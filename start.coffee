@@ -82,7 +82,7 @@ indexHTML = (callback) ->
     <meta charset="UTF-8">
     <title>Lefty Guitars</title>
     <script src="d3.min.js" charset="UTF-8"></script>
-    <script src="facts.pack.js" charset="UTF-8"></script>
+    <script src="Facts.pack.js" charset="UTF-8"></script>
     <script src="document.js" charset="UTF-8"></script>
     <script src="index.js" charset="UTF-8"></script>
   """
