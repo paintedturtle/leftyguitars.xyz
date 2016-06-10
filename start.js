@@ -26,7 +26,7 @@
   });
 
   service = require("http").createServer(function(request, response) {
-    var identifier, out, output;
+    var database, identifier, out, outputBuffer, serialized;
     console.info({
       request: identifier = decodeURIComponent(request.url.replace("/", ""))
     });
@@ -39,15 +39,19 @@
           return addInstrument(data.location);
         });
       case identifier !== "database.json":
-        output = new Buffer(JSON.stringify(instruments.database()), "UTF-8");
-        return send(response, out = {
+        database = instruments.database();
+        serialized = JSON.stringify(database, void 0, "  ");
+        outputBuffer = new Buffer(serialized, "UTF-8");
+        send(response, out = {
           file: "database.json",
           type: "application/json; charset=UTF-8",
-          size: output.length,
-          data: output
+          size: outputBuffer.length,
+          data: outputBuffer
         });
+        return write("database.json", serialized, "UTF8");
       case identifier !== "":
         return indexHTML(function(error, HTML) {
+          var output;
           if (error) {
             throw error;
           }

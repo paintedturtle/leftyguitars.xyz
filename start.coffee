@@ -21,12 +21,15 @@ service = require("http").createServer (request, response) ->
         console.info post:data
         addInstrument data.location
     when identifier is "database.json"
-      output = new Buffer JSON.stringify(instruments.database()), "UTF-8"
+      database = instruments.database()
+      serialized = JSON.stringify(database, undefined, "  ")
+      outputBuffer = new Buffer serialized, "UTF-8"
       send response, out =
         file:"database.json"
         type:"application/json; charset=UTF-8"
-        size:output.length
-        data:output
+        size:outputBuffer.length
+        data:outputBuffer
+      write "database.json", serialized, "UTF8"
     when identifier in [""]
       indexHTML (error, HTML) ->
         if error then throw error
