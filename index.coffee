@@ -105,7 +105,7 @@ document.on "input", "input", (event, input) ->
 key = (d) -> d["title"]
 
 render = (data) ->
-  data = data.sort (a, b) -> a["access time"] - b["access time"]
+  data = data.sort (a, b) -> b["access time"] - a["access time"]
   article = d3.select("#articles").selectAll("article").data(data, ((d) -> d.title) )
   article.enter().append("article")
   article.html (d) -> """
