@@ -80,7 +80,7 @@ indexHTML = (callback) ->
   callback undefined, """
     <!DOCTYPE HTML>
     <meta charset="UTF-8">
-    <title>Lefty Guitars</title>
+    <title>Lefty Guitars For Sale Under $1000</title>
     <script src="d3.min.js" charset="UTF-8"></script>
     <script src="Facts.pack.js" charset="UTF-8"></script>
     <script src="document.js" charset="UTF-8"></script>
