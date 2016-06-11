@@ -13,7 +13,8 @@ document.on "DOMContentLoaded", ->
         <h6>This site is hosted by</h6>
         <div id="paintedturtle">
           <strong><a target="paintedturtle" href="https://paintedturtle.xyz/instruments">Painted Turtle instruments</a></strong><br>
-          Well-worm lefty guitars in Ottawa, Ontario<br>
+          Well-worm lefty guitars &amp; basses<br>
+          Ottawa, Ontario, Canada<br>
           <a href="mailto:instruments@paintedturtle.xyz">instruments@paintedturtle.xyz</a>
           <a href="https://paintedturtle.xyz/instruments" class="window"><img src="paintedturtleinstruments.png" alt="Visit the Painted Turtle Instruments Website"></a>
         </div>
@@ -22,17 +23,20 @@ document.on "DOMContentLoaded", ->
         <h6>Lefty Links</h6>
         <div id="jerrysleftyguitars">
           <strong><a target="jerrysleftyguitars" href="https://www.jerrysleftyguitars.com/">Jerry’s Lefty Guitars</a></strong><br>
-          World’s finest collection of lefty guitars in Sarasota, Florida<br>
+          World’s finest collection of lefty guitars<br>
+          Sarasota, Florida, USA<br>
           <a href="mailto:jerry@jerrysleftyguitars.com">jerry@jerrysleftyguitars.com</a>
         </div>
         <div id="adkguitar">
           <a target="leftyguitarsonly" href="https://www.adkguitar.com/">Adirondack Guitar</a><br>
-          Large selection of lefty guitars in Hudson Falls, New York<br>
+          Large selection of new lefty guitars<br>
+          Hudson Falls, New York, USA<br>
           <a href="mailto:support@adkguitar.com">support@adkguitar.com</a>
         </div>
         <div id="leftyguitarsonly">
           <a target="leftyguitarsonly" href="http://leftyguitarsonly.com/">Lefty Guitars Only</a><br>
-          Spendy lefty guitars in East Greenwich, Rhode Island<br>
+          Very spendy lefty acoustic &amp; electic guitars<br>
+          East Greenwich, Rhode Island, USA<br>
           <a href="mailto:sales@leftyguitarsonly.com">sales@leftyguitarsonly.com</a>
         </div>
 
