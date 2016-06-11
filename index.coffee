@@ -39,7 +39,12 @@ document.on "DOMContentLoaded", ->
           East Greenwich, Rhode Island, USA<br>
           <a href="mailto:sales@leftyguitarsonly.com">sales@leftyguitarsonly.com</a>
         </div>
-
+        <div id="leftyguitars.be">
+          <a target="leftyguitars.be" href="http://leftyguitars.be/">Lefty Guitars</a><br>
+          Europe’s ultimate choice in lefty guitars and basses<br>
+          Peulis, Belgium<br>
+          <a href="mailto:sales@leftyguitarsonly.com">sales@leftyguitarsonly.com</a>
+        </div>
       </div>
     </footer>
     <style>
