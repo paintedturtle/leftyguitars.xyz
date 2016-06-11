@@ -3,6 +3,7 @@ Kijiji = module.exports
 Kijiji.Date = require('d3').time.format("%d-%b-%y")
 
 Kijiji.attributes =
+  "expired":".expired-ad-container"
   "title":"[itemprop=name]"
   "description":"[itemprop=description]"
   "price":"[itemprop=price]"
@@ -18,11 +19,16 @@ Kijiji.read = (address, done) ->
   address = Kijiji.address(id)
   console.info read:address
   window(address, Kijiji.attributes) (error, output) ->
+    console.info window:arguments
     output["address"] = address
-    output["publication date"] = Kijiji.Date.parse(output["publication date"])
-    output["description"] = output["description"].trim()
     output["access time"] = Date.now()
-    output["photographs"] = output["photographs"].filter (p) -> p.match("play-button") is p.match("youtube") is null
+    if output["expired"]?
+      output["expired"] = Date.now()
+      delete output["photographs"]
+    else
+      output["publication date"] = Kijiji.Date.parse(output["publication date"])
+      output["description"] = output["description"]?.trim()
+      output["photographs"] = output["photographs"].filter (p) -> p.match("play-button") is p.match("youtube") is null
     done error, output
 
 Kijiji.address = (id) ->

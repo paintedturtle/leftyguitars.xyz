@@ -4,7 +4,7 @@ read "http://www.kijiji.ca/v-view-details.html?adId=1165646316", (error, data) -
   console.error error if error
   console.info data
 
-read "http://www.kijiji.ca/v-guitar/city-of-toronto/lh-carparelli-hollow-body/1170859970", (error, data) ->
+read "http://www.kijiji.ca/v-view-details.html?adId=1170859970", (error, data) ->
   console.error error if error
   console.info data
 

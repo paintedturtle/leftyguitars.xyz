@@ -94,15 +94,24 @@ document.on "DOMContentLoaded", ->
     if error then console.error(error)
     window.instruments = Facts()
     window.instruments.datoms = Immutable.Stack Immutable.fromJS(database)
-    console.info window.instruments.query()
-    render window.instruments.query()
+    {current, expired} = window.instruments.query().reduce(toCurrentAndExpired)
+    render current
+
+toCurrentAndExpired = (reduction, guitar) ->
+  reduction ?= {}
+  reduction.current ?= []
+  reduction.expired ?= []
+  if guitar.expired
+    reduction.expired.push(guitar)
+  else
+    reduction.current.push(guitar)
+  return reduction
 
 document.on "input", "input", (event, input) ->
-  console.info input
-  console.info "input":input.value
-  if input.validity.valid then POST input.value
-
-key = (d) -> d["title"]
+  if input.validity.valid
+    POST input.value
+    reset = -> input.value = ""
+    setTimeout reset, 100
 
 render = (data) ->
   data = data.sort (a, b) -> b["access time"] - a["access time"]
