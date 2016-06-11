@@ -38,7 +38,7 @@
   render = function(data) {
     var article;
     data = data.sort(function(a, b) {
-      return b["access time"] - a["access time"];
+      return a["access time"] - b["access time"];
     });
     article = d3.select("#articles").selectAll("article").data(data, (function(d) {
       return d.title;
