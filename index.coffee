@@ -4,14 +4,20 @@ document.on "DOMContentLoaded", ->
     <input type="URL" placeholder="Paste a URL to add another guitar" value="">
     </form>
     <div id="articles"></div>
+    <div id="paintedturtle">
+      <h6>This site is hosted by</h6>
+      <a href="">Painted Turtle instruments</a><br>
+      Well-worm lefty guitars in Ottawa<br>
+      <a href="mailto:instruments@paintedturtle.xyz">instruments@paintedturtle.xyz</a>
+    </div>
     <style>
       html { background: #333; }
       body, article,div { padding: 0; margin: auto; position: relative;}
       form { width: 300mm; margin: 10mm auto;}
       form input { width: 100%; margin: auto; font: 4mm/4mm Consolas; }
-      #articles { margin: 10mm auto; width: 300mm; position: relative; overflow:hidden;}
-      article { margin: 0; color: white; font: 4mm/4mm Consolas; width: 100mm; float: left; outline: 1px solid black; overflow:hidden;}
-      article img { width: 100mm; height: 100mm; object-fit: cover; background-color: black; display:block;}
+      #articles { margin: 10mm auto; width: auto; position: relative; overflow:hidden;}
+      article { margin: 0; color: white; font: 4mm/4mm Consolas; width: 33%; float: left; outline: 1px solid black; overflow:hidden;}
+      article img { width: 100%; height: 100mm; object-fit: cover; background-color: black; display:block;}
       article .title { white-space: nowrap; position: absolute; background: black; margin: 1mm; padding: 1mm;}
       article .price { white-space: nowrap; position: absolute; background: black; margin: 1mm; padding: 1mm; top: 5mm;}
     </style>
