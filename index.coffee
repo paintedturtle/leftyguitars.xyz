@@ -5,36 +5,50 @@ document.on "DOMContentLoaded", ->
     </header>
     <div id="articles"></div>
 
-    <div id="hosted">
-      <h6>This site is hosted by</h6>
-      <div id="paintedturtle">
-        <a href="">Painted Turtle instruments</a><br>
-        Well-worm lefty guitars in Ottawa, Ontario<br>
-        <a href="mailto:instruments@paintedturtle.xyz">instruments@paintedturtle.xyz</a>
+    <div class="turtle">🐢</div>
+
+    <footer>
+
+      <div id="host">
+        <h6>This site is hosted by</h6>
+        <div id="paintedturtle">
+          <strong><a target="paintedturtle" href="https://paintedturtle.xyz/instruments">Painted Turtle instruments</a></strong><br>
+          Well-worm lefty guitars in Ottawa, Ontario<br>
+          <a href="mailto:instruments@paintedturtle.xyz">instruments@paintedturtle.xyz</a>
+          <a href="https://paintedturtle.xyz/instruments" class="window"><img src="paintedturtleinstruments.png" alt="Visit the Painted Turtle Instruments Website"></a>
+        </div>
       </div>
-    </div>
-    <div id="links">
-      <h6>Lefty Links</h6>
-      <div id="jerrysleftyguitars">
-        <a href="">Jerry’s Lefty Guitars</a><br>
-        World’s finest collection of lefty guitars in Sarasota, Florida<br>
-        <a href="mailto:instruments@paintedturtle.xyz">instruments@paintedturtle.xyz</a>
+      <div id="links">
+        <h6>Lefty Links</h6>
+        <div id="jerrysleftyguitars">
+          <strong><a target="jerrysleftyguitars" href="https://www.jerrysleftyguitars.com/">Jerry’s Lefty Guitars</a></strong><br>
+          World’s finest collection of lefty guitars in Sarasota, Florida<br>
+          <a href="mailto:jerry@jerrysleftyguitars.com">jerry@jerrysleftyguitars.com</a>
+        </div>
+        <div id="adkguitar">
+          <a target="leftyguitarsonly" href="https://www.adkguitar.com/">Adirondack Guitar</a><br>
+          Large selection of lefty guitars in Hudson Falls, New York<br>
+          <a href="mailto:support@adkguitar.com">support@adkguitar.com</a>
+        </div>
+        <div id="leftyguitarsonly">
+          <a target="leftyguitarsonly" href="http://leftyguitarsonly.com/">Lefty Guitars Only</a><br>
+          Spendy lefty guitars in East Greenwich, Rhode Island<br>
+          <a href="mailto:sales@leftyguitarsonly.com">sales@leftyguitarsonly.com</a>
+        </div>
+
       </div>
-      <div id="leftyguitarsonly">
-        <a href="">Lefty Guitars Only</a><br>
-        Expensive lefty guitars in East Greenwich, Rhode Island<br>
-        <a href="mailto:instruments@paintedturtle.xyz">instruments@paintedturtle.xyz</a>
-      </div>
-    </div>
+    </footer>
     <style>
-      html { background: #333; color: white;}
-      body { font: 4mm/4mm Consolas; }
       body, article, div, header, footer, h1, h2, h3, h4, h5, h6 { padding: 0; margin: auto; position: relative; font: inherit; }
+      a { color: inherit; text-decoration: inherit; }
+      strong { font-weight: inherit; }
+      html { background: #111; color: hsla(0, 0%, 100%, 0.5);}
+      body { font: 4mm/4mm "Avenir", sans-serif; font-weight: 600; }
       body > header { position: absolute; top: -100%; }
       form { width: 300mm; margin: 10mm auto;}
       form input { width: 100%; margin: auto; font: 4mm/4mm Consolas; }
-      #articles { margin: auto; width: auto; position: relative; overflow:hidden;}
-      article { margin: 0; color: white; font: 4mm/4mm Consolas; width: 33.333%; float: left; outline: 1px solid black; overflow:hidden;}
+      #articles { margin: auto; width: auto; position: relative; overflow:hidden; color: white;}
+      article { margin: 0; color: white; width: 33.333%; float: left; outline: 1px solid black; overflow:hidden;}
       article img { width: 100%; height: 100mm; object-fit: cover; background-color: black; display:block;}
       article .title { white-space: nowrap; position: absolute; background: black; margin: 1mm; padding: 1mm; bottom: 10mm;}
       article .price { white-space: nowrap; position: absolute; background: black; margin: 1mm; padding: 1mm; bottom: 5mm;}
@@ -43,6 +57,25 @@ document.on "DOMContentLoaded", ->
       article:hover a { background: hsl(333, 50%, 50%); color: black; text-decoration: underline;}
 
       #add { position: fixed; top: 0; left: 0; right: 0;}
+
+
+      body > footer { line-height: 5mm; }
+
+      #host { position: absolute; top: 0; left: 0; width: 33.333%; text-align: right; }
+      #host > h6 { padding: 10mm 2mm 2mm; }
+      #links { margin: 0 0 0 66.666%;  }
+      #links > h6 { padding: 10mm 2mm 2mm; }
+      #links > div { margin: 4mm 0; padding: 2mm; }
+
+      a.window { display:block; box-shadow: 0 0 1mm 0 black; border-top: 1mm solid hsla(0, 0%, 100%, 0.44);}
+      a.window img { width: 100%; display:block;}
+
+      #paintedturtle { padding: 2mm; margin: 4mm 0;}
+      #paintedturtle strong a[href] { color:hsl(333,88%,72%); }
+      #paintedturtle a.window { position: absolute; left: 100%; right:-100%; top: -21mm; transform: scale(0.88)rotate(-1.11deg); transition: all 222ms ease-out;}
+      #paintedturtle a.window:hover { transform: scale(0.99)rotate(+0.11deg); }
+
+      body .turtle { text-align: center; padding: 3% 1% 1%; color: white; font-size: 200%;}
     </style>
   """
   if location.hostname is "localhost"
