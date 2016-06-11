@@ -111,7 +111,7 @@ render = (data) ->
   article.html (d) -> """
     <div class="title">#{simplifiedTitle(d.title) or 'Untitled'}</div>
     <div class="price">#{d.price}</div>
-    <div class="address"><a href="#{d.address}">#{d.address.replace("http://www.", "")}</a></div>
+    <div class="address"><a target="new" href="#{d.address}">#{d.address.replace("http://www.", "")}</a></div>
     <img src="#{d.photographs[0]}">
     """
   article.exit().remove()

@@ -45,7 +45,7 @@
     }));
     article.enter().append("article");
     article.html(function(d) {
-      return "<div class=\"title\">" + (simplifiedTitle(d.title) || 'Untitled') + "</div>\n<div class=\"price\">" + d.price + "</div>\n<div class=\"address\"><a href=\"" + d.address + "\">" + (d.address.replace("http://www.", "")) + "</a></div>\n<img src=\"" + d.photographs[0] + "\">";
+      return "<div class=\"title\">" + (simplifiedTitle(d.title) || 'Untitled') + "</div>\n<div class=\"price\">" + d.price + "</div>\n<div class=\"address\"><a target=\"new\" href=\"" + d.address + "\">" + (d.address.replace("http://www.", "")) + "</a></div>\n<img src=\"" + d.photographs[0] + "\">";
     });
     return article.exit().remove();
   };
