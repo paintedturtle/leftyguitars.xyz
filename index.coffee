@@ -81,7 +81,6 @@ document.on "DOMContentLoaded", ->
       #current article .duration .label { white-space: nowrap; position: absolute; margin: 0; width: 15mm; height:4mm; padding: 1mm 1mm 2mm; top: 0; left:0; background:transparent; text-align: right; color: hsla(0, 0%, 66%, 1);}
       #current article .duration .graphic { position: absolute; margin: 1mm 1px 1.33mm; height:3.66mm; bottom: 0mm; left:17mm; background:hsla(0, 0%, 66%, 1);}
 
-
       article:not(:hover) a { background: transparent; color: inherit;}
       article a[href]:not(:visited) { color: hsl(205, 50%, 50%); }
       article a[href]:visited { color: hsl(278, 50%, 50%); }
@@ -90,7 +89,6 @@ document.on "DOMContentLoaded", ->
       div.diminished.articles { margin: 0 auto 10mm; width: auto; position: relative; overflow:hidden; color: white;}
       div.diminished.articles article { margin: 0; color: white; width: 10%; float: left; overflow:hidden;}
       div.diminished.articles article img { width: 100%; height: 50mm; object-fit: cover; background-color: black; display:block;}
-
 
       body > footer { line-height: 5mm; }
 
@@ -119,15 +117,11 @@ document.on "DOMContentLoaded", ->
     """
 
 document.on "DOMContentLoaded", ->
-  d3.json "database.json", (error, database) ->
-    if error then console.error(error)
-    window.instruments = Facts()
-    window.instruments.datoms = Immutable.Stack Immutable.fromJS(database)
-    {current, expired, noprice, pocketd} = window.instruments.query().reduce(toCurrentExpiredNoprice)
-    renderCurrentArticles current
-    renderExpiredArticles expired
-    renderArticlesWithoutPrices noprice
-    renderPocket pocketd if location.hostname.length is 9
+  {current, expired, noprice, pocketd} = window.instruments.query().reduce(toCurrentExpiredNoprice)
+  renderCurrentArticles current
+  renderExpiredArticles expired
+  renderArticlesWithoutPrices noprice
+  renderPocket pocketd if location.hostname.length is 9
 
 toCurrentExpiredNoprice = (reduction, guitar) ->
   reduction ?= {}

@@ -63,7 +63,7 @@ service = require("http").createServer (request, response) ->
 
     when identifier is "database.json"
       database = instruments.database()
-      serialized = JSON.stringify(database, undefined, "  ")
+      serialized = JSON.stringify(instruments.database(), undefined, "  ")
       outputBuffer = new Buffer serialized, "UTF-8"
       send response, out =
         file:"database.json"
@@ -132,6 +132,8 @@ indexHTML = (callback) ->
     #{compile readFileSync "Number.coffee", "UTF-8"}
     #{compile readFileSync "document.coffee", "UTF-8"}
     #{compile readFileSync "index.coffee", "UTF-8"}
+    window.instruments = Facts()
+    window.instruments.datoms = Immutable.Stack(Immutable.fromJS(#{JSON.stringify(instruments.database())}))
     </script>
   """
 
