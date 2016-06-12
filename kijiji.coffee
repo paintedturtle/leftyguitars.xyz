@@ -28,7 +28,6 @@ Kijiji.read = (address, done) ->
       delete output["photographs"]
     else
       output["publication time"] = Kijiji.Date.parse(output["publication date"]).getTime()
-      output["publication date"] = Kijiji.Date.parse(output["publication date"])
       output["description"] = output["description"]?.trim()
       output["photographs"] = output["photographs"].filter (p) -> p.match("play-button") is p.match("youtube") is null
     done error, output

@@ -167,7 +167,7 @@ document.on "input", "#pocket input", (event, input) ->
         input.value = ""
 
 renderCurrentArticles = (data) ->
-  data = data.sort (a, b) -> Date.parse(b["publication date"]) - Date.parse(a["publication date"])
+  data = data.sort (a, b) -> b["publication time"] - a["publication time"]
   article = d3.select("#current").selectAll("article").data(data, ((d) -> d.id) )
   article.enter().append("article")
     .attr id:(d) -> d.id
@@ -179,8 +179,8 @@ renderCurrentArticles = (data) ->
       <div class="label">$ #{ Number(d["price"].replace("$","").replace(",",".").split(".")[0]) }</div>
     </div>
     <div class="duration">
-      <div class="graphic" style="width:#{Math.round (Date.now() - Date.parse(d["publication date"])) / 24.hours() * 1.25 }%"></div>
-      <div class="label">#{Math.round (Date.now() - Date.parse(d["publication date"])) / 24.hours() } #{if Math.round((Date.now() - Date.parse(d["publication date"])) / 24.hours()) > 1 then 'days' else 'day'}</div>
+      <div class="graphic" style="width:#{Math.round((Date.now()-d["publication time"]) / 24.hours()) * 1.25 }%"></div>
+      <div class="label">#{ Math.round((Date.now()-d["publication time"]) / 24.hours()) } #{if Math.round((Date.now()-d["publication time"]) / 24.hours()) > 1 then 'days' else 'day'}</div>
     </div>
     <img src="#{d.photographs[0]}">
     <div class="id">#{if location.hostname is "localhost" then d.id else ""}</div>

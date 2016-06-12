@@ -216,7 +216,8 @@ write = require("fs").writeFile
 advanceOldestArticle = ->
   articles = instruments.query().sort (a, b) ->
     a["access time"] - b["access time"]
-  article = articles[2]
+  article = articles[0]
+  return if article["access time"] > (Date.now() - 45.minutes())
   console.info "Advancing stale article":article
   console.info before:article
   Kijiji.read article.address, (error, output) ->
@@ -230,4 +231,4 @@ advanceOldestArticle = ->
     instruments.advance article.id, advancements
 
 
-# setInterval advanceOldestArticle, 5.seconds()
+setInterval advanceOldestArticle, 2.seconds()
