@@ -192,7 +192,7 @@ render = (data) ->
       <div class="label">#{Math.round (Date.now() - Date.parse(d["publication date"])) / 24.hours() } days</div>
     </div>
     <img src="#{d.photographs[0]}">
-    <div class="id">#{d.id if location.hostname is "localhost"}</div>
+    <div class="id">#{if location.hostname is "localhost" then d.id else ""}</div>
     """
   article.exit().remove()
 
