@@ -4,10 +4,20 @@ document.on "DOMContentLoaded", ->
       <h1>Lefty Guitars For Sale Under $1000</h1>
     </header>
 
-    <h2 hidden>Current</h2>
-    <div id="current"></div>
+    <h1>
+      <span id="selection-size">N</span> lefty guitars for sale under $<span id="price-limit">1000</span> CAD
+    </h1>
 
-    <h2>Recently Departed</h2>
+    <form id="pricelimit" style="height:4mm; margin: 2mm 20% 10mm; position: relative;">
+      <label class="min" style="position: absolute; right: 100%; margin:0 1mm;">$100</label>
+      <label class="max" style="position: absolute; left: 100%; margin:0 1mm; ">$1000</label>
+      <input type="range" min="100" max="1000" value="1000" style="position: absolute; left: 0; right: 0; width: 100%; margin:0; padding:0; display:block;">
+    </form>
+
+    <h2 hidden>Current</h2>
+    <div id="current" class="natural articles"></div>
+
+    <h2>Dearly Departed</h2>
     <div id="expired" class="diminished articles"></div>
 
     <h2>No Price</h2>
@@ -62,27 +72,26 @@ document.on "DOMContentLoaded", ->
       html { background: #111; color: hsla(0, 0%, 100%, 0.5);}
       body { font: 4mm/4mm "Avenir", sans-serif; font-weight: 600; }
       body > header { position: absolute; top: -100%; }
-      form { width: 300mm; margin: 10mm auto;}
-      form input { width: 100%; margin: auto; font: 4mm/4mm Consolas; }
-      #current { margin: auto; width: auto; position: relative; overflow:hidden; color: white;}
-      #current article { margin: 0; color: white; width: 33.333%; float: left; overflow:hidden;}
-      #current article img { width: 100%; height: 100mm; object-fit: cover; background-color: black; display:block;}
-      #current article .address { white-space: nowrap; position: absolute; background: hsla(0, 0%, 0%, 0.66); margin: 0 2mm; padding: 1mm; bottom: 19mm;}
-      #current article .title { white-space: nowrap; position: absolute; background: hsla(0, 0%, 0%, 0.66); margin: 0 2mm; padding: 1mm; bottom: 13mm;}
 
-      #current article .id { white-space: nowrap; position: absolute; margin: 1mm; padding: 1mm; top: 0; left:0; font-size: 50%; }
-      #current article .publication { white-space: nowrap; position: absolute; margin: 1mm; padding: 1mm; top: 0mm; background:black; display:none;}
+      body > h1 { text-align: center; margin: 10mm 10mm 2mm; color: white;}
 
-      #current article .price { position: absolute; margin: 0 2mm; height:5mm; left: 0; bottom: 8mm; background: hsla(0, 0%, 0%, 0.66); right:0; overflow:hidden; }
-      #current article .price .label { white-space: nowrap; position: absolute; margin: 0; width: 15mm; height:4mm; padding: 1mm 1mm 2mm; top: 0; left:0; background:transparent; text-align: right; color:hsla(0, 0%, 66%, 1);}
-      #current article .price .graphic { position: absolute; margin: 1mm 1px 0.33mm; height:3.66mm; bottom: 0; left:17mm; background:hsla(0, 0%, 55%, 1);}
+      form input[type=text], form input[type=url] { width: 100%; margin: auto; font: 4mm/4mm Consolas; }
+      div.natural.articles { margin: auto; width: auto; position: relative; overflow:hidden; color: white;}
+      div.natural.articles article { margin: 0; color: white; width: 33.333%; float: left; overflow:hidden;}
+      div.natural.articles article img { width: 100%; height: 100mm; object-fit: cover; background-color: black; display:block;}
+      div.natural.articles article .address { white-space: nowrap; position: absolute; background: hsla(0, 0%, 0%, 0.66); margin: 0 2mm; padding: 1mm; bottom: 19mm;}
+      div.natural.articles article .title { white-space: nowrap; position: absolute; background: hsla(0, 0%, 0%, 0.66); margin: 0 2mm; padding: 1mm; bottom: 13mm;}
 
+      div.natural.articles article .id { white-space: nowrap; position: absolute; margin: 1mm; padding: 1mm; top: 0; left:0; font-size: 50%; }
+      div.natural.articles article .publication { white-space: nowrap; position: absolute; margin: 1mm; padding: 1mm; top: 0mm; background:black; display:none;}
 
-      #current article .duration { position: absolute; margin: 0 2mm 0; height:6mm; left: 0; bottom: 2mm; right:0; background: hsla(0, 0%, 0%, 0.66); overflow:hidden; }
-      #current article .duration .label { white-space: nowrap; position: absolute; margin: 0; width: 15mm; height:4mm; padding: 1mm 1mm 2mm; top: 0; left:0; background:transparent; text-align: right; color: hsla(0, 0%, 66%, 1);}
-      #current article .duration .graphic { position: absolute; margin: 1mm 1px 1.33mm; height:3.66mm; bottom: 0mm; left:17mm; background:hsla(0, 0%, 55%, 1);}
+      div.natural.articles article .price { position: absolute; margin: 0 2mm; height:5mm; left: 0; bottom: 8mm; background: hsla(0, 0%, 0%, 0.66); right:0; overflow:hidden; }
+      div.natural.articles article .price .label { white-space: nowrap; position: absolute; margin: 0; width: 15mm; height:4mm; padding: 1mm 1mm 2mm; top: 0; left:0; background:transparent; text-align: right; color:hsla(0, 0%, 66%, 1);}
+      div.natural.articles article .price .graphic { position: absolute; margin: 1mm 1px 0.33mm; height:3.66mm; bottom: 0; left:17mm; background:hsla(0, 0%, 55%, 1);}
 
-
+      div.natural.articles article .duration { position: absolute; margin: 0 2mm 0; height:6mm; left: 0; bottom: 2mm; right:0; background: hsla(0, 0%, 0%, 0.66); overflow:hidden; }
+      div.natural.articles article .duration .label { white-space: nowrap; position: absolute; margin: 0; width: 15mm; height:4mm; padding: 1mm 1mm 2mm; top: 0; left:0; background:transparent; text-align: right; color: hsla(0, 0%, 66%, 1);}
+      div.natural.articles article .duration .graphic { position: absolute; margin: 1mm 1px 1.33mm; height:3.66mm; bottom: 0mm; left:17mm; background:hsla(0, 0%, 55%, 1);}
 
       article:not(:hover) a { background: transparent; color: inherit;}
       article a[href]:not(:visited) { color: hsl(205, 50%, 50%); }
@@ -116,7 +125,7 @@ document.on "DOMContentLoaded", ->
     document.body.innerHTML += """
       <form id="add"><input type="URL" placeholder="Paste a URL to add another guitar" value=""></form>
       <form id="pocket"><input type="text" placeholder="Paste an ID to pocket an article" value="" maxlength="64" minlength="64"></form>
-      <div id="pocketd" class="diminished articles"></div>
+      <div id="pocketd" class="natural articles"></div>
     """
 
 document.on "DOMContentLoaded", ->
@@ -143,6 +152,15 @@ toCurrentExpiredNoprice = (reduction, guitar) ->
   reduction.current.push(guitar)
   return reduction
 
+document.on "input", "#pricelimit input", (event, input) ->
+  limit = Number(input.value)
+  {current} = window.instruments.query().reduce(toCurrentExpiredNoprice, {})
+  d3.select("#price-limit").html limit
+  renderCurrentArticles current.filter (article) ->
+    price = Number article["price"].replace("$","").replace(",",".").split(".")[0]
+    return price < limit
+
+
 document.on "input", "#add input", (event, input) ->
   console.info advance:input.value
   if input.validity.valid
@@ -166,26 +184,38 @@ document.on "input", "#pocket input", (event, input) ->
         console.info JSON.parse(response.responseText)
         input.value = ""
 
+byAddressInAscendingOrder  = (a, b) -> d3.ascending(a["address"], b["address"])
+byAddressInDescendingOrder = (a, b) -> d3.descending(a["address"], b["address"])
+
 renderCurrentArticles = (data) ->
-  data = data.sort (a, b) -> b["publication time"] - a["publication time"]
-  article = d3.select("#current").selectAll("article").data(data, ((d) -> d.id) )
+  sorted = data
+    .sort byAddressInDescendingOrder
+    .sort (a, b) -> b["publication time"] - a["publication time"]
+  d3.select("#selection-size").html sorted.length
+
+  article = d3.select("#current").selectAll("article").data(sorted, ((d) -> d.id))
+  article.order()
   article.enter().append("article")
-    .attr id:(d) -> d.id
-  article.html (d) -> """
-    <div class="title">#{simplifiedTitle(d.title) or 'Untitled'}</div>
-    <div class="address"><a target="#{d.id}" href="#{d.address}">#{simplifiedAddress d.address}</a></div>
+  article.attr id:(d) -> d.id
+  article.html naturalArticleHTML
+  article.exit().remove()
+
+naturalArticleHTML = (article) ->
+  return """
+    <div class="title">#{simplifiedTitle(article.title) or 'Untitled'}</div>
+    <div class="address"><a target="#{article.id}" href="#{article.address}">#{simplifiedAddress article.address}</a></div>
     <div class="price">
-      <div class="graphic" style="width:#{Number(d["price"].replace("$","").replace(",",".").split(".")[0])/13}%"></div>
-      <div class="label">$ #{ Number(d["price"].replace("$","").replace(",",".").split(".")[0]) }</div>
+      <div class="graphic" style="width:#{Number(article.price.replace("$","").replace(",",".").split(".")[0])/13}%"></div>
+      <div class="label">$ #{ Number(article.price.replace("$","").replace(",",".").split(".")[0]) }</div>
     </div>
     <div class="duration">
-      <div class="graphic" style="width:#{Math.round((Date.now()-d["publication time"]) / 24.hours()) * 1.25 }%"></div>
-      <div class="label">#{ Math.round((Date.now()-d["publication time"]) / 24.hours()) } #{if Math.round((Date.now()-d["publication time"]) / 24.hours()) > 1 then 'days' else 'day'}</div>
+      <div class="graphic" style="width:#{Math.round((Date.now()-article["publication time"]) / 24.hours()) * 1.25 }%"></div>
+      <div class="label">#{ Math.round((Date.now()-article["publication time"]) / 24.hours()) } #{if Math.round((Date.now()-article["publication time"]) / 24.hours()) > 1 then 'days' else 'day'}</div>
     </div>
-    <img src="#{d.photographs[0]}">
-    <div class="id">#{if location.hostname is "localhost" then d.id else ""}</div>
-    """
-  article.exit().remove()
+    <img src="#{article.photographs[0]}">
+    <div class="id">#{if location.hostname is "localhost" then article.id else ""}</div>
+  """
+
 
 renderExpiredArticles = (data) ->
   article = d3.select("#expired").selectAll("article").data(data, ((d) -> d.id))
@@ -199,10 +229,8 @@ renderExpiredArticles = (data) ->
 renderPocket = (data) ->
   article = d3.select("#pocketd").selectAll("article").data(data, ((d) -> d.id))
   article.enter().append("article")
-    .attr id:(d) -> d.id
-  article.html (d) -> """
-    <a target="#{d.id}" href="#{d.address}"><img src="#{d.photographs[0]}"></a>
-    """
+  article.attr id:(d) -> d.id
+  article.html naturalArticleHTML
   article.exit().remove()
 
 renderArticlesWithoutPrices = (data) ->
