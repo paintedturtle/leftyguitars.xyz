@@ -121,7 +121,7 @@
   };
 
   indexHTML = function(callback) {
-    return callback(void 0, "<!DOCTYPE HTML>\n<meta charset=\"UTF-8\">\n<title>Lefty Guitars For Sale Under $1000</title>\n<script src=\"d3.min.js\" charset=\"UTF-8\"></script>\n<script src=\"Facts.pack.js\" charset=\"UTF-8\"></script>\n<script src=\"document.js\" charset=\"UTF-8\"></script>\n<script src=\"index.js\" charset=\"UTF-8\"></script>");
+    return callback(void 0, "<!DOCTYPE HTML>\n<meta charset=\"UTF-8\">\n<title>Lefty Guitars For Sale Under $1000</title>\n<script src=\"Facts.pack.js\" charset=\"UTF-8\"></script>\n<script src=\"Number.js\" charset=\"UTF-8\"></script>\n<script src=\"d3.min.js\" charset=\"UTF-8\"></script>\n<script src=\"document.js\" charset=\"UTF-8\"></script>\n<script src=\"index.js\" charset=\"UTF-8\"></script>");
   };
 
   sendScript = function(identifier, response) {

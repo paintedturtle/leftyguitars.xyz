@@ -56,16 +56,28 @@ document.on "DOMContentLoaded", ->
       form { width: 300mm; margin: 10mm auto;}
       form input { width: 100%; margin: auto; font: 4mm/4mm Consolas; }
       #articles { margin: auto; width: auto; position: relative; overflow:hidden; color: white;}
-      article { margin: 0; color: white; width: 33.333%; float: left; outline: 1px solid black; overflow:hidden;}
+      article { margin: 0; color: white; width: 33.333%; float: left; overflow:hidden;}
       article img { width: 100%; height: 100mm; object-fit: cover; background-color: black; display:block;}
-      article .title { white-space: nowrap; position: absolute; background: black; margin: 1mm; padding: 1mm; bottom: 10mm;}
-      article .price { white-space: nowrap; position: absolute; background: black; margin: 1mm; padding: 1mm; bottom: 5mm;}
-      article .address { white-space: nowrap; position: absolute; background: black; margin: 1mm; padding: 1mm; bottom: 0mm;}
+      article .address { white-space: nowrap; position: absolute; background: hsla(0, 0%, 0%, 0.66); margin: 0 2mm; padding: 1mm; bottom: 19mm;}
+      article .title { white-space: nowrap; position: absolute; background: hsla(0, 0%, 0%, 0.66); margin: 0 2mm; padding: 1mm; bottom: 13mm;}
+
+      article .id { white-space: nowrap; position: absolute; margin: 1mm; padding: 1mm; top: 0; right:0; font-size: 50%; display:none;}
+      article .publication { white-space: nowrap; position: absolute; margin: 1mm; padding: 1mm; top: 0mm; background:black; display:none;}
+
+      article .price { position: absolute; margin: 0 2mm; height:5mm; left: 0; bottom: 8mm; background: hsla(0, 0%, 0%, 0.66); right:0; overflow:hidden; }
+      article .price .label { white-space: nowrap; position: absolute; margin: 0; width: 15mm; height:4mm; padding: 1mm 1mm 2mm; top: 0; left:0; background:transparent; text-align: right;}
+      article .price .graphic { position: absolute; margin: 1mm 1px 0.33mm; height:3.66mm; bottom: 0; left:17mm; background:hsla(0, 0%, 99%, 1);}
+
+      article .duration { position: absolute; margin: 0 2mm 0; height:6mm; left: 0; bottom: 2mm; right:0; background: hsla(0, 0%, 0%, 0.66); overflow:hidden; }
+      article .duration .label { white-space: nowrap; position: absolute; margin: 0; width: 15mm; height:4mm; padding: 1mm 1mm 2mm; top: 0; left:0; background:transparent; text-align: right; color: hsla(0, 0%, 66%, 1);}
+      article .duration .graphic { position: absolute; margin: 1mm 1px 1.33mm; height:3.66mm; bottom: 0mm; left:17mm; background:hsla(0, 0%, 66%, 1);}
+
+
       article:not(:hover) a { background: transparent; color: inherit;}
-      article:hover a { background: hsl(333, 50%, 50%); color: black; text-decoration: underline;}
+      article a[href]:not(:visited) { color: hsl(205, 50%, 50%); }
+      article a[href]:visited { color: hsl(278, 50%, 50%); }
 
       #add { position: fixed; top: 0; left: 0; right: 0;}
-
 
       body > footer { line-height: 5mm; }
 
@@ -119,12 +131,22 @@ document.on "input", "input", (event, input) ->
 
 render = (data) ->
   data = data.sort (a, b) -> b["access time"] - a["access time"]
-  article = d3.select("#articles").selectAll("article").data(data, ((d) -> d.title) )
+  article = d3.select("#articles").selectAll("article").data(data, ((d) -> d.id) )
   article.enter().append("article")
+    .attr id:(d) -> d.id
   article.html (d) -> """
     <div class="title">#{simplifiedTitle(d.title) or 'Untitled'}</div>
-    <div class="price">#{d.price}</div>
-    <div class="address"><a target="new" href="#{d.address}">#{simplifiedAddress d.address}</a></div>
+    <div class="address"><a target="#{d.id}" href="#{d.address}">#{simplifiedAddress d.address}</a></div>
+    <div class="id"><a href="##{d.id}">#{d.id}</a></div>
+    <div class="publication">#{d["publication date"]}</div>
+    <div class="price">
+      <div class="graphic" style="width:#{Number(d["price"].replace("$","").replace(",",".").split(".")[0])/13}%"></div>
+      <div class="label">$ #{ Number(d["price"].replace("$","").replace(",",".").split(".")[0]) }</div>
+    </div>
+    <div class="duration">
+      <div class="graphic" style="width:#{Math.round (Date.now() - Date.parse(d["publication date"])) / 24.hours() * 1.25 }%"></div>
+      <div class="label">#{Math.round (Date.now() - Date.parse(d["publication date"])) / 24.hours() } days</div>
+    </div>
     <img src="#{d.photographs[0]}">
     """
   article.exit().remove()
@@ -139,7 +161,7 @@ simplifiedTitle = (title) ->
 
 simplifiedAddress = (input) ->
   input
-    .replace("http://www.", "")
+    .replace("http://www.kijiji.ca", "kijiji")
     .replace("/v-view-details.html?adId=", "#")
 
 

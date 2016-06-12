@@ -18,7 +18,7 @@ Kijiji.read = (address, done) ->
   id = Kijiji.parseIdentifierFromAddress(address)
   address = Kijiji.address(id)
   console.info read:address
-  window(address, Kijiji.attributes) (error, output) ->
+  window(address+"&siteLocale=en_CA", Kijiji.attributes) (error, output) ->
     console.info window:arguments
     output["address"] = address
     output["access time"] = Date.now()
