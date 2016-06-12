@@ -8,7 +8,6 @@ document.on "DOMContentLoaded", ->
     <div class="turtle">🐢</div>
 
     <footer>
-
       <div id="host">
         <h6>This site is hosted by</h6>
         <div id="paintedturtle">
@@ -43,7 +42,7 @@ document.on "DOMContentLoaded", ->
           <a target="leftyguitars.be" href="http://leftyguitars.be/">Lefty Guitars</a><br>
           Europe’s ultimate choice in lefty guitars and basses<br>
           Peulis, Belgium<br>
-          <a href="mailto:sales@leftyguitarsonly.com">sales@leftyguitarsonly.com</a>
+          <a href="mailto:patrick@leftyguitars.be">patrick@leftyguitars.be</a>
         </div>
       </div>
     </footer>
@@ -125,7 +124,7 @@ render = (data) ->
   article.html (d) -> """
     <div class="title">#{simplifiedTitle(d.title) or 'Untitled'}</div>
     <div class="price">#{d.price}</div>
-    <div class="address"><a target="new" href="#{d.address}">#{d.address.replace("http://www.", "")}</a></div>
+    <div class="address"><a target="new" href="#{d.address}">#{simplifiedAddress d.address}</a></div>
     <img src="#{d.photographs[0]}">
     """
   article.exit().remove()
@@ -137,6 +136,11 @@ simplifiedTitle = (title) ->
     .replace(/left[- ]handed\s?/i, "")
     .replace(/left[- ]hand\s?/i, "")
     .replace("()", "")
+
+simplifiedAddress = (input) ->
+  input
+    .replace("http://www.", "")
+    .replace("/v-view-details.html?adId=", "#")
 
 
 POST = (location) ->
