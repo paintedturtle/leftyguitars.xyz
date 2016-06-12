@@ -1,7 +1,12 @@
+{readFileSync} = require "fs"
 JSONfromHTTPRequest = require("body/json")
 Cryptography = require('crypto')
 Immutable = require('immutable')
 files = require("facts")()
+
+Scripts =
+  d3: readFileSync "d3.min.js", "UTF-8"
+  facts: readFileSync "Facts.pack.js", "UTF-8"
 
 sources = """
   http://www.kijiji.ca/b-guitar/alberta/lefty/k0c613l9003?price=__1000&minNumberOfImages=1
@@ -69,11 +74,12 @@ service = require("http").createServer (request, response) ->
     when identifier in [""]
       indexHTML (error, HTML) ->
         if error then throw error
+        outputBuffer = new Buffer HTML, "UTF-8"
         send response, output =
           file:"index.html"
           type:"text/html; charset=UTF-8"
-          size:HTML.length
-          data:HTML
+          size:outputBuffer.length
+          data:outputBuffer
         write "index.html", HTML, "UTF8"
     when /js/.test identifier
       sendScript(identifier, response)
@@ -116,12 +122,17 @@ indexHTML = (callback) ->
   callback undefined, """
     <!DOCTYPE HTML>
     <meta charset="UTF-8">
-    <title>Lefty Guitars For Sale Under $1000</title>
-    <script src="Facts.pack.js" charset="UTF-8"></script>
-    <script src="Number.js" charset="UTF-8"></script>
-    <script src="d3.min.js" charset="UTF-8"></script>
-    <script src="document.js" charset="UTF-8"></script>
-    <script src="index.js" charset="UTF-8"></script>
+    <meta description="A growing index of left handed guitars and basses for sale. Prices are in Canadian Dollars.">
+    <meta keywords="lefty left-handed left-hand lefthand guitar bass guitars basses electric acoustic for sale 🐢">
+    <meta name="author" content="Painted Turtle Instruments">
+    <title>Lefty Guitars For Sale Under $1000 CAD</title>
+    <script charset="UTF-8">
+    #{Scripts.d3}
+    #{Scripts.facts}
+    #{compile readFileSync "Number.coffee", "UTF-8"}
+    #{compile readFileSync "document.coffee", "UTF-8"}
+    #{compile readFileSync "index.coffee", "UTF-8"}
+    </script>
   """
 
 sendScript = (identifier, response) ->

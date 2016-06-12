@@ -176,7 +176,7 @@ document.on "input", "#pocket input", (event, input) ->
 
 
 render = (data) ->
-  data = data.sort (a, b) -> b["access time"] - a["access time"]
+  data = data.sort (a, b) -> Date.parse(b["publication date"]) - Date.parse(a["publication date"])
   article = d3.select("#current").selectAll("article").data(data, ((d) -> d.id) )
   article.enter().append("article")
     .attr id:(d) -> d.id

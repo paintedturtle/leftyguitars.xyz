@@ -101,7 +101,7 @@
   render = function(data) {
     var article;
     data = data.sort(function(a, b) {
-      return b["access time"] - a["access time"];
+      return Date.parse(b["publication date"]) - Date.parse(a["publication date"]);
     });
     article = d3.select("#current").selectAll("article").data(data, (function(d) {
       return d.id;
