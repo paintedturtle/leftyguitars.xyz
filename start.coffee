@@ -1,8 +1,10 @@
+require("./Number")
 {readFileSync} = require "fs"
 JSONfromHTTPRequest = require("body/json")
 Cryptography = require('crypto')
 Immutable = require('immutable')
 files = require("facts")()
+
 
 Scripts =
   d3: readFileSync "d3.min.js", "UTF-8"
@@ -196,3 +198,23 @@ read = require("fs").readFile
 watch = require("fs").watch
 
 write = require("fs").writeFile
+
+
+advanceOldestArticle = ->
+  articles = instruments.query().sort (a, b) ->
+    a["access time"] - b["access time"]
+  article = articles[2]
+  console.info "Advancing stale article":article
+  console.info before:article
+  Kijiji.read article.address, (error, output) ->
+    console.error error if error
+    throw error if error
+    console.info after:output
+    advancements = {}
+    for key, value of output
+      advancements[key] = value unless Immutable.is Immutable.fromJS(value), Immutable.fromJS(article[key])
+    console.info changes:advancements
+    instruments.advance article.id, advancements
+
+
+# setInterval advanceOldestArticle, 5.seconds()

@@ -10,7 +10,7 @@ document.on "DOMContentLoaded", ->
     <h2>Recently Departed</h2>
     <div id="expired" class="diminished articles"></div>
 
-    <h2>Undefined Price</h2>
+    <h2>No Price</h2>
     <div id="noprice" class="diminished articles"></div>
 
     <div class="turtle">🐢</div>
@@ -74,12 +74,15 @@ document.on "DOMContentLoaded", ->
       #current article .publication { white-space: nowrap; position: absolute; margin: 1mm; padding: 1mm; top: 0mm; background:black; display:none;}
 
       #current article .price { position: absolute; margin: 0 2mm; height:5mm; left: 0; bottom: 8mm; background: hsla(0, 0%, 0%, 0.66); right:0; overflow:hidden; }
-      #current article .price .label { white-space: nowrap; position: absolute; margin: 0; width: 15mm; height:4mm; padding: 1mm 1mm 2mm; top: 0; left:0; background:transparent; text-align: right;}
-      #current article .price .graphic { position: absolute; margin: 1mm 1px 0.33mm; height:3.66mm; bottom: 0; left:17mm; background:hsla(0, 0%, 99%, 1);}
+      #current article .price .label { white-space: nowrap; position: absolute; margin: 0; width: 15mm; height:4mm; padding: 1mm 1mm 2mm; top: 0; left:0; background:transparent; text-align: right; color:hsla(0, 0%, 66%, 1);}
+      #current article .price .graphic { position: absolute; margin: 1mm 1px 0.33mm; height:3.66mm; bottom: 0; left:17mm; background:hsla(0, 0%, 55%, 1);}
+
 
       #current article .duration { position: absolute; margin: 0 2mm 0; height:6mm; left: 0; bottom: 2mm; right:0; background: hsla(0, 0%, 0%, 0.66); overflow:hidden; }
       #current article .duration .label { white-space: nowrap; position: absolute; margin: 0; width: 15mm; height:4mm; padding: 1mm 1mm 2mm; top: 0; left:0; background:transparent; text-align: right; color: hsla(0, 0%, 66%, 1);}
-      #current article .duration .graphic { position: absolute; margin: 1mm 1px 1.33mm; height:3.66mm; bottom: 0mm; left:17mm; background:hsla(0, 0%, 66%, 1);}
+      #current article .duration .graphic { position: absolute; margin: 1mm 1px 1.33mm; height:3.66mm; bottom: 0mm; left:17mm; background:hsla(0, 0%, 55%, 1);}
+
+
 
       article:not(:hover) a { background: transparent; color: inherit;}
       article a[href]:not(:visited) { color: hsl(205, 50%, 50%); }
@@ -117,14 +120,13 @@ document.on "DOMContentLoaded", ->
     """
 
 document.on "DOMContentLoaded", ->
-  {current, expired, noprice, pocketd} = window.instruments.query().reduce(toCurrentExpiredNoprice)
+  {current, expired, noprice, pocketd} = window.instruments.query().reduce(toCurrentExpiredNoprice, {})
   renderCurrentArticles current
   renderExpiredArticles expired
   renderArticlesWithoutPrices noprice
   renderPocket pocketd if location.hostname.length is 9
 
 toCurrentExpiredNoprice = (reduction, guitar) ->
-  reduction ?= {}
   reduction.current ?= []
   reduction.expired ?= []
   reduction.noprice ?= []
