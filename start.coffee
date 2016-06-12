@@ -27,6 +27,19 @@ sources = """
   http://www.kijiji.ca/b-guitar/new-brunswick/left-handed/k0c613l9005?price=__1000&minNumberOfImages=1
   http://www.kijiji.ca/b-guitar/new-brunswick/left-hand/k0c613l9005?price=__1000&minNumberOfImages=1
   http://www.kijiji.ca/b-guitar/new-brunswick/lefthand/k0c613l9005?price=__1000&minNumberOfImages=1
+  http://www.kijiji.ca/b-guitar/nova-scotia/lefty/k0c613l9002?price=__1000&minNumberOfImages=1
+  http://www.kijiji.ca/b-guitar/nova-scotia/left-handed/k0c613l9002?price=__1000&minNumberOfImages=1
+  http://www.kijiji.ca/b-guitar/nova-scotia/left-hand/k0c613l9002?price=__1000&minNumberOfImages=1
+  http://www.kijiji.ca/b-guitar/nova-scotia/lefthand/k0c613l9002?price=__1000&minNumberOfImages=1
+  http://www.kijiji.ca/b-guitar/ontario/lefty/k0c613l9004?price=__1000&minNumberOfImages=1
+  http://www.kijiji.ca/b-guitar/ontario/left-handed/k0c613l9004?price=__1000&minNumberOfImages=1
+  http://www.kijiji.ca/b-guitar/ontario/left-hand/k0c613l9004?price=__1000&minNumberOfImages=1
+  http://www.kijiji.ca/b-guitar/ontario/lefthand/k0c613l9004?price=__1000&minNumberOfImages=1
+  http://www.kijiji.ca/b-guitare/quebec/lefty/k0c613l9001?price=__1000&minNumberOfImages=1
+  http://www.kijiji.ca/b-guitare/quebec/left-handed/k0c613l9001?price=__1000&minNumberOfImages=1
+  http://www.kijiji.ca/b-guitare/quebec/left-hand/k0c613l9001?price=__1000&minNumberOfImages=1
+  http://www.kijiji.ca/b-guitare/quebec/lefthand/k0c613l9001?price=__1000&minNumberOfImages=1
+  http://www.kijiji.ca/b-guitare/quebec/gauchère/k0c613l9001?price=__1000&minNumberOfImages=1
 """.split("\n")
 
 console.info sources

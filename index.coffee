@@ -180,7 +180,7 @@ renderCurrentArticles = (data) ->
     </div>
     <div class="duration">
       <div class="graphic" style="width:#{Math.round (Date.now() - Date.parse(d["publication date"])) / 24.hours() * 1.25 }%"></div>
-      <div class="label">#{Math.round (Date.now() - Date.parse(d["publication date"])) / 24.hours() } days</div>
+      <div class="label">#{Math.round (Date.now() - Date.parse(d["publication date"])) / 24.hours() } #{if Math.round((Date.now() - Date.parse(d["publication date"])) / 24.hours()) > 1 then 'days' else 'day'}</div>
     </div>
     <img src="#{d.photographs[0]}">
     <div class="id">#{if location.hostname is "localhost" then d.id else ""}</div>
