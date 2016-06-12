@@ -192,7 +192,7 @@ renderExpiredArticles = (data) ->
   article.enter().append("article")
     .attr id:(d) -> d.id
   article.html (d) -> """
-    <img src="#{d.photographs[0]}">
+    <a target="#{d.id}" href="#{d.address}"><img src="#{d.photographs[0]}"></a>
     """
   article.exit().remove()
 
@@ -201,7 +201,7 @@ renderPocket = (data) ->
   article.enter().append("article")
     .attr id:(d) -> d.id
   article.html (d) -> """
-    <img src="#{d.photographs[0]}">
+    <a target="#{d.id}" href="#{d.address}"><img src="#{d.photographs[0]}"></a>
     """
   article.exit().remove()
 
@@ -210,7 +210,7 @@ renderArticlesWithoutPrices = (data) ->
   article.enter().append("article")
     .attr id:(d) -> d.id
   article.html (d) -> """
-    <img src="#{d.photographs[0]}">
+    <a target="#{d.id}" href="#{d.address}"><img src="#{d.photographs[0]}"></a>
     """
   article.exit().remove()
 
