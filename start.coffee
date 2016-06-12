@@ -89,8 +89,8 @@ service = require("http").createServer (request, response) ->
             response.writeHead 201, "Content-Length":2, "Content-Type":"application/json; charset=UTF-8"
             response.end "[]"
         else
-          response.writeHead 500, "Content-Length":0, "Content-Type":"text/plain; charset=UTF-8"
-          response.end ""
+          response.writeHead 500, "Content-Length":0
+          response.end()
 
     when identifier is "database.json"
       database = instruments.database()
@@ -102,7 +102,7 @@ service = require("http").createServer (request, response) ->
         size:outputBuffer.length
         data:outputBuffer
       write "database.json", serialized, "UTF8"
-    when identifier in [""]
+    when identifier is ""
       indexHTML (error, HTML) ->
         if error then throw error
         outputBuffer = new Buffer HTML, "UTF-8"
