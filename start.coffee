@@ -122,11 +122,7 @@ service = require("http").createServer (request, response) ->
       response.end()
 
 service.listen 8080, (error) ->
-  if error then throw error
-  console.info listening:service.address()
-  # console.info opening:"http://localhost:8080/index.html"
-  # exec "open http://localhost:8080/index.html", (error, stdout, stderr) ->
-  #   if error then console.error(stderr) and throw error else console.info(stdout)
+  if error then throw error else console.info listening:service.address()
 
 addInstrument = (location, callback) ->
   switch
