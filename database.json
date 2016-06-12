@@ -1,6 +1,146 @@
 [
   [
     true,
+    "a832d2cfac04f4d82306fb6a8d045595977fd6c572a9ce93ef4ad16464fa0a5d",
+    "expired",
+    1465750795917,
+    1466361731398.8577
+  ],
+  [
+    true,
+    "a832d2cfac04f4d82306fb6a8d045595977fd6c572a9ce93ef4ad16464fa0a5d",
+    "address",
+    "http://www.kijiji.ca/v-view-details.html?adId=1170781726",
+    1466361731398.8577
+  ],
+  [
+    true,
+    "a832d2cfac04f4d82306fb6a8d045595977fd6c572a9ce93ef4ad16464fa0a5d",
+    "access time",
+    1465750795917,
+    1466361731398.8577
+  ],
+  [
+    true,
+    "d98aecd3b8ebad6ab5e6c43291801388e744faf9558f8c6b0c96ae068f1b1cff",
+    "expired",
+    1465750625450,
+    1466361560932.0845
+  ],
+  [
+    true,
+    "d98aecd3b8ebad6ab5e6c43291801388e744faf9558f8c6b0c96ae068f1b1cff",
+    "address",
+    "http://www.kijiji.ca/v-view-details.html?adId=1171816046",
+    1466361560932.0845
+  ],
+  [
+    true,
+    "d98aecd3b8ebad6ab5e6c43291801388e744faf9558f8c6b0c96ae068f1b1cff",
+    "access time",
+    1465750625450,
+    1466361560932.0845
+  ],
+  [
+    true,
+    "f976b459a83c8ce68dfad25c92261001ca309f3f70156d92941f947954449052",
+    "expired",
+    1465750374171,
+    1466360749933.6816
+  ],
+  [
+    true,
+    "f976b459a83c8ce68dfad25c92261001ca309f3f70156d92941f947954449052",
+    "address",
+    "http://www.kijiji.ca/v-view-details.html?adId=1171847175",
+    1466360749933.6816
+  ],
+  [
+    true,
+    "f976b459a83c8ce68dfad25c92261001ca309f3f70156d92941f947954449052",
+    "access time",
+    1465750374171,
+    1466360749933.6816
+  ],
+  [
+    true,
+    "8dbf9e8e6410a9eb76af811b3d4edf3de3fe553b43140d1331270d11d903fd8a",
+    "pocketd",
+    true,
+    1466360477154.9802
+  ],
+  [
+    true,
+    "55d55328cd375a07e727d5860e877d6210d999fdbea7d97df68e2d2d65169d86",
+    "pocketd",
+    true,
+    1466360448816.6294
+  ],
+  [
+    true,
+    "f5840d72558221d2e9a9b60b93ed91ff1099788218a79b7cce665524026e8db1",
+    "expired",
+    1465746884752,
+    1466345261406.6057
+  ],
+  [
+    true,
+    "f5840d72558221d2e9a9b60b93ed91ff1099788218a79b7cce665524026e8db1",
+    "address",
+    "http://www.kijiji.ca/v-view-details.html?adId=1171534404",
+    1466345261406.6057
+  ],
+  [
+    true,
+    "f5840d72558221d2e9a9b60b93ed91ff1099788218a79b7cce665524026e8db1",
+    "access time",
+    1465746884752,
+    1466345261406.6057
+  ],
+  [
+    true,
+    "4c9c4a9f8dae5a4e8e576e84a09397c0fbd844fb00f0b7440eecb4c110c9f97d",
+    "expired",
+    1465746878264,
+    1466345254918.392
+  ],
+  [
+    true,
+    "4c9c4a9f8dae5a4e8e576e84a09397c0fbd844fb00f0b7440eecb4c110c9f97d",
+    "address",
+    "http://www.kijiji.ca/v-view-details.html?adId=1171530349",
+    1466345254918.392
+  ],
+  [
+    true,
+    "4c9c4a9f8dae5a4e8e576e84a09397c0fbd844fb00f0b7440eecb4c110c9f97d",
+    "access time",
+    1465746878264,
+    1466345254918.392
+  ],
+  [
+    true,
+    "e50ab175f3f1130be3773f6e9cdd8a59f86971c66a328f5a7e1cbd41752fd4a2",
+    "expired",
+    1465746778646,
+    1466345155301.3083
+  ],
+  [
+    true,
+    "e50ab175f3f1130be3773f6e9cdd8a59f86971c66a328f5a7e1cbd41752fd4a2",
+    "address",
+    "http://www.kijiji.ca/v-view-details.html?adId=1127355646",
+    1466345155301.3083
+  ],
+  [
+    true,
+    "e50ab175f3f1130be3773f6e9cdd8a59f86971c66a328f5a7e1cbd41752fd4a2",
+    "access time",
+    1465746778646,
+    1466345155301.3083
+  ],
+  [
+    true,
     "2489fe919b49cdfe1205f51d465b0fca152849dcdbb278a32579d3c6a07e292b",
     "title",
     "Takamine EF341SCLH Acoustic-Electric guitar Left-handed gaucher ",
@@ -2666,20 +2806,6 @@
   ],
   [
     true,
-    "a832d2cfac04f4d82306fb6a8d045595977fd6c572a9ce93ef4ad16464fa0a5d",
-    "address",
-    "http://www.kijiji.ca/v-view-details.html?adId=1170781726",
-    1466098534843.4678
-  ],
-  [
-    true,
-    "a832d2cfac04f4d82306fb6a8d045595977fd6c572a9ce93ef4ad16464fa0a5d",
-    "access time",
-    1465578130731,
-    1466098534843.4678
-  ],
-  [
-    true,
     "ad8bef0509dbba412c37d8124586bd2c8b1ef6d458c99284cde502f303509035",
     "title",
     "Fender Lefty Mexi Strat",
@@ -3482,20 +3608,6 @@
   ],
   [
     true,
-    "f976b459a83c8ce68dfad25c92261001ca309f3f70156d92941f947954449052",
-    "address",
-    "http://www.kijiji.ca/v-view-details.html?adId=1171847175",
-    1466098044577.1655
-  ],
-  [
-    true,
-    "f976b459a83c8ce68dfad25c92261001ca309f3f70156d92941f947954449052",
-    "access time",
-    1465577640465,
-    1466098044577.1655
-  ],
-  [
-    true,
     "a28eb9cc9dc43b8b9af599ae7ce29afea42a256c67f8241b6e5eb810c0295dc7",
     "title",
     "Art and Luthrie Left Handed Guitar for Sale ",
@@ -3955,20 +4067,6 @@
     "d98aecd3b8ebad6ab5e6c43291801388e744faf9558f8c6b0c96ae068f1b1cff",
     "publication date",
     "2016-06-07T04:00:00.000Z",
-    1466097417898.4043
-  ],
-  [
-    true,
-    "d98aecd3b8ebad6ab5e6c43291801388e744faf9558f8c6b0c96ae068f1b1cff",
-    "address",
-    "http://www.kijiji.ca/v-view-details.html?adId=1171816046",
-    1466097417898.4043
-  ],
-  [
-    true,
-    "d98aecd3b8ebad6ab5e6c43291801388e744faf9558f8c6b0c96ae068f1b1cff",
-    "access time",
-    1465577261625,
     1466097417898.4043
   ],
   [
@@ -4677,20 +4775,6 @@
   ],
   [
     true,
-    "f5840d72558221d2e9a9b60b93ed91ff1099788218a79b7cce665524026e8db1",
-    "address",
-    "http://www.kijiji.ca/v-view-details.html?adId=1171534404",
-    1466040027950.1401
-  ],
-  [
-    true,
-    "f5840d72558221d2e9a9b60b93ed91ff1099788218a79b7cce665524026e8db1",
-    "access time",
-    1465543222770,
-    1466040027950.1401
-  ],
-  [
-    true,
     "f1cee1b4007cc7239102598278772c0012eb212fb89be2fa4592146527eadcc6",
     "title",
     "LEFT HANDED ARIA ES Style SEMI HOLLOW BODY PRO TA-40 electric",
@@ -4938,20 +5022,6 @@
   ],
   [
     true,
-    "4c9c4a9f8dae5a4e8e576e84a09397c0fbd844fb00f0b7440eecb4c110c9f97d",
-    "address",
-    "http://www.kijiji.ca/v-view-details.html?adId=1171530349",
-    1466039049812.8013
-  ],
-  [
-    true,
-    "4c9c4a9f8dae5a4e8e576e84a09397c0fbd844fb00f0b7440eecb4c110c9f97d",
-    "access time",
-    1465542881629,
-    1466039049812.8013
-  ],
-  [
-    true,
     "c1cde7b3f9d6ffe9a16c7661c6656760b77d73e1d72c7b829d913158df103b0c",
     "title",
     "Sx vintage series electric guitar",
@@ -5155,20 +5225,6 @@
     "e50ab175f3f1130be3773f6e9cdd8a59f86971c66a328f5a7e1cbd41752fd4a2",
     "publication date",
     "2016-04-11T04:00:00.000Z",
-    1466038781157.3323
-  ],
-  [
-    true,
-    "e50ab175f3f1130be3773f6e9cdd8a59f86971c66a328f5a7e1cbd41752fd4a2",
-    "address",
-    "http://www.kijiji.ca/v-view-details.html?adId=1127355646",
-    1466038781157.3323
-  ],
-  [
-    true,
-    "e50ab175f3f1130be3773f6e9cdd8a59f86971c66a328f5a7e1cbd41752fd4a2",
-    "access time",
-    1465542612974,
     1466038781157.3323
   ],
   [

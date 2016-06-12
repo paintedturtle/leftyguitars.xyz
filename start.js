@@ -32,12 +32,44 @@
     });
     switch (false) {
       case request.method !== "POST":
-        return JSONfromHTTPRequest(request, function(error, data) {
-          console.info({
-            post: data
-          });
-          return addInstrument(data.location);
-        });
+        switch (false) {
+          case identifier !== "":
+            return JSONfromHTTPRequest(request, function(error, data) {
+              console.info({
+                post: data
+              });
+              addInstrument(data.location);
+              response.writeHead(201, {
+                "Content-Length": 2,
+                "Content-Type": "application/json; charset=UTF-8"
+              });
+              return response.end("[]");
+            });
+          case identifier.length !== 64:
+            console.info({
+              identifier: identifier
+            });
+            return JSONfromHTTPRequest(request, function(error, data) {
+              console.info({
+                post: data
+              });
+              instruments.advance(identifier, {
+                pocketd: true
+              });
+              response.writeHead(201, {
+                "Content-Length": 2,
+                "Content-Type": "application/json; charset=UTF-8"
+              });
+              return response.end("[]");
+            });
+          default:
+            response.writeHead(500, {
+              "Content-Length": 0,
+              "Content-Type": "text/plain; charset=UTF-8"
+            });
+            return response.end("");
+        }
+        break;
       case identifier !== "database.json":
         database = instruments.database();
         serialized = JSON.stringify(database, void 0, "  ");

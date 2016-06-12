@@ -17,9 +17,24 @@ service = require("http").createServer (request, response) ->
   console.info request:identifier=decodeURIComponent(request.url.replace("/",""))
   switch
     when request.method is "POST"
-      JSONfromHTTPRequest request, (error, data) ->
-        console.info post:data
-        addInstrument data.location
+      switch
+        when identifier is ""
+          JSONfromHTTPRequest request, (error, data) ->
+            console.info post:data
+            addInstrument data.location
+            response.writeHead 201, "Content-Length":2, "Content-Type":"application/json; charset=UTF-8"
+            response.end "[]"
+        when identifier.length is 64
+          console.info {identifier}
+          JSONfromHTTPRequest request, (error, data) ->
+            console.info post:data
+            instruments.advance identifier, {pocketd:yes}
+            response.writeHead 201, "Content-Length":2, "Content-Type":"application/json; charset=UTF-8"
+            response.end "[]"
+        else
+          response.writeHead 500, "Content-Length":0, "Content-Type":"text/plain; charset=UTF-8"
+          response.end ""
+
     when identifier is "database.json"
       database = instruments.database()
       serialized = JSON.stringify(database, undefined, "  ")

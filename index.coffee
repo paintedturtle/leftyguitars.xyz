@@ -3,7 +3,15 @@ document.on "DOMContentLoaded", ->
     <header>
       <h1>Lefty Guitars For Sale Under $1000</h1>
     </header>
-    <div id="articles"></div>
+
+    <h2>Current Possibilities</h2>
+    <div id="current"></div>
+
+    <h2>Recently Departed</h2>
+    <div id="expired" class="diminished articles"></div>
+
+    <h2>Undefined Price</h2>
+    <div id="noprice" class="diminished articles"></div>
 
     <div class="turtle">🐢</div>
 
@@ -46,6 +54,7 @@ document.on "DOMContentLoaded", ->
         </div>
       </div>
     </footer>
+
     <style>
       body, article, div, header, footer, h1, h2, h3, h4, h5, h6 { padding: 0; margin: auto; position: relative; font: inherit; }
       a { color: inherit; text-decoration: inherit; }
@@ -55,29 +64,32 @@ document.on "DOMContentLoaded", ->
       body > header { position: absolute; top: -100%; }
       form { width: 300mm; margin: 10mm auto;}
       form input { width: 100%; margin: auto; font: 4mm/4mm Consolas; }
-      #articles { margin: auto; width: auto; position: relative; overflow:hidden; color: white;}
-      article { margin: 0; color: white; width: 33.333%; float: left; overflow:hidden;}
-      article img { width: 100%; height: 100mm; object-fit: cover; background-color: black; display:block;}
-      article .address { white-space: nowrap; position: absolute; background: hsla(0, 0%, 0%, 0.66); margin: 0 2mm; padding: 1mm; bottom: 19mm;}
-      article .title { white-space: nowrap; position: absolute; background: hsla(0, 0%, 0%, 0.66); margin: 0 2mm; padding: 1mm; bottom: 13mm;}
+      #current { margin: auto; width: auto; position: relative; overflow:hidden; color: white;}
+      #current article { margin: 0; color: white; width: 33.333%; float: left; overflow:hidden;}
+      #current article img { width: 100%; height: 100mm; object-fit: cover; background-color: black; display:block;}
+      #current article .address { white-space: nowrap; position: absolute; background: hsla(0, 0%, 0%, 0.66); margin: 0 2mm; padding: 1mm; bottom: 19mm;}
+      #current article .title { white-space: nowrap; position: absolute; background: hsla(0, 0%, 0%, 0.66); margin: 0 2mm; padding: 1mm; bottom: 13mm;}
 
-      article .id { white-space: nowrap; position: absolute; margin: 1mm; padding: 1mm; top: 0; right:0; font-size: 50%; display:none;}
-      article .publication { white-space: nowrap; position: absolute; margin: 1mm; padding: 1mm; top: 0mm; background:black; display:none;}
+      #current article .id { white-space: nowrap; position: absolute; margin: 1mm; padding: 1mm; top: 0; left:0; font-size: 50%; }
+      #current article .publication { white-space: nowrap; position: absolute; margin: 1mm; padding: 1mm; top: 0mm; background:black; display:none;}
 
-      article .price { position: absolute; margin: 0 2mm; height:5mm; left: 0; bottom: 8mm; background: hsla(0, 0%, 0%, 0.66); right:0; overflow:hidden; }
-      article .price .label { white-space: nowrap; position: absolute; margin: 0; width: 15mm; height:4mm; padding: 1mm 1mm 2mm; top: 0; left:0; background:transparent; text-align: right;}
-      article .price .graphic { position: absolute; margin: 1mm 1px 0.33mm; height:3.66mm; bottom: 0; left:17mm; background:hsla(0, 0%, 99%, 1);}
+      #current article .price { position: absolute; margin: 0 2mm; height:5mm; left: 0; bottom: 8mm; background: hsla(0, 0%, 0%, 0.66); right:0; overflow:hidden; }
+      #current article .price .label { white-space: nowrap; position: absolute; margin: 0; width: 15mm; height:4mm; padding: 1mm 1mm 2mm; top: 0; left:0; background:transparent; text-align: right;}
+      #current article .price .graphic { position: absolute; margin: 1mm 1px 0.33mm; height:3.66mm; bottom: 0; left:17mm; background:hsla(0, 0%, 99%, 1);}
 
-      article .duration { position: absolute; margin: 0 2mm 0; height:6mm; left: 0; bottom: 2mm; right:0; background: hsla(0, 0%, 0%, 0.66); overflow:hidden; }
-      article .duration .label { white-space: nowrap; position: absolute; margin: 0; width: 15mm; height:4mm; padding: 1mm 1mm 2mm; top: 0; left:0; background:transparent; text-align: right; color: hsla(0, 0%, 66%, 1);}
-      article .duration .graphic { position: absolute; margin: 1mm 1px 1.33mm; height:3.66mm; bottom: 0mm; left:17mm; background:hsla(0, 0%, 66%, 1);}
+      #current article .duration { position: absolute; margin: 0 2mm 0; height:6mm; left: 0; bottom: 2mm; right:0; background: hsla(0, 0%, 0%, 0.66); overflow:hidden; }
+      #current article .duration .label { white-space: nowrap; position: absolute; margin: 0; width: 15mm; height:4mm; padding: 1mm 1mm 2mm; top: 0; left:0; background:transparent; text-align: right; color: hsla(0, 0%, 66%, 1);}
+      #current article .duration .graphic { position: absolute; margin: 1mm 1px 1.33mm; height:3.66mm; bottom: 0mm; left:17mm; background:hsla(0, 0%, 66%, 1);}
 
 
       article:not(:hover) a { background: transparent; color: inherit;}
       article a[href]:not(:visited) { color: hsl(205, 50%, 50%); }
       article a[href]:visited { color: hsl(278, 50%, 50%); }
 
-      #add { position: fixed; top: 0; left: 0; right: 0;}
+      div.diminished.articles { margin: auto; width: auto; position: relative; overflow:hidden; color: white;}
+      div.diminished.articles article { margin: 0; color: white; width: 10%; float: left; overflow:hidden;}
+      div.diminished.articles article img { width: 100%; height: 50mm; object-fit: cover; background-color: black; display:block;}
+
 
       body > footer { line-height: 5mm; }
 
@@ -101,8 +113,12 @@ document.on "DOMContentLoaded", ->
   if location.hostname is "localhost"
     document.body.innerHTML += """
       <form id="add">
-      <input type="URL" placeholder="Paste a URL to add another guitar" value="">
+        <input type="URL" placeholder="Paste a URL to add another guitar" value="">
       </form>
+      <form id="pocket">
+        <input type="text" placeholder="Paste an ID to pocket an article" value="" maxlength="64" minlength="64">
+      </form>
+      <div id="pocketd" class="diminished articles"></div>
     """
 
 document.on "DOMContentLoaded", ->
@@ -110,35 +126,62 @@ document.on "DOMContentLoaded", ->
     if error then console.error(error)
     window.instruments = Facts()
     window.instruments.datoms = Immutable.Stack Immutable.fromJS(database)
-    {current, expired} = window.instruments.query().reduce(toCurrentAndExpired)
+    {current, expired, noprice, pocketd} = window.instruments.query().reduce(toCurrentExpiredNoprice)
     render current
+    renderExpiredArticles expired
+    renderArticlesWithoutPrices noprice
+    renderPocket pocketd if location.hostname is "localhost"
 
-toCurrentAndExpired = (reduction, guitar) ->
+toCurrentExpiredNoprice = (reduction, guitar) ->
   reduction ?= {}
   reduction.current ?= []
   reduction.expired ?= []
+  reduction.noprice ?= []
+  reduction.pocketd ?= []
+  if guitar.pocketd
+    reduction.pocketd.push(guitar)
+    return reduction
   if guitar.expired
     reduction.expired.push(guitar)
-  else
-    reduction.current.push(guitar)
+    return reduction
+  if Number.isNaN Number guitar["price"].replace("$","").replace(",",".").split(".")[0]
+    reduction.noprice.push(guitar)
+    return reduction
+  reduction.current.push(guitar)
   return reduction
 
-document.on "input", "input", (event, input) ->
+document.on "input", "#add input", (event, input) ->
+  console.info advance:input.value
   if input.validity.valid
-    POST input.value
-    reset = -> input.value = ""
-    setTimeout reset, 100
+    d3.xhr("#{window.location}")
+      .header "Content-Type", "application/json"
+      .post JSON.stringify({location:input.value}), (error, response) ->
+        console.error error if error
+        console.info response.statusText
+        console.info JSON.parse(response.responseText)
+        input.value = ""
+
+document.on "input", "#pocket input", (event, input) ->
+  console.info pocket:input.value
+  console.info pocket:input.value.length
+  if input.validity.valid
+    d3.xhr("#{window.location}#{input.value}")
+      .header "Content-Type", "application/json"
+      .post JSON.stringify({pocketd:yes}), (error, response) ->
+        console.error error if error
+        console.info response.statusText
+        console.info JSON.parse(response.responseText)
+        input.value = ""
+
 
 render = (data) ->
   data = data.sort (a, b) -> b["access time"] - a["access time"]
-  article = d3.select("#articles").selectAll("article").data(data, ((d) -> d.id) )
+  article = d3.select("#current").selectAll("article").data(data, ((d) -> d.id) )
   article.enter().append("article")
     .attr id:(d) -> d.id
   article.html (d) -> """
     <div class="title">#{simplifiedTitle(d.title) or 'Untitled'}</div>
     <div class="address"><a target="#{d.id}" href="#{d.address}">#{simplifiedAddress d.address}</a></div>
-    <div class="id"><a href="##{d.id}">#{d.id}</a></div>
-    <div class="publication">#{d["publication date"]}</div>
     <div class="price">
       <div class="graphic" style="width:#{Number(d["price"].replace("$","").replace(",",".").split(".")[0])/13}%"></div>
       <div class="label">$ #{ Number(d["price"].replace("$","").replace(",",".").split(".")[0]) }</div>
@@ -147,6 +190,35 @@ render = (data) ->
       <div class="graphic" style="width:#{Math.round (Date.now() - Date.parse(d["publication date"])) / 24.hours() * 1.25 }%"></div>
       <div class="label">#{Math.round (Date.now() - Date.parse(d["publication date"])) / 24.hours() } days</div>
     </div>
+    <img src="#{d.photographs[0]}">
+    <div class="id">#{d.id}</div>
+    """
+  article.exit().remove()
+
+renderPocket = (data) ->
+  article = d3.select("#pocketd").selectAll("article").data(data, ((d) -> d.id))
+  article.enter().append("article")
+    .attr id:(d) -> d.id
+  article.html (d) -> """
+    <img src="#{d.photographs[0]}">
+    """
+  article.exit().remove()
+
+renderExpiredArticles = (data) ->
+  article = d3.select("#expired").selectAll("article").data(data, ((d) -> d.id))
+  article.enter().append("article")
+    .attr id:(d) -> d.id
+  article.html (d) -> """
+    <img src="#{d.photographs[0]}">
+    """
+  article.exit().remove()
+
+renderArticlesWithoutPrices = (data) ->
+  console.info noprice:data
+  article = d3.select("#noprice").selectAll("article").data(data, ((d) -> d.id))
+  article.enter().append("article")
+    .attr id:(d) -> d.id
+  article.html (d) -> """
     <img src="#{d.photographs[0]}">
     """
   article.exit().remove()
