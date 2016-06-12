@@ -4,7 +4,7 @@ document.on "DOMContentLoaded", ->
       <h1>Lefty Guitars For Sale Under $1000</h1>
     </header>
 
-    <h2>Current Possibilities</h2>
+    <h2 hidden>Current</h2>
     <div id="current"></div>
 
     <h2>Recently Departed</h2>
@@ -86,7 +86,8 @@ document.on "DOMContentLoaded", ->
       article a[href]:not(:visited) { color: hsl(205, 50%, 50%); }
       article a[href]:visited { color: hsl(278, 50%, 50%); }
 
-      div.diminished.articles { margin: auto; width: auto; position: relative; overflow:hidden; color: white;}
+      h2 { margin: 10mm auto 0; }
+      div.diminished.articles { margin: 0 auto 10mm; width: auto; position: relative; overflow:hidden; color: white;}
       div.diminished.articles article { margin: 0; color: white; width: 10%; float: left; overflow:hidden;}
       div.diminished.articles article img { width: 100%; height: 50mm; object-fit: cover; background-color: black; display:block;}
 
@@ -191,7 +192,7 @@ render = (data) ->
       <div class="label">#{Math.round (Date.now() - Date.parse(d["publication date"])) / 24.hours() } days</div>
     </div>
     <img src="#{d.photographs[0]}">
-    <div class="id">#{d.id}</div>
+    <div class="id">#{d.id if location.hostname is "localhost"}</div>
     """
   article.exit().remove()
 
