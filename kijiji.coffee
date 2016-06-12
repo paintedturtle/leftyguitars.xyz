@@ -17,7 +17,6 @@ window.throttle(1, 333)
 Kijiji.read = (address, done) ->
   id = Kijiji.parseIdentifierFromAddress(address)
   address = Kijiji.address(id)
-  # console.info read:address
   window(address+"&siteLocale=en_CA", Kijiji.attributes) (error, output) ->
     console.error arguments
     console.error error
@@ -30,6 +29,7 @@ Kijiji.read = (address, done) ->
       output["publication time"] = Kijiji.Date.parse(output["publication date"]).getTime()
       output["description"] = output["description"]?.trim()
       output["photographs"] = output["photographs"].filter (p) -> p.match("play-button") is p.match("youtube") is null
+    delete output["publication date"]
     done error, output
 
 Kijiji.address = (id) ->
