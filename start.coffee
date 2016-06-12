@@ -3,10 +3,31 @@ Cryptography = require('crypto')
 Immutable = require('immutable')
 files = require("facts")()
 
+sources = """
+  http://www.kijiji.ca/b-guitar/alberta/lefty/k0c613l9003?price=__1000&minNumberOfImages=1
+  http://www.kijiji.ca/b-guitar/alberta/left-handed/k0c613l9003?price=__1000&minNumberOfImages=1
+  http://www.kijiji.ca/b-guitar/alberta/left-hand/k0c613l9003?price=__1000&minNumberOfImages=1
+  http://www.kijiji.ca/b-guitar/alberta/lefthand/k0c613l9003?price=__1000&minNumberOfImages=1
+  http://www.kijiji.ca/b-guitar/british-columbia/lefty/k0c613l9007?price=__1000&minNumberOfImages=1
+  http://www.kijiji.ca/b-guitar/british-columbia/left-handed/k0c613l9007?price=__1000&minNumberOfImages=1
+  http://www.kijiji.ca/b-guitar/british-columbia/left-hand/k0c613l9007?price=__1000&minNumberOfImages=1
+  http://www.kijiji.ca/b-guitar/british-columbia/lefthand/k0c613l9007?price=__1000&minNumberOfImages=1
+  http://www.kijiji.ca/b-guitar/manitoba/lefty/k0c613l9006?price=__1000&minNumberOfImages=1
+  http://www.kijiji.ca/b-guitar/manitoba/left-handed/k0c613l9006?price=__1000&minNumberOfImages=1
+  http://www.kijiji.ca/b-guitar/manitoba/left-hand/k0c613l9006?price=__1000&minNumberOfImages=1
+  http://www.kijiji.ca/b-guitar/manitoba/lefthand/k0c613l9006?price=__1000&minNumberOfImages=1
+  http://www.kijiji.ca/b-guitar/new-brunswick/lefty/k0c613l9005?price=__1000&minNumberOfImages=1
+  http://www.kijiji.ca/b-guitar/new-brunswick/left-handed/k0c613l9005?price=__1000&minNumberOfImages=1
+  http://www.kijiji.ca/b-guitar/new-brunswick/left-hand/k0c613l9005?price=__1000&minNumberOfImages=1
+  http://www.kijiji.ca/b-guitar/new-brunswick/lefthand/k0c613l9005?price=__1000&minNumberOfImages=1
+""".split("\n")
+
+console.info sources
+
 instruments = require("facts")()
 instruments.datoms = Immutable.Stack(Immutable.fromJS(require("./instruments.datoms.json")))
 
-console.info instruments.query()
+# console.info instruments.query()
 
 instruments.on "transaction", ->
   write "instruments.datoms.json", JSON.stringify(instruments.datoms, undefined, "  "), "UTF-8", (error) ->
