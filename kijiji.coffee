@@ -18,8 +18,6 @@ Kijiji.read = (address, done) ->
   id = Kijiji.parseIdentifierFromAddress(address)
   address = Kijiji.address(id)
   window(address+"&siteLocale=en_CA", Kijiji.attributes) (error, output) ->
-    console.error arguments
-    console.error error
     output["address"] = address
     output["access time"] = Date.now()
     if output["expired"]?

@@ -231,11 +231,11 @@ advanceOldestArticle = ->
   article = articles[0]
   return if article["access time"] > (Date.now() - 45.minutes())
   console.info "Advancing stale article":article
-  console.info before:article
+  # console.info before:article
   Kijiji.read article.address, (error, output) ->
     console.error error if error
     throw error if error
-    console.info after:output
+    # console.info after:output
     advancements = {}
     for key, value of output
       advancements[key] = value unless Immutable.is Immutable.fromJS(value), Immutable.fromJS(article[key])
