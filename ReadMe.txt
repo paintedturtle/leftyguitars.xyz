@@ -1,7 +1,5 @@
 https://leftyguitars.xyz is an index of left handed guitars for sale.
 
-https://leftyguitars.xyz
-
 Visitors can:
 • Browse the index of all guitars
 • Filter by word
