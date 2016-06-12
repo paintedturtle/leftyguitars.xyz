@@ -43,15 +43,19 @@ sources = """
   http://www.kijiji.ca/b-guitar/saskatchewan/lefty/k0c613l9009?price=__1000&minNumberOfImages=1
   http://www.kijiji.ca/b-guitar/saskatchewan/left-handed/k0c613l9009?price=__1000&minNumberOfImages=1
   http://www.kijiji.ca/b-guitar/saskatchewan/left-hand/k0c613l9009?price=__1000&minNumberOfImages=1
-  http://www.kijiji.ca/b-guitar/saskatchewan/lefthand/k0c613l9009?price=__1000
-  http://www.kijiji.ca/b-guitar/territories/lefty/k0c613l9010?price=__1000
-  http://www.kijiji.ca/b-guitar/territories/left-handed/k0c613l9010?price=__1000
-  http://www.kijiji.ca/b-guitar/territories/left-hand/k0c613l9010?price=__1000
-  http://www.kijiji.ca/b-guitar/territories/lefthand/k0c613l9010?price=__1000
-  http://www.kijiji.ca/b-guitar/prince-edward-island/lefty/k0c613l9011?price=__1000
-  http://www.kijiji.ca/b-guitar/prince-edward-island/left-handed/k0c613l9011?price=__1000
-  http://www.kijiji.ca/b-guitar/prince-edward-island/left-hand/k0c613l9011?price=__1000
-  http://www.kijiji.ca/b-guitar/prince-edward-island/lefthand/k0c613l9011?price=__1000
+  http://www.kijiji.ca/b-guitar/saskatchewan/lefthand/k0c613l9009?price=__1000&minNumberOfImages=1
+  http://www.kijiji.ca/b-guitar/territories/lefty/k0c613l9010?price=__1000&minNumberOfImages=1
+  http://www.kijiji.ca/b-guitar/territories/left-handed/k0c613l9010?price=__1000&minNumberOfImages=1
+  http://www.kijiji.ca/b-guitar/territories/left-hand/k0c613l9010?price=__1000&minNumberOfImages=1
+  http://www.kijiji.ca/b-guitar/territories/lefthand/k0c613l9010?price=__1000&minNumberOfImages=1
+  http://www.kijiji.ca/b-guitar/prince-edward-island/lefty/k0c613l9011?price=__1000&minNumberOfImages=1
+  http://www.kijiji.ca/b-guitar/prince-edward-island/left-handed/k0c613l9011?price=__1000&minNumberOfImages=1
+  http://www.kijiji.ca/b-guitar/prince-edward-island/left-hand/k0c613l9011?price=__1000&minNumberOfImages=1
+  http://www.kijiji.ca/b-guitar/prince-edward-island/lefthand/k0c613l9011?price=__1000&minNumberOfImages=1
+  http://www.kijiji.ca/b-guitar/newfoundland/lefty/k0c613l9008?price=__1000&minNumberOfImages=1
+  http://www.kijiji.ca/b-guitar/newfoundland/left-handed/k0c613l9008?price=__1000&minNumberOfImages=1
+  http://www.kijiji.ca/b-guitar/newfoundland/left-hand/k0c613l9008?price=__1000&minNumberOfImages=1
+  http://www.kijiji.ca/b-guitar/newfoundland/lefthand/k0c613l9008?price=__1000&minNumberOfImages=1
 """.split("\n")
 
 console.info sources
