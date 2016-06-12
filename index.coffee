@@ -111,14 +111,10 @@ document.on "DOMContentLoaded", ->
       body .turtle { text-align: center; padding: 3% 1% 1%; color: white; font-size: 200%;}
     </style>
   """
-  if location.hostname is "localhost"
+  if location.hostname.length is 9
     document.body.innerHTML += """
-      <form id="add">
-        <input type="URL" placeholder="Paste a URL to add another guitar" value="">
-      </form>
-      <form id="pocket">
-        <input type="text" placeholder="Paste an ID to pocket an article" value="" maxlength="64" minlength="64">
-      </form>
+      <form id="add"><input type="URL" placeholder="Paste a URL to add another guitar" value=""></form>
+      <form id="pocket"><input type="text" placeholder="Paste an ID to pocket an article" value="" maxlength="64" minlength="64"></form>
       <div id="pocketd" class="diminished articles"></div>
     """
 
@@ -128,10 +124,10 @@ document.on "DOMContentLoaded", ->
     window.instruments = Facts()
     window.instruments.datoms = Immutable.Stack Immutable.fromJS(database)
     {current, expired, noprice, pocketd} = window.instruments.query().reduce(toCurrentExpiredNoprice)
-    render current
+    renderCurrentArticles current
     renderExpiredArticles expired
     renderArticlesWithoutPrices noprice
-    renderPocket pocketd if location.hostname is "localhost"
+    renderPocket pocketd if location.hostname.length is 9
 
 toCurrentExpiredNoprice = (reduction, guitar) ->
   reduction ?= {}
@@ -174,8 +170,7 @@ document.on "input", "#pocket input", (event, input) ->
         console.info JSON.parse(response.responseText)
         input.value = ""
 
-
-render = (data) ->
+renderCurrentArticles = (data) ->
   data = data.sort (a, b) -> Date.parse(b["publication date"]) - Date.parse(a["publication date"])
   article = d3.select("#current").selectAll("article").data(data, ((d) -> d.id) )
   article.enter().append("article")
@@ -196,15 +191,6 @@ render = (data) ->
     """
   article.exit().remove()
 
-renderPocket = (data) ->
-  article = d3.select("#pocketd").selectAll("article").data(data, ((d) -> d.id))
-  article.enter().append("article")
-    .attr id:(d) -> d.id
-  article.html (d) -> """
-    <img src="#{d.photographs[0]}">
-    """
-  article.exit().remove()
-
 renderExpiredArticles = (data) ->
   article = d3.select("#expired").selectAll("article").data(data, ((d) -> d.id))
   article.enter().append("article")
@@ -214,8 +200,16 @@ renderExpiredArticles = (data) ->
     """
   article.exit().remove()
 
+renderPocket = (data) ->
+  article = d3.select("#pocketd").selectAll("article").data(data, ((d) -> d.id))
+  article.enter().append("article")
+    .attr id:(d) -> d.id
+  article.html (d) -> """
+    <img src="#{d.photographs[0]}">
+    """
+  article.exit().remove()
+
 renderArticlesWithoutPrices = (data) ->
-  console.info noprice:data
   article = d3.select("#noprice").selectAll("article").data(data, ((d) -> d.id))
   article.enter().append("article")
     .attr id:(d) -> d.id
@@ -224,22 +218,15 @@ renderArticlesWithoutPrices = (data) ->
     """
   article.exit().remove()
 
-simplifiedTitle = (title) ->
-  title
+simplifiedTitle = (string) ->
+  string
     .replace(/guitar\s?/i, "")
     .replace(/lefty\s?/i, "")
     .replace(/left[- ]handed\s?/i, "")
     .replace(/left[- ]hand\s?/i, "")
     .replace("()", "")
 
-simplifiedAddress = (input) ->
-  input
+simplifiedAddress = (string) ->
+  string
     .replace("http://www.kijiji.ca", "kijiji")
     .replace("/v-view-details.html?adId=", "#")
-
-
-POST = (location) ->
-  d3.xhr(window.location)
-    .header "Content-Type", "application/json"
-    .post JSON.stringify({location}), (error, serialized) ->
-      console.info data = JSON.parse(serialized)
