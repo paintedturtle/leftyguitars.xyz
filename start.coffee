@@ -5,7 +5,7 @@ Cryptography = require('crypto')
 Immutable = require('immutable')
 files = require("facts")()
 
-Kijiji = require "./Kijiji"
+Kijiji = require "./Sources/Kijiji"
 
 Scripts =
   d3: readFileSync "d3.min.js", "UTF-8"
@@ -84,8 +84,8 @@ addInstrument = (location, callback) ->
 
 
 
-addInstrument.fromKijiji = (location, callback) ->
-  Kijiji.read location, (error, output) ->
+addInstrument.fromKijiji = (address, callback) ->
+  Kijiji.Article.read address, (error, output) ->
     throw error if error
     address = output.address
     identifier = identifyInstrumentAddress(address)
@@ -193,7 +193,7 @@ advanceOldestArticle = ->
   article = articles[0]
   if article["access time"] < (Date.now() - 66.minutes())
     console.info "READ #{article.id}":article.address
-    Kijiji.read article.address, (error, output) ->
+    Kijiji.Article.read article.address, (error, output) ->
       if error then throw error
       advancements = {}
       for key, value of output
@@ -217,7 +217,7 @@ diagnostic = ->
   address = "http://www.kijiji.ca/v-view-details.html?adId=1157360872"
   article = instruments.pull identifyInstrumentAddress(address)
   console.info "#{address}":article
-  Kijiji.read address, (error, output) ->
+  Kijiji.Article.read address, (error, output) ->
     if error then throw error
     console.info address:output
     advancements = {}

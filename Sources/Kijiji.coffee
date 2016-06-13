@@ -2,8 +2,65 @@ window = require('x-ray')()
 window.concurrency(1)
 window.throttle(1, 333)
 
-
 Kijiji = module.exports
+
+Kijiji.Date = require('d3').time.format("%d-%b-%y")
+
+Kijiji.Article = {}
+
+Kijiji.Article.address = (id) ->
+  "http://www.kijiji.ca/v-view-details.html?adId=#{id}"
+
+Kijiji.Article.attributes =
+  "expired":".expired-ad-container"
+  "title":"[itemprop=name]"
+  "description":"[itemprop=description]"
+  "price string":"[itemprop=price]"
+  "photographs":["ul.photo-navigation img@src"]
+  "publication date":"table.ad-attributes tr:first-child td"
+
+Kijiji.Article.read = (address, done) ->
+  id = Kijiji.parseIdentifierFromAddress(address)
+  # console.info "Kijiji.read":id
+  address = Kijiji.address(id)
+  window(address+"&siteLocale=en_CA", Kijiji.Article.attributes) (error, output) ->
+    output["address"] = address
+    if output["expired"]?
+      output["expired"] = Date.now()
+      delete output["photographs"]
+    else
+      output["price"] = Number output["price string"].replace("$","")
+      output["publication time"] = Kijiji.Date.parse(output["publication date"]).getTime()
+      output["description"] = output["description"]?.trim()
+      output["photographs"] = output["photographs"].filter (p) -> p.match("play-button") is p.match("youtube") is null
+    delete output["publication date"]
+    delete output["price string"]
+    # console.info "kijiji output":output
+    done error, output
+
+Kijiji.Article.parseIdentifierFromAddress = (address) ->
+  if id = address.match(/adId=([0-9]+)/)?[1]
+    return Number(id)
+  else
+    identifier = Number address.split("?")[0].split("/").pop()
+    if Number.isNaN identifier
+      return undefined
+    else
+      return identifier
+
+
+Kijiji.Search =
+  attributes: {
+    "addresses":[".title a[href]@href"]
+  }
+  read: (address, done) ->
+    console.info "kijiji search read":address
+    window(address, Kijiji.Search.attributes) (error, output) ->
+      console.error error if error
+      identifiers = output.addresses.map(Kijiji.parseIdentifierFromAddress)
+      identifiers = identifiers.filter (address) -> address isnt undefined
+      done error, identifiers.map(Kijiji.address)
+
 
 Kijiji.sources = """
   http://www.kijiji.ca/b-guitar/alberta/lefty/k0c613l9003?price=__1000&minNumberOfImages=1
@@ -52,58 +109,3 @@ Kijiji.sources = """
   http://www.kijiji.ca/b-guitar/newfoundland/left-hand/k0c613l9008?price=__1000&minNumberOfImages=1
   http://www.kijiji.ca/b-guitar/newfoundland/lefthand/k0c613l9008?price=__1000&minNumberOfImages=1
 """.split("\n")
-
-Kijiji.Date = require('d3').time.format("%d-%b-%y")
-
-Kijiji.address = (id) ->
-  "http://www.kijiji.ca/v-view-details.html?adId=#{id}"
-
-Kijiji.attributes =
-  "expired":".expired-ad-container"
-  "title":"[itemprop=name]"
-  "description":"[itemprop=description]"
-  "price string":"[itemprop=price]"
-  "photographs":["ul.photo-navigation img@src"]
-  "publication date":"table.ad-attributes tr:first-child td"
-
-Kijiji.read = (address, done) ->
-  id = Kijiji.parseIdentifierFromAddress(address)
-  console.info "Kijiji.read":id
-  address = Kijiji.address(id)
-  window(address+"&siteLocale=en_CA", Kijiji.attributes) (error, output) ->
-    output["address"] = address
-    if output["expired"]?
-      output["expired"] = Date.now()
-      delete output["photographs"]
-    else
-      output["price"] = Number output["price string"].replace("$","")
-      output["publication time"] = Kijiji.Date.parse(output["publication date"]).getTime()
-      output["description"] = output["description"]?.trim()
-      output["photographs"] = output["photographs"].filter (p) -> p.match("play-button") is p.match("youtube") is null
-    delete output["publication date"]
-    delete output["price string"]
-    console.info "kijiji output":output
-    done error, output
-
-Kijiji.parseIdentifierFromAddress = (address) ->
-  if id = address.match(/adId=([0-9]+)/)?[1]
-    return Number(id)
-  else
-    identifier = Number address.split("?")[0].split("/").pop()
-    if Number.isNaN identifier
-      return undefined
-    else
-      return identifier
-
-
-Kijiji.Search =
-  attributes: {
-    "addresses":[".title a[href]@href"]
-  }
-  read: (address, done) ->
-    console.info "kijiji search read":address
-    window(address, Kijiji.Search.attributes) (error, output) ->
-      console.error error if error
-      identifiers = output.addresses.map(Kijiji.parseIdentifierFromAddress)
-      identifiers = identifiers.filter (address) -> address isnt undefined
-      done error, identifiers.map(Kijiji.address)

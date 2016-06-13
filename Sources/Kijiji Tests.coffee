@@ -1,17 +1,22 @@
-{read} = require("./kijiji")
+Kijiji = require("./Kijiji")
+cheerio = require "cheerio"
+tape = require "tape"
 
-read "http://www.kijiji.ca/v-view-details.html?adId=1165646316", (error, data) ->
-  console.error error if error
-  console.info data
+tape "Kijiji.address", (test) ->
+  test.same Kijiji.address("123"), "http://www.kijiji.ca/v-view-details.html?adId=123"
+  test.end()
 
-read "http://www.kijiji.ca/v-view-details.html?adId=1170859970", (error, data) ->
-  console.error error if error
-  console.info data
+tape "Read current article from Kijiji", (test) ->
+  Kijiji.Article.read "http://www.kijiji.ca/v-view-details.html?adId=1165646316", (error, data) ->
+    test.same error, null
+    test.same Object.keys(data), ["title","description","photographs","address","price","publication time"]
+    test.end()
 
-read "http://www.kijiji.ca/v-guitar/ottawa/epiphone-dot-es335-pristine-with-hard-case-left-hand/1171635084", (error, data) ->
-  console.error error if error
-  console.info data
-
+tape "Read expired article from Kijiji", (test) ->
+  Kijiji.Article.read "http://www.kijiji.ca/v-view-details.html?adId=1164371061", (error, data) ->
+    test.same error, null
+    test.same Object.keys(data), ["expired", "address"]
+    test.end()
 
 # {read} = require("./kijiji_search")
 #
