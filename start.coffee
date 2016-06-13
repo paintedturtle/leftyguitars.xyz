@@ -176,12 +176,12 @@ write = require("fs").writeFile
 
 
 advanceOldestArticle = ->
-  articles = instruments.query().sort (a, b) ->
-    a["access time"] - b["access time"]
+  articles = instruments.query()
+  articles = articles.filter (article) -> article.expired is undefined
+  articles = articles.sort (a, b) -> a["access time"] - b["access time"]
   article = articles[0]
-  return if article["access time"] > (Date.now() - 45.minutes())
-  console.info "Advancing stale article":article
-  # console.info before:article
+  return if article["access time"] > (Date.now() - 15.minutes())
+  console.info "Advancing oldest unexpired article":article
   Kijiji.read article.address, (error, output) ->
     console.error error if error
     throw error if error

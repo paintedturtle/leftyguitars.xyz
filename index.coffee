@@ -5,7 +5,7 @@ document.on "DOMContentLoaded", ->
     </header>
 
     <div id="search" style="box-sizing: border-box;">
-      <input autofocus type="text" placeholder="Search" style="text-align:center; font:inherit; width:33.3%; box-sizing: border-box; background:transparent; padding: 1mm 1mm 0.66mm; border:2px solid grey; border-radius:1mm; color: white; margin: 4mm auto; display:block; font-size:200%;">
+      <input type="text" placeholder="Search" style="text-align:center; font:inherit; width:33.3%; box-sizing: border-box; background:transparent; padding: 1mm 1mm 0.66mm; border:2px solid grey; border-radius:1mm; color: white; margin: 4mm auto; display:block; font-size:200%;">
     </div>
 
     <div id="pricelimit" style="height:4mm; margin: 2mm 20% 10mm; position: relative;">
@@ -243,9 +243,14 @@ naturalArticleHTML = (article) ->
 
 
 renderExpiredArticles = (data) ->
-  article = d3.select("#expired").selectAll("article").data(data, ((d) -> d.id))
+  sorted = data
+    .sort (a, b) -> b["access time"] - a["access time"]
+    .slice(0, 10)
+
+  article = d3.select("#expired").selectAll("article").data(sorted, ((d) -> d.id))
+  article.order()
   article.enter().append("article")
-    .attr id:(d) -> d.id
+  article.attr id:(d) -> d.id
   article.html (d) -> """
     <a target="#{d.id}" href="#{d.address}"><img src="#{d.photographs[0]}"></a>
     """
