@@ -1,8 +1,9 @@
 document.on "DOMContentLoaded", ->
   document.body.innerHTML = """
     <header>
-      <h1>Lefty Guitars For Sale Under $1000</h1>
+      <h1>Lefty Guitars For Sale Under $1000 CAD</h1>
     </header>
+    <div id="novelty" class="natural articles"></div>
 
     <div id="search" style="box-sizing: border-box;">
       <input type="text" placeholder="Search" style="text-align:center; font:inherit; width:33.3%; box-sizing: border-box; background:transparent; padding: 1mm 1mm 0.66mm; border:2px solid grey; border-radius:1mm; color: white; margin: 4mm auto; display:block; font-size:200%;">
@@ -41,6 +42,9 @@ document.on "DOMContentLoaded", ->
 
     <h2>No Price</h2>
     <div id="noprice" class="diminished articles"></div>
+
+    <h2>Trashed</h2>
+    <div id="trashed" class="diminished articles"></div>
 
     <div class="turtle">🐢</div>
 
@@ -113,6 +117,10 @@ document.on "DOMContentLoaded", ->
       div.natural.articles article .duration .label { white-space: nowrap; position: absolute; margin: 0; width: 15mm; height:4mm; padding: 1mm 1mm 2mm; top: 0; left:0; background:transparent; text-align: right; color: hsla(0, 0%, 66%, 1);}
       div.natural.articles article .duration .graphic { position: absolute; margin: 1mm 1px 1.33mm; height:3.66mm; bottom: 0mm; left:17mm; background:hsla(0, 0%, 55%, 1);}
 
+      div.natural.articles article button { position: absolute; top: 0; display:block; width:50%;}
+      div.natural.articles article button.discard { left: 0; }
+      div.natural.articles article button.approve { right: 0; }
+
       article:not(:hover) a { background: transparent; color: inherit;}
       article a[href]:not(:visited) { color: hsl(205, 50%, 50%); }
       article a[href]:visited { color: hsl(278, 50%, 50%); }
@@ -149,13 +157,18 @@ document.on "DOMContentLoaded", ->
     """
 
 document.on "DOMContentLoaded", ->
-  {current, expired, noprice, pocketd} = window.instruments.query().reduce(toCurrentExpiredNoprice, {})
+  {current, expired, noprice, pocketd, novelty, trashed} = window.instruments.query().reduce(toCurrentExpiredNoprice, {})
   renderCurrentArticles current
   renderExpiredArticles expired
   renderArticlesWithoutPrices noprice
-  renderPocket pocketd if location.hostname.length is 9
+  if location.hostname.length is 9
+    renderPocket pocketd
+    renderNovelty novelty
+    renderTrash trashed
 
 toCurrentExpiredNoprice = (reduction, guitar) ->
+  reduction.trashed ?= []
+  reduction.novelty ?= []
   reduction.current ?= []
   reduction.expired ?= []
   reduction.noprice ?= []
@@ -163,14 +176,32 @@ toCurrentExpiredNoprice = (reduction, guitar) ->
   if guitar.pocketd
     reduction.pocketd.push(guitar)
     return reduction
+  if guitar.trashed
+    reduction.trashed.push(guitar)
+    return reduction
   if guitar.expired
     reduction.expired.push(guitar)
     return reduction
   if Number.isNaN Number guitar["price"].replace("$","").replace(",",".").split(".")[0]
     reduction.noprice.push(guitar)
     return reduction
-  reduction.current.push(guitar)
-  return reduction
+  if guitar.approved
+    reduction.current.push(guitar)
+    return reduction
+  else
+    reduction.novelty.push(guitar)
+    return reduction
+
+document.on "click", "button.discard", (event, button) ->
+  console.info discard:button
+  id = button.closest("article").id
+  d3.xhr("#{window.location}#{id}")
+    .header "Content-Type", "application/json"
+    .post JSON.stringify({trashed:yes}), (error, response) ->
+      console.error error if error
+      console.info response.statusText
+      console.info response.responseText
+
 
 document.on "input", "#search input", (event, input) ->
   {current} = window.instruments.query().reduce(toCurrentExpiredNoprice, {})
@@ -226,7 +257,7 @@ renderCurrentArticles = (data) ->
   article.exit().remove()
 
 naturalArticleHTML = (article) ->
-  return """
+  output = """
     <div class="title">#{simplifiedTitle(article.title) or 'Untitled'}</div>
     <div class="address"><a target="#{article.id}" href="#{article.address}">#{simplifiedAddress article.address}</a></div>
     <div class="price">
@@ -238,16 +269,34 @@ naturalArticleHTML = (article) ->
       <div class="label">#{ Math.round((Date.now()-article["publication time"]) / 24.hours()) } #{if Math.round((Date.now()-article["publication time"]) / 24.hours()) > 1 then 'days' else 'day'}</div>
     </div>
     <img src="#{article.photographs[0]}">
-    <div class="id">#{if location.hostname is "localhost" then article.id else ""}</div>
   """
+  if location.hostname is "localhost" and article.approved is undefined
+    output += """
+      <div class="id">#{if location.hostname is "localhost" then article.id else ""}</div>
+      <button class="discard">⌫</button>
+      <button class="approve">👀</button>
+    """
+  return output
 
 
 renderExpiredArticles = (data) ->
   sorted = data
     .sort (a, b) -> b["access time"] - a["access time"]
     .slice(0, 10)
-
   article = d3.select("#expired").selectAll("article").data(sorted, ((d) -> d.id))
+  article.order()
+  article.enter().append("article")
+  article.attr id:(d) -> d.id
+  article.html (d) -> """
+    <a target="#{d.id}" href="#{d.address}"><img src="#{d.photographs[0]}"></a>
+    """
+  article.exit().remove()
+
+renderTrash = (data) ->
+  sorted = data
+    .sort (a, b) -> b["access time"] - a["access time"]
+    .slice(0, 10)
+  article = d3.select("#trashed").selectAll("article").data(sorted, ((d) -> d.id))
   article.order()
   article.enter().append("article")
   article.attr id:(d) -> d.id
@@ -262,6 +311,14 @@ renderPocket = (data) ->
   article.attr id:(d) -> d.id
   article.html naturalArticleHTML
   article.exit().remove()
+
+renderNovelty = (data) ->
+  article = d3.select("#novelty").selectAll("article").data(data, ((d) -> d.id))
+  article.enter().append("article")
+  article.attr id:(d) -> d.id
+  article.html naturalArticleHTML
+  article.exit().remove()
+
 
 renderArticlesWithoutPrices = (data) ->
   article = d3.select("#noprice").selectAll("article").data(data, ((d) -> d.id))

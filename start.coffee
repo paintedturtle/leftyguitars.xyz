@@ -27,15 +27,16 @@ service = require("http").createServer (request, response) ->
       switch
         when identifier is ""
           JSONfromHTTPRequest request, (error, data) ->
-            console.info post:data
+            console.info "POST":data
+            if error then throw error
             addInstrument data.location
             response.writeHead 201, "Content-Length":2, "Content-Type":"application/json; charset=UTF-8"
             response.end "[]"
         when identifier.length is 64
-          console.info {identifier}
-          JSONfromHTTPRequest request, (error, data) ->
-            console.info post:data
-            instruments.advance identifier, {pocketd:yes}
+          JSONfromHTTPRequest request, (error, input) ->
+            console.info "POST #{identifier}":input
+            if error then throw error
+            instruments.advance identifier, input
             response.writeHead 201, "Content-Length":2, "Content-Type":"application/json; charset=UTF-8"
             response.end "[]"
         else
@@ -88,6 +89,7 @@ addInstrument.fromKijiji = (location, callback) ->
     identifier = identifyInstrumentAddress(address)
     instruments.advance identifier, output
     console.info identifier:output
+    callback error, identifier
 
 identifyInstrumentAddress = (address) ->
   hash = Cryptography.createHash('sha256')
@@ -177,15 +179,15 @@ write = require("fs").writeFile
 
 advanceOldestArticle = ->
   articles = instruments.query()
-  articles = articles.filter (article) -> article.expired is undefined
-  articles = articles.sort (a, b) -> a["access time"] - b["access time"]
+    .filter (article) -> article.approved?
+    .filter (article) -> article.expired is undefined
+    .sort (a, b) -> a["access time"] - b["access time"]
   article = articles[0]
-  return if article["access time"] > (Date.now() - 15.minutes())
-  console.info "Advancing oldest unexpired article":article
+  return if article["access time"] > (Date.now() - 45.minutes())
+  console.info "Advancing oldest unexpired approved article":article
   Kijiji.read article.address, (error, output) ->
     console.error error if error
     throw error if error
-    # console.info after:output
     advancements = {}
     for key, value of output
       advancements[key] = value unless Immutable.is Immutable.fromJS(value), Immutable.fromJS(article[key])
@@ -195,8 +197,10 @@ advanceOldestArticle = ->
 setInterval advanceOldestArticle, 2.seconds()
 
 findNovelArticles = ->
-  Kijiji.sources.forEach (source) ->
+  Kijiji.sources.slice(0,2).forEach (source) ->
     Kijiji.Search.read source, (error, addresses) ->
-      console.info "#{source} novelty": addresses.filter (address) -> instruments.pull(identifyInstrumentAddress(address)) is undefined
+      novelAddresses = addresses.filter (address) -> instruments.pull(identifyInstrumentAddress(address)) is undefined
+      console.info "#{source} novelty": novelAddresses
+      novelAddresses.forEach (address) -> addInstrument.fromKijiji(address, (error, identifier) ->)
 
-# setTimeout findNovelArticles, 1.seconds()
+setTimeout findNovelArticles, 1.seconds()
