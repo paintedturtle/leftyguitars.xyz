@@ -61,12 +61,13 @@ Kijiji.attributes =
   "expired":".expired-ad-container"
   "title":"[itemprop=name]"
   "description":"[itemprop=description]"
-  "price":"[itemprop=price]"
+  "price string":"[itemprop=price]"
   "photographs":["ul.photo-navigation img@src"]
   "publication date":"table.ad-attributes tr:first-child td"
 
 Kijiji.read = (address, done) ->
   id = Kijiji.parseIdentifierFromAddress(address)
+  console.info "Kijiji.read":id
   address = Kijiji.address(id)
   window(address+"&siteLocale=en_CA", Kijiji.attributes) (error, output) ->
     output["address"] = address
@@ -75,10 +76,12 @@ Kijiji.read = (address, done) ->
       output["expired"] = Date.now()
       delete output["photographs"]
     else
+      output["price"] = Number output["price string"].replace("$","")
       output["publication time"] = Kijiji.Date.parse(output["publication date"]).getTime()
       output["description"] = output["description"]?.trim()
       output["photographs"] = output["photographs"].filter (p) -> p.match("play-button") is p.match("youtube") is null
     delete output["publication date"]
+    delete output["price string"]
     done error, output
 
 Kijiji.parseIdentifierFromAddress = (address) ->

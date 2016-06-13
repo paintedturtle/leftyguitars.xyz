@@ -17,8 +17,8 @@ instruments.datoms = Immutable.Stack(Immutable.fromJS(require("./instruments.dat
 
 instruments.on "transaction", ->
   write "instruments.datoms.json", JSON.stringify(instruments.datoms, undefined, "  "), "UTF-8", (error) ->
-    console.error error if error
-    console.info "Wrote instruments.datoms.json to file system"
+    if error then throw error
+    console.info "SAVED":"instruments.datoms.json"
 
 service = require("http").createServer (request, response) ->
   console.info request:identifier=decodeURIComponent(request.url.replace("/",""))
@@ -183,18 +183,16 @@ advanceOldestArticle = ->
     .filter (article) -> article.expired is undefined
     .sort (a, b) -> a["access time"] - b["access time"]
   article = articles[0]
-  return if article["access time"] > (Date.now() - 45.minutes())
-  console.info "Advancing oldest unexpired approved article":article
-  Kijiji.read article.address, (error, output) ->
-    console.error error if error
-    throw error if error
-    advancements = {}
-    for key, value of output
-      advancements[key] = value unless Immutable.is Immutable.fromJS(value), Immutable.fromJS(article[key])
-    console.info changes:advancements
-    instruments.advance article.id, advancements
+  if article["access time"] < (Date.now() - 45.minutes())
+    console.info "READ #{article.id}":article.address
+    Kijiji.read article.address, (error, output) ->
+      if error then throw error
+      advancements = {}
+      advancements[key] = value unless Immutable.is Immutable.fromJS(value), Immutable.fromJS(article[key]) for key, value of output
+      console.info "PULL #{article.id}":advancements
+      instruments.advance article.id, advancements
 
-setInterval advanceOldestArticle, 2.seconds()
+setInterval advanceOldestArticle, 3.seconds()
 
 findNovelArticles = ->
   Kijiji.sources.slice(0,2).forEach (source) ->

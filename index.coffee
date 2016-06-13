@@ -6,10 +6,10 @@ document.on "DOMContentLoaded", ->
     <div id="novelty" class="natural articles"></div>
 
     <div id="search" style="box-sizing: border-box;">
-      <input type="text" placeholder="Search" style="text-align:center; font:inherit; width:33.3%; box-sizing: border-box; background:transparent; padding: 1mm 1mm 0.66mm; border:2px solid grey; border-radius:1mm; color: white; margin: 4mm auto; display:block; font-size:200%;">
+      <input type="text" placeholder="Search" style="text-align:center; font:inherit; width:25%; box-sizing: border-box; background:transparent; padding: 1mm 1mm 0.66mm; border:2px solid grey; border-radius:1mm; color: white; margin: 4mm auto; display:block; font-size:150%;">
     </div>
 
-    <div id="pricelimit" style="height:4mm; margin: 2mm 20% 10mm; position: relative;">
+    <div id="pricelimit" style="height:4mm; margin: 2mm 33.3% 10mm; position: relative;">
       <label class="min" style="position: absolute; right: 100%; margin:0 2mm;">$100</label>
       <label class="max" style="position: absolute; left: 100%; margin:0 2mm; ">$1000</label>
       <input type="range" min="100" max="1000" value="1000" style="position: absolute; top: -0.3mm; left: 0; right: 0; width: 100%; margin:0; padding:0; display:block;">
@@ -39,12 +39,6 @@ document.on "DOMContentLoaded", ->
 
     <h2>Dearly Departed</h2>
     <div id="expired" class="diminished articles"></div>
-
-    <h2>No Price</h2>
-    <div id="noprice" class="diminished articles"></div>
-
-    <h2>Trashed</h2>
-    <div id="trashed" class="diminished articles"></div>
 
     <div class="turtle">🐢</div>
 
@@ -130,6 +124,10 @@ document.on "DOMContentLoaded", ->
       div.diminished.articles article { margin: 0; color: white; width: 10%; float: left; overflow:hidden;}
       div.diminished.articles article img { width: 100%; height: 50mm; object-fit: cover; background-color: black; display:block;}
 
+      #trashed { margin: auto; }
+      #trashed article { opacity:0.33; }
+      #trashed article:hover { opacity:0.99; }
+
       body > footer { line-height: 5mm; }
 
       #host { position: absolute; top: 0; left: 0; width: 33.333%; text-align: right; }
@@ -153,17 +151,19 @@ document.on "DOMContentLoaded", ->
     document.body.innerHTML += """
       <form id="add"><input type="URL" placeholder="Paste a URL to add another guitar" value=""></form>
       <form id="pocket"><input type="text" placeholder="Paste an ID to pocket an article" value="" maxlength="64" minlength="64"></form>
+      <h2>Pocketd</h2>
       <div id="pocketd" class="natural articles"></div>
+      <h2>Trashed</h2>
+      <div id="trashed" class="diminished articles"></div>
     """
 
 document.on "DOMContentLoaded", ->
-  {current, expired, noprice, pocketd, novelty, trashed} = window.instruments.query().reduce(toCurrentExpiredNoprice, {})
+  {current, expired, pocketd, novelty, trashed} = window.instruments.query().reduce(toCurrentExpiredNoprice, {})
   renderCurrentArticles current
   renderExpiredArticles expired
-  renderArticlesWithoutPrices noprice
   if location.hostname.length is 9
-    renderPocket pocketd
     renderNovelty novelty
+    renderPocket pocketd
     renderTrash trashed
 
 toCurrentExpiredNoprice = (reduction, guitar) ->
@@ -171,7 +171,6 @@ toCurrentExpiredNoprice = (reduction, guitar) ->
   reduction.novelty ?= []
   reduction.current ?= []
   reduction.expired ?= []
-  reduction.noprice ?= []
   reduction.pocketd ?= []
   if guitar.pocketd
     reduction.pocketd.push(guitar)
@@ -181,9 +180,6 @@ toCurrentExpiredNoprice = (reduction, guitar) ->
     return reduction
   if guitar.expired
     reduction.expired.push(guitar)
-    return reduction
-  if Number.isNaN Number guitar["price"].replace("$","").replace(",",".").split(".")[0]
-    reduction.noprice.push(guitar)
     return reduction
   if guitar.approved
     reduction.current.push(guitar)
@@ -222,8 +218,7 @@ document.on "input", "#pricelimit input", (event, input) ->
   {current} = window.instruments.query().reduce(toCurrentExpiredNoprice, {})
   d3.select("#price-limit").html limit
   renderCurrentArticles current.filter (article) ->
-    price = Number article["price"].replace("$","").replace(",",".").split(".")[0]
-    return price < limit
+    return article["price"] < limit
 
 document.on "input", "#add input", (event, input) ->
   console.info advance:input.value
@@ -269,8 +264,8 @@ naturalArticleHTML = (article) ->
     <div class="title">#{simplifiedTitle(article.title) or 'Untitled'}</div>
     <div class="address"><a target="#{article.id}" href="#{article.address}">#{simplifiedAddress article.address}</a></div>
     <div class="price">
-      <div class="graphic" style="width:#{Number(article.price.replace("$","").replace(",",".").split(".")[0])/13}%"></div>
-      <div class="label">$ #{ Number(article.price.replace("$","").replace(",",".").split(".")[0]) }</div>
+      <div class="graphic" style="width:#{article.price/13}%"></div>
+      <div class="label">$ #{ Math.ceil(article.price) }</div>
     </div>
     <div class="duration">
       <div class="graphic" style="width:#{Math.round((Date.now()-article["publication time"]) / 24.hours()) * 1.25 }%"></div>
