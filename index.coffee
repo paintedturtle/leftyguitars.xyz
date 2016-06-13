@@ -261,7 +261,7 @@ renderCurrentArticles = (data) ->
 
 naturalArticleHTML = (article) ->
   output = """
-    <div class="title">#{simplifiedTitle(article.title) or 'Untitled'}</div>
+    <div class="title">#{article.title or 'Untitled'}</div>
     <div class="address"><a target="#{article.id}" href="#{article.address}">#{simplifiedAddress article.address}</a></div>
     <div class="price">
       <div class="graphic" style="width:#{article.price/13}%"></div>
