@@ -202,6 +202,14 @@ document.on "click", "button.discard", (event, button) ->
       console.info response.statusText
       console.info response.responseText
 
+document.on "click", "button.approve", (event, button) ->
+  id = button.closest("article").id
+  d3.xhr("#{window.location}#{id}")
+    .header "Content-Type", "application/json"
+    .post JSON.stringify({approved:yes}), (error, response) ->
+      console.error error if error
+      console.info response.statusText
+      console.info response.responseText
 
 document.on "input", "#search input", (event, input) ->
   {current} = window.instruments.query().reduce(toCurrentExpiredNoprice, {})
