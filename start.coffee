@@ -5,6 +5,8 @@ Cryptography = require('crypto')
 Immutable = require('immutable')
 files = require("facts")()
 
+Kijiji = require "./Kijiji"
+
 Scripts =
   d3: readFileSync "d3.min.js", "UTF-8"
   facts: readFileSync "Facts.pack.js", "UTF-8"
@@ -80,7 +82,7 @@ addInstrument = (location, callback) ->
     when location.match("kijiji") then addInstrument.fromKijiji(location, callback)
     else throw "unknown instrument host"
 
-Kijiji = require "./kijiji"
+
 
 addInstrument.fromKijiji = (location, callback) ->
   Kijiji.read location, (error, output) ->
@@ -176,19 +178,26 @@ watch = require("fs").watch
 
 write = require("fs").writeFile
 
+# backgroundWork = ->
+#   if article = nextStaleArticle()
+#
+#     return
+#   if search = nextStaleSearch()
+#
+#     return
 
 advanceOldestArticle = ->
   articles = instruments.query()
-    .filter (article) -> article.approved?
-    .filter (article) -> article.expired is undefined
+    .filter (article) -> article["approved"] and (article["expired"] is undefined)
     .sort (a, b) -> a["access time"] - b["access time"]
   article = articles[0]
-  if article["access time"] < (Date.now() - 30.minutes())
+  if article["access time"] < (Date.now() - 66.minutes())
     console.info "READ #{article.id}":article.address
     Kijiji.read article.address, (error, output) ->
       if error then throw error
-      advancements = {"access time":Date.now()}
-      advancements[key] = value unless Immutable.is Immutable.fromJS(value), Immutable.fromJS(article[key]) for key, value of output
+      advancements = {}
+      for key, value of output
+        advancements[key] = value unless Immutable.is Immutable.fromJS(value), Immutable.fromJS(article[key])
       console.info "PULL #{article.id}":advancements
       instruments.advance article.id, advancements
 
@@ -201,4 +210,21 @@ findNovelArticles = ->
       console.info "#{source} novelty": novelAddresses
       novelAddresses.forEach (address) -> addInstrument.fromKijiji(address, (error, identifier) ->)
 
-# setTimeout findNovelArticles, 15.seconds()
+# setTimeout findNovelArticles, 1.second()
+
+diagnostic = ->
+  address = "http://www.kijiji.ca/v-view-details.html?adId=1157360872"
+  article = instruments.pull identifyInstrumentAddress(address)
+  console.info "#{address}":article
+  Kijiji.read address, (error, output) ->
+    if error then throw error
+    console.info address:output
+    advancements = {}
+    for key, value of output
+      console.info "#{key}":[value, article[key]]
+      advancements[key] = value unless Immutable.is Immutable.fromJS(value), Immutable.fromJS(article[key])
+    console.info {advancements}
+    instruments.advance article.id, advancements
+
+
+# diagnostic()

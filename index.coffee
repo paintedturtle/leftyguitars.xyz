@@ -189,7 +189,6 @@ toCurrentExpiredNoprice = (reduction, guitar) ->
     return reduction
 
 document.on "click", "button.discard", (event, button) ->
-  console.info discard:button
   id = button.closest("article").id
   d3.xhr("#{window.location}#{id}")
     .header "Content-Type", "application/json"
@@ -209,12 +208,10 @@ document.on "click", "button.approve", (event, button) ->
 
 document.on "input", "#search input", (event, input) ->
   {current} = window.instruments.query().reduce(toCurrentExpiredNoprice, {})
-  console.info current.length
   if input.value
     pattern = new RegExp "\\b#{input.value}", "i"
   else
     pattern = new RegExp "."
-  console.info pattern
   renderCurrentArticles current.filter (article) -> pattern.test(article["title"]) or pattern.test(article["description"])
 
 document.on "input", "#pricelimit input", (event, input) ->
