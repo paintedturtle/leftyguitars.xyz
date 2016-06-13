@@ -4,27 +4,26 @@ document.on "DOMContentLoaded", ->
       <h1>Lefty Guitars For Sale Under $1000</h1>
     </header>
 
-    <form id="search" style="box-sizing: border-box;">
+    <div id="search" style="box-sizing: border-box;">
       <input type="text" placeholder="Search" style="text-align:center; font:inherit; width:33.3%; box-sizing: border-box; background:transparent; padding: 1mm 1mm 0.66mm; border:2px solid grey; border-radius:1mm; color: white; margin: 4mm auto; display:block; font-size:200%;">
-    </form>
+    </div>
 
-    <form id="pricelimit" style="height:4mm; margin: 2mm 20% 10mm; position: relative;">
+    <div id="pricelimit" style="height:4mm; margin: 2mm 20% 10mm; position: relative;">
       <label class="min" style="position: absolute; right: 100%; margin:0 1mm;">$100</label>
       <label class="max" style="position: absolute; left: 100%; margin:0 1mm; ">$1000</label>
       <input type="range" min="100" max="1000" value="1000" style="position: absolute; left: 0; right: 0; width: 100%; margin:0; padding:0; display:block;">
-    </form>
+    </div>
 
-    <form id="filter" hidden>
+    <div id="filter" hidden>
       <button>All</button>
       <button>Acoustic</button>
       <button>Electric</button>
       <button>Bass</button>
-    </form>
+    </div>
 
     <h1>
       <span id="selection-size">N</span> lefty guitars for sale under $<span id="price-limit">1000</span> CAD
     </h1>
-
 
     <form id="sort" hidden>
       <button>All</button>
