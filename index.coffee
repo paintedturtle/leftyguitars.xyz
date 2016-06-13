@@ -5,13 +5,13 @@ document.on "DOMContentLoaded", ->
     </header>
 
     <div id="search" style="box-sizing: border-box;">
-      <input type="text" placeholder="Search" style="text-align:center; font:inherit; width:33.3%; box-sizing: border-box; background:transparent; padding: 1mm 1mm 0.66mm; border:2px solid grey; border-radius:1mm; color: white; margin: 4mm auto; display:block; font-size:200%;">
+      <input autofocus type="text" placeholder="Search" style="text-align:center; font:inherit; width:33.3%; box-sizing: border-box; background:transparent; padding: 1mm 1mm 0.66mm; border:2px solid grey; border-radius:1mm; color: white; margin: 4mm auto; display:block; font-size:200%;">
     </div>
 
     <div id="pricelimit" style="height:4mm; margin: 2mm 20% 10mm; position: relative;">
-      <label class="min" style="position: absolute; right: 100%; margin:0 1mm;">$100</label>
-      <label class="max" style="position: absolute; left: 100%; margin:0 1mm; ">$1000</label>
-      <input type="range" min="100" max="1000" value="1000" style="position: absolute; left: 0; right: 0; width: 100%; margin:0; padding:0; display:block;">
+      <label class="min" style="position: absolute; right: 100%; margin:0 2mm;">$100</label>
+      <label class="max" style="position: absolute; left: 100%; margin:0 2mm; ">$1000</label>
+      <input type="range" min="100" max="1000" value="1000" style="position: absolute; top: -0.3mm; left: 0; right: 0; width: 100%; margin:0; padding:0; display:block;">
     </div>
 
     <div id="filter" hidden>
@@ -94,7 +94,8 @@ document.on "DOMContentLoaded", ->
 
       body > h1 { text-align: center; margin: 4mm 10mm 4mm; color: white;}
 
-      form input[type=text], form input[type=url] { width: 100%; margin: auto; font: 4mm/4mm Consolas; }
+      form input[type=text], form input[type=url] { width: 100%; margin: auto; font: 4mm/4mm Consolas; box-sizing: border-box;}
+
       div.natural.articles { margin: auto; width: auto; position: relative; overflow:hidden; color: white;}
       div.natural.articles article { margin: 0; color: white; width: 33.333%; float: left; overflow:hidden;}
       div.natural.articles article img { width: 100%; height: 100mm; object-fit: cover; background-color: black; display:block;}
@@ -116,8 +117,8 @@ document.on "DOMContentLoaded", ->
       article a[href]:not(:visited) { color: hsl(205, 50%, 50%); }
       article a[href]:visited { color: hsl(278, 50%, 50%); }
 
-      h2 { margin: 10mm auto 0; }
-      div.diminished.articles { margin: 0 auto 10mm; width: auto; position: relative; overflow:hidden; color: white;}
+      h2 { margin: 20mm auto 0; }
+      div.diminished.articles { margin: 0 auto 20mm; width: auto; position: relative; overflow:hidden; color: white;}
       div.diminished.articles article { margin: 0; color: white; width: 10%; float: left; overflow:hidden;}
       div.diminished.articles article img { width: 100%; height: 50mm; object-fit: cover; background-color: black; display:block;}
 
