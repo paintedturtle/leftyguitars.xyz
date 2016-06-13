@@ -298,7 +298,6 @@ renderExpiredArticles = (data) ->
 renderTrash = (data) ->
   sorted = data
     .sort (a, b) -> b["access time"] - a["access time"]
-    .slice(0, 10)
   article = d3.select("#trashed").selectAll("article").data(sorted, ((d) -> d.id))
   article.order()
   article.enter().append("article")

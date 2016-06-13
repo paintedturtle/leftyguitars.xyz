@@ -187,18 +187,18 @@ advanceOldestArticle = ->
     console.info "READ #{article.id}":article.address
     Kijiji.read article.address, (error, output) ->
       if error then throw error
-      advancements = {}
+      advancements = {"access time":Date.now()}
       advancements[key] = value unless Immutable.is Immutable.fromJS(value), Immutable.fromJS(article[key]) for key, value of output
       console.info "PULL #{article.id}":advancements
       instruments.advance article.id, advancements
 
-setInterval advanceOldestArticle, 3.seconds()
+# setInterval advanceOldestArticle, 3.seconds()
 
 findNovelArticles = ->
-  Kijiji.sources.slice(0,2).forEach (source) ->
+  Kijiji.sources.forEach (source) ->
     Kijiji.Search.read source, (error, addresses) ->
       novelAddresses = addresses.filter (address) -> instruments.pull(identifyInstrumentAddress(address)) is undefined
       console.info "#{source} novelty": novelAddresses
       novelAddresses.forEach (address) -> addInstrument.fromKijiji(address, (error, identifier) ->)
 
-setTimeout findNovelArticles, 1.seconds()
+# setTimeout findNovelArticles, 1.seconds()
