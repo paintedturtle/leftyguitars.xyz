@@ -192,5 +192,11 @@ advanceOldestArticle = ->
     console.info changes:advancements
     instruments.advance article.id, advancements
 
-
 setInterval advanceOldestArticle, 2.seconds()
+
+findNovelArticles = ->
+  Kijiji.sources.forEach (source) ->
+    Kijiji.Search.read source, (error, addresses) ->
+      console.info "#{source} novelty": addresses.filter (address) -> instruments.pull(identifyInstrumentAddress(address)) is undefined
+
+# setTimeout findNovelArticles, 1.seconds()

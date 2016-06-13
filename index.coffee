@@ -186,7 +186,6 @@ document.on "input", "#pricelimit input", (event, input) ->
     price = Number article["price"].replace("$","").replace(",",".").split(".")[0]
     return price < limit
 
-
 document.on "input", "#add input", (event, input) ->
   console.info advance:input.value
   if input.validity.valid

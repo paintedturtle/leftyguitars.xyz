@@ -85,4 +85,21 @@ Kijiji.parseIdentifierFromAddress = (address) ->
   if id = address.match(/adId=([0-9]+)/)?[1]
     return Number(id)
   else
-    return Number address.split("?")[0].split("/").pop()
+    identifier = Number address.split("?")[0].split("/").pop()
+    if Number.isNaN identifier
+      return undefined
+    else
+      return identifier
+
+
+Kijiji.Search =
+  attributes: {
+    "addresses":[".title a[href]@href"]
+  }
+  read: (address, done) ->
+    console.info "kijiji search read":address
+    window(address, Kijiji.Search.attributes) (error, output) ->
+      console.error error if error
+      identifiers = output.addresses.map(Kijiji.parseIdentifierFromAddress)
+      identifiers = identifiers.filter (address) -> address isnt undefined
+      done error, identifiers.map(Kijiji.address)
