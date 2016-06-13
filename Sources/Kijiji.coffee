@@ -20,9 +20,9 @@ Kijiji.Article.attributes =
   "publication date":"table.ad-attributes tr:first-child td"
 
 Kijiji.Article.read = (address, done) ->
-  id = Kijiji.parseIdentifierFromAddress(address)
-  # console.info "Kijiji.read":id
-  address = Kijiji.address(id)
+  id = Kijiji.Article.parseIdentifierFromAddress(address)
+  console.info "READ article from Kijiji":id
+  address = Kijiji.Article.address(id)
   window(address+"&siteLocale=en_CA", Kijiji.Article.attributes) (error, output) ->
     output["address"] = address
     if output["expired"]?
@@ -35,7 +35,7 @@ Kijiji.Article.read = (address, done) ->
       output["photographs"] = output["photographs"].filter (p) -> p.match("play-button") is p.match("youtube") is null
     delete output["publication date"]
     delete output["price string"]
-    # console.info "kijiji output":output
+    console.info "READ article from Kijiji":output
     done error, output
 
 Kijiji.Article.parseIdentifierFromAddress = (address) ->
@@ -57,9 +57,9 @@ Kijiji.Search =
     console.info "kijiji search read":address
     window(address, Kijiji.Search.attributes) (error, output) ->
       console.error error if error
-      identifiers = output.addresses.map(Kijiji.parseIdentifierFromAddress)
+      identifiers = output.addresses.map(Kijiji.Article.parseIdentifierFromAddress)
       identifiers = identifiers.filter (address) -> address isnt undefined
-      done error, identifiers.map(Kijiji.address)
+      done error, identifiers.map(Kijiji.Article.address)
 
 
 Kijiji.sources = """
