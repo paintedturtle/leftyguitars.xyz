@@ -4,14 +4,34 @@ document.on "DOMContentLoaded", ->
       <h1>Lefty Guitars For Sale Under $1000</h1>
     </header>
 
-    <h1>
-      <span id="selection-size">N</span> lefty guitars for sale under $<span id="price-limit">1000</span> CAD
-    </h1>
+    <form id="search" style="box-sizing: border-box;">
+      <input type="text" placeholder="Search" style="text-align:center; font:inherit; width:33.3%; box-sizing: border-box; background:transparent; padding: 1mm 1mm 0.66mm; border:2px solid grey; border-radius:1mm; color: white; margin: 4mm auto; display:block; font-size:200%;">
+    </form>
 
     <form id="pricelimit" style="height:4mm; margin: 2mm 20% 10mm; position: relative;">
       <label class="min" style="position: absolute; right: 100%; margin:0 1mm;">$100</label>
       <label class="max" style="position: absolute; left: 100%; margin:0 1mm; ">$1000</label>
       <input type="range" min="100" max="1000" value="1000" style="position: absolute; left: 0; right: 0; width: 100%; margin:0; padding:0; display:block;">
+    </form>
+
+    <form id="filter" hidden>
+      <button>All</button>
+      <button>Acoustic</button>
+      <button>Electric</button>
+      <button>Bass</button>
+    </form>
+
+    <h1>
+      <span id="selection-size">N</span> lefty guitars for sale under $<span id="price-limit">1000</span> CAD
+    </h1>
+
+
+    <form id="sort" hidden>
+      <button>All</button>
+      <button>Oldest first</button>
+      <button>Newest first</button>
+      <button>Low-to-High</button>
+      <button>High-to-Low</button>
     </form>
 
     <h2 hidden>Current</h2>
@@ -73,7 +93,7 @@ document.on "DOMContentLoaded", ->
       body { font: 4mm/4mm "Avenir", sans-serif; font-weight: 600; }
       body > header { position: absolute; top: -100%; }
 
-      body > h1 { text-align: center; margin: 10mm 10mm 2mm; color: white;}
+      body > h1 { text-align: center; margin: 4mm 10mm 4mm; color: white;}
 
       form input[type=text], form input[type=url] { width: 100%; margin: auto; font: 4mm/4mm Consolas; }
       div.natural.articles { margin: auto; width: auto; position: relative; overflow:hidden; color: white;}
@@ -151,6 +171,12 @@ toCurrentExpiredNoprice = (reduction, guitar) ->
     return reduction
   reduction.current.push(guitar)
   return reduction
+
+document.on "input", "#search input", (event, input) ->
+  {current} = window.instruments.query().reduce(toCurrentExpiredNoprice, {})
+  console.info current.length
+  pattern = new RegExp input.value, "i"
+  renderCurrentArticles current.filter (article) -> pattern.test(article["title"]) or pattern.test(article["description"])
 
 document.on "input", "#pricelimit input", (event, input) ->
   limit = Number(input.value)
