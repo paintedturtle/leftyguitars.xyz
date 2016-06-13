@@ -210,7 +210,8 @@ findNovelArticles = ->
       console.info "#{source} novelty": novelAddresses
       novelAddresses.forEach (address) -> addInstrument.fromKijiji(address, (error, identifier) ->)
 
-# setTimeout findNovelArticles, 1.second()
+setInterval advanceOldestArticle, 15.minutes()
+setTimeout findNovelArticles, 1.second()
 
 diagnostic = ->
   address = "http://www.kijiji.ca/v-view-details.html?adId=1157360872"
