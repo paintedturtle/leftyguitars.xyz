@@ -210,7 +210,11 @@ document.on "click", "button.approve", (event, button) ->
 document.on "input", "#search input", (event, input) ->
   {current} = window.instruments.query().reduce(toCurrentExpiredNoprice, {})
   console.info current.length
-  pattern = new RegExp input.value, "i"
+  if input.value
+    pattern = new RegExp "\\b#{input.value}", "i"
+  else
+    pattern = new RegExp "."
+  console.info pattern
   renderCurrentArticles current.filter (article) -> pattern.test(article["title"]) or pattern.test(article["description"])
 
 document.on "input", "#pricelimit input", (event, input) ->
@@ -319,16 +323,6 @@ renderNovelty = (data) ->
   article.enter().append("article")
   article.attr id:(d) -> d.id
   article.html naturalArticleHTML
-  article.exit().remove()
-
-
-renderArticlesWithoutPrices = (data) ->
-  article = d3.select("#noprice").selectAll("article").data(data, ((d) -> d.id))
-  article.enter().append("article")
-    .attr id:(d) -> d.id
-  article.html (d) -> """
-    <a target="#{d.id}" href="#{d.address}"><img src="#{d.photographs[0]}"></a>
-    """
   article.exit().remove()
 
 simplifiedTitle = (string) ->
