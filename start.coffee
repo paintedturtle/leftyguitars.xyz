@@ -191,12 +191,13 @@ advanceOldestArticle = ->
     .filter (article) -> article["approved"] and (article["expired"] is undefined)
     .sort (a, b) -> a["access time"] - b["access time"]
   article = articles[0]
-  if article["access time"] < (Date.now() - 66.minutes())
+  if article["access time"] < (Date.now() - 33.minutes())
     console.info "READ #{article.id}":article.address
     Kijiji.Article.read article.address, (error, output) ->
       if error then throw error
       advancements = {}
       for key, value of output
+        console.info "key #{key}": [value, article[key]]
         advancements[key] = value unless Immutable.is Immutable.fromJS(value), Immutable.fromJS(article[key])
       console.info "PULL #{article.id}":advancements
       instruments.advance article.id, advancements
@@ -210,8 +211,8 @@ findNovelArticles = ->
       console.info "#{source} novelty": novelAddresses
       novelAddresses.forEach (address) -> addInstrument.fromKijiji(address, (error, identifier) ->)
 
-setInterval advanceOldestArticle, 15.minutes()
-setTimeout findNovelArticles, 1.second()
+# setInterval findNovelArticles, 15.minutes()
+# setTimeout  findNovelArticles, 1.second()
 
 diagnostic = ->
   address = "http://www.kijiji.ca/v-view-details.html?adId=1157360872"

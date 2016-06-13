@@ -2,10 +2,9 @@ window = require('x-ray')()
 window.concurrency(1)
 window.throttle(1, 333)
 
-
 Reverb = module.exports
 
-Reverb.sources = """
+Reverb["search addresses"] = """
   https://reverb.com/marketplace/electric-guitars/left-handed?product_type=electric-guitars&category=left-handed&item_region=CA&year_min=&year_max=&price_min=&price_max=1000.00&ships_to=CA&item_region=CA
   https://reverb.com/marketplace/bass-guitars/left-handed?product_type=bass-guitars&category=left-handed&item_region=CA&year_min=&year_max=&price_min=&price_max=1000.00&ships_to=CA&item_region=CA
   https://reverb.com/marketplace/acoustic-guitars/left-handed?product_type=acoustic-guitars&category=left-handed&item_region=&year_min=&year_max=&price_min=&price_max=1000.00&ships_to=CA&item_region=CA
@@ -14,8 +13,13 @@ Reverb.sources = """
 Reverb.Article =
   address: (identifier) ->
     "https://reverb.com/item/#{identifier}"
+
   identify: (address) ->
-    return identifier
+    if matches = address.match(/\/item\/([0-9]+)\-/)
+      matches[1]
+    else
+      undefined
+
   attributes:
     "expired":".expired-ad-container"
     "title":"[itemprop=name]"
@@ -23,18 +27,18 @@ Reverb.Article =
     "price string":"[itemprop=price]"
     "photographs":["ul.photo-navigation img@src"]
     "publication date":"table.ad-attributes tr:first-child td"
-  read = (address, done) ->
-    id = Kijiji.parseIdentifierFromAddress(address)
-    console.info "Kijiji.read":id
-    address = Kijiji.address(id)
-    window(address+"&siteLocale=en_CA", Kijiji.attributes) (error, output) ->
+  read: (address, done) ->
+    identifier = Reverb.Article.identify(address)
+    console.info "Kijiji.read":identifier
+    address = Reverb.Article.address(identifier)
+    window(address+"&siteLocale=en_CA", Reverb.Article.attributes) (error, output) ->
       output["address"] = address
       if output["expired"]?
         output["expired"] = Date.now()
         delete output["photographs"]
       else
         output["price"] = Number output["price string"].replace("$","")
-        output["publication time"] = Kijiji.Date.parse(output["publication date"]).getTime()
+        output["publication time"] = output["publication date"]
         output["description"] = output["description"]?.trim()
         output["photographs"] = output["photographs"].filter (p) -> p.match("play-button") is p.match("youtube") is null
       delete output["publication date"]
@@ -42,25 +46,14 @@ Reverb.Article =
       console.info "kijiji output":output
       done error, output
 
-Kijiji.parseIdentifierFromAddress = (address) ->
-  if id = address.match(/adId=([0-9]+)/)?[1]
-    return Number(id)
-  else
-    identifier = Number address.split("?")[0].split("/").pop()
-    if Number.isNaN identifier
-      return undefined
-    else
-      return identifier
+Reverb.Search =
+  attributes:
+    "addresses":[".product .product-image a[href]@href"]
 
-
-Kijiji.Search =
-  attributes: {
-    "addresses":[".title a[href]@href"]
-  }
   read: (address, done) ->
-    console.info "kijiji search read":address
-    window(address, Kijiji.Search.attributes) (error, output) ->
-      console.error error if error
-      identifiers = output.addresses.map(Kijiji.parseIdentifierFromAddress)
-      identifiers = identifiers.filter (address) -> address isnt undefined
-      done error, identifiers.map(Kijiji.address)
+    console.info "Reverb.Search.read":address
+    window(address, Reverb.Search.attributes) (error, output) ->
+      if error
+        done error
+      else
+        done error, output.addresses.map(Reverb.Article.identify).map(Reverb.Article.address)

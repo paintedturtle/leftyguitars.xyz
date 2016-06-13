@@ -25,6 +25,7 @@ Kijiji.Article.read = (address, done) ->
   address = Kijiji.Article.address(id)
   window(address+"&siteLocale=en_CA", Kijiji.Article.attributes) (error, output) ->
     output["address"] = address
+    output["access time"] = Date.now()
     if output["expired"]?
       output["expired"] = Date.now()
       delete output["photographs"]
