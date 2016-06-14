@@ -158,7 +158,7 @@ document.on "DOMContentLoaded", ->
     """
 
 document.on "DOMContentLoaded", ->
-  {current, expired, pocketd, novelty, trashed} = window.instruments.query().reduce(toCurrentExpiredNoprice, {})
+  {current, expired, pocketd, novelty, trashed} = window.articles.reduce(toCurrentExpiredNoprice, {})
   renderCurrentArticles current
   renderExpiredArticles expired
   if location.hostname.length is 9
@@ -192,7 +192,7 @@ document.on "click", "button.discard", (event, button) ->
   id = button.closest("article").id
   d3.xhr("#{window.location}#{id}")
     .header "Content-Type", "application/json"
-    .post JSON.stringify({trashed:yes}), (error, response) ->
+    .post JSON.stringify({trashed:Date.now()}), (error, response) ->
       console.error error if error
       console.info response.statusText
       console.info response.responseText
@@ -207,7 +207,7 @@ document.on "click", "button.approve", (event, button) ->
       console.info response.responseText
 
 document.on "input", "#search input", (event, input) ->
-  {current} = window.instruments.query().reduce(toCurrentExpiredNoprice, {})
+  {current} = window.articles.reduce(toCurrentExpiredNoprice, {})
   if input.value
     pattern = new RegExp "\\b#{input.value}", "i"
   else
@@ -216,7 +216,7 @@ document.on "input", "#search input", (event, input) ->
 
 document.on "input", "#pricelimit input", (event, input) ->
   limit = Number(input.value)
-  {current} = window.instruments.query().reduce(toCurrentExpiredNoprice, {})
+  {current} = window.articles.reduce(toCurrentExpiredNoprice, {})
   d3.select("#price-limit").html limit
   renderCurrentArticles current.filter (article) ->
     return article["price"] < limit

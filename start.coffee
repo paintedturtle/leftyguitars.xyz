@@ -108,19 +108,17 @@ identifyInstrumentAddress = (address) ->
 indexHTML = (callback) ->
   callback undefined, """
     <!DOCTYPE HTML>
+    <title>Lefty Guitars for sale under $1000 CAD</title>
     <meta charset="UTF-8">
-    <meta description="A growing index of left handed guitars and basses for sale. Prices are in Canadian Dollars.">
+    <meta description="A growing index of left handed guitars and basses for sale in Canada.">
     <meta keywords="lefty left-handed left-hand lefthand guitar bass guitars basses electric acoustic for sale 🐢">
-    <meta name="author" content="Painted Turtle Instruments">
-    <title>Lefty Guitars For Sale Under $1000 CAD</title>
     <script charset="UTF-8">
+    window.articles = #{JSON.stringify(instruments.query(), undefined, "  ")}
     #{Scripts.d3}
     #{Scripts.facts}
     #{compile readFileSync "Number.coffee", "UTF-8"}
     #{compile readFileSync "document.coffee", "UTF-8"}
     #{compile readFileSync "index.coffee", "UTF-8"}
-    window.instruments = Facts()
-    window.instruments.datoms = Immutable.Stack(Immutable.fromJS(#{JSON.stringify(instruments.database())}))
     </script>
   """
 
@@ -180,7 +178,7 @@ write = require("fs").writeFile
 
 advanceOldestArticle = ->
   articles = instruments.query()
-    .filter (article) -> article["approved"] and (article["expired"] is undefined)
+    .filter (article) -> article["approved"] and (article["expired"] is undefined) and (article["trashed"] is undefined)
     .sort (a, b) -> a["access time"] - b["access time"]
 
   article = articles[0]
@@ -207,7 +205,7 @@ findNovelArticles = ->
       console.info "#{source} novelty": novelAddresses
       novelAddresses.forEach (address) -> addInstrument.fromKijiji(address, (error, identifier) ->)
 
-setTimeout findNovelArticles, 1.second()
+setTimeout findNovelArticles, 1.minute()
 
 diagnostic = ->
   article = instruments.pull "e075c83d17c997c976d19b1baa3da2d3d6f8aba0df367b2fb06e534e28838b2c"
@@ -224,4 +222,4 @@ diagnostic = ->
   #   instruments.advance article.id, advancements
 
 
-diagnostic()
+# diagnostic()
