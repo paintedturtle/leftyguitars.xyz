@@ -190,8 +190,9 @@ advanceOldestArticle = ->
   articles = instruments.query()
     .filter (article) -> article["approved"] and (article["expired"] is undefined)
     .sort (a, b) -> a["access time"] - b["access time"]
+
   article = articles[0]
-  if article["access time"] < (Date.now() - 44.minutes())
+  if article and article["access time"] < (Date.now() - 44.minutes())
     console.info "READ #{article.id}":article.address
     Kijiji.Article.read article.address, (error, output) ->
       if error then throw error
@@ -201,8 +202,13 @@ advanceOldestArticle = ->
         advancements[key] = value unless Immutable.is Immutable.fromJS(value), Immutable.fromJS(article[key])
       console.info "PULL #{article.id}":advancements
       instruments.advance article.id, advancements
+      setTimeout advanceOldestArticle, 1
+  else
+    console.info "no more stale articles"
 
-setInterval advanceOldestArticle, 3.seconds()
+setTimeout advanceOldestArticle, 1
+
+# setInterval advanceOldestArticle, 3.seconds()
 
 findNovelArticles = ->
   Kijiji.sources.forEach (source) ->
@@ -215,18 +221,18 @@ findNovelArticles = ->
 # setTimeout  findNovelArticles, 1.second()
 
 diagnostic = ->
-  address = "http://www.kijiji.ca/v-view-details.html?adId=1157360872"
-  article = instruments.pull identifyInstrumentAddress(address)
-  console.info "#{address}":article
-  Kijiji.Article.read address, (error, output) ->
-    if error then throw error
-    console.info address:output
-    advancements = {}
-    for key, value of output
-      console.info "#{key}":[value, article[key]]
-      advancements[key] = value unless Immutable.is Immutable.fromJS(value), Immutable.fromJS(article[key])
-    console.info {advancements}
-    instruments.advance article.id, advancements
+  article = instruments.pull "e075c83d17c997c976d19b1baa3da2d3d6f8aba0df367b2fb06e534e28838b2c"
+  instruments.advance "e075c83d17c997c976d19b1baa3da2d3d6f8aba0df367b2fb06e534e28838b2c", trashed:yes
+  console.info "article":article
+  # Kijiji.Article.read address, (error, output) ->
+  #   if error then throw error
+  #   console.info address:output
+  #   advancements = {}
+  #   for key, value of output
+  #     console.info "#{key}":[value, article[key]]
+  #     advancements[key] = value unless Immutable.is Immutable.fromJS(value), Immutable.fromJS(article[key])
+  #   console.info {advancements}
+  #   instruments.advance article.id, advancements
 
 
-# diagnostic()
+diagnostic()

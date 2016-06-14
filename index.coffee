@@ -274,9 +274,12 @@ naturalArticleHTML = (article) ->
     </div>
     <img src="#{article.photographs[0]}">
   """
+  if location.hostname is "localhost"
+    output += """
+      <div class="id">#{if location.hostname is "localhost" then article.id else ""}</div><br>
+    """
   if location.hostname is "localhost" and article.approved is undefined
     output += """
-      <div class="id">#{if location.hostname is "localhost" then article.id else ""}</div>
       <button class="discard">⌫</button>
       <button class="approve">👀</button>
     """
