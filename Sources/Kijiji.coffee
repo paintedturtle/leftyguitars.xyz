@@ -18,6 +18,7 @@ Kijiji.Article.attributes =
   "price string":"[itemprop=price]"
   "photographs":["ul.photo-navigation img@src"]
   "publication date":"table.ad-attributes tr:first-child td"
+  "location":"table.ad-attributes tr:nth-child(3) td"
 
 Kijiji.Article.read = (address, done) ->
   id = Kijiji.Article.parseIdentifierFromAddress(address)
@@ -30,6 +31,7 @@ Kijiji.Article.read = (address, done) ->
       delete output["photographs"]
     else
       output["price"] = Number output["price string"].replace("$","")
+      output["location"] = output["location"].trim().replace(",","").split(" ").map((d) -> d.trim()).filter((d) -> d isnt "").slice(0, 3)
       output["publication time"] = Kijiji.Date.parse(output["publication date"]).getTime()
       output["description"] = output["description"]?.trim()
       output["photographs"] = output["photographs"].filter (p) -> p.match("play-button") is p.match("youtube") is null
