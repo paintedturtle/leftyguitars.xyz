@@ -211,7 +211,7 @@ setTimeout findNovelArticles, 1.second()
 
 diagnostic = ->
   article = instruments.pull "e075c83d17c997c976d19b1baa3da2d3d6f8aba0df367b2fb06e534e28838b2c"
-  instruments.advance "e075c83d17c997c976d19b1baa3da2d3d6f8aba0df367b2fb06e534e28838b2c", trashed:yes
+  instruments.advance "e075c83d17c997c976d19b1baa3da2d3d6f8aba0df367b2fb06e534e28838b2c", trashed:Date.now()
   console.info "article":article
   # Kijiji.Article.read address, (error, output) ->
   #   if error then throw error
@@ -224,4 +224,4 @@ diagnostic = ->
   #   instruments.advance article.id, advancements
 
 
-# diagnostic()
+diagnostic()

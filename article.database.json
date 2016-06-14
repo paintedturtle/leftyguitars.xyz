@@ -1,6 +1,13 @@
 [
   [
     true,
+    "e075c83d17c997c976d19b1baa3da2d3d6f8aba0df367b2fb06e534e28838b2c",
+    "trashed",
+    1465877672811,
+    1466594095651.2253
+  ],
+  [
+    true,
     "b78a9d0502b4cdf4a745708648ce84d73be9f917a958b027ea604066abdc7912",
     "access time",
     1465877467441,
@@ -1479,13 +1486,6 @@
   [
     true,
     "e075c83d17c997c976d19b1baa3da2d3d6f8aba0df367b2fb06e534e28838b2c",
-    "description",
-    "Schecter Lady Luck 5 star reviews across the board barely played like new, works great sounds even better, the tone tap is amazing Here are the specs belowI am also open to tradesSchecter C-1 LadyLuck Left Handed Guitar CONSTRUCTION/SCALE: Set-Neck w/ Ultra Access / 25.5”  BODY: Mahogany  NECK/FINGERBOARD: Mahogany / Rosewood  FRETS: 24 Jumbo  INLAYS: \"Lady Luck\" @12th fret  PICKUPS: Schecter Alnico Plus  ELECTRONICS: Vol/Vol/Tone (tap)/3-Way  BRIDGE: TonePros TOM w/thru-body  BINDING: Flat Black  TUNERS: Grover  HARDWARE: Distressed Chrome  COLOR: Racing Red (RR)   US RETAIL PRICE: $779.00",
-    1466592716223.8987
-  ],
-  [
-    true,
-    "e075c83d17c997c976d19b1baa3da2d3d6f8aba0df367b2fb06e534e28838b2c",
     "access time",
     1465877031845,
     1466592716223.8987
@@ -2146,13 +2146,6 @@
   ],
   [
     true,
-    "e075c83d17c997c976d19b1baa3da2d3d6f8aba0df367b2fb06e534e28838b2c",
-    "trashed",
-    true,
-    1466587826073.3938
-  ],
-  [
-    true,
     "732494f6ddb9a6def269d79272f8152407044bd755e9cb642790b1e75edd169e",
     "expired",
     1465874298121,
@@ -2297,6 +2290,13 @@
     "access time",
     1465874255540,
     1466587179129.3945
+  ],
+  [
+    true,
+    "e075c83d17c997c976d19b1baa3da2d3d6f8aba0df367b2fb06e534e28838b2c",
+    "description",
+    "",
+    1466587178118.5308
   ],
   [
     true,
