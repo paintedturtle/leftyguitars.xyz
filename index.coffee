@@ -52,22 +52,22 @@ document.on "DOMContentLoaded", ->
         </div>
       </div>
       <div id="links">
-        <h2>Lefty Links</h2>
+        <h2>Lefty Shops</h2>
         <div id="jerrysleftyguitars" class="space">
           <strong><a target="jerrysleftyguitars" href="https://www.jerrysleftyguitars.com/">Jerry’s Lefty Guitars</a></strong><br>
           World’s finest collection of lefty guitars<br>
           Sarasota, Florida, USA<br>
           <a href="mailto:jerry@jerrysleftyguitars.com">jerry@jerrysleftyguitars.com</a>
-        </div><div id="leftyguitarsonly" class="space">
-          <strong><a target="leftyguitarsonly" href="http://leftyguitarsonly.com/">Lefty Guitars Only</a></strong><br>
-          Very spendy lefty acoustic &amp; electic guitars<br>
-          East Greenwich, Rhode Island, USA<br>
-          <a href="mailto:sales@leftyguitarsonly.com">sales@leftyguitarsonly.com</a>
         </div><div id="leftyguitars.be" class="space">
           <strong><a target="leftyguitars.be" href="http://leftyguitars.be/">LeftyGuitars.BE</a></strong><br>
           Europe’s spot for lefty guitars &amp; basses<br>
           Peulis, Belgium, EU<br>
           <a href="mailto:patrick@leftyguitars.be">patrick@leftyguitars.be</a>
+        </div><div id="leftyguitarsonly" class="space">
+          <strong><a target="leftyguitarsonly" href="http://leftyguitarsonly.com/">Lefty Guitars Only</a></strong><br>
+          Very spendy lefty acoustic &amp; electic guitars<br>
+          East Greenwich, Rhode Island, USA<br>
+          <a href="mailto:sales@leftyguitarsonly.com">sales@leftyguitarsonly.com</a>
         </div><div id="leftyvintageguitars" class="space">
           <strong><a target="leftyvintageguitars" href="http://www.leftyvintageguitars.com/">Lefty Vintage Guitars</a></strong><br>
           Valuable, vintage, left handed guitars<br>
@@ -163,7 +163,7 @@ document.on "DOMContentLoaded", ->
       #host { position:absolute; left: 0; top: 0;}
       #host > h2 { margin: 5mm; }
       #links { margin:0 0 0 90mm; }
-      #links > h2 { margin: 5mm; }
+      #links > h2 { margin: 5mm; border-top: 1px solid #444; padding-top:4mm;}
       div.space { padding:5mm; width: 80mm; display:inline-block; margin:0;}
       div.space strong { color:hsl(0,0%,77%); font-weight: 600;}
       div.space:hover strong a[href] { text-decoration:underline;}
