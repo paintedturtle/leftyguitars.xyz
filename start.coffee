@@ -91,8 +91,8 @@ indexHTML = (callback) ->
     <meta keywords="lefty left hand left-handed left-hand lefthand guitar bass guitars basses electric acoustic for sale Canada CAD 🐢">
     <script charset="UTF-8">
     window.articles = #{JSON.stringify(instruments.query(), undefined, "  ")}
-    #{compile readFileSync "Number.coffee", "UTF-8"}
     #{readFileSync "d3.min.js", "UTF-8"}
+    #{compile readFileSync "Number.coffee", "UTF-8"}
     #{compile readFileSync "document.coffee", "UTF-8"}
     #{compile readFileSync "index.coffee", "UTF-8"}
     </script>
@@ -144,7 +144,7 @@ advanceOldestArticle = ->
   else
     setTimeout advanceOldestArticle, 1.minute()
 
-setTimeout advanceOldestArticle, 1.second()
+# setTimeout advanceOldestArticle, 1.second()
 
 findNovelArticles = ->
   Kijiji.sources.forEach (source) ->
@@ -153,6 +153,6 @@ findNovelArticles = ->
       console.info "#{source} novelty": novelAddresses
       novelAddresses.forEach (address) -> addInstrument.fromKijiji(address, (error, identifier) ->)
 
-setTimeout findNovelArticles, 1.second()
+# setTimeout findNovelArticles, 1.second()
 
 # console.info article = instruments.pull "e075c83d17c997c976d19b1baa3da2d3d6f8aba0df367b2fb06e534e28838b2c"
