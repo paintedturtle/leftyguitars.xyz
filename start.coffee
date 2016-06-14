@@ -13,14 +13,20 @@ Scripts =
 
 
 instruments = require("facts")()
-instruments.datoms = Immutable.Stack(Immutable.fromJS(require("./instruments.datoms.json")))
+instruments.datoms = Immutable.Stack(Immutable.fromJS(require("./article.datoms.json")))
 
 # console.info instruments.query()
 
 instruments.on "transaction", ->
-  write "instruments.datoms.json", JSON.stringify(instruments.datoms, undefined, "  "), "UTF-8", (error) ->
+  write "article.datoms.json", JSON.stringify(instruments.datoms, undefined, "  "), "UTF-8", (error) ->
     if error then throw error
-    console.info "SAVED":"instruments.datoms.json"
+    console.info "SAVED":"article.datoms.json"
+  write "article.database.json", JSON.stringify(instruments.database(), undefined, "  "), "UTF-8", (error) ->
+    if error then throw error
+    console.info "SAVED":"article.database.json"
+  write "articles.json", JSON.stringify(instruments.query(), undefined, "  "), "UTF-8", (error) ->
+    if error then throw error
+    console.info "SAVED":"articles.json"
 
 service = require("http").createServer (request, response) ->
   console.info request:identifier=decodeURIComponent(request.url.replace("/",""))
