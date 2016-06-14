@@ -19,6 +19,7 @@ document.on "DOMContentLoaded", ->
       <button>All</button>
       <button>Acoustic</button>
       <button>Electric</button>
+      <button>Guitar</button>
       <button>Bass</button>
     </div>
 
@@ -40,45 +41,54 @@ document.on "DOMContentLoaded", ->
     <h2>Dearly Departed</h2>
     <div id="expired" class="diminished articles"></div>
 
-    <div class="turtle">🐢</div>
-
     <footer>
       <div id="host">
-        <h6>This site is hosted by</h6>
-        <div id="paintedturtle">
+        <h2>This site is hosted by:</h2>
+        <div id="paintedturtle" class="space">
           <strong><a target="paintedturtle" href="https://paintedturtle.xyz/instruments">Painted Turtle instruments</a></strong><br>
           Well-worm lefty guitars &amp; basses<br>
           Ottawa, Ontario, Canada<br>
           <a href="mailto:instruments@paintedturtle.xyz">instruments@paintedturtle.xyz</a>
-          <a href="https://paintedturtle.xyz/instruments" class="window"><img src="paintedturtleinstruments.png" alt="Visit the Painted Turtle Instruments Website"></a>
         </div>
       </div>
       <div id="links">
-        <h6>Lefty Links</h6>
-        <div id="jerrysleftyguitars">
+        <h2>Lefty Links</h2>
+        <div id="jerrysleftyguitars" class="space">
           <strong><a target="jerrysleftyguitars" href="https://www.jerrysleftyguitars.com/">Jerry’s Lefty Guitars</a></strong><br>
           World’s finest collection of lefty guitars<br>
           Sarasota, Florida, USA<br>
           <a href="mailto:jerry@jerrysleftyguitars.com">jerry@jerrysleftyguitars.com</a>
-        </div>
-        <div id="adkguitar">
-          <a target="leftyguitarsonly" href="https://www.adkguitar.com/">Adirondack Guitar</a><br>
-          Large selection of new lefty guitars<br>
-          Hudson Falls, New York, USA<br>
-          <a href="mailto:support@adkguitar.com">support@adkguitar.com</a>
-        </div>
-        <div id="leftyguitarsonly">
-          <a target="leftyguitarsonly" href="http://leftyguitarsonly.com/">Lefty Guitars Only</a><br>
+        </div><div id="leftyguitarsonly" class="space">
+          <strong><a target="leftyguitarsonly" href="http://leftyguitarsonly.com/">Lefty Guitars Only</a></strong><br>
           Very spendy lefty acoustic &amp; electic guitars<br>
           East Greenwich, Rhode Island, USA<br>
           <a href="mailto:sales@leftyguitarsonly.com">sales@leftyguitarsonly.com</a>
-        </div>
-        <div id="leftyguitars.be">
-          <a target="leftyguitars.be" href="http://leftyguitars.be/">Lefty Guitars</a><br>
-          Europe’s ultimate choice in lefty guitars and basses<br>
-          Peulis, Belgium<br>
+        </div><div id="leftyguitars.be" class="space">
+          <strong><a target="leftyguitars.be" href="http://leftyguitars.be/">LeftyGuitars.BE</a></strong><br>
+          Europe’s spot for lefty guitars &amp; basses<br>
+          Peulis, Belgium, EU<br>
           <a href="mailto:patrick@leftyguitars.be">patrick@leftyguitars.be</a>
+        </div><div id="leftyvintageguitars" class="space">
+          <strong><a target="leftyvintageguitars" href="http://www.leftyvintageguitars.com/">Lefty Vintage Guitars</a></strong><br>
+          Valuable, vintage, left handed guitars<br>
+          Undisclosed, Florida, USA<br>
+          <a href="mailto:alex57@comcast.net">alex57@comcast.net</a>
+        </div><div id="adkguitar" class="space">
+          <strong><a target="adkguitar" href="https://www.adkguitar.com/">Adirondack Guitar</a></strong><br>
+          Large selection of new lefty guitars<br>
+          Hudson Falls, New York, USA<br>
+          <a href="mailto:support@adkguitar.com">support@adkguitar.com</a>
+        </div><div id="taniguchi-gakki" class="space">
+          <strong><a target="taniguchi-gakki" href="https://shop.taniguchi-gakki.jp/products/list.php?category_id=128">Taniguchi Gakki</a></strong><br>
+          Fender &amp; Tokai lefties! &amp; accordians!<br>
+          Tokyo, Japan<br>
+          <a href="mailto:info@taniguchi-gakki.jp">info@taniguchi-gakki.jp</a>
         </div>
+
+
+
+
+
       </div>
     </footer>
 
@@ -87,7 +97,7 @@ document.on "DOMContentLoaded", ->
       a { color: inherit; text-decoration: inherit; }
       strong { font-weight: inherit; }
       html { background: #111; color: hsla(0, 0%, 100%, 0.5);}
-      body { font: 4mm/4mm "Avenir", sans-serif; font-weight: 600; }
+      body { font: 3.8mm/4mm "Avenir", sans-serif; font-weight: 600; }
       body > header { position: absolute; top: -100%; }
 
       body > h1 { text-align: center; margin: 4mm 10mm 4mm; color: white;}
@@ -119,38 +129,36 @@ document.on "DOMContentLoaded", ->
       article a[href]:not(:visited) { color: hsl(205, 50%, 50%); }
       article a[href]:visited { color: hsl(278, 50%, 50%); }
 
-      h2 { margin: 20mm auto 0; }
+      h2 { margin: 20mm 4mm 4mm; }
       div.diminished.articles { margin: 0 auto 20mm; width: auto; position: relative; overflow:hidden; color: white;}
       div.diminished.articles article { margin: 0; color: white; width: 10%; float: left; overflow:hidden;}
       div.diminished.articles article img { width: 100%; height: 50mm; object-fit: cover; background-color: black; display:block;}
 
-      #trashed { margin: auto; }
-      #trashed article { opacity:0.33; }
-      #trashed article:hover { opacity:0.99; }
 
-      body > footer { line-height: 5mm; }
+      div.diminished.articles article { opacity:0.33; }
+      div.diminished.articles article:hover { opacity:0.99; }
 
-      #host { position: absolute; top: 0; left: 0; width: 33.333%; text-align: right; }
-      #host > h6 { padding: 10mm 2mm 2mm; }
-      #links { margin: 0 0 0 66.666%;  }
-      #links > h6 { padding: 10mm 2mm 2mm; }
-      #links > div { margin: 4mm 0; padding: 2mm; }
+      body > footer { border-top:5mm solid transparent; border-bottom:5mm solid transparent; font: 3.9mm/5mm "Avenir", sans-serif; font-weight: 400; overflow:hidden;}
 
-      a.window { display:block; box-shadow: 0 0 1mm 0 black; border-top: 1mm solid hsla(0, 0%, 100%, 0.44);}
-      a.window img { width: 100%; display:block;}
+      #host { position:absolute; left: 0; top: 0;}
+      #host > h2 { margin: 0 5mm; }
+      #links { margin:0 0 0 90mm; }
+      #links > h2 { margin: 0 5mm; }
+      div.space { padding:5mm; width: 80mm; display:inline-block; margin:0;}
+      div.space strong { color:hsl(0,0%,77%); font-weight: 600;}
+      div.space:hover strong a[href] { text-decoration:underline;}
 
-      #paintedturtle { padding: 2mm; margin: 4mm 0;}
-      #paintedturtle strong a[href] { color:hsl(333,88%,72%); }
-      #paintedturtle a.window { position: absolute; left: 100%; right:-100%; top: -21mm; transform: scale(0.88)rotate(-1.11deg); transition: all 222ms ease-out;}
-      #paintedturtle a.window:hover { transform: scale(0.99)rotate(+0.11deg); }
+      #paintedturtle { margin: 0;}
+      #paintedturtle:hover strong a[href] { text-decoration:underline;}
+      #paintedturtle strong a[href] { color:hsl(333,88%,72%); font-weight: 600;}
 
       body .turtle { text-align: center; padding: 3% 1% 1%; color: white; font-size: 200%;}
     </style>
   """
   if location.hostname.length is 9
     document.body.innerHTML += """
-      <form id="add"><input type="URL" placeholder="Paste a URL to add another guitar" value=""></form>
-      <form id="pocket"><input type="text" placeholder="Paste an ID to pocket an article" value="" maxlength="64" minlength="64"></form>
+      <form id="add" hidden><input type="URL" placeholder="Paste a URL to add another guitar" value=""></form>
+      <form id="pocket" hidden><input type="text" placeholder="Paste an ID to pocket an article" value="" maxlength="64" minlength="64"></form>
       <h2>Pocketd</h2>
       <div id="pocketd" class="natural articles"></div>
       <h2>Trashed</h2>
@@ -289,7 +297,7 @@ naturalArticleHTML = (article) ->
 renderExpiredArticles = (data) ->
   sorted = data
     .sort (a, b) -> b["access time"] - a["access time"]
-    .slice(0, 10)
+    .slice(0, 20)
   article = d3.select("#expired").selectAll("article").data(sorted, ((d) -> d.id))
   article.order()
   article.enter().append("article")

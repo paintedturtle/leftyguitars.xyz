@@ -182,7 +182,7 @@ advanceOldestArticle = ->
     .sort (a, b) -> a["access time"] - b["access time"]
 
   article = articles[0]
-  if article and article["access time"] < (Date.now() - 44.minutes())
+  if article and article["access time"] < (Date.now() - 33.minutes())
     console.info "READ #{article.id}":article.address
     Kijiji.Article.read article.address, (error, output) ->
       if error then throw error
@@ -205,7 +205,7 @@ findNovelArticles = ->
       console.info "#{source} novelty": novelAddresses
       novelAddresses.forEach (address) -> addInstrument.fromKijiji(address, (error, identifier) ->)
 
-setTimeout findNovelArticles, 1.minute()
+setTimeout findNovelArticles, 1.second()
 
 diagnostic = ->
   article = instruments.pull "e075c83d17c997c976d19b1baa3da2d3d6f8aba0df367b2fb06e534e28838b2c"
