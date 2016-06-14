@@ -104,13 +104,11 @@ document.on "DOMContentLoaded", ->
           <a target="leftyfrets" href="http://www.leftyfrets.net/forumdisplay.php?10-Left-Handed-Electric-Instruments-For-Sale">▸ Electric Instruments For Sale</a><br>
           <a target="leftyfrets" href="http://www.leftyfrets.net/forumdisplay.php?11-General-Lefty-Discussion">▸ General Lefty Discussion</a><br>
         </div>
-
-
-
-
-
       </div>
     </footer>
+
+    <h2>Trash Heap</h2>
+    <div id="trashed" class="diminished articles"></div>
 
     <style>
       body, article, div, header, footer, h1, h2, h3, h4, h5, h6 { padding: 0; margin: auto; position: relative; font: inherit; }
@@ -150,13 +148,13 @@ document.on "DOMContentLoaded", ->
       article a[href]:visited { color: hsl(278, 50%, 50%); }
 
       h2 { margin: 20mm 4mm 4mm; }
-      div.diminished.articles { margin: 0 auto 20mm; width: auto; position: relative; overflow:hidden; color: white;}
+      div.diminished.articles { margin: auto; width: auto; position: relative; overflow:hidden; color: white; }
       div.diminished.articles article { margin: 0; color: white; width: 10%; float: left; overflow:hidden;}
-      div.diminished.articles article img { width: 100%; height: 50mm; object-fit: cover; background-color: black; display:block;}
-
-
+      div.diminished.articles article img { width: 100%; height: 66mm; object-fit: cover; background-color: black; display:block;}
       div.diminished.articles article { opacity:0.33; }
       div.diminished.articles article:hover { opacity:0.99; }
+
+      #trashed article, #trashed article img { height:33mm; }
 
       body > footer { border-top:5mm solid transparent; border-bottom:5mm solid transparent; font: 3.9mm/5mm "Avenir", sans-serif; font-weight: 400; overflow:hidden;}
 
@@ -164,11 +162,13 @@ document.on "DOMContentLoaded", ->
       #host > h2 { margin: 5mm; }
       #links { margin:0 0 0 90mm; }
       #links > h2 { margin: 5mm; border-top: 1px solid #444; padding-top:4mm;}
-      div.space { padding:5mm; width: 80mm; display:inline-block; margin:0;}
-      div.space strong { color:hsl(0,0%,77%); font-weight: 600;}
-      div.space:hover strong a[href] { text-decoration:underline;}
 
-      #paintedturtle { margin: 0;}
+      div.space { padding:5mm; width: 80mm; display:inline-block; cursor:default; transition: color 188ms linear;}
+      div.space:hover { color:hsl(0,0%,77%); }
+      div.space strong { color:hsl(0,0%,77%); font-weight: 600;}
+      div.space strong a[href] { }
+      div.space a[href]:hover { color:hsl(55,88%,77%); }
+
       #paintedturtle:hover strong a[href] { text-decoration:underline;}
       #paintedturtle strong a[href] { color:hsl(333,88%,72%); font-weight: 600;}
 
@@ -177,22 +177,19 @@ document.on "DOMContentLoaded", ->
   """
   if location.hostname.length is 9
     document.body.innerHTML += """
-      <form id="add" hidden><input type="URL" placeholder="Paste a URL to add another guitar" value=""></form>
-      <form id="pocket" hidden><input type="text" placeholder="Paste an ID to pocket an article" value="" maxlength="64" minlength="64"></form>
       <h2>Pocketd</h2>
       <div id="pocketd" class="natural articles"></div>
-      <h2>Trashed</h2>
-      <div id="trashed" class="diminished articles"></div>
+      <form id="add" hidden><input type="URL" placeholder="Paste a URL to add another guitar" value=""></form>
+      <form id="pocket" hidden><input type="text" placeholder="Paste an ID to pocket an article" value="" maxlength="64" minlength="64"></form>
     """
 
 document.on "DOMContentLoaded", ->
   {current, expired, pocketd, novelty, trashed} = window.articles.reduce(toCurrentExpiredNoprice, {})
+  renderNovelty novelty if location.hostname.length is 9
   renderCurrentArticles current
   renderExpiredArticles expired
-  if location.hostname.length is 9
-    renderNovelty novelty
-    renderPocket pocketd
-    renderTrash trashed
+  renderTrash trashed
+  renderPocket pocketd if location.hostname.length is 9
 
 toCurrentExpiredNoprice = (reduction, guitar) ->
   reduction.trashed ?= []
@@ -330,6 +327,7 @@ renderExpiredArticles = (data) ->
 renderTrash = (data) ->
   sorted = data
     .sort (a, b) -> b["access time"] - a["access time"]
+    .slice(0, 60)
   article = d3.select("#trashed").selectAll("article").data(sorted, ((d) -> d.id))
   article.order()
   article.enter().append("article")

@@ -154,5 +154,4 @@ findNovelArticles = ->
 
 setTimeout findNovelArticles, 1.second()
 
-console.info article = instruments.pull "cb5d19aa10570c3b9638065442c8c06d881e27e87a7ba59d80e9de9a23ebf66d"
-instruments.advance "cb5d19aa10570c3b9638065442c8c06d881e27e87a7ba59d80e9de9a23ebf66d", pocketd:yes
+# console.info article = instruments.pull "cb5d19aa10570c3b9638065442c8c06d881e27e87a7ba59d80e9de9a23ebf66d"
