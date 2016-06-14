@@ -127,15 +127,14 @@ write = require("fs").writeFile
 advanceOldestArticle = ->
   articles = instruments.query()
     .filter (article) -> article["approved"] and (article["expired"] is undefined) and (article["trashed"] is undefined)
+    .filter (article) -> article["access time"] < (Date.now() - 33.minutes())
     .sort (a, b) -> a["access time"] - b["access time"]
-  article = articles[0]
-  if article and article["access time"] < (Date.now() - 33.minutes())
+  if article = articles[0]
     console.info "READ #{article.id}":article.address
     Kijiji.Article.read article.address, (error, output) ->
       if error then throw error
       advancements = {}
       for key, value of output
-        console.info "key #{key}": [value, article[key]]
         advancements[key] = value unless Immutable.is Immutable.fromJS(value), Immutable.fromJS(article[key])
       console.info "PULL #{article.id}":advancements
       instruments.advance article.id, advancements
@@ -143,7 +142,7 @@ advanceOldestArticle = ->
   else
     setTimeout advanceOldestArticle, 1.minute()
 
-setTimeout advanceOldestArticle, 10.seconds()
+setTimeout advanceOldestArticle, 1.seconds()
 
 findNovelArticles = ->
   Kijiji.sources.forEach (source) ->
@@ -152,10 +151,11 @@ findNovelArticles = ->
       console.info "#{source} novelty": novelAddresses
       novelAddresses.forEach (address) -> addInstrument.fromKijiji(address, (error, identifier) ->)
 
-setTimeout findNovelArticles, 1.second()
+# setTimeout findNovelArticles, 1.second()
 
 # console.info article = instruments.pull "XXX"
-instruments.advance "f2a0207b9a0fdc7c8d3c5c23ffbfdd21fa1d20548858a75e0e587fdc60d75368", pocketd:yes
+# instruments.advance "XXX", trashed:Date.now()
+# instruments.advance "XXX", pocketd:yes
 
 # Kijiji.Article.read "http://www.kijiji.ca/v-view-details.html?adId=1172621430", (error, output) ->
 #   if error then throw error
@@ -166,12 +166,3 @@ instruments.advance "f2a0207b9a0fdc7c8d3c5c23ffbfdd21fa1d20548858a75e0e587fdc60d
 #     advancements[key] = value unless Immutable.is Immutable.fromJS(value), Immutable.fromJS(article[key])
 #   console.info "PULL #{article.id}":advancements
 #   instruments.advance article.id, advancements
-
-  # console.info output
-  # advancements = {}
-  # for key, value of output
-  #   console.info "key #{key}": [value, article[key]]
-  #   advancements[key] = value unless Immutable.is Immutable.fromJS(value), Immutable.fromJS(article[key])
-  # console.info "PULL #{article.id}":advancements
-  # instruments.advance article.id, advancements
-  # setTimeout advanceOldestArticle, 1
