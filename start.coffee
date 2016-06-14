@@ -7,16 +7,8 @@ files = require("facts")()
 
 Kijiji = require "./Sources/Kijiji"
 
-Scripts =
-  d3: readFileSync "d3.min.js", "UTF-8"
-  facts: readFileSync "Facts.pack.js", "UTF-8"
-
-
 instruments = require("facts")()
 instruments.datoms = Immutable.Stack(Immutable.fromJS(require("./article.datoms.json")))
-
-# console.info instruments.query()
-
 instruments.on "transaction", ->
   write "article.datoms.json", JSON.stringify(instruments.datoms, undefined, "  "), "UTF-8", (error) ->
     if error then throw error
@@ -51,16 +43,6 @@ service = require("http").createServer (request, response) ->
           response.writeHead 500, "Content-Length":0
           response.end()
 
-    when identifier is "database.json"
-      database = instruments.database()
-      serialized = JSON.stringify(instruments.database(), undefined, "  ")
-      outputBuffer = new Buffer serialized, "UTF-8"
-      send response, out =
-        file:"database.json"
-        type:"application/json; charset=UTF-8"
-        size:outputBuffer.length
-        data:outputBuffer
-      write "database.json", serialized, "UTF8"
     when identifier is ""
       indexHTML (error, HTML) ->
         if error then throw error
@@ -71,8 +53,6 @@ service = require("http").createServer (request, response) ->
           size:outputBuffer.length
           data:outputBuffer
         write "index.html", HTML, "UTF8"
-    when /js/.test identifier
-      sendScript(identifier, response)
     when /png|jpg|svg|woff/.test identifier
       sendBinary(identifier, response)
     else
@@ -88,8 +68,6 @@ addInstrument = (location, callback) ->
     when location.match("kijiji") then addInstrument.fromKijiji(location, callback)
     else throw "unknown instrument host"
 
-
-
 addInstrument.fromKijiji = (address, callback) ->
   Kijiji.Article.read address, (error, output) ->
     throw error if error
@@ -104,33 +82,21 @@ identifyInstrumentAddress = (address) ->
   hash.update(address)
   hash.digest('hex')
 
-
 indexHTML = (callback) ->
   callback undefined, """
     <!DOCTYPE HTML>
-    <title>Lefty Guitars for sale under $1000 CAD</title>
+    <title>Lefty Guitars For Sale Under $1000 CAD</title>
     <meta charset="UTF-8">
     <meta description="A growing index of left handed guitars and basses for sale in Canada.">
-    <meta keywords="lefty left-handed left-hand lefthand guitar bass guitars basses electric acoustic for sale 🐢">
+    <meta keywords="lefty left hand left-handed left-hand lefthand guitar bass guitars basses electric acoustic for sale Canada CAD 🐢">
     <script charset="UTF-8">
     window.articles = #{JSON.stringify(instruments.query(), undefined, "  ")}
-    #{Scripts.d3}
-    #{Scripts.facts}
     #{compile readFileSync "Number.coffee", "UTF-8"}
+    #{readFileSync "d3.min.js", "UTF-8"}
     #{compile readFileSync "document.coffee", "UTF-8"}
     #{compile readFileSync "index.coffee", "UTF-8"}
     </script>
   """
-
-sendScript = (identifier, response) ->
-  if script = files.pull(identifier)
-    send response, out =
-      file:identifier
-      type:"application/ecmascript; charset=UTF-8"
-      size:script.size
-      data:script.data
-  else
-    initialize identifier, -> sendScript(identifier, response)
 
 sendBinary = (identifier, response) ->
   read identifier, (error, data) ->
@@ -143,28 +109,11 @@ sendBinary = (identifier, response) ->
 send = (response, output) ->
   response.writeHead 200, "Content-Length":output.size, "Content-Type":output.type
   response.end output.data
-
   console.info "send":
     file: output.file
     type: output.type
     size: output.size
     data: output.data.constructor.name
-
-initialize = (identifier, done) ->
-  if files.pull(identifier) is undefined
-    watch identifier, (event) -> if event is "change" then memorize identifier
-    console.info watching:identifier
-    memorize identifier, done
-  else
-    done()
-
-memorize = (identifier, done) ->
-  read identifier, (error, data) ->
-    files.advance identifier,
-      size:data.length
-      data:data.toString("UTF-8")
-    console.info memorized:identifier
-    if done then done()
 
 compile = require("coffee-script").compile
 
@@ -180,7 +129,6 @@ advanceOldestArticle = ->
   articles = instruments.query()
     .filter (article) -> article["approved"] and (article["expired"] is undefined) and (article["trashed"] is undefined)
     .sort (a, b) -> a["access time"] - b["access time"]
-
   article = articles[0]
   if article and article["access time"] < (Date.now() - 33.minutes())
     console.info "READ #{article.id}":article.address
@@ -207,19 +155,4 @@ findNovelArticles = ->
 
 setTimeout findNovelArticles, 1.second()
 
-diagnostic = ->
-  article = instruments.pull "e075c83d17c997c976d19b1baa3da2d3d6f8aba0df367b2fb06e534e28838b2c"
-  instruments.advance "e075c83d17c997c976d19b1baa3da2d3d6f8aba0df367b2fb06e534e28838b2c", trashed:Date.now()
-  console.info "article":article
-  # Kijiji.Article.read address, (error, output) ->
-  #   if error then throw error
-  #   console.info address:output
-  #   advancements = {}
-  #   for key, value of output
-  #     console.info "#{key}":[value, article[key]]
-  #     advancements[key] = value unless Immutable.is Immutable.fromJS(value), Immutable.fromJS(article[key])
-  #   console.info {advancements}
-  #   instruments.advance article.id, advancements
-
-
-# diagnostic()
+# console.info article = instruments.pull "e075c83d17c997c976d19b1baa3da2d3d6f8aba0df367b2fb06e534e28838b2c"
