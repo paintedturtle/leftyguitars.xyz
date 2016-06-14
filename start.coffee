@@ -142,7 +142,7 @@ advanceOldestArticle = ->
   else
     setTimeout advanceOldestArticle, 1.minute()
 
-setTimeout advanceOldestArticle, 1.seconds()
+setTimeout advanceOldestArticle, 10.seconds()
 
 findNovelArticles = ->
   Kijiji.sources.forEach (source) ->
