@@ -78,11 +78,31 @@ document.on "DOMContentLoaded", ->
           Large selection of new lefty guitars<br>
           Hudson Falls, New York, USA<br>
           <a href="mailto:support@adkguitar.com">support@adkguitar.com</a>
+        </div><div id="southpawguitars" class="space">
+          <strong><a target="taniguchi-gakki" href="https://www.southpawguitars.com/">South Paw Guitars</a></strong><br>
+          Large selection of new lefty guitars<br>
+          Houston, Texas, USA<br>
+          <a href="mailto:info@southpawguitars.com">info@southpawguitars.com</a>
         </div><div id="taniguchi-gakki" class="space">
-          <strong><a target="taniguchi-gakki" href="https://shop.taniguchi-gakki.jp/products/list.php?category_id=128">Taniguchi Gakki</a></strong><br>
+          <strong><a target="taniguchi-gakki" href="https://shop.taniguchi-gakki.jp/products/list.php?category_id=6">Taniguchi Gakki</a></strong><br>
           Fender &amp; Tokai lefties! &amp; accordians!<br>
           Tokyo, Japan<br>
           <a href="mailto:info@taniguchi-gakki.jp">info@taniguchi-gakki.jp</a>
+        </div>
+        <h2>Lefty Communities</h2>
+        <div id="leftyguitartrader" class="space">
+          <strong><a target="leftyguitartrader" href="http://www.leftyguitartrader.com/forum/forum.php">Lefty Guitar Trader</a></strong><br>
+          Friendly discussion forums &amp; classifieds<br>
+          <a target="leftyguitartrader" href="http://www.leftyguitartrader.com/forum/forumdisplay.php?8-Lefty-Guitars">▸ Guitars For Sale</a><br>
+          <a target="leftyguitartrader" href="http://www.leftyguitartrader.com/forum/forumdisplay.php?9-Lefty-Bass">▸ Bass Guitars For Sale</a><br>
+          <a target="leftyguitartrader" href="http://www.leftyguitartrader.com/forum/forumdisplay.php?2-Lefty-Guitar-Discussion">▸ Lefty Guitar Discussion</a><br>
+        </div>
+        <div id="leftyguitartrader" class="space">
+          <strong><a target="leftyfrets" href="http://www.leftyfrets.net/forum.php">Lefty Frets</a></strong><br>
+          Friendly discussion forums &amp; classifieds<br>
+          <a target="leftyfrets" href="http://www.leftyfrets.net/forumdisplay.php?7-Left-Handed-Acoustic-Instruments-For-Sale">▸ Acoustic Instruments For Sale</a><br>
+          <a target="leftyfrets" href="http://www.leftyfrets.net/forumdisplay.php?10-Left-Handed-Electric-Instruments-For-Sale">▸ Electric Instruments For Sale</a><br>
+          <a target="leftyfrets" href="http://www.leftyfrets.net/forumdisplay.php?11-General-Lefty-Discussion">▸ General Lefty Discussion</a><br>
         </div>
 
 
@@ -141,9 +161,9 @@ document.on "DOMContentLoaded", ->
       body > footer { border-top:5mm solid transparent; border-bottom:5mm solid transparent; font: 3.9mm/5mm "Avenir", sans-serif; font-weight: 400; overflow:hidden;}
 
       #host { position:absolute; left: 0; top: 0;}
-      #host > h2 { margin: 0 5mm; }
+      #host > h2 { margin: 5mm; }
       #links { margin:0 0 0 90mm; }
-      #links > h2 { margin: 0 5mm; }
+      #links > h2 { margin: 5mm; }
       div.space { padding:5mm; width: 80mm; display:inline-block; margin:0;}
       div.space strong { color:hsl(0,0%,77%); font-weight: 600;}
       div.space:hover strong a[href] { text-decoration:underline;}
