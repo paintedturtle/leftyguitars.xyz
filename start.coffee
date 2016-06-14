@@ -164,27 +164,13 @@ memorize = (identifier, done) ->
 
 compile = require("coffee-script").compile
 
-echo = (identifier) -> files.pull(identifier).data
-
-exec = require("child_process").exec
-
 mime = require("mime")
-
-parallel = require("async").parallel
 
 read = require("fs").readFile
 
 watch = require("fs").watch
 
 write = require("fs").writeFile
-
-# backgroundWork = ->
-#   if article = nextStaleArticle()
-#
-#     return
-#   if search = nextStaleSearch()
-#
-#     return
 
 advanceOldestArticle = ->
   articles = instruments.query()
@@ -204,11 +190,9 @@ advanceOldestArticle = ->
       instruments.advance article.id, advancements
       setTimeout advanceOldestArticle, 1
   else
-    console.info "no more stale articles"
+    setTimeout advanceOldestArticle, 1.minute()
 
-setTimeout advanceOldestArticle, 1
-
-# setInterval advanceOldestArticle, 3.seconds()
+setTimeout advanceOldestArticle, 1.second()
 
 findNovelArticles = ->
   Kijiji.sources.forEach (source) ->
@@ -217,8 +201,7 @@ findNovelArticles = ->
       console.info "#{source} novelty": novelAddresses
       novelAddresses.forEach (address) -> addInstrument.fromKijiji(address, (error, identifier) ->)
 
-# setInterval findNovelArticles, 15.minutes()
-# setTimeout  findNovelArticles, 1.second()
+setTimeout findNovelArticles, 1.second()
 
 diagnostic = ->
   article = instruments.pull "e075c83d17c997c976d19b1baa3da2d3d6f8aba0df367b2fb06e534e28838b2c"
@@ -235,4 +218,4 @@ diagnostic = ->
   #   instruments.advance article.id, advancements
 
 
-diagnostic()
+# diagnostic()
