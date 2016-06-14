@@ -144,7 +144,7 @@ advanceOldestArticle = ->
   else
     setTimeout advanceOldestArticle, 1.minute()
 
-# setTimeout advanceOldestArticle, 1.second()
+setTimeout advanceOldestArticle, 10.seconds()
 
 findNovelArticles = ->
   Kijiji.sources.forEach (source) ->
@@ -153,6 +153,6 @@ findNovelArticles = ->
       console.info "#{source} novelty": novelAddresses
       novelAddresses.forEach (address) -> addInstrument.fromKijiji(address, (error, identifier) ->)
 
-# setTimeout findNovelArticles, 1.second()
+setTimeout findNovelArticles, 1.second()
 
 # console.info article = instruments.pull "e075c83d17c997c976d19b1baa3da2d3d6f8aba0df367b2fb06e534e28838b2c"
