@@ -21,7 +21,6 @@ Kijiji.Article.attributes =
 
 Kijiji.Article.read = (address, done) ->
   id = Kijiji.Article.parseIdentifierFromAddress(address)
-  console.info "READ article from Kijiji":id
   address = Kijiji.Article.address(id)
   window(address+"&siteLocale=en_CA", Kijiji.Article.attributes) (error, output) ->
     output["address"] = address
@@ -36,7 +35,6 @@ Kijiji.Article.read = (address, done) ->
       output["photographs"] = output["photographs"].filter (p) -> p.match("play-button") is p.match("youtube") is null
     delete output["publication date"]
     delete output["price string"]
-    console.info "READ article from Kijiji":output
     done error, output
 
 Kijiji.Article.parseIdentifierFromAddress = (address) ->
