@@ -191,7 +191,7 @@ advanceOldestArticle = ->
     .filter (article) -> article["approved"] and (article["expired"] is undefined)
     .sort (a, b) -> a["access time"] - b["access time"]
   article = articles[0]
-  if article["access time"] < (Date.now() - 33.minutes())
+  if article["access time"] < (Date.now() - 44.minutes())
     console.info "READ #{article.id}":article.address
     Kijiji.Article.read article.address, (error, output) ->
       if error then throw error
@@ -202,7 +202,7 @@ advanceOldestArticle = ->
       console.info "PULL #{article.id}":advancements
       instruments.advance article.id, advancements
 
-setInterval advanceOldestArticle, 2.seconds()
+setInterval advanceOldestArticle, 3.seconds()
 
 findNovelArticles = ->
   Kijiji.sources.forEach (source) ->
