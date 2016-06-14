@@ -7,7 +7,7 @@ leftyguitars.xyz:
 	git push leftyguitars.xyz master
 
 paintedturtle.github:
-	git push paintedturtle.github master
+	git push paintedturtle.github master:gh-pages
 
 d3.min.js: node_modules/d3/d3.min.js
 	cp node_modules/d3/d3.min.js d3.min.js
