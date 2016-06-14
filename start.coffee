@@ -1,11 +1,10 @@
-require("./Number")
-{readFileSync} = require "fs"
-JSONfromHTTPRequest = require("body/json")
-Cryptography = require('crypto')
-Immutable = require('immutable')
-files = require("facts")()
-
-Kijiji = require "./Sources/Kijiji"
+require "./Number"
+{readFileSync}      = require "fs"
+Cryptography        = require "crypto"
+Facts               = require "facts"
+Immutable           = require "immutable"
+JSONfromHTTPRequest = require "body/json"
+Kijiji              = require "./Sources/Kijiji"
 
 instruments = require("facts")()
 instruments.datoms = Immutable.Stack(Immutable.fromJS(require("./article.datoms.json")))

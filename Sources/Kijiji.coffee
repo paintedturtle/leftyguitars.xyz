@@ -51,16 +51,19 @@ Kijiji.Article.parseIdentifierFromAddress = (address) ->
 
 
 Kijiji.Search =
-  attributes: {
-    "addresses":[".title a[href]@href"]
-  }
+  attributes:
+    title: "title"
+    addresses: [".title a[href]@href"]
+
   read: (address, done) ->
-    console.info "kijiji search read":address
     window(address, Kijiji.Search.attributes) (error, output) ->
-      console.error error if error
-      identifiers = output.addresses.map(Kijiji.Article.parseIdentifierFromAddress)
-      identifiers = identifiers.filter (address) -> address isnt undefined
-      done error, identifiers.map(Kijiji.Article.address)
+      if error
+        console.error "Kijiji.Search.read #{address}":error
+        done error
+      else
+        identifiers = output.addresses.map(Kijiji.Article.parseIdentifierFromAddress)
+        identifiers = identifiers.filter (address) -> address isnt undefined
+        done error, identifiers.map(Kijiji.Article.address)
 
 
 Kijiji.sources = """
