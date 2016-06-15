@@ -150,7 +150,7 @@ document.on "DOMContentLoaded", ->
       div.diminished.articles { margin: auto; width: auto; position: relative; overflow:hidden; color: white; }
       div.diminished.articles article { margin: 0; color: white; width: 10%; float: left; overflow:hidden;}
       div.diminished.articles article img { width: 100%; height: 66mm; object-fit: cover; background-color: black; display:block;}
-      div.diminished.articles article { opacity:0.33; }
+      div.diminished.articles article { opacity:0.44; }
       div.diminished.articles article:hover { opacity:0.99; }
 
       #trashed article:not(:hover) { opacity: 0.22;}

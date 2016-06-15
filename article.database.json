@@ -1,6 +1,68 @@
 [
   [
     true,
+    "5a01541629618756c7e6a26f49019760cbbee8ee5aba08276ff0478dffc4b57f",
+    "title",
+    "Left handed Samick accoustic guitar",
+    1466827132283.8909
+  ],
+  [
+    true,
+    "5a01541629618756c7e6a26f49019760cbbee8ee5aba08276ff0478dffc4b57f",
+    "description",
+    "Hi! I have a Samick left handed guitar with stand for sale. I bought to start playing but don't have time. Pictures to come later today.",
+    1466827132283.8909
+  ],
+  [
+    true,
+    "5a01541629618756c7e6a26f49019760cbbee8ee5aba08276ff0478dffc4b57f",
+    "photographs",
+    [
+      "http://i.ebayimg.com/00/s/ODAwWDQ1MA==/z/UfIAAOSwc1FXYaoA/$_35.JPG",
+      "http://i.ebayimg.com/00/s/NDUwWDgwMA==/z/bc0AAOSwNuxXYaoP/$_35.JPG"
+    ],
+    1466827132283.8909
+  ],
+  [
+    true,
+    "5a01541629618756c7e6a26f49019760cbbee8ee5aba08276ff0478dffc4b57f",
+    "location",
+    [
+      "Fredericton",
+      "NB  E3C0G7"
+    ],
+    1466827132283.8909
+  ],
+  [
+    true,
+    "5a01541629618756c7e6a26f49019760cbbee8ee5aba08276ff0478dffc4b57f",
+    "address",
+    "http://www.kijiji.ca/v-view-details.html?adId=1174207544",
+    1466827132283.8909
+  ],
+  [
+    true,
+    "5a01541629618756c7e6a26f49019760cbbee8ee5aba08276ff0478dffc4b57f",
+    "access time",
+    1466019247731,
+    1466827132283.8909
+  ],
+  [
+    true,
+    "5a01541629618756c7e6a26f49019760cbbee8ee5aba08276ff0478dffc4b57f",
+    "price",
+    150,
+    1466827132283.8909
+  ],
+  [
+    true,
+    "5a01541629618756c7e6a26f49019760cbbee8ee5aba08276ff0478dffc4b57f",
+    "publication time",
+    1465963200000,
+    1466827132283.8909
+  ],
+  [
+    true,
     "4f9975a4cd438997052d70d204f99f51bd6dad66c81b5e8d2681f0a9ecf04dfa",
     "access time",
     1466018414362,
