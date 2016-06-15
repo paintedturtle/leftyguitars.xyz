@@ -127,7 +127,7 @@ write = require("fs").writeFile
 advanceOldestArticle = ->
   articles = instruments.query()
     .filter (article) -> article["approved"] and (article["expired"] is undefined) and (article["trashed"] is undefined)
-    .filter (article) -> article["access time"] < (Date.now() - 22.minutes())
+    .filter (article) -> article["access time"] < (Date.now() - 11.minutes())
     .sort (a, b) -> a["access time"] - b["access time"]
   if article = articles[0]
     console.info "READ #{article.id}":article.address

@@ -31,7 +31,7 @@ Kijiji.Article.read = (address, done) ->
       delete output["photographs"]
     else
       output["price"] = Number output["price string"].replace("$","")
-      output["location"] = output["location"].trim().replace(",","").split(" ").map((d) -> d.trim()).filter((d) -> d isnt "").slice(0, 3)
+      output["location"] = output["location"].trim().replace(",","").split(" ").map((d) -> d.trim()).filter((d) -> d isnt "")
       output["publication time"] = Kijiji.Date.parse(output["publication date"]).getTime()
       output["description"] = output["description"]?.trim()
       output["photographs"] = output["photographs"].filter (p) -> p.match("play-button") is p.match("youtube") is null
