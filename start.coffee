@@ -141,7 +141,7 @@ advanceOldestArticle = ->
       setTimeout advanceOldestArticle, 1
   else
     setTimeout findNovelArticles, 30.seconds()
-    setTimeout advanceOldestArticle, 33.minutes()
+    setTimeout advanceOldestArticle, 9.minutes()
 
 setTimeout advanceOldestArticle, 30.seconds()
 
