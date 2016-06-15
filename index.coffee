@@ -122,22 +122,21 @@ document.on "DOMContentLoaded", ->
 
       form input[type=text], form input[type=url] { width: 100%; margin: auto; font: 4mm/4mm Consolas; box-sizing: border-box;}
 
-      div.natural.articles { margin: auto; width: auto; position: relative; overflow:hidden; color: white;}
-      div.natural.articles article { margin: 0; color: white; width: 33.333%; float: left; overflow:hidden;}
-      div.natural.articles article img { width: 100%; height: 100mm; object-fit: cover; background-color: black; display:block;}
-      div.natural.articles article .address { white-space: nowrap; position: absolute; background: hsla(0, 0%, 0%, 0.66); margin: 0 2mm; padding: 1mm; bottom: 19mm;}
-      div.natural.articles article .title { white-space: nowrap; position: absolute; background: hsla(0, 0%, 0%, 0.66); margin: 0 2mm; padding: 1mm; bottom: 13mm;}
+      div.natural.articles { margin: auto; width: auto;  position: relative; overflow:hidden; color: white; }
+      div.natural.articles article { height: 100mm; margin: 0; color: white; width: 33.333%; float: left; overflow:hidden;}
+      div.natural.articles article img { width:100%; height: 100mm; object-fit: cover; background-color: black; display:block; position: absolute; bottom:0; }
+      div.natural.articles article .id { white-space: nowrap; position: absolute; margin: 1mm; padding: 1mm; bottom: 0; left:0; font-size: 50%; }
+      div.natural.articles article .position { position: absolute; top:0; left:0; right: 0; margin: 1mm;}
+      div.natural.articles article .address > span  { white-space: nowrap; background: hsla(0, 0%, 0%, 0.66); padding: 1mm; display:inline-block; }
+      div.natural.articles article .title > span   { white-space: nowrap; background: hsla(0, 0%, 0%, 0.66); padding: 1mm; display:inline-block; }
+      div.natural.articles article .location > span { white-space: nowrap; background: hsla(0, 0%, 0%, 0.66); padding: 1mm; display:inline-block;}
+      div.natural.articles article .duration > span { white-space: nowrap; background: hsla(0, 0%, 0%, 0.66); padding: 1mm; display:inline-block;}
 
-      div.natural.articles article .id { white-space: nowrap; position: absolute; margin: 1mm; padding: 1mm; top: 0; left:0; font-size: 50%; }
-      div.natural.articles article .publication { white-space: nowrap; position: absolute; margin: 1mm; padding: 1mm; top: 0mm; background:black; display:none;}
+      div.natural.articles article .price {white-space: nowrap; overflow:hidden;  }
+      div.natural.articles article .price .label { display:inline-block;  margin: 0;  color:hsla(0, 0%, 66%, 1); background: hsla(0, 0%, 0%, 0.66); padding: 1mm;}
+      div.natural.articles article .price .graphic { display:inline-block; background: hsla(0, 0%, 0%, 0.66); padding: 1mm;}
+      div.natural.articles article .price .graphic strong { display:inline-block; height:2mm; background:hsla(0, 0%, 55%, 1);}
 
-      div.natural.articles article .price { position: absolute; margin: 0 2mm; height:5mm; left: 0; bottom: 8mm; background: hsla(0, 0%, 0%, 0.66); right:0; overflow:hidden; }
-      div.natural.articles article .price .label { white-space: nowrap; position: absolute; margin: 0; width: 15mm; height:4mm; padding: 1mm 1mm 2mm; top: 0; left:0; background:transparent; text-align: right; color:hsla(0, 0%, 66%, 1);}
-      div.natural.articles article .price .graphic { position: absolute; margin: 1mm 1px 0.33mm; height:3.66mm; bottom: 0; left:17mm; background:hsla(0, 0%, 55%, 1);}
-
-      div.natural.articles article .duration { position: absolute; margin: 0 2mm 0; height:6mm; left: 0; bottom: 2mm; right:0; background: hsla(0, 0%, 0%, 0.66); overflow:hidden; }
-      div.natural.articles article .duration .label { white-space: nowrap; position: absolute; margin: 0; width: 15mm; height:4mm; padding: 1mm 1mm 2mm; top: 0; left:0; background:transparent; text-align: right; color: hsla(0, 0%, 66%, 1);}
-      div.natural.articles article .duration .graphic { position: absolute; margin: 1mm 1px 1.33mm; height:3.66mm; bottom: 0mm; left:17mm; background:hsla(0, 0%, 55%, 1);}
 
       div.natural.articles article button { position: absolute; top: 0; display:block; width:50%;}
       div.natural.articles article button.discard { left: 0; }
@@ -287,17 +286,26 @@ renderCurrentArticles = (data) ->
 
 naturalArticleHTML = (article) ->
   output = """
-    <div class="title">#{article.title or 'Untitled'}</div>
-    <div class="address"><a target="#{article.id}" href="#{article.address}">#{simplifiedAddress article.address}</a></div>
-    <div class="price">
-      <div class="graphic" style="width:#{article.price/13}%"></div>
-      <div class="label">$ #{ Math.ceil(article.price) }</div>
-    </div>
-    <div class="duration">
-      <div class="graphic" style="width:#{Math.round((Date.now()-article["publication time"]) / 24.hours()) * 1.25 }%"></div>
-      <div class="label">#{ Math.round((Date.now()-article["publication time"]) / 24.hours()) } #{if Math.round((Date.now()-article["publication time"]) / 24.hours()) > 1 then 'days' else 'day'}</div>
-    </div>
     <img src="#{article.photographs[0]}">
+    <div class="position">
+      <div class="address">
+        <span><a target="#{article.id}" href="#{article.address}">#{simplifiedAddress article.address}</a></span>
+      </div>
+      <div class="title">
+        <span>#{article.title or 'Untitled'}</span>
+      </div>
+      <div class="location">
+        <span>#{article.location?.slice(0,2).join(" ")}</span>
+      </div>
+
+      <div>
+      <span class="label" style="padding: 1mm; background: hsla(0, 0%, 0%, 0.66);"><span style="width:#{article.price/10}%; display:inline-block; height:1mm; background:#fff; "></span></span><span class="label" style="padding: 1mm; background: hsla(0, 0%, 0%, 0.66);">$<strong>#{ Math.ceil(article.price) }</strong></span>
+      </div>
+
+      <div class="duration" hidden>
+        #{ Math.round((Date.now()-article["publication time"]) / 24.hours()) } #{if Math.round((Date.now()-article["publication time"]) / 24.hours()) > 1 then 'days' else 'day'}
+      </div>
+    </div>
   """
   if location.hostname is "localhost"
     output += """

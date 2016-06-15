@@ -48,15 +48,20 @@ Kijiji.Article.attributes =
 Kijiji.Article.read = (address, done) ->
   id = Kijiji.Article.parseIdentifierFromAddress(address)
   address = Kijiji.Article.address(id)
+  console.info address
   window(address+"&siteLocale=en_CA", Kijiji.Article.attributes) (error, output) ->
+    console.info error, output
     output["address"] = address
     output["access time"] = Date.now()
-    if output["expired"]?
+    if output["expired"]
       output["expired"] = Date.now()
       delete output["photographs"]
     else
       output["price"] = Number output["price string"].replace("$","")
-      output["location"] = Kijiji.Location.parse(output["location"])
+      output["location"] = output["location"]
+        .split("\n")[0]
+        .split(",")
+        .map (w) -> w.trim()
       output["publication time"] = Kijiji.Date.parse(output["publication date"]).getTime()
       output["description"] = output["description"]?.trim()
       output["photographs"] = output["photographs"].filter (p) -> p.match("play-button") is p.match("youtube") is null

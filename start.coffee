@@ -126,8 +126,8 @@ write = require("fs").writeFile
 
 advanceOldestArticle = ->
   articles = instruments.query()
-    .filter (article) -> article["approved"] and (article["expired"] is undefined) and (article["trashed"] is undefined)
-    .filter (article) -> article["access time"] < (Date.now() - 33.minutes())
+    .filter (article) -> (article["approved"] or article["pocketd"]) and (article["expired"] is undefined) and (article["trashed"] is undefined)
+    .filter (article) -> article["access time"] < (Date.now() - 44.minutes())
     .sort (a, b) -> a["access time"] - b["access time"]
   if article = articles[0]
     console.info "READ #{article.id}":article.address
@@ -142,7 +142,7 @@ advanceOldestArticle = ->
   else
     setTimeout advanceOldestArticle, 1.minute()
 
-setTimeout advanceOldestArticle, 1.seconds()
+setTimeout advanceOldestArticle, 30.seconds()
 
 findNovelArticles = ->
   Kijiji.sources.forEach (source) ->
@@ -151,18 +151,8 @@ findNovelArticles = ->
       console.info "#{source} novelty": novelAddresses
       novelAddresses.forEach (address) -> addInstrument.fromKijiji(address, (error, identifier) ->)
 
-setTimeout findNovelArticles, 1.second()
+# setTimeout findNovelArticles, 1.second()
 
 # console.info article = instruments.pull "XXX"
-# instruments.advance "XXX", trashed:Date.now()
+# instruments.advance "700ff0c61e06647295fbe5a9ab809e1f779aab5119464960168c29be1c85ea7d", expired:Date.now()
 # instruments.advance "XXX", pocketd:yes
-
-# Kijiji.Article.read "http://www.kijiji.ca/v-view-details.html?adId=1172621430", (error, output) ->
-#   if error then throw error
-#   article = instruments.pull identifyInstrumentAddress("http://www.kijiji.ca/v-view-details.html?adId=1172621430")
-#   advancements = {}
-#   for key, value of output
-#     console.info "key #{key}": [value, article[key]]
-#     advancements[key] = value unless Immutable.is Immutable.fromJS(value), Immutable.fromJS(article[key])
-#   console.info "PULL #{article.id}":advancements
-#   instruments.advance article.id, advancements
