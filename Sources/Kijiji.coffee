@@ -6,6 +6,31 @@ Kijiji = module.exports
 
 Kijiji.Date = require('d3').time.format("%d-%b-%y")
 
+Kijiji.Location =
+  parse: (string) ->
+    words = string.trim().split(" ")
+      .map((d) -> d.trim())
+      .filter((d) -> d isnt "")
+      .filter((d) -> d isnt "Canada")
+    words = words.slice(0, -2)
+    if words[words.length-1].length is 6
+      postalcode = words.pop()
+    else if words[words.length-1].replace(",","").length is 3 and words[words.length-2].replace(",","").length is 3
+      postalcode = [words.pop(), words.pop()].reverse().join("").replace(",","")
+    else
+      postalcode = "N0N0N0"
+    province = words.pop() if words[words.length-1].length is 2
+    if words.length is 1
+      city = words.pop().replace(",","")
+    else if words[words.length-1].match(",") and words[words.length-2].match(",")
+      city = words.pop().replace(",","")
+    else if words[words.length-1].match(",")
+      city = [words.pop(), words.pop()].reverse().join(" ").replace(",","")
+    else
+      city = "Unknown"
+    return [city, province, postalcode]
+
+
 Kijiji.Article = {}
 
 Kijiji.Article.address = (id) ->
@@ -31,7 +56,7 @@ Kijiji.Article.read = (address, done) ->
       delete output["photographs"]
     else
       output["price"] = Number output["price string"].replace("$","")
-      output["location"] = output["location"].trim().replace(",","").split(" ").map((d) -> d.trim()).filter((d) -> d isnt "")
+      output["location"] = Kijiji.Location.parse(output["location"])
       output["publication time"] = Kijiji.Date.parse(output["publication date"]).getTime()
       output["description"] = output["description"]?.trim()
       output["photographs"] = output["photographs"].filter (p) -> p.match("play-button") is p.match("youtube") is null

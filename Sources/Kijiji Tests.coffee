@@ -6,6 +6,14 @@ tape "Kijiji.address", (test) ->
   test.same Kijiji.Article.address("123"), "http://www.kijiji.ca/v-view-details.html?adId=123"
   test.end()
 
+
+tape "parse location attributes from Kijiji string", (test) ->
+  parsed = Kijiji.Location.parse "140 Dundonald St, Fredericton, NB E3B 1W8, Canada \n View map"
+  test.same parsed, ["Fredericton", "NB", "E3B1W8"]
+  parsed = Kijiji.Location.parse "Montréal, QC H1E1Z9 \n View map"
+  test.same parsed, ["Montréal", "QC", "H1E1Z9"]
+  test.end()
+
 tape "Read current article from Kijiji", (test) ->
   Kijiji.Article.read "http://www.kijiji.ca/v-view-details.html?adId=1165646316", (error, data) ->
     test.same error, null
