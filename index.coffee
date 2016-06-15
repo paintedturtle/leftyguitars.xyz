@@ -153,7 +153,7 @@ document.on "DOMContentLoaded", ->
       div.diminished.articles article { opacity:0.33; }
       div.diminished.articles article:hover { opacity:0.99; }
 
-      #trashed article { opacity: 0.11;}
+      #trashed article:not(:hover) { opacity: 0.22;}
       #trashed article, #trashed article img { height:33mm; }
 
       body > footer { border-top:5mm solid transparent; border-bottom:5mm solid transparent; font: 3.9mm/5mm "Avenir", sans-serif; font-weight: 400; overflow:hidden;}
@@ -197,11 +197,11 @@ toCurrentExpiredNoprice = (reduction, guitar) ->
   reduction.current ?= []
   reduction.expired ?= []
   reduction.pocketd ?= []
-  if guitar.pocketd
-    reduction.pocketd.push(guitar)
-    return reduction
   if guitar.trashed
     reduction.trashed.push(guitar)
+    return reduction
+  if guitar.pocketd
+    reduction.pocketd.push(guitar)
     return reduction
   if guitar.expired
     reduction.expired.push(guitar)
@@ -323,6 +323,7 @@ naturalArticleHTML = (article) ->
 renderExpiredArticles = (data) ->
   sorted = data
     .sort (a, b) -> b["access time"] - a["access time"]
+    .filter (a) -> a["photographs"] and a["photographs"].length isnt 0
     .slice(0, 20)
   article = d3.select("#expired").selectAll("article").data(sorted, ((d) -> d.id))
   article.order()
@@ -336,6 +337,7 @@ renderExpiredArticles = (data) ->
 renderTrash = (data) ->
   sorted = data
     .sort (a, b) -> b["access time"] - a["access time"]
+    .filter (a) -> a["photographs"] and a["photographs"].length isnt 0
     .slice(0, 60)
   article = d3.select("#trashed").selectAll("article").data(sorted, ((d) -> d.id))
   article.order()
