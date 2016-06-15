@@ -153,6 +153,7 @@ document.on "DOMContentLoaded", ->
       div.diminished.articles article { opacity:0.33; }
       div.diminished.articles article:hover { opacity:0.99; }
 
+      #trashed article { opacity: 0.11;}
       #trashed article, #trashed article img { height:33mm; }
 
       body > footer { border-top:5mm solid transparent; border-bottom:5mm solid transparent; font: 3.9mm/5mm "Avenir", sans-serif; font-weight: 400; overflow:hidden;}
@@ -286,7 +287,7 @@ renderCurrentArticles = (data) ->
 
 naturalArticleHTML = (article) ->
   output = """
-    <img src="#{article.photographs[0]}">
+    <img src="#{article.photographs?[0]}">
     <div class="position">
       <div class="address">
         <span><a target="#{article.id}" href="#{article.address}">#{simplifiedAddress article.address}</a></span>

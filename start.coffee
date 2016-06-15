@@ -155,5 +155,5 @@ findNovelArticles = ->
 # setTimeout findNovelArticles, 1.second()
 
 # console.info article = instruments.pull "XXX"
-# instruments.advance "700ff0c61e06647295fbe5a9ab809e1f779aab5119464960168c29be1c85ea7d", expired:Date.now()
-# instruments.advance "XXX", pocketd:yes
+# instruments.advance "cb5d19aa10570c3b9638065442c8c06d881e27e87a7ba59d80e9de9a23ebf66d", expired:Date.now()
+# instruments.advance "4710afa5d6310b719dd8bf369a29f17b3ae689d95f5639e5682cd7ed5417289b", pocketd:Date.now()
