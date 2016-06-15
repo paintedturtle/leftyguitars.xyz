@@ -57,14 +57,18 @@ Kijiji.Article.read = (address, done) ->
       output["expired"] = Date.now()
       delete output["photographs"]
     else
-      output["price"] = Number output["price string"].replace("$","")
-      output["location"] = output["location"]
-        .split("\n")[0]
-        .split(",")
-        .map (w) -> w.trim()
-      output["publication time"] = Kijiji.Date.parse(output["publication date"]).getTime()
+      if output["price string"]
+        output["price"] = Number output["price string"].replace("$","")
+      if output["location"]
+        output["location"] = output["location"]
+          .split("\n")[0]
+          .split(",")
+          .map (w) -> w.trim()
+      if output["publication date"]
+        output["publication time"] = Kijiji.Date.parse(output["publication date"]).getTime()
       output["description"] = output["description"]?.trim()
       output["photographs"] = output["photographs"].filter (p) -> p.match("play-button") is p.match("youtube") is null
+    delete output["photographs"] if output["photographs"].length is 1
     delete output["publication date"]
     delete output["price string"]
     done error, output
