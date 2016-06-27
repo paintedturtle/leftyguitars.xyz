@@ -91,9 +91,9 @@ identifyInstrumentAddress = (address) ->
 indexHTML = (callback) ->
   callback undefined, """
     <!DOCTYPE HTML>
-    <title>Lefty Guitars For Sale Under $1000 CAD</title>
+    <title>Lefty Guitars For Sale in Canada</title>
     <meta charset="UTF-8">
-    <meta description="A growing index of left handed guitars and basses for sale in Canada.">
+    <meta description="A growing index of left handed guitars and basses for sale in Canada for less than $1000 CAD">
     <meta keywords="lefty left hand left-handed left-hand lefthand guitar bass guitars basses electric acoustic for sale Canada CAD 🐢">
     <script charset="UTF-8">
     window.articles = #{JSON.stringify(instruments.query(), undefined, "  ")}
