@@ -15,17 +15,29 @@ document.on "DOMContentLoaded", ->
       <input type="range" min="100" max="1000" value="1000" style="position: absolute; top: -0.3mm; left: 0; right: 0; width: 100%; margin:0; padding:0; display:block;">
     </div>
 
-    <div id="filter" hidden>
-      <button>All</button>
+    <style>
+      #filter {font-size:200%;}
+      #filter button { font:inherit; background:transparent; color:inherit; border:none; padding: 0;}
+      #filter button:disabled { background:white; color:black; font-size:inherit; padding: 2.4mm 1mm 1.6mm;}
+      #filter input { font:inherit; background:transparent; color:inherit; border:none; box-sizing: border-box; padding: 1mm 1mm 0.66mm; margin: 4mm auto; width:11%; font-size:inherit; border-bottom: 1px dotted #999; font-weight: 100; font-style:italic; text-align:right; padding:0;}
+    </style>
+
+    <div id="filter">
+      <input type="search" placeholder="Search" style="">
+      <button disabled>All</button>
+      lefty
       <button>Acoustic</button>
       <button>Electric</button>
-      <button>Guitar</button>
       <button>Bass</button>
+      <button>Guitars</button>
+      <button hidden>Ukulele</button>
+      <button hidden>Other</button>
+      for sale in Canada under $1000.
     </div>
 
-    <h1>
+    <h2>
       <span id="selection-size">N</span> lefty guitars for sale under $<span id="price-limit">1000</span> CAD
-    </h1>
+    </h2>
 
     <form id="sort" hidden>
       <button>All</button>

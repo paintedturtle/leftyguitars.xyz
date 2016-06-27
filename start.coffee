@@ -52,6 +52,13 @@ service = require("http").createServer (request, response) ->
           size:outputBuffer.length
           data:outputBuffer
         write "index.html", HTML, "UTF8"
+    when identifier is "filters"
+      outputBuffer = new Buffer filtersHTML(), "UTF-8"
+      send response, output =
+        file:"filters.html"
+        type:"text/html; charset=UTF-8"
+        size:outputBuffer.length
+        data:outputBuffer
     when /png|jpg|svg|woff/.test identifier
       sendBinary(identifier, response)
     else
@@ -88,6 +95,20 @@ indexHTML = (callback) ->
     <meta charset="UTF-8">
     <meta description="A growing index of left handed guitars and basses for sale in Canada.">
     <meta keywords="lefty left hand left-handed left-hand lefthand guitar bass guitars basses electric acoustic for sale Canada CAD 🐢">
+    <script charset="UTF-8">
+    window.articles = #{JSON.stringify(instruments.query(), undefined, "  ")}
+    #{readFileSync "d3.min.js", "UTF-8"}
+    #{compile readFileSync "Number.coffee", "UTF-8"}
+    #{compile readFileSync "document.coffee", "UTF-8"}
+    #{compile readFileSync "index.coffee", "UTF-8"}
+    </script>
+  """
+
+filtersHTML = ->
+  return """
+    <!DOCTYPE HTML>
+    <title>Filter Controls</title>
+    <meta charset="UTF-8">
     <script charset="UTF-8">
     window.articles = #{JSON.stringify(instruments.query(), undefined, "  ")}
     #{readFileSync "d3.min.js", "UTF-8"}
@@ -143,7 +164,7 @@ advanceOldestArticle = ->
     setTimeout findNovelArticles, 30.seconds()
     setTimeout advanceOldestArticle, 9.minutes()
 
-setTimeout advanceOldestArticle, 30.seconds()
+# setTimeout advanceOldestArticle, 30.seconds()
 
 findNovelArticles = ->
   Kijiji.sources.forEach (source) ->
@@ -152,7 +173,7 @@ findNovelArticles = ->
       console.info "#{source} novelty": novelAddresses
       novelAddresses.forEach (address) -> addInstrument.fromKijiji(address, (error, identifier) ->)
 
-# setTimeout findNovelArticles, 1.second()
+setTimeout findNovelArticles, 1.second()
 
 # console.info article = instruments.pull "XXX"
 # instruments.advance "cb5d19aa10570c3b9638065442c8c06d881e27e87a7ba59d80e9de9a23ebf66d", trashed:Date.now()
