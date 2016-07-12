@@ -176,5 +176,7 @@ findNovelArticles = ->
 setTimeout findNovelArticles, 1.second()
 
 # console.info article = instruments.pull "XXX"
+
 # instruments.advance "83031ecb2752b14fd7d6dcf11a4665b388c0dab55539cd15e8bfc984b85e231f", trashed:Date.now()
 # instruments.advance "c75d9a687cdc9978fca6b9a2535b6f742c26f8a1da7f5842c72a102489cb5f5c", pocketd:Date.now()
+# addInstrument.fromKijiji "http://www.kijiji.ca/v-guitar/city-of-toronto/fender-p-bass-junior-lefty-mij-p/1180225005", -> console.info("Done")
