@@ -164,7 +164,7 @@ advanceOldestArticle = ->
     setTimeout findNovelArticles, 30.seconds()
     setTimeout advanceOldestArticle, 9.minutes()
 
-# setTimeout advanceOldestArticle, 30.seconds()
+setTimeout advanceOldestArticle, 30.seconds()
 
 findNovelArticles = ->
   Kijiji.sources.forEach (source) ->
@@ -176,5 +176,5 @@ findNovelArticles = ->
 setTimeout findNovelArticles, 1.second()
 
 # console.info article = instruments.pull "XXX"
-# instruments.advance "cb5d19aa10570c3b9638065442c8c06d881e27e87a7ba59d80e9de9a23ebf66d", trashed:Date.now()
-# instruments.advance "5dbbba59106f2fd64561280e8128917660ff5388e106752e6f5d6ff927ec7cc4", pocketd:Date.now()
+# instruments.advance "83031ecb2752b14fd7d6dcf11a4665b388c0dab55539cd15e8bfc984b85e231f", trashed:Date.now()
+# instruments.advance "24d38ee2be0682865f03fe3a41e593a4ce95471e360c0065f18ceb4ed183a379", pocketd:Date.now()
