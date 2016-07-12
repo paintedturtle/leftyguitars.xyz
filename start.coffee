@@ -177,4 +177,4 @@ setTimeout findNovelArticles, 1.second()
 
 # console.info article = instruments.pull "XXX"
 # instruments.advance "83031ecb2752b14fd7d6dcf11a4665b388c0dab55539cd15e8bfc984b85e231f", trashed:Date.now()
-# instruments.advance "24d38ee2be0682865f03fe3a41e593a4ce95471e360c0065f18ceb4ed183a379", pocketd:Date.now()
+instruments.advance "c75d9a687cdc9978fca6b9a2535b6f742c26f8a1da7f5842c72a102489cb5f5c", pocketd:Date.now()
