@@ -1,6 +1,6 @@
 window = require('x-ray')()
-window.concurrency(1)
-window.throttle(1, 333)
+window.concurrency(3)
+window.throttle(1, 111)
 
 Kijiji = module.exports
 

@@ -150,6 +150,7 @@ advanceOldestArticle = ->
     .filter (article) -> (article["approved"] or article["pocketd"]) and (article["expired"] is undefined) and (article["trashed"] is undefined)
     .filter (article) -> article["access time"] < (Date.now() - 33.minutes())
     .sort (a, b) -> a["access time"] - b["access time"]
+    .reverse()
   if article = articles[0]
     console.info "READ #{article.id}":article.address
     Kijiji.Article.read article.address, (error, output) ->
@@ -159,12 +160,12 @@ advanceOldestArticle = ->
         advancements[key] = value unless Immutable.is Immutable.fromJS(value), Immutable.fromJS(article[key])
       console.info "PULL #{article.id}":advancements
       instruments.advance article.id, advancements
-      setTimeout advanceOldestArticle, 1
+      setTimeout advanceOldestArticle, 1/10
   else
-    setTimeout findNovelArticles, 30.seconds()
+    setTimeout findNovelArticles, 5.minutes()
     setTimeout advanceOldestArticle, 9.minutes()
 
-setTimeout advanceOldestArticle, 30.seconds()
+
 
 findNovelArticles = ->
   Kijiji.sources.forEach (source) ->
@@ -173,10 +174,11 @@ findNovelArticles = ->
       console.info "#{source} novelty": novelAddresses
       novelAddresses.forEach (address) -> addInstrument.fromKijiji(address, (error, identifier) ->)
 
-setTimeout findNovelArticles, 1.second()
+setTimeout findNovelArticles,    1.seconds()
+setTimeout advanceOldestArticle, 3.seconds()
 
 # console.info article = instruments.pull "XXX"
 
 # instruments.advance "83031ecb2752b14fd7d6dcf11a4665b388c0dab55539cd15e8bfc984b85e231f", trashed:Date.now()
-# instruments.advance "c75d9a687cdc9978fca6b9a2535b6f742c26f8a1da7f5842c72a102489cb5f5c", pocketd:Date.now()
+# instruments.advance "201660fff09c4bf0ef1a4f203afc77af0f0b731940e57f0d7c4342a9ea567dc2", pocketd:Date.now()
 # addInstrument.fromKijiji "http://www.kijiji.ca/v-guitar/city-of-toronto/fender-p-bass-junior-lefty-mij-p/1180225005", -> console.info("Done")
