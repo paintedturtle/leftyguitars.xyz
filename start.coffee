@@ -148,7 +148,7 @@ write = require("fs").writeFile
 advanceOldestArticle = ->
   articles = instruments.query()
     .filter (article) -> (article["approved"] or article["pocketd"]) and (article["expired"] is undefined) and (article["trashed"] is undefined)
-    .filter (article) -> article["access time"] < (Date.now() - 33.minutes())
+    .filter (article) -> article["access time"] < (Date.now() - 99.minutes())
     .sort (a, b) -> a["access time"] - b["access time"]
     .reverse()
   if article = articles[0]

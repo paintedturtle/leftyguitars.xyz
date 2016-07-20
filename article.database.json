@@ -1,6 +1,1756 @@
 [
   [
     true,
+    "21b4a00eaafb7077ddbc0835921855fa295eb17a6c656fa49c7c986669c15fbe",
+    "access time",
+    1469056842613,
+    1469359343561.9382
+  ],
+  [
+    true,
+    "29579411f3ad321bc8bfbeac02613e902a7e0834941ea496f8cecbf2c647735e",
+    "access time",
+    1469056837983,
+    1469359338931.324
+  ],
+  [
+    true,
+    "33c5112dd54ef5c1ce6757e2c57743fc9422a8c9a0d5531db6425738f352006f",
+    "access time",
+    1469056835176,
+    1469359336124.106
+  ],
+  [
+    true,
+    "c646ed87aed6921d8feb92a4c692e4d174440d06b82e366335ac0ee23a0c8969",
+    "expired",
+    1469056832013,
+    1469359332960.827
+  ],
+  [
+    true,
+    "c646ed87aed6921d8feb92a4c692e4d174440d06b82e366335ac0ee23a0c8969",
+    "access time",
+    1469056832013,
+    1469359332960.827
+  ],
+  [
+    true,
+    "a4ef50915914f495a8a2e6800e6b53f2875ca69aaee84e0595af5bc5ec980660",
+    "trashed",
+    1469056826297,
+    1469359327413.7317
+  ],
+  [
+    true,
+    "f8ab40737420abf80cd293e73f0161e49895127e46c8d778f245b37bfc193c61",
+    "access time",
+    1469056823493,
+    1469359324441.4695
+  ],
+  [
+    true,
+    "c592d9018ca43f14f6fce6cc5a596439db03335394c55caddad2a92e266a9a9d",
+    "access time",
+    1469056819129,
+    1469359320077.9695
+  ],
+  [
+    true,
+    "3273310d01001c94c8cc7fb0a0c2683920bcf77c58159ee8a288d6d02d20d168",
+    "access time",
+    1469056814507,
+    1469359315455.9272
+  ],
+  [
+    true,
+    "3273310d01001c94c8cc7fb0a0c2683920bcf77c58159ee8a288d6d02d20d168",
+    "price",
+    null,
+    1469359315455.9272
+  ],
+  [
+    true,
+    "532d3e1c06313607019dffbf32438c4dc96535387212c8699ff9be6a9c434224",
+    "access time",
+    1469056809949,
+    1469359310896.7676
+  ],
+  [
+    true,
+    "532d3e1c06313607019dffbf32438c4dc96535387212c8699ff9be6a9c434224",
+    "publication time",
+    1466568000000,
+    1469359310896.7676
+  ],
+  [
+    true,
+    "b11fc265f48a8d457dad7bfa1b97bf41744aea2cbdd353635362e33df0cd6610",
+    "access time",
+    1469056805475,
+    1469359306422.9807
+  ],
+  [
+    true,
+    "a77fa9e3f22b7185704109739a31b45f3a42e91ce65331156ba245553c646c8f",
+    "access time",
+    1469056800708,
+    1469359301656.218
+  ],
+  [
+    true,
+    "3297427e6f9aa5b91dcc1a8c47a642d1b041a2a772a5e502695bce957399ed52",
+    "access time",
+    1469056795801,
+    1469359296748.4585
+  ],
+  [
+    true,
+    "12521bb49c61652d3ec9b9bab3341a650658bfa8244928b3cce7e518e9df68fc",
+    "access time",
+    1469056791152,
+    1469359292099.9768
+  ],
+  [
+    true,
+    "e37ef0a46780c8f8148ac7e4d44299b2012463ab5259db6d2d147d0a99d22dc5",
+    "access time",
+    1469056786631,
+    1469359287577.9192
+  ],
+  [
+    true,
+    "31699ba74ce9f38a773f8e765ce920690dc67ba6444a2b83017e18ef4251ff74",
+    "access time",
+    1469056782182,
+    1469359283129.4392
+  ],
+  [
+    true,
+    "d5d89565a1fc5a8965590530d078a8dce532a3cdde9e1142f290c7a6c6963f1a",
+    "access time",
+    1469056777247,
+    1469359278195.0203
+  ],
+  [
+    true,
+    "baaf47991b06dfff2268aab10a111abab16c60936b922321fb0e5ae9922a8f1d",
+    "access time",
+    1469056772922,
+    1469359273870.2402
+  ],
+  [
+    true,
+    "6275b80466e1072e4f6d1cef84f32e260e4b43695a35a893093ef75ab48447ee",
+    "access time",
+    1469056768221,
+    1469359269169.6206
+  ],
+  [
+    true,
+    "9f3a49c1a8844b5cfb259aaa36d589af1662da4659f39cb8c86ec0087cdfd33c",
+    "access time",
+    1469056763689,
+    1469359264636.141
+  ],
+  [
+    true,
+    "f2e20b4efbc694d022b4a21ef22b4e545ac1f8fd643f695c15f5d1374212253f",
+    "description",
+    "Yamaha APX700 gauchère (lefty, left handed) à vendre, 400$\rAvec gig bag.\r\rEn très bonne état.\r\rJe préfère vendre mais ouvert à un échange si semi-hollow, genre Epiphone Dot (gauchère également).",
+    1469359259811.3054
+  ],
+  [
+    true,
+    "f2e20b4efbc694d022b4a21ef22b4e545ac1f8fd643f695c15f5d1374212253f",
+    "access time",
+    1469056758864,
+    1469359259811.3054
+  ],
+  [
+    true,
+    "bdecc4e00aa5ff2c8fc3c8ac7172b6175d6f4ebdb72d4969d29c9fe32be3081e",
+    "expired",
+    1469056754295,
+    1469359255241.1072
+  ],
+  [
+    true,
+    "bdecc4e00aa5ff2c8fc3c8ac7172b6175d6f4ebdb72d4969d29c9fe32be3081e",
+    "access time",
+    1469056754295,
+    1469359255241.1072
+  ],
+  [
+    true,
+    "034b6d7f7ba1461dcf349506362b44f1b221e7cbb2e17408526765deb27b3120",
+    "access time",
+    1469056749609,
+    1469359250555.3845
+  ],
+  [
+    true,
+    "9bb0a013e81d07f56795ab2ecfbd478e7e64b037e054c86e5c000331aad6428c",
+    "expired",
+    1469056744681,
+    1469359245627.1997
+  ],
+  [
+    true,
+    "9bb0a013e81d07f56795ab2ecfbd478e7e64b037e054c86e5c000331aad6428c",
+    "access time",
+    1469056744681,
+    1469359245627.1997
+  ],
+  [
+    true,
+    "171b1c30df3f9fb2c9c6676e3eb8107d50098a96330d36d5bcbb8718b8c31440",
+    "access time",
+    1469056739876,
+    1469359240822.225
+  ],
+  [
+    true,
+    "4a8359f24077835094186a01b496e0820cc80fcb3ada1fc88bfc1577a1780ea6",
+    "access time",
+    1469056736948,
+    1469359237894.4758
+  ],
+  [
+    true,
+    "55efe3c22ccc9e61c8bc315b35f511a8aeb9cadf20be88a653dde9ab078a3017",
+    "access time",
+    1469056732152,
+    1469359233097.9575
+  ],
+  [
+    true,
+    "151c0120ca6da7bccd2787b8b5f83b8d15875cfccafc8165c80638e665471e0c",
+    "access time",
+    1469056727515,
+    1469359228461.3345
+  ],
+  [
+    true,
+    "3c3617e52d54ca3b79e523551c4fb6f95490529dd64b7d24fb56931b30524bed",
+    "access time",
+    1469056723059,
+    1469359224005.169
+  ],
+  [
+    true,
+    "446873ef66de8f636e708c328f7851e4f2e401b7e0c8ce9829fcc3b4dd3196e7",
+    "access time",
+    1469056718683,
+    1469359219628.6892
+  ],
+  [
+    true,
+    "438ced0db3ba87e7830aec4a5313ed2f142c6c87e82a222c181de115c79993ec",
+    "access time",
+    1469056713958,
+    1469359214904.5142
+  ],
+  [
+    true,
+    "1aa09ce29c3253f1c48aaddb1fece6ced4619ae42851abfc8f5d357a7ef6b66c",
+    "access time",
+    1469056709502,
+    1469359210447.3435
+  ],
+  [
+    true,
+    "e02d9df23ec7e1185e67f924da3055937fe3e6b299c7389776535dc95591d82c",
+    "access time",
+    1469056706527,
+    1469359207472.5657
+  ],
+  [
+    true,
+    "116930fcfec0179edec560d15521a5562f114223bbb4a3ff0b4e99c2eb27035d",
+    "access time",
+    1469056702180,
+    1469359203125.098
+  ],
+  [
+    true,
+    "89ab34ba140f09c90c913374ae672e3bde25a42325f40fb7add16f64218ad828",
+    "access time",
+    1469056697918,
+    1469359198863.5935
+  ],
+  [
+    true,
+    "099a23ebcc5820812c0238b7497b944b2820db678b140fd71527ab27cbf32279",
+    "expired",
+    1469056693154,
+    1469359194099.0068
+  ],
+  [
+    true,
+    "099a23ebcc5820812c0238b7497b944b2820db678b140fd71527ab27cbf32279",
+    "access time",
+    1469056693154,
+    1469359194099.0068
+  ],
+  [
+    true,
+    "5dbbba59106f2fd64561280e8128917660ff5388e106752e6f5d6ff927ec7cc4",
+    "access time",
+    1469056688233,
+    1469359189178.2295
+  ],
+  [
+    true,
+    "5565b7f2578a10004fa1aef95fa8adf163d811d72a2c7a4084ae6fa1d107dfe0",
+    "access time",
+    1469056683844,
+    1469359184789.0596
+  ],
+  [
+    true,
+    "e28ee3bd02cb75e86b35a98b7e28198e3d0dc9a5035d7102f8273eab4f320765",
+    "access time",
+    1469056679596,
+    1469359180541.4304
+  ],
+  [
+    true,
+    "640174f57862dc15ab50851c604ebef534123b4f70a50703a88442bfc4adfc52",
+    "access time",
+    1469056674915,
+    1469359175859.6443
+  ],
+  [
+    true,
+    "0036c8d3a9b63c1393e353093dd5d8b5ea8545a5b10957971f76bfe1d3806a65",
+    "access time",
+    1469056670662,
+    1469359171607.343
+  ],
+  [
+    true,
+    "827f232328c783a9309e327137418e6c50775d567b87f50ab4a748d874f44185",
+    "access time",
+    1469056666140,
+    1469359167085.4119
+  ],
+  [
+    true,
+    "194833f3e2822a0b8bdf9b79320fc1eb204cfd82340dd7db0eb7d8eacaf276b6",
+    "access time",
+    1469056661681,
+    1469359162625.4072
+  ],
+  [
+    true,
+    "c0b7303769a911857edc16897be702c2718272adda21f1513d9e01f748398108",
+    "access time",
+    1469056657130,
+    1469359158074.5571
+  ],
+  [
+    true,
+    "82b88f99f13800a670e0279434638533c86228990a8c8b671cda22737a17e647",
+    "access time",
+    1469056654353,
+    1469359155297.3113
+  ],
+  [
+    true,
+    "93ee3eef68add5557182c5d92daacbf61612cc59ea261d86794a283e2b1c00bf",
+    "access time",
+    1469056649638,
+    1469359150582.792
+  ],
+  [
+    true,
+    "d878ee5f28e1e0dc8e1d7378af36748f9d76fa006af6c683b8920b2ef5b2e59f",
+    "access time",
+    1469056645454,
+    1469359146398.5208
+  ],
+  [
+    true,
+    "9176d548ec45b7ce353b5d92490b7252447296f8965145a2a757680b8e321ecd",
+    "title",
+    "Epiphone Lefty Dot CH Cherry Like New with accessories 600 obo",
+    1469359141849.385
+  ],
+  [
+    true,
+    "9176d548ec45b7ce353b5d92490b7252447296f8965145a2a757680b8e321ecd",
+    "description",
+    "What I have to offer:\rEpiphone Dot Lefty Cherry Red Semi-hollow body electric guitar\rhttp://www.epiphone.com/Products/Archtop/Dot-(LH).aspx\rVox Classic rock headphone amp\rhttps://www.amazon.ca/Vox-amPlug-Classic-Guitar-Headphone/dp/B000ZJTPLG\rBasic black strap from Long & McQuade\rhttps://www.long-mcquade.com/4702/Guitars/Straps/Long_McQuade/Nylon_Strap_with_Leather_Ends.htm\rHard Shell Case for the dot\rhttps://www.long-mcquade.com/12021/Guitars/Cases_Gig_Bags/Yorkville_Sound/Hardshell_ES-335_Style_Guitar_Case.htm\r\rCondition:\rGuitar is in great shape, no visible wear to the body but a bit of wear on the fretboard. Plays well. Missing the pickguard but I have the E symbol, screws and bracket from it. You can get a new one for about $20.\rVox and strap also like new. Played the vox a bit when tying to be quiet. I have one straplock, I lost the other one.\rThe case is a bit beat up but still in good shape.  \r \rThis guitar is in great shape and at the time I thought I'd play more. It's a disconitnued model and the pickguard is missing but I have the bracket, screws and E symbol it came with.\r\rObviously come down to try it, bring a cord please, I don't have one to connect the guitar to the amp.",
+    1469359141849.385
+  ],
+  [
+    true,
+    "9176d548ec45b7ce353b5d92490b7252447296f8965145a2a757680b8e321ecd",
+    "access time",
+    1469056640905,
+    1469359141849.385
+  ],
+  [
+    true,
+    "9176d548ec45b7ce353b5d92490b7252447296f8965145a2a757680b8e321ecd",
+    "price",
+    600,
+    1469359141849.385
+  ],
+  [
+    true,
+    "55a74e2ba4a07ca516b4e1212ccd8ef6e7d410eb354a55ef6f4d8e287a70a375",
+    "access time",
+    1469056636729,
+    1469359137673.6
+  ],
+  [
+    true,
+    "3cfa90d5a9ddd2ae58038c374b5ce50e4bdfd62ee715fe045464ee81ebeba1f6",
+    "expired",
+    1469056632100,
+    1469359133043.4556
+  ],
+  [
+    true,
+    "3cfa90d5a9ddd2ae58038c374b5ce50e4bdfd62ee715fe045464ee81ebeba1f6",
+    "access time",
+    1469056632100,
+    1469359133043.4556
+  ],
+  [
+    true,
+    "14ceb509b2fad38ffdce1b9544791d339b97c3079c98ed796dbdc4d55e62a26d",
+    "access time",
+    1469056627471,
+    1469359128415.2957
+  ],
+  [
+    true,
+    "c242de3c579fced8f95bf2b8661e32157bbffec28bef74ff531c1b611f96df2a",
+    "expired",
+    1469056622801,
+    1469359123744.6914
+  ],
+  [
+    true,
+    "c242de3c579fced8f95bf2b8661e32157bbffec28bef74ff531c1b611f96df2a",
+    "access time",
+    1469056622801,
+    1469359123744.6914
+  ],
+  [
+    true,
+    "9a379570591c51ff28e5016625771daaa9434dba5deb6aac7f65337b42b0be7e",
+    "access time",
+    1469056618184,
+    1469359119128.275
+  ],
+  [
+    true,
+    "38e8662452307a3b2a8a75d191ab532c9e2345bf418a541b3fef52a05fbe2964",
+    "access time",
+    1469056613599,
+    1469359114542.3682
+  ],
+  [
+    true,
+    "0f60a80dd9332c3ed5c93a7b391050445cedcc17bb10b4d4c201cb274b348142",
+    "access time",
+    1469056609437,
+    1469359110380.8516
+  ],
+  [
+    true,
+    "16d433bffb317e6f480292740b5d87d71b414ad58cdcf27057ea093d2d78d6bd",
+    "access time",
+    1469056604746,
+    1469359105689.2908
+  ],
+  [
+    true,
+    "81a84b53f56f9467276d09f608966b403417b3ac828c526b46f4f728dacfb151",
+    "description",
+    "Guitare gauchère neuve &100,00 non négociable , ajustée par luthier , je donne un vieux case pas de poignée avec.",
+    1469359102968.5022
+  ],
+  [
+    true,
+    "81a84b53f56f9467276d09f608966b403417b3ac828c526b46f4f728dacfb151",
+    "access time",
+    1469056602025,
+    1469359102968.5022
+  ],
+  [
+    true,
+    "81a84b53f56f9467276d09f608966b403417b3ac828c526b46f4f728dacfb151",
+    "price",
+    100,
+    1469359102968.5022
+  ],
+  [
+    true,
+    "bae115cfb8c47f204015676db4f4d2548ee341f5b5422f79e932b038586be28b",
+    "expired",
+    1469056597309,
+    1469359098252.2646
+  ],
+  [
+    true,
+    "bae115cfb8c47f204015676db4f4d2548ee341f5b5422f79e932b038586be28b",
+    "access time",
+    1469056597309,
+    1469359098252.2646
+  ],
+  [
+    true,
+    "4329b1ccaf42e9c91c2374e673404c55617d437ac0f47773f82985847e1b967c",
+    "access time",
+    1469056592412,
+    1469359093355.572
+  ],
+  [
+    true,
+    "4a586d9b0ab6b5649ec84a89b978d2f37007ad2f8aa4517d4384231786148a59",
+    "access time",
+    1469056587779,
+    1469359088723.001
+  ],
+  [
+    true,
+    "c75d9a687cdc9978fca6b9a2535b6f742c26f8a1da7f5842c72a102489cb5f5c",
+    "expired",
+    1469056583471,
+    1469359084413.5862
+  ],
+  [
+    true,
+    "c75d9a687cdc9978fca6b9a2535b6f742c26f8a1da7f5842c72a102489cb5f5c",
+    "access time",
+    1469056583471,
+    1469359084413.5862
+  ],
+  [
+    true,
+    "994c5e3acd23f67e4387bd4cd2aeb9ef8a330bd6a064e4a2283f097738b80793",
+    "expired",
+    1469056580004,
+    1469359080947.045
+  ],
+  [
+    true,
+    "994c5e3acd23f67e4387bd4cd2aeb9ef8a330bd6a064e4a2283f097738b80793",
+    "access time",
+    1469056580004,
+    1469359080947.045
+  ],
+  [
+    true,
+    "29bc205c61522f08406fd7f537a9f614ee1edb4bc9bb03c35e77aabb706be204",
+    "access time",
+    1469056573435,
+    1469359074377.913
+  ],
+  [
+    true,
+    "619901b9e14d188cf93d665a73f47a55a9975ef23ce0975133778cae6c357924",
+    "access time",
+    1469056569015,
+    1469359069957.1724
+  ],
+  [
+    true,
+    "e08d89cdc7325fe42278849e7af42536b0a8eec4994fa625d993227d0aa44ee7",
+    "access time",
+    1469056564826,
+    1469359065768.4287
+  ],
+  [
+    true,
+    "8edd9a1a76f79adfb7f5e5b4c444c233fb895912b4e00dc69ce70b4a60fe80b4",
+    "expired",
+    1469056560085,
+    1469359061027.2637
+  ],
+  [
+    true,
+    "8edd9a1a76f79adfb7f5e5b4c444c233fb895912b4e00dc69ce70b4a60fe80b4",
+    "access time",
+    1469056560085,
+    1469359061027.2637
+  ],
+  [
+    true,
+    "8fcd96d79afb1e1899e25ed837e4f6d7a39ca345629c428d80bcd684237aaedf",
+    "expired",
+    1469056555489,
+    1469359056431.4087
+  ],
+  [
+    true,
+    "8fcd96d79afb1e1899e25ed837e4f6d7a39ca345629c428d80bcd684237aaedf",
+    "access time",
+    1469056555489,
+    1469359056431.4087
+  ],
+  [
+    true,
+    "b1e03e86532a7dff0a714f81c8a8015520b51102f905cb0cd346b7a081079153",
+    "access time",
+    1469056550123,
+    1469359051066.6816
+  ],
+  [
+    true,
+    "ba55cb7bca1659c48dadd2202917de11e6340b7437d9ca2e92cd818b7a15585b",
+    "access time",
+    1469056545589,
+    1469359046531.0977
+  ],
+  [
+    true,
+    "932734c39962100a4073da3a40eb5e1c64f0494a9768d9e2082082b2417de75b",
+    "access time",
+    1469056541208,
+    1469359042149.6235
+  ],
+  [
+    true,
+    "1b20451dccbf2c1dd0afec74ae4b41b9f38ccfd36081c56797395e44e85e93b6",
+    "expired",
+    1469056536486,
+    1469359037428.2625
+  ],
+  [
+    true,
+    "1b20451dccbf2c1dd0afec74ae4b41b9f38ccfd36081c56797395e44e85e93b6",
+    "access time",
+    1469056536486,
+    1469359037428.2625
+  ],
+  [
+    true,
+    "75b701477db23e42b0086e39a02bad8b00acd09e0def496bccce8e2716edeebb",
+    "access time",
+    1469056531662,
+    1469359032603.8357
+  ],
+  [
+    true,
+    "076a2ad35dfcb8ae4a7fd872fb2ff076372ac5f7fe3ad2bef311301ae4d784ac",
+    "access time",
+    1469056528800,
+    1469359029741.9812
+  ],
+  [
+    true,
+    "6ea775b0015ae1d3ff08d38dde1d4ef990fb26ffc25384c36b517924519177b2",
+    "access time",
+    1469056525993,
+    1469359026934.8552
+  ],
+  [
+    true,
+    "a7e1d67dfbed2712e57413ebd6f760ed6c37fe66eb6536fd2a0b1466a5ca37cb",
+    "access time",
+    1469056521228,
+    1469359022173.5725
+  ],
+  [
+    true,
+    "c860cbf0539db00680167353e3d6bfb4a02b6c144e046989cfb2cbe7268c3bb7",
+    "expired",
+    1469056516508,
+    1469359017449.7097
+  ],
+  [
+    true,
+    "c860cbf0539db00680167353e3d6bfb4a02b6c144e046989cfb2cbe7268c3bb7",
+    "access time",
+    1469056516508,
+    1469359017449.7097
+  ],
+  [
+    true,
+    "4be433368b9692bde466acc8977f473a647671ee59e6271a00a41ba6c8822e85",
+    "expired",
+    1469056511758,
+    1469359012699.2175
+  ],
+  [
+    true,
+    "4be433368b9692bde466acc8977f473a647671ee59e6271a00a41ba6c8822e85",
+    "access time",
+    1469056511758,
+    1469359012699.2175
+  ],
+  [
+    true,
+    "c835eb9dd12554fc4adec766bc237150af71703b81c17502ddf6c18ede59b102",
+    "expired",
+    1469056506994,
+    1469359007934.6604
+  ],
+  [
+    true,
+    "c835eb9dd12554fc4adec766bc237150af71703b81c17502ddf6c18ede59b102",
+    "access time",
+    1469056506994,
+    1469359007934.6604
+  ],
+  [
+    true,
+    "b2fc264b517fe51b7506c7c5f72549996401c9f00247a7766e576748a77a305c",
+    "expired",
+    1469056502090,
+    1469359003030.7815
+  ],
+  [
+    true,
+    "b2fc264b517fe51b7506c7c5f72549996401c9f00247a7766e576748a77a305c",
+    "access time",
+    1469056502090,
+    1469359003030.7815
+  ],
+  [
+    true,
+    "8845d5cc1226d7259c36b77066208bfc719885d27d0c774eb056e0fac1c5082e",
+    "expired",
+    1469056497060,
+    1469358998000.595
+  ],
+  [
+    true,
+    "8845d5cc1226d7259c36b77066208bfc719885d27d0c774eb056e0fac1c5082e",
+    "access time",
+    1469056497060,
+    1469358998000.595
+  ],
+  [
+    true,
+    "c9cd51526a40e242df7df6e216e54e63e805f8f3235902b3376f89e6ceb74e7b",
+    "access time",
+    1469056492134,
+    1469358993075.1606
+  ],
+  [
+    true,
+    "50d1a4af4b4cd9442bbe31e9e8ee378eac8505c892283d9bb9a6acc465b44280",
+    "access time",
+    1469056487377,
+    1469358988317.4812
+  ],
+  [
+    true,
+    "4c7fab309eb72a0ac719828661207780ad44cdb6d19c9b32c207b023403a2713",
+    "access time",
+    1469056482954,
+    1469358983894.9019
+  ],
+  [
+    true,
+    "1477047b347546d855d72c2d22a1f9b329fee79a613c4cd6a93fa2368da32efb",
+    "expired",
+    1469056480123,
+    1469358981063.9248
+  ],
+  [
+    true,
+    "1477047b347546d855d72c2d22a1f9b329fee79a613c4cd6a93fa2368da32efb",
+    "access time",
+    1469056480123,
+    1469358981063.9248
+  ],
+  [
+    true,
+    "74ff5ecdd0578a7e597760689e2ad64d8f21e64bb6252f6d399086ca36141b98",
+    "expired",
+    1469056475356,
+    1469358976295.9539
+  ],
+  [
+    true,
+    "74ff5ecdd0578a7e597760689e2ad64d8f21e64bb6252f6d399086ca36141b98",
+    "access time",
+    1469056475356,
+    1469358976295.9539
+  ],
+  [
+    true,
+    "3cf2e49d22ea7ac0cc84897ced7dcd14e4518d5d8372e6322ae3894edc98b391",
+    "access time",
+    1469056469938,
+    1469358970878.8396
+  ],
+  [
+    true,
+    "6d942449677f6b8e5373d2a997d0879ff2267746672171dbc35d4bbd36ccedf3",
+    "access time",
+    1469056465385,
+    1469358966325.6309
+  ],
+  [
+    true,
+    "d4313a1db05a5a1fe72a71cca90b8765e79e6ef8407bfb802b0bb04ccec7badb",
+    "expired",
+    1469056461205,
+    1469358962144.8308
+  ],
+  [
+    true,
+    "d4313a1db05a5a1fe72a71cca90b8765e79e6ef8407bfb802b0bb04ccec7badb",
+    "access time",
+    1469056461205,
+    1469358962144.8308
+  ],
+  [
+    true,
+    "fe5d594d984266dccba9b762a1defd67436cc3551807b34b0c8daf6c01116a63",
+    "access time",
+    1469056456121,
+    1469358957061.3364
+  ],
+  [
+    true,
+    "fe5d594d984266dccba9b762a1defd67436cc3551807b34b0c8daf6c01116a63",
+    "price",
+    170,
+    1469358957061.3364
+  ],
+  [
+    true,
+    "d66b1c0a207ae7c5179de199ea4465a9c9872a57896c7522ac6b98ff9d3e658f",
+    "access time",
+    1469056451918,
+    1469358952858.1775
+  ],
+  [
+    true,
+    "70414d782e0a039e5c85a1fd44583cd72f1a9da58638446214612ed4fe66d33e",
+    "access time",
+    1469056447250,
+    1469358948190.4678
+  ],
+  [
+    true,
+    "caa6d5b75cac85a8e5e436a2f25a11c02cb80474a6f55693b89157b8aa033282",
+    "access time",
+    1469056442800,
+    1469358943740.4873
+  ],
+  [
+    true,
+    "16901fb91f569683688ebd6a3a74b384e80183df5901bd7ea5ced7352df61b10",
+    "expired",
+    1469056438237,
+    1469358939177.1182
+  ],
+  [
+    true,
+    "16901fb91f569683688ebd6a3a74b384e80183df5901bd7ea5ced7352df61b10",
+    "access time",
+    1469056438237,
+    1469358939177.1182
+  ],
+  [
+    true,
+    "6808d5f9f23859893d14932b562b4ec922309f3c31b2038be551f62b73cca34a",
+    "expired",
+    1469056433162,
+    1469358934101.4092
+  ],
+  [
+    true,
+    "6808d5f9f23859893d14932b562b4ec922309f3c31b2038be551f62b73cca34a",
+    "access time",
+    1469056433162,
+    1469358934101.4092
+  ],
+  [
+    true,
+    "1ac9c02bf3673b7d9c5cb2669641c900a6e03141d54ad752f9cac5c84361ed14",
+    "access time",
+    1469056427812,
+    1469358928751.853
+  ],
+  [
+    true,
+    "2324a323a7611a55f9672ca68c5543d1c7130f09272330d11f704e6f2eaa8f54",
+    "access time",
+    1469056423178,
+    1469358924117.6858
+  ],
+  [
+    true,
+    "ab472231debe0314f48f17c714f7f1fbce2451d7f07511b53f8bf62858e8b40f",
+    "access time",
+    1469056418642,
+    1469358919581.5132
+  ],
+  [
+    true,
+    "817c50a645f2db932dfb527ba1bdc65d95d92320d56c5a2cca82d00e00abc6d5",
+    "access time",
+    1469056414300,
+    1469358915239.414
+  ],
+  [
+    true,
+    "2ecd5726e177f696831ad178988085651d260724a72f9c81f83f05fb20d739ac",
+    "access time",
+    1469056409420,
+    1469358910360.3828
+  ],
+  [
+    true,
+    "86ce197dbe9af072425599848f99f1b17afc359e660c336bd1c2017019c875b7",
+    "access time",
+    1469056405095,
+    1469358906033.8481
+  ],
+  [
+    true,
+    "24b3873aa64f72ab6ff3b38093264115bd2699636a71b8881e34806596c6110d",
+    "access time",
+    1469056400295,
+    1469358901235.861
+  ],
+  [
+    true,
+    "4f2a0d701d278c26b7bf755d2fe49a591ad81b5900bc53253484de7acf756b93",
+    "expired",
+    1469056395797,
+    1469358896735.5872
+  ],
+  [
+    true,
+    "4f2a0d701d278c26b7bf755d2fe49a591ad81b5900bc53253484de7acf756b93",
+    "access time",
+    1469056395797,
+    1469358896735.5872
+  ],
+  [
+    true,
+    "ef0cecaad3d72fcc533b3442ae314b5f14fc92b3c57247e79ba0f322a999c5c5",
+    "expired",
+    1469056391213,
+    1469358892152.0227
+  ],
+  [
+    true,
+    "ef0cecaad3d72fcc533b3442ae314b5f14fc92b3c57247e79ba0f322a999c5c5",
+    "access time",
+    1469056391213,
+    1469358892152.0227
+  ],
+  [
+    true,
+    "872920b6ef26508b17e81e18c5588a01458a1e68d8e790884a322d7be8b72397",
+    "access time",
+    1469056387965,
+    1469358888904.127
+  ],
+  [
+    true,
+    "d9d550b600e927a11aa140319980d54f0fd1a20d16639e9e3bff2869c5e85603",
+    "access time",
+    1469056383305,
+    1469358884243.3596
+  ],
+  [
+    true,
+    "16b705ba40247c40b8fd572c1a2ed1a167420e659681c368ddc45aa296b03606",
+    "access time",
+    1469056380429,
+    1469358881368.135
+  ],
+  [
+    true,
+    "5a01541629618756c7e6a26f49019760cbbee8ee5aba08276ff0478dffc4b57f",
+    "access time",
+    1469056376038,
+    1469358876976.505
+  ],
+  [
+    true,
+    "5a01541629618756c7e6a26f49019760cbbee8ee5aba08276ff0478dffc4b57f",
+    "description",
+    null,
+    1469358876976.505
+  ],
+  [
+    true,
+    "823a4662e03d1744db12e0abdd72748f84bc2e6cef4433688a380b8190661e17",
+    "access time",
+    1469056370797,
+    1469358871735.8745
+  ],
+  [
+    true,
+    "9aa7f9a7c7ff51840194e78fbe88b0f5dc5903df5d6064f482084b9fab7cc872",
+    "access time",
+    1469056366130,
+    1469358867068.722
+  ],
+  [
+    true,
+    "c1e76f84a44177339343aecf72ec926830d1ce20a6d428b046fe91f3f2c80905",
+    "expired",
+    1469056361689,
+    1469358862626.9373
+  ],
+  [
+    true,
+    "c1e76f84a44177339343aecf72ec926830d1ce20a6d428b046fe91f3f2c80905",
+    "access time",
+    1469056361689,
+    1469358862626.9373
+  ],
+  [
+    true,
+    "ed9d90c61a260cf1dac251c4aabda1f06eb9eb341bf4aa9518cba7f1bf462f90",
+    "access time",
+    1469056356818,
+    1469358857756.3904
+  ],
+  [
+    true,
+    "a462c465242d51e1bd10d54d753a1acdbf3019fb77dd26c84a5077b560c24821",
+    "description",
+    "Left-handed 2012 BC Rich Mockingbird Exotic Classic.  Spalted maple top, neck-through design, dual Rockfield Mafia humbuckers. Bound neck and headstock, ebony fretboard, cloud inlays. Hardshell case included. Full specs here http://bcrichguitars.jp/xcmgsm.html.\r\rThis guitar is in mint condition with the exception of a small ding in the finish on the bottom rear corner (see photo).  \r\rContact for more details.  Local pickup only.  Not interested in trades, thanks.",
+    1469358853005.3047
+  ],
+  [
+    true,
+    "a462c465242d51e1bd10d54d753a1acdbf3019fb77dd26c84a5077b560c24821",
+    "access time",
+    1469056352067,
+    1469358853005.3047
+  ],
+  [
+    true,
+    "1902fcc7b25f187aa56a965d387ec361494e31c577a09d2bebb1e56e96be8f4b",
+    "access time",
+    1469056347682,
+    1469358848620.5063
+  ],
+  [
+    true,
+    "b4780c8f402f1c58f7347c3f6cb65bd30f7e2bddd8d41daf0440c66fe1c68f38",
+    "access time",
+    1469056342949,
+    1469358843886.8726
+  ],
+  [
+    true,
+    "dd55f99b9c882ccd3ab8a9d079a4aa37312a022c29d36986d37ecc6e951a8166",
+    "access time",
+    1469056338232,
+    1469358839168.9846
+  ],
+  [
+    true,
+    "dd55f99b9c882ccd3ab8a9d079a4aa37312a022c29d36986d37ecc6e951a8166",
+    "description",
+    null,
+    1469358839168.9846
+  ],
+  [
+    true,
+    "806a6ae0e42b22bceb06210bba03bd5cf400c6b0b88aa5c8ddff8e7b49d248d1",
+    "access time",
+    1469056333434,
+    1469358834371.2222
+  ],
+  [
+    true,
+    "806a6ae0e42b22bceb06210bba03bd5cf400c6b0b88aa5c8ddff8e7b49d248d1",
+    "description",
+    null,
+    1469358834371.2222
+  ],
+  [
+    true,
+    "08450cba1fd4576cd8c350312353d607c1e3edc317fca3b8d799eaf791ddb7b6",
+    "access time",
+    1469056328090,
+    1469358829026.7969
+  ],
+  [
+    true,
+    "08450cba1fd4576cd8c350312353d607c1e3edc317fca3b8d799eaf791ddb7b6",
+    "description",
+    null,
+    1469358829026.7969
+  ],
+  [
+    true,
+    "e465bf0f3c3d1b4c619c31cfdc9a414defd3964009d9dfe6ba2321c05d2e27a0",
+    "access time",
+    1469056323226,
+    1469358824164.4087
+  ],
+  [
+    true,
+    "8ac489eb5824c7bf390a3e8015e8a24fcbd2d191a3ad65d263e81801bf3d487d",
+    "access time",
+    1469056318440,
+    1469358819378.0332
+  ],
+  [
+    true,
+    "a28eb9cc9dc43b8b9af599ae7ce29afea42a256c67f8241b6e5eb810c0295dc7",
+    "access time",
+    1469056313685,
+    1469358814621.5955
+  ],
+  [
+    true,
+    "33fee04be8f79df161c37a5cfd08f19060801c9b203f42cfe513f44776add944",
+    "expired",
+    1469056309254,
+    1469358810190.7285
+  ],
+  [
+    true,
+    "33fee04be8f79df161c37a5cfd08f19060801c9b203f42cfe513f44776add944",
+    "access time",
+    1469056309254,
+    1469358810190.7285
+  ],
+  [
+    true,
+    "0494b20574f2972236a62b137f98b65f509853222b7eeac196c3491e512b4e18",
+    "access time",
+    1469056304838,
+    1469358805775.0647
+  ],
+  [
+    true,
+    "6a9819999137235dc5e64af039d9831e0abbfe68a5e0cdc09cf5eb57b1365913",
+    "access time",
+    1469056300093,
+    1469358801030.1287
+  ],
+  [
+    true,
+    "e1ac98b7406005e7043a582ebc8c0aaf2f355eec2989aaf3d57a371a90f339fc",
+    "access time",
+    1469056295713,
+    1469358796649.8987
+  ],
+  [
+    true,
+    "e1ac98b7406005e7043a582ebc8c0aaf2f355eec2989aaf3d57a371a90f339fc",
+    "price",
+    370,
+    1469358796649.8987
+  ],
+  [
+    true,
+    "e1ac98b7406005e7043a582ebc8c0aaf2f355eec2989aaf3d57a371a90f339fc",
+    "publication time",
+    1468728000000,
+    1469358796649.8987
+  ],
+  [
+    true,
+    "3eaa8b81129edbf811317765bddde923ec093d2e562155afc038e52db14ea8d1",
+    "access time",
+    1469056290909,
+    1469358791845.2146
+  ],
+  [
+    true,
+    "3eaa8b81129edbf811317765bddde923ec093d2e562155afc038e52db14ea8d1",
+    "description",
+    null,
+    1469358791845.2146
+  ],
+  [
+    true,
+    "84afad29efd3c8a721420410c46eefb7cbba1fc72aebcf942b42756d6c019a05",
+    "expired",
+    1469056285807,
+    1469358786743.2292
+  ],
+  [
+    true,
+    "84afad29efd3c8a721420410c46eefb7cbba1fc72aebcf942b42756d6c019a05",
+    "access time",
+    1469056285807,
+    1469358786743.2292
+  ],
+  [
+    true,
+    "fc80bd431ade5ac4205da24ab3bedece0d4caffb626222253c25e140c9b6ed53",
+    "description",
+    "Guitare Gauchère    Ibanez G10  2 pick-up Humbucker    excellente condition, possibilité accessoires, (pochette, courroie, fil) négotiable.  819 868-1375",
+    1469358781722.9036
+  ],
+  [
+    true,
+    "fc80bd431ade5ac4205da24ab3bedece0d4caffb626222253c25e140c9b6ed53",
+    "access time",
+    1469056280786,
+    1469358781722.9036
+  ],
+  [
+    true,
+    "e4452e6f1554b75baa64730fcd1baa3f6ada407d4fc904802ad5630910eac8ff",
+    "access time",
+    1469056276313,
+    1469358777249.223
+  ],
+  [
+    true,
+    "2afc1fef08187974c79de1b69757716592e8c626e68b253c2bb148887b4716db",
+    "expired",
+    1469056271990,
+    1469358772926.5159
+  ],
+  [
+    true,
+    "2afc1fef08187974c79de1b69757716592e8c626e68b253c2bb148887b4716db",
+    "access time",
+    1469056271990,
+    1469358772926.5159
+  ],
+  [
+    true,
+    "ac90d1c80af93067470820fe0b308203672ab5ac6b093a773309a061dfd0abee",
+    "access time",
+    1469056266615,
+    1469358767551.1394
+  ],
+  [
+    true,
+    "074285518d7ee73f8be59745f18e255f641b358789a80a4fd5bf6c520a7e5a00",
+    "access time",
+    1469056262224,
+    1469358763160.3005
+  ],
+  [
+    true,
+    "e4700435854897f0cbc9f1fe9c1b1588d0616529770d7781ab801603de6553d7",
+    "access time",
+    1469056257261,
+    1469358758196.254
+  ],
+  [
+    true,
+    "e4700435854897f0cbc9f1fe9c1b1588d0616529770d7781ab801603de6553d7",
+    "description",
+    null,
+    1469358758196.254
+  ],
+  [
+    true,
+    "ad8bef0509dbba412c37d8124586bd2c8b1ef6d458c99284cde502f303509035",
+    "access time",
+    1469056252354,
+    1469358753289.931
+  ],
+  [
+    true,
+    "01fda5056551e3c9d15bab071b918fadc798ed78c016a27ce4f4bdd13eab4f86",
+    "access time",
+    1469056248029,
+    1469358748964.4182
+  ],
+  [
+    true,
+    "ae414ff2259909eaf39e77f7d7e5dd1427a2ecb62c625651ab60f344d96d416a",
+    "expired",
+    1469056243320,
+    1469358744255.3013
+  ],
+  [
+    true,
+    "ae414ff2259909eaf39e77f7d7e5dd1427a2ecb62c625651ab60f344d96d416a",
+    "access time",
+    1469056243320,
+    1469358744255.3013
+  ],
+  [
+    true,
+    "db39e8c37695f74576ce0b49da844cbd1a60ebdf5db508690ae75c1b6b0e4206",
+    "access time",
+    1469056238128,
+    1469358739063.8716
+  ],
+  [
+    true,
+    "22554eab14183b9aa9ced38bf57f855a698642083f60949f7098f6bda39810a7",
+    "access time",
+    1469056233727,
+    1469358734662.63
+  ],
+  [
+    true,
+    "9541ab925df1c88564ea42ecde94ce8d8a6ff8f08b21ade35aca4aceae038de7",
+    "access time",
+    1469056229437,
+    1469358730372.1255
+  ],
+  [
+    true,
+    "1ab728a92aefbf1fc5340de89000cb7d550c7d216623eb47c24f1efd2b468124",
+    "expired",
+    1469056224478,
+    1469358725412.7976
+  ],
+  [
+    true,
+    "1ab728a92aefbf1fc5340de89000cb7d550c7d216623eb47c24f1efd2b468124",
+    "access time",
+    1469056224478,
+    1469358725412.7976
+  ],
+  [
+    true,
+    "aba897e0a4321da0fea5fd6f895cd05141b235778650866e3014477d8ccbf209",
+    "access time",
+    1469056221498,
+    1469358722433.5388
+  ],
+  [
+    true,
+    "a92a0b7732629a44c7f0d2ed59bdc397c649f5c4b213a3bc7c87dd5f3213915a",
+    "access time",
+    1469056218465,
+    1469358719400.1973
+  ],
+  [
+    true,
+    "2c028b3dce70d37f083cd45c141ff2f6f4df3cbf54fc0c29b707da77330005d8",
+    "access time",
+    1469056213804,
+    1469358714739.5925
+  ],
+  [
+    true,
+    "c11b0841a71049190e83fd393de04614dc4ded20750101fed7477027180fc5d6",
+    "access time",
+    1469056209211,
+    1469358710145.6147
+  ],
+  [
+    true,
+    "494562fa98d161be936bbbfdefdbf4bc5d7f5698f7caf750eda3ba474c502a5f",
+    "access time",
+    1469056204824,
+    1469358705759.175
+  ],
+  [
+    true,
+    "d8a527fb81e0e90ee285a3969e4022ba37919561b806074431b1ecc4151f7384",
+    "expired",
+    1469056200403,
+    1469358701337.3757
+  ],
+  [
+    true,
+    "d8a527fb81e0e90ee285a3969e4022ba37919561b806074431b1ecc4151f7384",
+    "access time",
+    1469056200403,
+    1469358701337.3757
+  ],
+  [
+    true,
+    "919bb6b06186bbe8f4c7307224a0b1ef10ab01128e66795c947d171c1e8c1c46",
+    "expired",
+    1469056195179,
+    1469358696113.5654
+  ],
+  [
+    true,
+    "919bb6b06186bbe8f4c7307224a0b1ef10ab01128e66795c947d171c1e8c1c46",
+    "access time",
+    1469056195179,
+    1469358696113.5654
+  ],
+  [
+    true,
+    "183fc63b670d9ae3d73b90a646840e436c06f38ed16740505d25f36a6fe7c255",
+    "access time",
+    1469056190509,
+    1469358691443.0898
+  ],
+  [
+    true,
+    "27f341b8c5f90bb0b1ed12007849623d84fe102365cdb92e4364480aff048d9f",
+    "access time",
+    1469056185729,
+    1469358686664.822
+  ],
+  [
+    true,
+    "63362dfca2c5b41f01ae324a6bf3c8b3cd74541689a34a89900a4f0613209531",
+    "access time",
+    1469056180999,
+    1469358681933.6785
+  ],
+  [
+    true,
+    "d0e6428046764164431025b99716440c042d317bc4b9fa1b8c4cdfeb51e9a2fa",
+    "access time",
+    1469056178169,
+    1469358679103.523
+  ],
+  [
+    true,
+    "e3ae5a301548d40ad98cb508647a282132ecd800f9341c5c10ef99eea8651924",
+    "access time",
+    1469056173453,
+    1469358674387.371
+  ],
+  [
+    true,
+    "13b86875533a291a0843e5998bf28b07ff5f74f6c0a97bc357966feba3b969c7",
+    "access time",
+    1469056168966,
+    1469358669900.1367
+  ],
+  [
+    true,
+    "13b86875533a291a0843e5998bf28b07ff5f74f6c0a97bc357966feba3b969c7",
+    "description",
+    null,
+    1469358669900.1367
+  ],
+  [
+    true,
+    "de7f2c4d8863c708ce3af42d5f3c6362ddd2739cb3020c109264571b4225485f",
+    "access time",
+    1469056165657,
+    1469358666590.9243
+  ],
+  [
+    true,
+    "86555168b8f3c83f90f06929eed8ed8a566b879bb004b0216cf4a18ad25c7661",
+    "access time",
+    1469056161300,
+    1469358662233.9534
+  ],
+  [
+    true,
+    "c87e2349b8003a7c673a8a29d8826520bfcc28ce34a78d97ddcd05324d34f260",
+    "access time",
+    1469056158252,
+    1469358659186.8005
+  ],
+  [
+    true,
+    "91639564f03295503d189481bee17bb5f41b7a1aea52205002e859d0180e08ef",
+    "access time",
+    1469056153875,
+    1469358654808.8743
+  ],
+  [
+    true,
+    "91639564f03295503d189481bee17bb5f41b7a1aea52205002e859d0180e08ef",
+    "description",
+    null,
+    1469358654808.8743
+  ],
+  [
+    true,
+    "79d06aef9f85151baa43044cd1e8b628772667ca4696b4ee7b50144623236876",
+    "access time",
+    1469056148390,
+    1469358649323.1248
+  ],
+  [
+    true,
+    "79d06aef9f85151baa43044cd1e8b628772667ca4696b4ee7b50144623236876",
+    "description",
+    null,
+    1469358649323.1248
+  ],
+  [
+    true,
+    "8434da64fdee9b6d06b874bd17dc2fe7c94cdd012c1c6bf0da406ccd7f09ab6c",
+    "access time",
+    1469056143013,
+    1469358643947.0522
+  ],
+  [
+    true,
+    "c5545a02cbcbc0c081b657a4b8d9571b6c2a919573f8ba5c2e429b488282538e",
+    "access time",
+    1469056138639,
+    1469358639572.4307
+  ],
+  [
+    true,
+    "84a6ac6392c8e9d1a9f202120e3f3d7a4324598e1d502c9aeb6221a83936aac2",
+    "access time",
+    1469056133809,
+    1469358634742.3481
+  ],
+  [
+    true,
+    "5ff3ad4f437e2da61964918664f96a6bb0e4384a21a2fa5fce01cae8929ed950",
+    "expired",
+    1469056129442,
+    1469358630374.5923
+  ],
+  [
+    true,
+    "5ff3ad4f437e2da61964918664f96a6bb0e4384a21a2fa5fce01cae8929ed950",
+    "access time",
+    1469056129442,
+    1469358630374.5923
+  ],
+  [
+    true,
+    "feac25005286b1113331810bb36452152c6af591a08df2ed8b8fd7079b6e1c34",
+    "expired",
+    1469056124253,
+    1469358625186.3345
+  ],
+  [
+    true,
+    "feac25005286b1113331810bb36452152c6af591a08df2ed8b8fd7079b6e1c34",
+    "access time",
+    1469056124253,
+    1469358625186.3345
+  ],
+  [
+    true,
+    "f77e8b0f38f828128c9d01a6696edef9da74b9adf966ce7b5b59626d684c103e",
+    "access time",
+    1469056119440,
+    1469358620372.953
+  ],
+  [
+    true,
+    "7e66b46d8c13424a04704c817d643aa484371809a9f182624dd0950b255480e4",
+    "access time",
+    1469056115078,
+    1469358616010.3926
+  ],
+  [
+    true,
+    "7e66b46d8c13424a04704c817d643aa484371809a9f182624dd0950b255480e4",
+    "description",
+    null,
+    1469358616010.3926
+  ],
+  [
+    true,
+    "f570cd7cd7eb2c81a349826e33bcb5802b83b2c07ec85776df9c27d37dba89db",
+    "expired",
+    1469056109792,
+    1469358610724.7834
+  ],
+  [
+    true,
+    "f570cd7cd7eb2c81a349826e33bcb5802b83b2c07ec85776df9c27d37dba89db",
+    "access time",
+    1469056109792,
+    1469358610724.7834
+  ],
+  [
+    true,
+    "c26311cc7e65a1c32c706c521452d0d4808b564222da02c9ad46c998c494ceba",
+    "access time",
+    1469056104904,
+    1469358605836.3318
+  ],
+  [
+    true,
+    "b5903141f824414875796f64aa779f7177a93908547eed9a5b8edcba6bfce3fc",
+    "access time",
+    1469056101971,
+    1469358602904.7654
+  ],
+  [
+    true,
+    "a6801dbe0b39976ebd75d33f2529124c04078ce02cf6f20e90c662931f66d02d",
+    "access time",
+    1469056097683,
+    1469358598615.1802
+  ],
+  [
+    true,
+    "7d235513e1ecabae896ded35409d5cde3e850ecf27726f02ec49b3587aa2b32c",
+    "access time",
+    1469056092692,
+    1469358593623.5442
+  ],
+  [
+    true,
+    "7d235513e1ecabae896ded35409d5cde3e850ecf27726f02ec49b3587aa2b32c",
+    "description",
+    null,
+    1469358593623.5442
+  ],
+  [
+    true,
+    "ee0134494256e0ae6c63116ab378a0aa986523373cdde01d5d8328794b6cf90b",
+    "access time",
+    1469056087887,
+    1469358588819.3574
+  ],
+  [
+    true,
+    "ee0134494256e0ae6c63116ab378a0aa986523373cdde01d5d8328794b6cf90b",
+    "description",
+    null,
+    1469358588819.3574
+  ],
+  [
+    true,
+    "0228971135a5968f95620252e63bf3fab8b20c13094c8a005bf299237197eda2",
+    "access time",
+    1469056082645,
+    1469358583577.6523
+  ],
+  [
+    true,
+    "55d55328cd375a07e727d5860e877d6210d999fdbea7d97df68e2d2d65169d86",
+    "expired",
+    1469056077835,
+    1469358578767.0212
+  ],
+  [
+    true,
+    "55d55328cd375a07e727d5860e877d6210d999fdbea7d97df68e2d2d65169d86",
+    "access time",
+    1469056077835,
+    1469358578767.0212
+  ],
+  [
+    true,
+    "a2975fc75a120505358e06f7777869b6f6c4302c8249d2f3b764f37a51ea50af",
+    "access time",
+    1469056073081,
+    1469358574012.702
+  ],
+  [
+    true,
+    "dc53280a1dc0ba989e7728fab7b74479ce39fa2e945f31b00683b517769aea9b",
+    "expired",
+    1469056068309,
+    1469358569240.9653
+  ],
+  [
+    true,
+    "dc53280a1dc0ba989e7728fab7b74479ce39fa2e945f31b00683b517769aea9b",
+    "access time",
+    1469056068309,
+    1469358569240.9653
+  ],
+  [
+    true,
+    "4ba197cd8d39461eb20c10431eb8cc4e520b026b2bff4e001212b37666d66077",
+    "expired",
+    1469056063097,
+    1469358564028.2126
+  ],
+  [
+    true,
+    "4ba197cd8d39461eb20c10431eb8cc4e520b026b2bff4e001212b37666d66077",
+    "access time",
+    1469056063097,
+    1469358564028.2126
+  ],
+  [
+    true,
+    "f9c09c8bb453293b9ac3bd21531bc68f94177ac7b6342f32a455e92ecf5fbffb",
+    "access time",
+    1469056057839,
+    1469358558775.095
+  ],
+  [
+    true,
+    "f9c09c8bb453293b9ac3bd21531bc68f94177ac7b6342f32a455e92ecf5fbffb",
+    "description",
+    null,
+    1469358558775.095
+  ],
+  [
+    true,
+    "c1e139f58fa4e82d57707434ae023e6e692920705b580af4788b70a04fa25c9d",
+    "access time",
+    1469056053096,
+    1469358554027.6338
+  ],
+  [
+    true,
+    "a4ef50915914f495a8a2e6800e6b53f2875ca69aaee84e0595af5bc5ec980660",
+    "title",
+    "Lefty Agile Intrepid 9 String",
+    1469358550007.4258
+  ],
+  [
+    true,
+    "a4ef50915914f495a8a2e6800e6b53f2875ca69aaee84e0595af5bc5ec980660",
+    "description",
+    "Sounds great, but there's two too many strings for me.  The guitar is in excellent condition and comes with a gig bag.No trades, please.",
+    1469358550007.4258
+  ],
+  [
+    true,
+    "a4ef50915914f495a8a2e6800e6b53f2875ca69aaee84e0595af5bc5ec980660",
+    "photographs",
+    [
+      "http://i.ebayimg.com/00/s/NDUwWDgwMA==/z/6RwAAOSwaB5XkAM-/$_35.JPG",
+      "http://i.ebayimg.com/00/s/NDUwWDgwMA==/z/ewYAAOSwbsBXkANB/$_35.JPG",
+      "http://i.ebayimg.com/00/s/NDUwWDgwMA==/z/6cQAAOSwaB5XkANG/$_35.JPG"
+    ],
+    1469358550007.4258
+  ],
+  [
+    true,
+    "a4ef50915914f495a8a2e6800e6b53f2875ca69aaee84e0595af5bc5ec980660",
+    "location",
+    [
+      "Montréal",
+      "QC  H4A1G1"
+    ],
+    1469358550007.4258
+  ],
+  [
+    true,
+    "a4ef50915914f495a8a2e6800e6b53f2875ca69aaee84e0595af5bc5ec980660",
+    "address",
+    "http://www.kijiji.ca/v-view-details.html?adId=1183721457",
+    1469358550007.4258
+  ],
+  [
+    true,
+    "a4ef50915914f495a8a2e6800e6b53f2875ca69aaee84e0595af5bc5ec980660",
+    "access time",
+    1469056049076,
+    1469358550007.4258
+  ],
+  [
+    true,
+    "a4ef50915914f495a8a2e6800e6b53f2875ca69aaee84e0595af5bc5ec980660",
+    "price",
+    400,
+    1469358550007.4258
+  ],
+  [
+    true,
+    "a4ef50915914f495a8a2e6800e6b53f2875ca69aaee84e0595af5bc5ec980660",
+    "publication time",
+    1468987200000,
+    1469358550007.4258
+  ],
+  [
+    true,
+    "bf502f7cf1aab98ffe4ccb4d99c44bbc5b0532833029a21de26f069c81f9c9c6",
+    "access time",
+    1469056046702,
+    1469358547636.7734
+  ],
+  [
+    true,
     "f8ed23e12a2d9923f1fb82b54740b8e2e7ac0b09c6dc87cdc65091ad1c8e0a99",
     "access time",
     1469055843340,
@@ -5987,1238 +7737,6 @@
   ],
   [
     true,
-    "bf502f7cf1aab98ffe4ccb4d99c44bbc5b0532833029a21de26f069c81f9c9c6",
-    "access time",
-    1468336851884,
-    1468705850564.6626
-  ],
-  [
-    true,
-    "c1e139f58fa4e82d57707434ae023e6e692920705b580af4788b70a04fa25c9d",
-    "access time",
-    1468336845435,
-    1468705844114.4763
-  ],
-  [
-    true,
-    "f9c09c8bb453293b9ac3bd21531bc68f94177ac7b6342f32a455e92ecf5fbffb",
-    "access time",
-    1468336840100,
-    1468705838779.246
-  ],
-  [
-    true,
-    "4ba197cd8d39461eb20c10431eb8cc4e520b026b2bff4e001212b37666d66077",
-    "access time",
-    1468336835980,
-    1468705834659.9014
-  ],
-  [
-    true,
-    "dc53280a1dc0ba989e7728fab7b74479ce39fa2e945f31b00683b517769aea9b",
-    "access time",
-    1468336831374,
-    1468705830053.3745
-  ],
-  [
-    true,
-    "a2975fc75a120505358e06f7777869b6f6c4302c8249d2f3b764f37a51ea50af",
-    "access time",
-    1468336825140,
-    1468705823819.3218
-  ],
-  [
-    true,
-    "55d55328cd375a07e727d5860e877d6210d999fdbea7d97df68e2d2d65169d86",
-    "access time",
-    1468336818495,
-    1468705817174.6294
-  ],
-  [
-    true,
-    "0228971135a5968f95620252e63bf3fab8b20c13094c8a005bf299237197eda2",
-    "access time",
-    1468336810982,
-    1468705809661.4438
-  ],
-  [
-    true,
-    "ee0134494256e0ae6c63116ab378a0aa986523373cdde01d5d8328794b6cf90b",
-    "access time",
-    1468336806090,
-    1468705804769.1868
-  ],
-  [
-    true,
-    "7d235513e1ecabae896ded35409d5cde3e850ecf27726f02ec49b3587aa2b32c",
-    "access time",
-    1468336801126,
-    1468705799805.1072
-  ],
-  [
-    true,
-    "a6801dbe0b39976ebd75d33f2529124c04078ce02cf6f20e90c662931f66d02d",
-    "access time",
-    1468336796109,
-    1468705794788.54
-  ],
-  [
-    true,
-    "b5903141f824414875796f64aa779f7177a93908547eed9a5b8edcba6bfce3fc",
-    "access time",
-    1468336789450,
-    1468705788128.7097
-  ],
-  [
-    true,
-    "c26311cc7e65a1c32c706c521452d0d4808b564222da02c9ad46c998c494ceba",
-    "access time",
-    1468336784666,
-    1468705783344.2026
-  ],
-  [
-    true,
-    "f570cd7cd7eb2c81a349826e33bcb5802b83b2c07ec85776df9c27d37dba89db",
-    "access time",
-    1468336777949,
-    1468705776626.9878
-  ],
-  [
-    true,
-    "7e66b46d8c13424a04704c817d643aa484371809a9f182624dd0950b255480e4",
-    "access time",
-    1468336772194,
-    1468705770871.7524
-  ],
-  [
-    true,
-    "f77e8b0f38f828128c9d01a6696edef9da74b9adf966ce7b5b59626d684c103e",
-    "access time",
-    1468336765632,
-    1468705764310.298
-  ],
-  [
-    true,
-    "feac25005286b1113331810bb36452152c6af591a08df2ed8b8fd7079b6e1c34",
-    "access time",
-    1468336760152,
-    1468705758829.3433
-  ],
-  [
-    true,
-    "5ff3ad4f437e2da61964918664f96a6bb0e4384a21a2fa5fce01cae8929ed950",
-    "access time",
-    1468336754650,
-    1468705753327.543
-  ],
-  [
-    true,
-    "84a6ac6392c8e9d1a9f202120e3f3d7a4324598e1d502c9aeb6221a83936aac2",
-    "access time",
-    1468336748818,
-    1468705747495.6152
-  ],
-  [
-    true,
-    "c5545a02cbcbc0c081b657a4b8d9571b6c2a919573f8ba5c2e429b488282538e",
-    "access time",
-    1468336743560,
-    1468705742237.6855
-  ],
-  [
-    true,
-    "8434da64fdee9b6d06b874bd17dc2fe7c94cdd012c1c6bf0da406ccd7f09ab6c",
-    "access time",
-    1468336737733,
-    1468705736410.5156
-  ],
-  [
-    true,
-    "79d06aef9f85151baa43044cd1e8b628772667ca4696b4ee7b50144623236876",
-    "access time",
-    1468336734806,
-    1468705733483.037
-  ],
-  [
-    true,
-    "91639564f03295503d189481bee17bb5f41b7a1aea52205002e859d0180e08ef",
-    "access time",
-    1468336728562,
-    1468705727238.6426
-  ],
-  [
-    true,
-    "c87e2349b8003a7c673a8a29d8826520bfcc28ce34a78d97ddcd05324d34f260",
-    "access time",
-    1468336722581,
-    1468705721258.5913
-  ],
-  [
-    true,
-    "86555168b8f3c83f90f06929eed8ed8a566b879bb004b0216cf4a18ad25c7661",
-    "access time",
-    1468336717109,
-    1468705715785.7917
-  ],
-  [
-    true,
-    "de7f2c4d8863c708ce3af42d5f3c6362ddd2739cb3020c109264571b4225485f",
-    "access time",
-    1468336712283,
-    1468705710959.997
-  ],
-  [
-    true,
-    "13b86875533a291a0843e5998bf28b07ff5f74f6c0a97bc357966feba3b969c7",
-    "access time",
-    1468336707780,
-    1468705706456.4834
-  ],
-  [
-    true,
-    "e3ae5a301548d40ad98cb508647a282132ecd800f9341c5c10ef99eea8651924",
-    "access time",
-    1468336704619,
-    1468705703296.0662
-  ],
-  [
-    true,
-    "d0e6428046764164431025b99716440c042d317bc4b9fa1b8c4cdfeb51e9a2fa",
-    "access time",
-    1468336699777,
-    1468705698453.1086
-  ],
-  [
-    true,
-    "63362dfca2c5b41f01ae324a6bf3c8b3cd74541689a34a89900a4f0613209531",
-    "access time",
-    1468336694332,
-    1468705693008.0872
-  ],
-  [
-    true,
-    "27f341b8c5f90bb0b1ed12007849623d84fe102365cdb92e4364480aff048d9f",
-    "access time",
-    1468336689038,
-    1468705687714.1267
-  ],
-  [
-    true,
-    "183fc63b670d9ae3d73b90a646840e436c06f38ed16740505d25f36a6fe7c255",
-    "access time",
-    1468336683560,
-    1468705682235.77
-  ],
-  [
-    true,
-    "919bb6b06186bbe8f4c7307224a0b1ef10ab01128e66795c947d171c1e8c1c46",
-    "access time",
-    1468336678266,
-    1468705676941.9512
-  ],
-  [
-    true,
-    "d8a527fb81e0e90ee285a3969e4022ba37919561b806074431b1ecc4151f7384",
-    "access time",
-    1468336673429,
-    1468705672104.6511
-  ],
-  [
-    true,
-    "494562fa98d161be936bbbfdefdbf4bc5d7f5698f7caf750eda3ba474c502a5f",
-    "access time",
-    1468336668203,
-    1468705666878.2517
-  ],
-  [
-    true,
-    "c11b0841a71049190e83fd393de04614dc4ded20750101fed7477027180fc5d6",
-    "access time",
-    1468336663504,
-    1468705662179.8267
-  ],
-  [
-    true,
-    "2c028b3dce70d37f083cd45c141ff2f6f4df3cbf54fc0c29b707da77330005d8",
-    "access time",
-    1468336658025,
-    1468705656699.8923
-  ],
-  [
-    true,
-    "a92a0b7732629a44c7f0d2ed59bdc397c649f5c4b213a3bc7c87dd5f3213915a",
-    "access time",
-    1468336652816,
-    1468705651490.9365
-  ],
-  [
-    true,
-    "aba897e0a4321da0fea5fd6f895cd05141b235778650866e3014477d8ccbf209",
-    "access time",
-    1468336648229,
-    1468705646904.5789
-  ],
-  [
-    true,
-    "1ab728a92aefbf1fc5340de89000cb7d550c7d216623eb47c24f1efd2b468124",
-    "access time",
-    1468336643422,
-    1468705642097.568
-  ],
-  [
-    true,
-    "9541ab925df1c88564ea42ecde94ce8d8a6ff8f08b21ade35aca4aceae038de7",
-    "access time",
-    1468336639880,
-    1468705638555.439
-  ],
-  [
-    true,
-    "22554eab14183b9aa9ced38bf57f855a698642083f60949f7098f6bda39810a7",
-    "access time",
-    1468336635038,
-    1468705633712.84
-  ],
-  [
-    true,
-    "db39e8c37695f74576ce0b49da844cbd1a60ebdf5db508690ae75c1b6b0e4206",
-    "access time",
-    1468336630080,
-    1468705628755.391
-  ],
-  [
-    true,
-    "ae414ff2259909eaf39e77f7d7e5dd1427a2ecb62c625651ab60f344d96d416a",
-    "access time",
-    1468336626440,
-    1468705625115.7727
-  ],
-  [
-    true,
-    "01fda5056551e3c9d15bab071b918fadc798ed78c016a27ce4f4bdd13eab4f86",
-    "access time",
-    1468336622059,
-    1468705620733.5867
-  ],
-  [
-    true,
-    "ad8bef0509dbba412c37d8124586bd2c8b1ef6d458c99284cde502f303509035",
-    "access time",
-    1468336617866,
-    1468705616540.0818
-  ],
-  [
-    true,
-    "e4700435854897f0cbc9f1fe9c1b1588d0616529770d7781ab801603de6553d7",
-    "access time",
-    1468336613225,
-    1468705611898.9517
-  ],
-  [
-    true,
-    "074285518d7ee73f8be59745f18e255f641b358789a80a4fd5bf6c520a7e5a00",
-    "access time",
-    1468336608025,
-    1468705606698.5361
-  ],
-  [
-    true,
-    "ac90d1c80af93067470820fe0b308203672ab5ac6b093a773309a061dfd0abee",
-    "access time",
-    1468336603272,
-    1468705601946.661
-  ],
-  [
-    true,
-    "2afc1fef08187974c79de1b69757716592e8c626e68b253c2bb148887b4716db",
-    "access time",
-    1468336598607,
-    1468705597280.9712
-  ],
-  [
-    true,
-    "e4452e6f1554b75baa64730fcd1baa3f6ada407d4fc904802ad5630910eac8ff",
-    "access time",
-    1468336593909,
-    1468705592583.2415
-  ],
-  [
-    true,
-    "fc80bd431ade5ac4205da24ab3bedece0d4caffb626222253c25e140c9b6ed53",
-    "access time",
-    1468336588942,
-    1468705587615.8425
-  ],
-  [
-    true,
-    "84afad29efd3c8a721420410c46eefb7cbba1fc72aebcf942b42756d6c019a05",
-    "access time",
-    1468336583731,
-    1468705582404.7458
-  ],
-  [
-    true,
-    "3eaa8b81129edbf811317765bddde923ec093d2e562155afc038e52db14ea8d1",
-    "access time",
-    1468336579073,
-    1468705577746.2014
-  ],
-  [
-    true,
-    "e1ac98b7406005e7043a582ebc8c0aaf2f355eec2989aaf3d57a371a90f339fc",
-    "access time",
-    1468336573347,
-    1468705572019.9502
-  ],
-  [
-    true,
-    "6a9819999137235dc5e64af039d9831e0abbfe68a5e0cdc09cf5eb57b1365913",
-    "access time",
-    1468336568116,
-    1468705566789.037
-  ],
-  [
-    true,
-    "0494b20574f2972236a62b137f98b65f509853222b7eeac196c3491e512b4e18",
-    "access time",
-    1468336563196,
-    1468705561869.26
-  ],
-  [
-    true,
-    "33fee04be8f79df161c37a5cfd08f19060801c9b203f42cfe513f44776add944",
-    "access time",
-    1468336558210,
-    1468705556882.5308
-  ],
-  [
-    true,
-    "a28eb9cc9dc43b8b9af599ae7ce29afea42a256c67f8241b6e5eb810c0295dc7",
-    "access time",
-    1468336552652,
-    1468705551325.0212
-  ],
-  [
-    true,
-    "8ac489eb5824c7bf390a3e8015e8a24fcbd2d191a3ad65d263e81801bf3d487d",
-    "access time",
-    1468336547230,
-    1468705545902.7046
-  ],
-  [
-    true,
-    "e465bf0f3c3d1b4c619c31cfdc9a414defd3964009d9dfe6ba2321c05d2e27a0",
-    "access time",
-    1468336542547,
-    1468705541219.5647
-  ],
-  [
-    true,
-    "08450cba1fd4576cd8c350312353d607c1e3edc317fca3b8d799eaf791ddb7b6",
-    "access time",
-    1468336537860,
-    1468705536532.6816
-  ],
-  [
-    true,
-    "806a6ae0e42b22bceb06210bba03bd5cf400c6b0b88aa5c8ddff8e7b49d248d1",
-    "access time",
-    1468336533087,
-    1468705531759.3025
-  ],
-  [
-    true,
-    "dd55f99b9c882ccd3ab8a9d079a4aa37312a022c29d36986d37ecc6e951a8166",
-    "access time",
-    1468336529899,
-    1468705528570.65
-  ],
-  [
-    true,
-    "b4780c8f402f1c58f7347c3f6cb65bd30f7e2bddd8d41daf0440c66fe1c68f38",
-    "access time",
-    1468336524964,
-    1468705523635.7468
-  ],
-  [
-    true,
-    "1902fcc7b25f187aa56a965d387ec361494e31c577a09d2bebb1e56e96be8f4b",
-    "access time",
-    1468336520683,
-    1468705519354.8015
-  ],
-  [
-    true,
-    "a462c465242d51e1bd10d54d753a1acdbf3019fb77dd26c84a5077b560c24821",
-    "access time",
-    1468336516162,
-    1468705514833.9565
-  ],
-  [
-    true,
-    "ed9d90c61a260cf1dac251c4aabda1f06eb9eb341bf4aa9518cba7f1bf462f90",
-    "access time",
-    1468336511380,
-    1468705510051.6992
-  ],
-  [
-    true,
-    "c1e76f84a44177339343aecf72ec926830d1ce20a6d428b046fe91f3f2c80905",
-    "access time",
-    1468336506982,
-    1468705505653.931
-  ],
-  [
-    true,
-    "9aa7f9a7c7ff51840194e78fbe88b0f5dc5903df5d6064f482084b9fab7cc872",
-    "access time",
-    1468336502886,
-    1468705501558.2102
-  ],
-  [
-    true,
-    "823a4662e03d1744db12e0abdd72748f84bc2e6cef4433688a380b8190661e17",
-    "access time",
-    1468336498142,
-    1468705496813.0774
-  ],
-  [
-    true,
-    "5a01541629618756c7e6a26f49019760cbbee8ee5aba08276ff0478dffc4b57f",
-    "access time",
-    1468336493979,
-    1468705492650.6284
-  ],
-  [
-    true,
-    "16b705ba40247c40b8fd572c1a2ed1a167420e659681c368ddc45aa296b03606",
-    "access time",
-    1468336489094,
-    1468705487765.0107
-  ],
-  [
-    true,
-    "d9d550b600e927a11aa140319980d54f0fd1a20d16639e9e3bff2869c5e85603",
-    "access time",
-    1468336484426,
-    1468705483097.2798
-  ],
-  [
-    true,
-    "872920b6ef26508b17e81e18c5588a01458a1e68d8e790884a322d7be8b72397",
-    "access time",
-    1468336480130,
-    1468705478801.3135
-  ],
-  [
-    true,
-    "ef0cecaad3d72fcc533b3442ae314b5f14fc92b3c57247e79ba0f322a999c5c5",
-    "access time",
-    1468336475925,
-    1468705474596.3066
-  ],
-  [
-    true,
-    "4f2a0d701d278c26b7bf755d2fe49a591ad81b5900bc53253484de7acf756b93",
-    "access time",
-    1468336471378,
-    1468705470048.5696
-  ],
-  [
-    true,
-    "24b3873aa64f72ab6ff3b38093264115bd2699636a71b8881e34806596c6110d",
-    "access time",
-    1468336467149,
-    1468705465819.9834
-  ],
-  [
-    true,
-    "86ce197dbe9af072425599848f99f1b17afc359e660c336bd1c2017019c875b7",
-    "access time",
-    1468336464210,
-    1468705462881.8286
-  ],
-  [
-    true,
-    "2ecd5726e177f696831ad178988085651d260724a72f9c81f83f05fb20d739ac",
-    "access time",
-    1468336459441,
-    1468705458111.1423
-  ],
-  [
-    true,
-    "817c50a645f2db932dfb527ba1bdc65d95d92320d56c5a2cca82d00e00abc6d5",
-    "access time",
-    1468336455038,
-    1468705453708.323
-  ],
-  [
-    true,
-    "ab472231debe0314f48f17c714f7f1fbce2451d7f07511b53f8bf62858e8b40f",
-    "access time",
-    1468336450906,
-    1468705449576.6543
-  ],
-  [
-    true,
-    "2324a323a7611a55f9672ca68c5543d1c7130f09272330d11f704e6f2eaa8f54",
-    "access time",
-    1468336446218,
-    1468705444888.8064
-  ],
-  [
-    true,
-    "1ac9c02bf3673b7d9c5cb2669641c900a6e03141d54ad752f9cac5c84361ed14",
-    "access time",
-    1468336443478,
-    1468705442148.245
-  ],
-  [
-    true,
-    "6808d5f9f23859893d14932b562b4ec922309f3c31b2038be551f62b73cca34a",
-    "access time",
-    1468336438916,
-    1468705437585.8572
-  ],
-  [
-    true,
-    "16901fb91f569683688ebd6a3a74b384e80183df5901bd7ea5ced7352df61b10",
-    "access time",
-    1468336434207,
-    1468705432877.2075
-  ],
-  [
-    true,
-    "caa6d5b75cac85a8e5e436a2f25a11c02cb80474a6f55693b89157b8aa033282",
-    "access time",
-    1468336429805,
-    1468705428474.481
-  ],
-  [
-    true,
-    "70414d782e0a039e5c85a1fd44583cd72f1a9da58638446214612ed4fe66d33e",
-    "access time",
-    1468336425662,
-    1468705424331.897
-  ],
-  [
-    true,
-    "d66b1c0a207ae7c5179de199ea4465a9c9872a57896c7522ac6b98ff9d3e658f",
-    "access time",
-    1468336421016,
-    1468705419685.4888
-  ],
-  [
-    true,
-    "fe5d594d984266dccba9b762a1defd67436cc3551807b34b0c8daf6c01116a63",
-    "access time",
-    1468336416909,
-    1468705415578.1497
-  ],
-  [
-    true,
-    "d4313a1db05a5a1fe72a71cca90b8765e79e6ef8407bfb802b0bb04ccec7badb",
-    "access time",
-    1468336412449,
-    1468705411119.2144
-  ],
-  [
-    true,
-    "6d942449677f6b8e5373d2a997d0879ff2267746672171dbc35d4bbd36ccedf3",
-    "access time",
-    1468336407776,
-    1468705406445.0674
-  ],
-  [
-    true,
-    "3cf2e49d22ea7ac0cc84897ced7dcd14e4518d5d8372e6322ae3894edc98b391",
-    "access time",
-    1468336403481,
-    1468705402150.382
-  ],
-  [
-    true,
-    "74ff5ecdd0578a7e597760689e2ad64d8f21e64bb6252f6d399086ca36141b98",
-    "access time",
-    1468336399298,
-    1468705397967.079
-  ],
-  [
-    true,
-    "1477047b347546d855d72c2d22a1f9b329fee79a613c4cd6a93fa2368da32efb",
-    "access time",
-    1468336394693,
-    1468705393361.9495
-  ],
-  [
-    true,
-    "4c7fab309eb72a0ac719828661207780ad44cdb6d19c9b32c207b023403a2713",
-    "access time",
-    1468336390467,
-    1468705389135.773
-  ],
-  [
-    true,
-    "50d1a4af4b4cd9442bbe31e9e8ee378eac8505c892283d9bb9a6acc465b44280",
-    "access time",
-    1468336386002,
-    1468705384670.913
-  ],
-  [
-    true,
-    "c9cd51526a40e242df7df6e216e54e63e805f8f3235902b3376f89e6ceb74e7b",
-    "access time",
-    1468336381381,
-    1468705380049.446
-  ],
-  [
-    true,
-    "8845d5cc1226d7259c36b77066208bfc719885d27d0c774eb056e0fac1c5082e",
-    "access time",
-    1468336377048,
-    1468705375716.7131
-  ],
-  [
-    true,
-    "b2fc264b517fe51b7506c7c5f72549996401c9f00247a7766e576748a77a305c",
-    "access time",
-    1468336374303,
-    1468705372972.4912
-  ],
-  [
-    true,
-    "c835eb9dd12554fc4adec766bc237150af71703b81c17502ddf6c18ede59b102",
-    "access time",
-    1468336369642,
-    1468705368310.155
-  ],
-  [
-    true,
-    "4be433368b9692bde466acc8977f473a647671ee59e6271a00a41ba6c8822e85",
-    "access time",
-    1468336366991,
-    1468705365659.3167
-  ],
-  [
-    true,
-    "c860cbf0539db00680167353e3d6bfb4a02b6c144e046989cfb2cbe7268c3bb7",
-    "access time",
-    1468336362601,
-    1468705361269.073
-  ],
-  [
-    true,
-    "a7e1d67dfbed2712e57413ebd6f760ed6c37fe66eb6536fd2a0b1466a5ca37cb",
-    "access time",
-    1468336357833,
-    1468705356501.8303
-  ],
-  [
-    true,
-    "6ea775b0015ae1d3ff08d38dde1d4ef990fb26ffc25384c36b517924519177b2",
-    "access time",
-    1468336353395,
-    1468705352063.0522
-  ],
-  [
-    true,
-    "076a2ad35dfcb8ae4a7fd872fb2ff076372ac5f7fe3ad2bef311301ae4d784ac",
-    "access time",
-    1468336349233,
-    1468705347901.5535
-  ],
-  [
-    true,
-    "75b701477db23e42b0086e39a02bad8b00acd09e0def496bccce8e2716edeebb",
-    "access time",
-    1468336346249,
-    1468705344916.4363
-  ],
-  [
-    true,
-    "1b20451dccbf2c1dd0afec74ae4b41b9f38ccfd36081c56797395e44e85e93b6",
-    "access time",
-    1468336341980,
-    1468705340648.0156
-  ],
-  [
-    true,
-    "932734c39962100a4073da3a40eb5e1c64f0494a9768d9e2082082b2417de75b",
-    "access time",
-    1468336337541,
-    1468705336208.6477
-  ],
-  [
-    true,
-    "ba55cb7bca1659c48dadd2202917de11e6340b7437d9ca2e92cd818b7a15585b",
-    "access time",
-    1468336334513,
-    1468705333180.8442
-  ],
-  [
-    true,
-    "b1e03e86532a7dff0a714f81c8a8015520b51102f905cb0cd346b7a081079153",
-    "access time",
-    1468336330124,
-    1468705328791.2075
-  ],
-  [
-    true,
-    "8fcd96d79afb1e1899e25ed837e4f6d7a39ca345629c428d80bcd684237aaedf",
-    "access time",
-    1468336326051,
-    1468705324718.0938
-  ],
-  [
-    true,
-    "8edd9a1a76f79adfb7f5e5b4c444c233fb895912b4e00dc69ce70b4a60fe80b4",
-    "access time",
-    1468336321362,
-    1468705320029.2336
-  ],
-  [
-    true,
-    "e08d89cdc7325fe42278849e7af42536b0a8eec4994fa625d993227d0aa44ee7",
-    "access time",
-    1468336317175,
-    1468705315841.739
-  ],
-  [
-    true,
-    "619901b9e14d188cf93d665a73f47a55a9975ef23ce0975133778cae6c357924",
-    "access time",
-    1468336312700,
-    1468705311366.9622
-  ],
-  [
-    true,
-    "29bc205c61522f08406fd7f537a9f614ee1edb4bc9bb03c35e77aabb706be204",
-    "access time",
-    1468336309704,
-    1468705308371.0535
-  ],
-  [
-    true,
-    "994c5e3acd23f67e4387bd4cd2aeb9ef8a330bd6a064e4a2283f097738b80793",
-    "access time",
-    1468336305436,
-    1468705304102.9163
-  ],
-  [
-    true,
-    "c75d9a687cdc9978fca6b9a2535b6f742c26f8a1da7f5842c72a102489cb5f5c",
-    "access time",
-    1468336301340,
-    1468705300007.1897
-  ],
-  [
-    true,
-    "4a586d9b0ab6b5649ec84a89b978d2f37007ad2f8aa4517d4384231786148a59",
-    "access time",
-    1468336296661,
-    1468705295327.5654
-  ],
-  [
-    true,
-    "4329b1ccaf42e9c91c2374e673404c55617d437ac0f47773f82985847e1b967c",
-    "access time",
-    1468336293945,
-    1468705292612.061
-  ],
-  [
-    true,
-    "bae115cfb8c47f204015676db4f4d2548ee341f5b5422f79e932b038586be28b",
-    "access time",
-    1468336289485,
-    1468705288152.0837
-  ],
-  [
-    true,
-    "81a84b53f56f9467276d09f608966b403417b3ac828c526b46f4f728dacfb151",
-    "access time",
-    1468336284888,
-    1468705283553.926
-  ],
-  [
-    true,
-    "16d433bffb317e6f480292740b5d87d71b414ad58cdcf27057ea093d2d78d6bd",
-    "access time",
-    1468336280637,
-    1468705279303.7476
-  ],
-  [
-    true,
-    "0f60a80dd9332c3ed5c93a7b391050445cedcc17bb10b4d4c201cb274b348142",
-    "access time",
-    1468336276378,
-    1468705275044.3108
-  ],
-  [
-    true,
-    "38e8662452307a3b2a8a75d191ab532c9e2345bf418a541b3fef52a05fbe2964",
-    "access time",
-    1468336271688,
-    1468705270354.102
-  ],
-  [
-    true,
-    "9a379570591c51ff28e5016625771daaa9434dba5deb6aac7f65337b42b0be7e",
-    "access time",
-    1468336267491,
-    1468705266157.4172
-  ],
-  [
-    true,
-    "c242de3c579fced8f95bf2b8661e32157bbffec28bef74ff531c1b611f96df2a",
-    "access time",
-    1468336263009,
-    1468705261675.342
-  ],
-  [
-    true,
-    "14ceb509b2fad38ffdce1b9544791d339b97c3079c98ed796dbdc4d55e62a26d",
-    "access time",
-    1468336258309,
-    1468705256974.7788
-  ],
-  [
-    true,
-    "3cfa90d5a9ddd2ae58038c374b5ce50e4bdfd62ee715fe045464ee81ebeba1f6",
-    "access time",
-    1468336253935,
-    1468705252600.9526
-  ],
-  [
-    true,
-    "55a74e2ba4a07ca516b4e1212ccd8ef6e7d410eb354a55ef6f4d8e287a70a375",
-    "access time",
-    1468336249733,
-    1468705248398.7383
-  ],
-  [
-    true,
-    "9176d548ec45b7ce353b5d92490b7252447296f8965145a2a757680b8e321ecd",
-    "access time",
-    1468336245125,
-    1468705243790.521
-  ],
-  [
-    true,
-    "d878ee5f28e1e0dc8e1d7378af36748f9d76fa006af6c683b8920b2ef5b2e59f",
-    "access time",
-    1468336240929,
-    1468705239594.417
-  ],
-  [
-    true,
-    "93ee3eef68add5557182c5d92daacbf61612cc59ea261d86794a283e2b1c00bf",
-    "access time",
-    1468336236386,
-    1468705235051.5354
-  ],
-  [
-    true,
-    "82b88f99f13800a670e0279434638533c86228990a8c8b671cda22737a17e647",
-    "access time",
-    1468336231712,
-    1468705230377.0583
-  ],
-  [
-    true,
-    "c0b7303769a911857edc16897be702c2718272adda21f1513d9e01f748398108",
-    "access time",
-    1468336227333,
-    1468705225997.8386
-  ],
-  [
-    true,
-    "194833f3e2822a0b8bdf9b79320fc1eb204cfd82340dd7db0eb7d8eacaf276b6",
-    "access time",
-    1468336224618,
-    1468705223282.4478
-  ],
-  [
-    true,
-    "827f232328c783a9309e327137418e6c50775d567b87f50ab4a748d874f44185",
-    "access time",
-    1468336219891,
-    1468705218556.2178
-  ],
-  [
-    true,
-    "0036c8d3a9b63c1393e353093dd5d8b5ea8545a5b10957971f76bfe1d3806a65",
-    "access time",
-    1468336215741,
-    1468705214405.3276
-  ],
-  [
-    true,
-    "640174f57862dc15ab50851c604ebef534123b4f70a50703a88442bfc4adfc52",
-    "access time",
-    1468336212847,
-    1468705211511.6887
-  ],
-  [
-    true,
-    "e28ee3bd02cb75e86b35a98b7e28198e3d0dc9a5035d7102f8273eab4f320765",
-    "access time",
-    1468336208039,
-    1468705206704.0388
-  ],
-  [
-    true,
-    "5565b7f2578a10004fa1aef95fa8adf163d811d72a2c7a4084ae6fa1d107dfe0",
-    "access time",
-    1468336203680,
-    1468705202344.9583
-  ],
-  [
-    true,
-    "5dbbba59106f2fd64561280e8128917660ff5388e106752e6f5d6ff927ec7cc4",
-    "access time",
-    1468336199482,
-    1468705198146.353
-  ],
-  [
-    true,
-    "099a23ebcc5820812c0238b7497b944b2820db678b140fd71527ab27cbf32279",
-    "access time",
-    1468336194804,
-    1468705193467.6802
-  ],
-  [
-    true,
-    "89ab34ba140f09c90c913374ae672e3bde25a42325f40fb7add16f64218ad828",
-    "access time",
-    1468336190626,
-    1468705189290.4968
-  ],
-  [
-    true,
-    "116930fcfec0179edec560d15521a5562f114223bbb4a3ff0b4e99c2eb27035d",
-    "access time",
-    1468336187735,
-    1468705186398.9417
-  ],
-  [
-    true,
-    "e02d9df23ec7e1185e67f924da3055937fe3e6b299c7389776535dc95591d82c",
-    "access time",
-    1468336183051,
-    1468705181714.7476
-  ],
-  [
-    true,
-    "1aa09ce29c3253f1c48aaddb1fece6ced4619ae42851abfc8f5d357a7ef6b66c",
-    "access time",
-    1468336178674,
-    1468705177337.457
-  ],
-  [
-    true,
-    "438ced0db3ba87e7830aec4a5313ed2f142c6c87e82a222c181de115c79993ec",
-    "access time",
-    1468336174495,
-    1468705173159.3606
-  ],
-  [
-    true,
-    "446873ef66de8f636e708c328f7851e4f2e401b7e0c8ce9829fcc3b4dd3196e7",
-    "access time",
-    1468336169765,
-    1468705168428.978
-  ],
-  [
-    true,
-    "3c3617e52d54ca3b79e523551c4fb6f95490529dd64b7d24fb56931b30524bed",
-    "access time",
-    1468336167036,
-    1468705165699.5605
-  ],
-  [
-    true,
-    "151c0120ca6da7bccd2787b8b5f83b8d15875cfccafc8165c80638e665471e0c",
-    "access time",
-    1468336162590,
-    1468705161253.867
-  ],
-  [
-    true,
-    "55efe3c22ccc9e61c8bc315b35f511a8aeb9cadf20be88a653dde9ab078a3017",
-    "access time",
-    1468336157803,
-    1468705156466.8723
-  ],
-  [
-    true,
-    "4a8359f24077835094186a01b496e0820cc80fcb3ada1fc88bfc1577a1780ea6",
-    "access time",
-    1468336153495,
-    1468705152158.373
-  ],
-  [
-    true,
-    "171b1c30df3f9fb2c9c6676e3eb8107d50098a96330d36d5bcbb8718b8c31440",
-    "access time",
-    1468336150780,
-    1468705149443.0022
-  ],
-  [
-    true,
-    "9bb0a013e81d07f56795ab2ecfbd478e7e64b037e054c86e5c000331aad6428c",
-    "access time",
-    1468336146050,
-    1468705144712.7996
-  ],
-  [
-    true,
-    "034b6d7f7ba1461dcf349506362b44f1b221e7cbb2e17408526765deb27b3120",
-    "access time",
-    1468336141968,
-    1468705140630.7202
-  ],
-  [
-    true,
-    "bdecc4e00aa5ff2c8fc3c8ac7172b6175d6f4ebdb72d4969d29c9fe32be3081e",
-    "access time",
-    1468336137514,
-    1468705136177.1199
-  ],
-  [
-    true,
-    "f2e20b4efbc694d022b4a21ef22b4e545ac1f8fd643f695c15f5d1374212253f",
-    "access time",
-    1468336132838,
-    1468705131500.8936
-  ],
-  [
-    true,
-    "9f3a49c1a8844b5cfb259aaa36d589af1662da4659f39cb8c86ec0087cdfd33c",
-    "access time",
-    1468336128576,
-    1468705127238.6472
-  ],
-  [
-    true,
-    "6275b80466e1072e4f6d1cef84f32e260e4b43695a35a893093ef75ab48447ee",
-    "access time",
-    1468336124405,
-    1468705123068.2458
-  ],
-  [
-    true,
-    "baaf47991b06dfff2268aab10a111abab16c60936b922321fb0e5ae9922a8f1d",
-    "access time",
-    1468336119674,
-    1468705118336.489
-  ],
-  [
-    true,
-    "d5d89565a1fc5a8965590530d078a8dce532a3cdde9e1142f290c7a6c6963f1a",
-    "access time",
-    1468336115515,
-    1468705114177.6636
-  ],
-  [
-    true,
-    "31699ba74ce9f38a773f8e765ce920690dc67ba6444a2b83017e18ef4251ff74",
-    "access time",
-    1468336111034,
-    1468705109696.0913
-  ],
-  [
-    true,
-    "e37ef0a46780c8f8148ac7e4d44299b2012463ab5259db6d2d147d0a99d22dc5",
-    "access time",
-    1468336106344,
-    1468705105005.8618
-  ],
-  [
-    true,
-    "12521bb49c61652d3ec9b9bab3341a650658bfa8244928b3cce7e518e9df68fc",
-    "access time",
-    1468336101935,
-    1468705100597.3862
-  ],
-  [
-    true,
-    "3297427e6f9aa5b91dcc1a8c47a642d1b041a2a772a5e502695bce957399ed52",
-    "access time",
-    1468336097791,
-    1468705096452.719
-  ],
-  [
-    true,
-    "a77fa9e3f22b7185704109739a31b45f3a42e91ce65331156ba245553c646c8f",
-    "access time",
-    1468336093044,
-    1468705091705.9148
-  ],
-  [
-    true,
-    "b11fc265f48a8d457dad7bfa1b97bf41744aea2cbdd353635362e33df0cd6610",
-    "access time",
-    1468336088832,
-    1468705087494.1145
-  ],
-  [
-    true,
-    "532d3e1c06313607019dffbf32438c4dc96535387212c8699ff9be6a9c434224",
-    "access time",
-    1468336084226,
-    1468705082887.0647
-  ],
-  [
-    true,
-    "3273310d01001c94c8cc7fb0a0c2683920bcf77c58159ee8a288d6d02d20d168",
-    "access time",
-    1468336081182,
-    1468705079844.489
-  ],
-  [
-    true,
-    "c592d9018ca43f14f6fce6cc5a596439db03335394c55caddad2a92e266a9a9d",
-    "access time",
-    1468336076793,
-    1468705075454.1926
-  ],
-  [
-    true,
-    "f8ab40737420abf80cd293e73f0161e49895127e46c8d778f245b37bfc193c61",
-    "access time",
-    1468336072646,
-    1468705071307.9377
-  ],
-  [
-    true,
-    "c646ed87aed6921d8feb92a4c692e4d174440d06b82e366335ac0ee23a0c8969",
-    "access time",
-    1468336068076,
-    1468705066737.301
-  ],
-  [
-    true,
-    "33c5112dd54ef5c1ce6757e2c57743fc9422a8c9a0d5531db6425738f352006f",
-    "access time",
-    1468336063917,
-    1468705062578.0278
-  ],
-  [
-    true,
-    "29579411f3ad321bc8bfbeac02613e902a7e0834941ea496f8cecbf2c647735e",
-    "access time",
-    1468336059432,
-    1468705058093.3843
-  ],
-  [
-    true,
-    "21b4a00eaafb7077ddbc0835921855fa295eb17a6c656fa49c7c986669c15fbe",
-    "access time",
-    1468336054732,
-    1468705053392.5474
-  ],
-  [
-    true,
     "2b563d00eef9c503581fe1cdb4da7db55ffec55297bcf1295dad73498179d6d1",
     "access time",
     1468336050361,
@@ -8186,90 +8704,6 @@
   ],
   [
     true,
-    "ee0134494256e0ae6c63116ab378a0aa986523373cdde01d5d8328794b6cf90b",
-    "description",
-    null,
-    1468703723355.1162
-  ],
-  [
-    true,
-    "7d235513e1ecabae896ded35409d5cde3e850ecf27726f02ec49b3587aa2b32c",
-    "description",
-    null,
-    1468703719013.374
-  ],
-  [
-    true,
-    "7e66b46d8c13424a04704c817d643aa484371809a9f182624dd0950b255480e4",
-    "description",
-    null,
-    1468703696907.6267
-  ],
-  [
-    true,
-    "79d06aef9f85151baa43044cd1e8b628772667ca4696b4ee7b50144623236876",
-    "description",
-    null,
-    1468703668384.9429
-  ],
-  [
-    true,
-    "91639564f03295503d189481bee17bb5f41b7a1aea52205002e859d0180e08ef",
-    "description",
-    null,
-    1468703663524.3513
-  ],
-  [
-    true,
-    "13b86875533a291a0843e5998bf28b07ff5f74f6c0a97bc357966feba3b969c7",
-    "description",
-    null,
-    1468703647396.8699
-  ],
-  [
-    true,
-    "e4700435854897f0cbc9f1fe9c1b1588d0616529770d7781ab801603de6553d7",
-    "description",
-    null,
-    1468703562967.5872
-  ],
-  [
-    true,
-    "3eaa8b81129edbf811317765bddde923ec093d2e562155afc038e52db14ea8d1",
-    "description",
-    null,
-    1468703532459.1184
-  ],
-  [
-    true,
-    "08450cba1fd4576cd8c350312353d607c1e3edc317fca3b8d799eaf791ddb7b6",
-    "description",
-    null,
-    1468703497187.8557
-  ],
-  [
-    true,
-    "806a6ae0e42b22bceb06210bba03bd5cf400c6b0b88aa5c8ddff8e7b49d248d1",
-    "description",
-    null,
-    1468703492587.3372
-  ],
-  [
-    true,
-    "dd55f99b9c882ccd3ab8a9d079a4aa37312a022c29d36986d37ecc6e951a8166",
-    "description",
-    null,
-    1468703487984.7048
-  ],
-  [
-    true,
-    "5a01541629618756c7e6a26f49019760cbbee8ee5aba08276ff0478dffc4b57f",
-    "description",
-    null,
-    1468703454799.5002
-  ],
-  [
-    true,
     "20bb3beab69ccc1aa3ccda55b66046b665aa4d9dceb3de893231cb59bd57c4ba",
     "expired",
     1468334279235,
@@ -8281,13 +8715,6 @@
     "access time",
     1468334279235,
     1468703277853.127
-  ],
-  [
-    true,
-    "3273310d01001c94c8cc7fb0a0c2683920bcf77c58159ee8a288d6d02d20d168",
-    "price",
-    null,
-    1468703032705.0684
   ],
   [
     true,
@@ -9560,13 +9987,6 @@
   ],
   [
     true,
-    "fc80bd431ade5ac4205da24ab3bedece0d4caffb626222253c25e140c9b6ed53",
-    "description",
-    "Guitare Gauchère    Ibanez G10  2 pick-up Humbucker    excellente condition, possibilité accessoires, négotiable.  819 868-1375",
-    1468576155504.1326
-  ],
-  [
-    true,
     "f445d6e84b7e1544f1168b476fa4a49100853eb434145be63d96ea444ab6605d",
     "expired",
     1468256300250,
@@ -10095,13 +10515,6 @@
   [
     true,
     "81a84b53f56f9467276d09f608966b403417b3ac828c526b46f4f728dacfb151",
-    "description",
-    "Guitare gauchère neuve , ajustée par luthier , je donne un vieux case pas de poignée avec.",
-    1468562057278.0864
-  ],
-  [
-    true,
-    "81a84b53f56f9467276d09f608966b403417b3ac828c526b46f4f728dacfb151",
     "photographs",
     [
       "http://i.ebayimg.com/00/s/ODAwWDYwMA==/z/g3oAAOSw0kNXgmzR/$_35.JPG",
@@ -10125,13 +10538,6 @@
     "81a84b53f56f9467276d09f608966b403417b3ac828c526b46f4f728dacfb151",
     "address",
     "http://www.kijiji.ca/v-view-details.html?adId=1180902122",
-    1468562057278.0864
-  ],
-  [
-    true,
-    "81a84b53f56f9467276d09f608966b403417b3ac828c526b46f4f728dacfb151",
-    "price",
-    120,
     1468562057278.0864
   ],
   [
@@ -10871,13 +11277,6 @@
     "fe5d594d984266dccba9b762a1defd67436cc3551807b34b0c8daf6c01116a63",
     "address",
     "http://www.kijiji.ca/v-view-details.html?adId=1181046784",
-    1468562016947.4412
-  ],
-  [
-    true,
-    "fe5d594d984266dccba9b762a1defd67436cc3551807b34b0c8daf6c01116a63",
-    "price",
-    180,
     1468562016947.4412
   ],
   [
@@ -12546,13 +12945,6 @@
     "publication time",
     1467864000000,
     1468073171907.5247
-  ],
-  [
-    true,
-    "532d3e1c06313607019dffbf32438c4dc96535387212c8699ff9be6a9c434224",
-    "publication time",
-    1466654400000,
-    1468068637971.7222
   ],
   [
     true,
@@ -21002,20 +21394,6 @@
   [
     true,
     "9176d548ec45b7ce353b5d92490b7252447296f8965145a2a757680b8e321ecd",
-    "title",
-    "Epiphone Lefty Dot CH Cherry Like New with accessories 750 obo",
-    1467653164678.2856
-  ],
-  [
-    true,
-    "9176d548ec45b7ce353b5d92490b7252447296f8965145a2a757680b8e321ecd",
-    "description",
-    "What I have to offer:\rEpiphone Dot Lefty Cherry Red Semi-hollow body electric guitar\rhttp://www.epiphone.com/Products/Archtop/Dot-(LH).aspx\rVox Classic rock headphone amp\rhttps://www.amazon.ca/Vox-amPlug-Classic-Guitar-Headphone/dp/B000ZJTPLG\rBasic black strap from Long & McQuade\rhttps://www.long-mcquade.com/4702/Guitars/Straps/Long_McQuade/Nylon_Strap_with_Leather_Ends.htm\rHard Shell Case for the dot\rhttps://www.long-mcquade.com/12021/Guitars/Cases_Gig_Bags/Yorkville_Sound/Hardshell_ES-335_Style_Guitar_Case.htm\r\rCondition:\rGuitar is in great shape, no visible wear to the body but a bit of wear on the fretboard. Plays well. Missing the pickguard but I have the E symbol, screws and bracket from it. You can get a new one for about $20.\rVox and strap also like new. Played the vox a bit when tying to be quiet. I have one straplock, I lost the other one.\rThe case is a bit beat up but still in good shape.  \r \rThis guitar is in great shape and at the time I thought I'd play more. It's a disconitnued model and the pickguard is missing but I have the bracket, screws and E symbol it came with. I'm pretty firm on the price. I also have a small traynor amp I'll throw in for free. \r\rObviously come down to try it, bring a cord please, I don't have one to connect the guitar to the amp.",
-    1467653164678.2856
-  ],
-  [
-    true,
-    "9176d548ec45b7ce353b5d92490b7252447296f8965145a2a757680b8e321ecd",
     "photographs",
     [
       "http://i.ebayimg.com/00/s/ODAwWDYwMA==/z/mmgAAOSwEjFXeZbR/$_35.JPG",
@@ -21042,13 +21420,6 @@
     "9176d548ec45b7ce353b5d92490b7252447296f8965145a2a757680b8e321ecd",
     "address",
     "http://www.kijiji.ca/v-view-details.html?adId=1179106395",
-    1467653164678.2856
-  ],
-  [
-    true,
-    "9176d548ec45b7ce353b5d92490b7252447296f8965145a2a757680b8e321ecd",
-    "price",
-    750,
     1467653164678.2856
   ],
   [
@@ -25094,13 +25465,6 @@
     "f2e20b4efbc694d022b4a21ef22b4e545ac1f8fd643f695c15f5d1374212253f",
     "title",
     "Yamaha APX700 gauchère",
-    1467209780453.6677
-  ],
-  [
-    true,
-    "f2e20b4efbc694d022b4a21ef22b4e545ac1f8fd643f695c15f5d1374212253f",
-    "description",
-    "Yamaha APX700 gauchère à vendre, 400$\rAvec gig bag.\r\rEn très bonne état.\r\rJe préfère vendre mais ouvert à un échange si semi-hollow, genre Epiphone Dot (gauchère également).",
     1467209780453.6677
   ],
   [
@@ -46682,13 +47046,6 @@
   ],
   [
     true,
-    "e1ac98b7406005e7043a582ebc8c0aaf2f355eec2989aaf3d57a371a90f339fc",
-    "price",
-    375,
-    1466452228842.4485
-  ],
-  [
-    true,
     "805c19142c5ce3d9384b875d9626a4ce16c3783f11cedc06313df562fe5ff075",
     "price",
     225,
@@ -50048,13 +50405,6 @@
   [
     true,
     "f9c09c8bb453293b9ac3bd21531bc68f94177ac7b6342f32a455e92ecf5fbffb",
-    "description",
-    "300 or BEST OFFER\rHardly new still great quality Barely used- LEFT HANDED- Do not email. Will include a TUNER and AMP with PICKS and CASE. No guitar strap. Will deliver depending on area",
-    1466388166648.365
-  ],
-  [
-    true,
-    "f9c09c8bb453293b9ac3bd21531bc68f94177ac7b6342f32a455e92ecf5fbffb",
     "photographs",
     [
       "http://i.ebayimg.com/00/s/NDAwWDQwMA==/z/3koAAOSwMr1XPcCS/$_35.JPG",
@@ -52621,13 +52971,6 @@
     "publication time",
     1463112000000,
     1466382710416.3726
-  ],
-  [
-    true,
-    "e1ac98b7406005e7043a582ebc8c0aaf2f355eec2989aaf3d57a371a90f339fc",
-    "publication time",
-    1463976000000,
-    1466382705409.9766
   ],
   [
     true,
@@ -56149,13 +56492,6 @@
     "a462c465242d51e1bd10d54d753a1acdbf3019fb77dd26c84a5077b560c24821",
     "title",
     "LEFTY BC Rich Mockingbird Exotic Classic",
-    1466096274177.519
-  ],
-  [
-    true,
-    "a462c465242d51e1bd10d54d753a1acdbf3019fb77dd26c84a5077b560c24821",
-    "description",
-    "Left-handed 2012 BC Rich Mockingbird Exotic Classic.  Spalted maple top, neck-through design, dual Rockfield Mafia humbuckers.  Hardshell case included. Full specs here http://bcrichguitars.jp/xcmgsm.html.\r\rThis guitar is in mint condition with the exception of a small ding in the finish on the bottom rear corner (see photo).  \r\rContact for more details.  Local pickup only.  Not interested in trades, thanks.",
     1466096274177.519
   ],
   [
