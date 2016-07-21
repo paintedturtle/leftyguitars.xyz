@@ -155,6 +155,7 @@ advanceOldestArticle = ->
     console.info "READ #{article.id}":article.address
     Kijiji.Article.read article.address, (error, output) ->
       if error then throw error
+      console.info output
       advancements = {}
       for key, value of output
         advancements[key] = value unless Immutable.is Immutable.fromJS(value), Immutable.fromJS(article[key])
@@ -179,6 +180,8 @@ setTimeout advanceOldestArticle, 3.seconds()
 
 # console.info article = instruments.pull "XXX"
 
-# instruments.advance "83031ecb2752b14fd7d6dcf11a4665b388c0dab55539cd15e8bfc984b85e231f", trashed:Date.now()
+# instruments.advance "4710afa5d6310b719dd8bf369a29f17b3ae689d95f5639e5682cd7ed5417289b", expired:Date.now()
 # instruments.advance "201660fff09c4bf0ef1a4f203afc77af0f0b731940e57f0d7c4342a9ea567dc2", pocketd:Date.now()
-# addInstrument.fromKijiji "http://www.kijiji.ca/v-guitar/city-of-toronto/fender-p-bass-junior-lefty-mij-p/1180225005", -> console.info("Done")
+# addInstrument.fromKijiji "http://www.kijiji.ca/v-view-details.html?adId=1172979691", -> console.info(arguments, "Done")
+
+Kijiji.Article.read "http://www.kijiji.ca/v-view-details.html?adId=1172979691", (error, output) -> console.info(output)

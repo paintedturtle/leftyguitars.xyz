@@ -37,7 +37,7 @@ Kijiji.Article.address = (id) ->
   "http://www.kijiji.ca/v-view-details.html?adId=#{id}"
 
 Kijiji.Article.attributes =
-  "expired":".expired-ad-container"
+  "expired":".expired-ad-container,.message-container.info>.message"
   "title":"[itemprop=name]"
   "description":"[itemprop=description]"
   "price string":"[itemprop=price]"
@@ -53,9 +53,8 @@ Kijiji.Article.read = (address, done) ->
     console.info error, output
     output["address"] = address
     output["access time"] = Date.now()
-    if output["expired"]
+    if output["expired"] or (undefined is output["title"] is output["description"])
       output["expired"] = Date.now()
-      delete output["photographs"]
     else
       if output["price string"]
         output["price"] = Number output["price string"].replace("$","")

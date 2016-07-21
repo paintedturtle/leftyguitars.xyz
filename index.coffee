@@ -199,8 +199,8 @@ document.on "DOMContentLoaded", ->
   {current, expired, pocketd, novelty, trashed} = window.articles.reduce(toCurrentExpiredNoprice, {})
   renderNovelty novelty if location.hostname.length is 9
   renderCurrentArticles current
-  renderExpiredArticles expired
-  renderTrash trashed
+  # renderExpiredArticles expired
+  # renderTrash trashed
   renderPocket pocketd if location.hostname.length is 9
 
 toCurrentExpiredNoprice = (reduction, guitar) ->
@@ -212,7 +212,7 @@ toCurrentExpiredNoprice = (reduction, guitar) ->
   if guitar.trashed
     reduction.trashed.push(guitar)
     return reduction
-  if guitar.pocketd
+  if guitar.pocketd and guitar.expired is undefined
     reduction.pocketd.push(guitar)
     return reduction
   if guitar.expired
@@ -382,7 +382,7 @@ simplifiedTitle = (string) ->
     .replace(/left[- ]hand\s?/i, "")
     .replace("()", "")
 
-simplifiedAddress = (string) ->
+simplifiedAddress = (string="https://undefined.space/address") ->
   string
     .replace("http://www.kijiji.ca", "kijiji")
     .replace("/v-view-details.html?adId=", "#")
