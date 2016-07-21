@@ -1,6 +1,1042 @@
 [
   [
     true,
+    "afa786f960b4ed6bc97d4187616e6ab976c2b974d353043bf9bed537b4287688",
+    "access time",
+    1469127314320,
+    1469475702315.2268
+  ],
+  [
+    true,
+    "399ff4566a5548a257988ab82d6487e4a4bddb21a0b9c67f1ba49d41e61cd511",
+    "access time",
+    1469127002989,
+    1469475390975.3672
+  ],
+  [
+    true,
+    "b753cda21e1b09579e4058d5ada9ebf325fca3f307763fbcba4f21dec874fded",
+    "access time",
+    1469126802860,
+    1469475190841.622
+  ],
+  [
+    true,
+    "73d8a6d84d0a2ff9bf061addd7c05c92d9ba5e785adc6ccc8baa9faaf6af40d0",
+    "access time",
+    1469126707388,
+    1469475095366.6213
+  ],
+  [
+    true,
+    "cfcff8f6ee8356cb14f1261a531be10faaff7fae48eed02b59d3441320a2ceae",
+    "access time",
+    1469126612331,
+    1469475000307.3586
+  ],
+  [
+    true,
+    "28af3ebf81610486163b97548949bbd438b6dd0988a577af54bdfad954600c51",
+    "access time",
+    1469126607642,
+    1469474995617.8203
+  ],
+  [
+    true,
+    "fdd56fc545e57816a346d1f3d4ab08a9d3cbfdf21f1497b737c2527fc57b8d33",
+    "access time",
+    1469126603075,
+    1469474991051.7712
+  ],
+  [
+    true,
+    "1ee8c40150fb0df3a67eb3154a4cd390d8cf97cae7def54e34629ffe85986990",
+    "access time",
+    1469126598658,
+    1469474986633.8015
+  ],
+  [
+    true,
+    "2b8eb0434639fe1d1a11c6bdd93ddf7bbf121ab2afd35ab54802bc289994eb1f",
+    "access time",
+    1469126593729,
+    1469474981704.6238
+  ],
+  [
+    true,
+    "a20efec2740cc4251e562f7945841be441b8a498b2c37711e84ee472a34c3fac",
+    "access time",
+    1469126589055,
+    1469474977031.7263
+  ],
+  [
+    true,
+    "27e934245da6920f3bbf149e6b48799447df13ba63fa0e5081cf6bcaaf1f2f2d",
+    "access time",
+    1469126584092,
+    1469474972067.6426
+  ],
+  [
+    true,
+    "f1d45c4a06b0e1255a4de4f77eabb248b82fd1823726deb2e9de9ac3062948dd",
+    "access time",
+    1469126579749,
+    1469474967723.9688
+  ],
+  [
+    true,
+    "8f825cb143211c0cce892ed7d0fb39c74f8c9319d82071922ee5796e70a3d2eb",
+    "access time",
+    1469126576608,
+    1469474964582.8767
+  ],
+  [
+    true,
+    "60a4590ca629f01980cf667ea1fff270f7d5f11c36d3d219624529b4267f496a",
+    "access time",
+    1469126571933,
+    1469474959908.0068
+  ],
+  [
+    true,
+    "5521c6339d1b84936620bbbb446dba9e366f9be77c58d9ba4c64d5f228a83560",
+    "access time",
+    1469126567364,
+    1469474955338.8992
+  ],
+  [
+    true,
+    "a550cf9b78efe4e5cc4a21b8c86009561880940f8061017d44f078d9b5e3968b",
+    "access time",
+    1469126564460,
+    1469474952435.6565
+  ],
+  [
+    true,
+    "6e6803a250c03313b951fb4df749e42a24814d082da3d2060abc8bc22902996d",
+    "access time",
+    1469126559676,
+    1469474947651.6045
+  ],
+  [
+    true,
+    "b23dcc41b770e596e145dd04099d6f3bca5a0eded80304a8d1e6e8e856b836ab",
+    "access time",
+    1469126554978,
+    1469474942952.6208
+  ],
+  [
+    true,
+    "d14bb00f52059081e319a442923215729297b769acc2f5aa05348c62a3820b02",
+    "access time",
+    1469126550438,
+    1469474938413.4238
+  ],
+  [
+    true,
+    "ad4fd80f7614d7e1d766bb9f1027535730dec2e95d9bbc74aeaa63542219fa46",
+    "access time",
+    1469126546000,
+    1469474933974.912
+  ],
+  [
+    true,
+    "07c20cdb811a2f533520e95087354441255af54300c4e5f4433235a4fcb5b6ea",
+    "access time",
+    1469126541125,
+    1469474929099.069
+  ],
+  [
+    true,
+    "41392c39b61a54c8b0a475ca0f378c6cb59f8703b19be0562991b01dacc9ee0f",
+    "access time",
+    1469126536343,
+    1469474924317.6091
+  ],
+  [
+    true,
+    "41392c39b61a54c8b0a475ca0f378c6cb59f8703b19be0562991b01dacc9ee0f",
+    "price",
+    null,
+    1469474924317.6091
+  ],
+  [
+    true,
+    "2b99164e6b24785cb19880b241deec27ce1cb66b5cd6234f7308fbc11c636614",
+    "access time",
+    1469126531720,
+    1469474919693.879
+  ],
+  [
+    true,
+    "6acef8a02c516d9bc6d1a57fdbeb235d2b1f0f4578e6aa8671eed220f529e6f0",
+    "access time",
+    1469126526926,
+    1469474914900.5698
+  ],
+  [
+    true,
+    "3749673899d323d44de74f59117c29a2b190232c9212e9e8f586db36bf5b1872",
+    "access time",
+    1469126521961,
+    1469474909934.987
+  ],
+  [
+    true,
+    "26a56e0866daadf4511629f359cad6c3161a93aaf10b5752fe431934a9b46d99",
+    "access time",
+    1469126517384,
+    1469474905409.547
+  ],
+  [
+    true,
+    "06f79cd956e6c2dd03b1b22cb12edf4a9b6c69a0c25c462a352914529b9a583a",
+    "access time",
+    1469126512526,
+    1469474900500.7166
+  ],
+  [
+    true,
+    "4b9dee57931db4df0a7aa4166c8cba8d3d18c6521ef9c5e1ee88f7e511d72855",
+    "access time",
+    1469126508026,
+    1469474896002.6404
+  ],
+  [
+    true,
+    "d14a42e904dd52a7df5066dfff2e66fd7d2e05f51b41eeb127a59f4a231a406d",
+    "access time",
+    1469126504874,
+    1469474892847.8406
+  ],
+  [
+    true,
+    "45542c4788cf4ed41d8da6b9cbce6a9b2a7d40d8681e7c6a0584aa54b3997aff",
+    "access time",
+    1469126499992,
+    1469474887966.0137
+  ],
+  [
+    true,
+    "96b5ac610978b0dca4c1207345824daa755d7a391ec9944413cdc1affe5d3857",
+    "access time",
+    1469126495064,
+    1469474883037.6482
+  ],
+  [
+    true,
+    "bf502f7cf1aab98ffe4ccb4d99c44bbc5b0532833029a21de26f069c81f9c9c6",
+    "access time",
+    1469126490291,
+    1469474878264.2307
+  ],
+  [
+    true,
+    "3cc0164ed52af270368f521633d4e64fcf7e6fac13b7e7b61aae1342e5589ab5",
+    "access time",
+    1469126485363,
+    1469474873336.7493
+  ],
+  [
+    true,
+    "6c1c7514377e418472c90d9ec2c98bf3af9ef15d8828ee796664cec8949a64cb",
+    "access time",
+    1469126480552,
+    1469474868525.1145
+  ],
+  [
+    true,
+    "eb68279f5e123a17d7c819d81835d6d448b8d6da7631264c9efdf767ce4d9c6a",
+    "access time",
+    1469126475795,
+    1469474863768.464
+  ],
+  [
+    true,
+    "10a1cc0f863ec36f6f277d6fddc2ec73e4dbab2e6ebacbf215a8e352bc6ba62b",
+    "access time",
+    1469126470642,
+    1469474858615.6782
+  ],
+  [
+    true,
+    "c1e139f58fa4e82d57707434ae023e6e692920705b580af4788b70a04fa25c9d",
+    "access time",
+    1469126465616,
+    1469474853588.8862
+  ],
+  [
+    true,
+    "84a6ac6392c8e9d1a9f202120e3f3d7a4324598e1d502c9aeb6221a83936aac2",
+    "access time",
+    1469126402432,
+    1469474790403.0105
+  ],
+  [
+    true,
+    "801ba47355e434a7f4cb49e19fd8ab2dd7744703457830a05f0f3d578ff069e2",
+    "access time",
+    1469126397961,
+    1469474785932.652
+  ],
+  [
+    true,
+    "f687d2a8ab07424fe4a5ab1198a726de6618da87f102bfd4788af430a278b881",
+    "access time",
+    1469126393206,
+    1469474781176.945
+  ],
+  [
+    true,
+    "f1955762df192cf8531309d9db92e83f1c8a775bdffec3c844beabc5679102ef",
+    "access time",
+    1469126388277,
+    1469474776248.541
+  ],
+  [
+    true,
+    "5909638777227ffc9793aaa16d2dea47997e60509d1b5af11a553435005345da",
+    "access time",
+    1469126383563,
+    1469474771534.4495
+  ],
+  [
+    true,
+    "e1e1349102beecca3bfef6cea02b45de4cbe1251ebe4bebd109b82b3054760c3",
+    "access time",
+    1469126378414,
+    1469474766385.108
+  ],
+  [
+    true,
+    "1788c7116ebfde37fc84301fbd2da490c3226f27d920178a6b8fa24f6b658221",
+    "access time",
+    1469126373964,
+    1469474761934.3525
+  ],
+  [
+    true,
+    "20aa2c13bfb8dc7b3d33ebb04e13f562a6832b14d6ca464ddfe42355e94849b7",
+    "access time",
+    1469126369171,
+    1469474757142.274
+  ],
+  [
+    true,
+    "61bc9107f3f6580a164aad6c7dd31e865c7c3b49285a554d908987b36337b1ed",
+    "access time",
+    1469126364311,
+    1469474752281.9812
+  ],
+  [
+    true,
+    "aefbe5cf18019fb69bc51b22a7b1ee9dc655283dd7ad3631741a60c1f7efb767",
+    "access time",
+    1469126359743,
+    1469474747713.6829
+  ],
+  [
+    true,
+    "0a61bb183b4e372c0a9de07e2bcb6873a3ea5ca8bd5e1661558b4ac1fd4b4286",
+    "access time",
+    1469126355329,
+    1469474743299.2754
+  ],
+  [
+    true,
+    "a6801dbe0b39976ebd75d33f2529124c04078ce02cf6f20e90c662931f66d02d",
+    "access time",
+    1469126350480,
+    1469474738450.099
+  ],
+  [
+    true,
+    "b5903141f824414875796f64aa779f7177a93908547eed9a5b8edcba6bfce3fc",
+    "access time",
+    1469126345752,
+    1469474733721.6414
+  ],
+  [
+    true,
+    "52ae276e6281339655bff975c0d6cd2ab5d0ba52568732ea94df4df41978462d",
+    "access time",
+    1469126341094,
+    1469474729063.8862
+  ],
+  [
+    true,
+    "c8d5475188b68aad00859fdee189338253883961aab7882c8f0c82ad71d9bd3b",
+    "access time",
+    1469126338061,
+    1469474726031.0522
+  ],
+  [
+    true,
+    "b4a8c642503354235d43e7e9cbe638643c9d6bfc09b75896abdc570bcb919da0",
+    "access time",
+    1469126333003,
+    1469474720973.0266
+  ],
+  [
+    true,
+    "c26311cc7e65a1c32c706c521452d0d4808b564222da02c9ad46c998c494ceba",
+    "access time",
+    1469126328633,
+    1469474716604.2153
+  ],
+  [
+    true,
+    "1fd20bbc37a6ee72af478425a384d44be259573c0fe23f5bfc395e40c180bc25",
+    "access time",
+    1469126323828,
+    1469474711797.8367
+  ],
+  [
+    true,
+    "c5545a02cbcbc0c081b657a4b8d9571b6c2a919573f8ba5c2e429b488282538e",
+    "access time",
+    1469126319023,
+    1469474706992.0608
+  ],
+  [
+    true,
+    "d92118c8c1e4aca584f448e965e91908ad4177c4c070ee093bb594338cc491ba",
+    "access time",
+    1469126314379,
+    1469474702348.175
+  ],
+  [
+    true,
+    "0ace2d71ddb3e8a5a2a9852c9a59248d3011e56067f81a70612baf61bd1df249",
+    "access time",
+    1469126311320,
+    1469474699289.3835
+  ],
+  [
+    true,
+    "b64f9ce438f666755a91f557bd82039bc8015f9f7e9e99ae003730fb5b199af3",
+    "access time",
+    1469126187681,
+    1469474575647.683
+  ],
+  [
+    true,
+    "ae783541be4edfdb4ad36b9eddf99d343abf149b4494751e5e767b7be2055788",
+    "access time",
+    1469126183071,
+    1469474571037.886
+  ],
+  [
+    true,
+    "7046e5e465f4d22d2cbd0be5bd790d3fd1cb6fd0c320a3cd5c4842c21b54fe4b",
+    "access time",
+    1469126178620,
+    1469474566586.4163
+  ],
+  [
+    true,
+    "0338f450b9fadb3ac482beba40334eb0f62765b021be4a850e5d0fa08abd65bb",
+    "access time",
+    1469126173721,
+    1469474561687.7583
+  ],
+  [
+    true,
+    "ba6cb3495d96ac5d9f4b08d8d6c82acb013a7d1a5456a762e320c994231bc1c5",
+    "access time",
+    1469126168678,
+    1469474556644.2615
+  ],
+  [
+    true,
+    "5df0bd03423cfd8a7096fd1d47be3ef313c9e90616aa841f00638bbea78f9938",
+    "access time",
+    1469126164100,
+    1469474552067.0051
+  ],
+  [
+    true,
+    "f2a0207b9a0fdc7c8d3c5c23ffbfdd21fa1d20548858a75e0e587fdc60d75368",
+    "access time",
+    1469126159578,
+    1469474547543.8982
+  ],
+  [
+    true,
+    "ef7a8a063b5e7295f9d4113f224d32d2f7a94b75e465962d1247e5ce3958e6bb",
+    "access time",
+    1469126154710,
+    1469474542676.3809
+  ],
+  [
+    true,
+    "7410cd476f74076b223d1cf60dc4b6a3a26bb756c8215940e51fbc68dcf2f3cb",
+    "access time",
+    1469126151629,
+    1469474539594.6318
+  ],
+  [
+    true,
+    "a6be8fe01782b61faeb6afd0241cca5cebec1b8c15ea6ce0b74b642ebb5d6c15",
+    "access time",
+    1469126147086,
+    1469474535051.9539
+  ],
+  [
+    true,
+    "731fa8ee69efcba0cb2085ff501d857292a8597882db7879ae27dea531d9443a",
+    "access time",
+    1469126144103,
+    1469474532068.9312
+  ],
+  [
+    true,
+    "6d6e90e3f35f23f4e0854394566ea9f668d6ee3dd26c1e5beafc62010eaf0b7b",
+    "access time",
+    1469126139063,
+    1469474527029.311
+  ],
+  [
+    true,
+    "18ace842c46aff5d8f8571952dbd502c9926c310a61a48094f8041a7d97622d5",
+    "access time",
+    1469126134154,
+    1469474522120.296
+  ],
+  [
+    true,
+    "18c9441bb294e962026e00016a81b02098b8f41f82723d3fd2c91ed6f30338af",
+    "access time",
+    1469126129458,
+    1469474517423.529
+  ],
+  [
+    true,
+    "2b2dc31f10bb0345cd6e5701f85549106f83df0a256c0f4c69d0d4012df66acb",
+    "access time",
+    1469126126298,
+    1469474514264.606
+  ],
+  [
+    true,
+    "f2e52e2b022a13755af93ae777f000624b41e6119ba8a2ff3e1f5eee04ae6211",
+    "access time",
+    1469126121544,
+    1469474509510.703
+  ],
+  [
+    true,
+    "e6ff51ac1e9d0789a3f812bb0b958243de84b4872e3837376e6d87783258a9cf",
+    "access time",
+    1469126116806,
+    1469474504771.6035
+  ],
+  [
+    true,
+    "69839eea431eb0564f83035795bcf684421b6ad9abe0d98c73e2d45bc0678f68",
+    "access time",
+    1469126111995,
+    1469474499960.2124
+  ],
+  [
+    true,
+    "e8a09ecdd94a980eea355b6b654fbae7e068a2764b66c183a12fe889087c2a44",
+    "access time",
+    1469126107036,
+    1469474495000.8188
+  ],
+  [
+    true,
+    "e439c8086f353efdd3307a2f113e4df870985ffa4df016f2d7f61073c16fa973",
+    "access time",
+    1469126102178,
+    1469474490142.9697
+  ],
+  [
+    true,
+    "71a04d2315b27f006e20a5954c931749300f5a539b0eac9b6913e045bf865d30",
+    "access time",
+    1469126097598,
+    1469474485562.435
+  ],
+  [
+    true,
+    "58f119f10cc8ce4ae20597f345b8e131f98a8b7e617f9c7814c0a255cb9fd051",
+    "access time",
+    1469126093017,
+    1469474480981.8901
+  ],
+  [
+    true,
+    "482b464cb43dd3acbc0eca8920287862b4c42a221b2a2122bf025922630022e5",
+    "access time",
+    1469126088055,
+    1469474476019.726
+  ],
+  [
+    true,
+    "339c3ea7dc704a839e8ba9f62ee45e2b34810bb210d3fb94b7c9d4a767a6f50f",
+    "access time",
+    1469126083472,
+    1469474471435.992
+  ],
+  [
+    true,
+    "c45ed58190aa916dba00736fa9930c360fb3eb2e2e2ead3778907bd4dce6243d",
+    "access time",
+    1469126077568,
+    1469474465532.603
+  ],
+  [
+    true,
+    "aac0db9e2f56ef5276aa04127c41446b66285c1f3007740c4d2f9f6a9dd81c83",
+    "access time",
+    1469126072641,
+    1469474460605.2761
+  ],
+  [
+    true,
+    "f61d039475813c432ec7a29225cdc2480424c68f5a5ab8c096b6948a15c0c145",
+    "access time",
+    1469126067942,
+    1469474455906.0117
+  ],
+  [
+    true,
+    "f8ed23e12a2d9923f1fb82b54740b8e2e7ac0b09c6dc87cdc65091ad1c8e0a99",
+    "access time",
+    1469126064924,
+    1469474452887.9287
+  ],
+  [
+    true,
+    "f20af8bb6ef2307ad01a61eb545d98a9960b80d67dfd189348dfd6ab342ece86",
+    "access time",
+    1469126059846,
+    1469474447810.7866
+  ],
+  [
+    true,
+    "d8c411889588cd43e1c01c0ffe358bea2e0e50b3b2a9e9dbbd34d8dfd368aa56",
+    "access time",
+    1469126055158,
+    1469474443121.8015
+  ],
+  [
+    true,
+    "3005b81b4226241724f7c59f3a080e6a0bc1c3098173f6e37c5e0835e3c175d0",
+    "access time",
+    1469126051786,
+    1469474439749.4224
+  ],
+  [
+    true,
+    "dc70e3a06d8cf26d629c31500873ebe91579ca0db9971ca7825fd40b0fa8e521",
+    "access time",
+    1469126047020,
+    1469474434986.132
+  ],
+  [
+    true,
+    "f7f3b8c5b9ea6c6f8dbec0719995bb81c3f8c519d117399f45e8f34b70b6435b",
+    "access time",
+    1469126041779,
+    1469474429742.7278
+  ],
+  [
+    true,
+    "f7f3b8c5b9ea6c6f8dbec0719995bb81c3f8c519d117399f45e8f34b70b6435b",
+    "expired",
+    1469126041779,
+    1469474429742.7278
+  ],
+  [
+    true,
+    "fb99b5560ce272abfa6f6c8001773e0a61416f24717d8bfd51070c1d34a4263e",
+    "access time",
+    1469126038544,
+    1469474426507.5215
+  ],
+  [
+    true,
+    "0239d33156abd582b0ee4961d314872b81d2ea1e9ecb9233532a3aa423837814",
+    "access time",
+    1469126033560,
+    1469474421524.3127
+  ],
+  [
+    true,
+    "67f615a5a0acf0cd62be47ecf38663204ff7454246ee3e5a57ddfad4108f6460",
+    "access time",
+    1469126028781,
+    1469474416746.014
+  ],
+  [
+    true,
+    "db39e8c37695f74576ce0b49da844cbd1a60ebdf5db508690ae75c1b6b0e4206",
+    "access time",
+    1469124630301,
+    1469473018234.1907
+  ],
+  [
+    true,
+    "22554eab14183b9aa9ced38bf57f855a698642083f60949f7098f6bda39810a7",
+    "access time",
+    1469124625673,
+    1469473013605.2334
+  ],
+  [
+    true,
+    "9541ab925df1c88564ea42ecde94ce8d8a6ff8f08b21ade35aca4aceae038de7",
+    "access time",
+    1469124621094,
+    1469473009025.9973
+  ],
+  [
+    true,
+    "a92a0b7732629a44c7f0d2ed59bdc397c649f5c4b213a3bc7c87dd5f3213915a",
+    "access time",
+    1469124616104,
+    1469473004036.5854
+  ],
+  [
+    true,
+    "2c028b3dce70d37f083cd45c141ff2f6f4df3cbf54fc0c29b707da77330005d8",
+    "access time",
+    1469124611400,
+    1469472999331.6091
+  ],
+  [
+    true,
+    "494562fa98d161be936bbbfdefdbf4bc5d7f5698f7caf750eda3ba474c502a5f",
+    "access time",
+    1469124608435,
+    1469472996366.9875
+  ],
+  [
+    true,
+    "183fc63b670d9ae3d73b90a646840e436c06f38ed16740505d25f36a6fe7c255",
+    "access time",
+    1469124603871,
+    1469472991802.3467
+  ],
+  [
+    true,
+    "8821dae54ddfc4b6949d82f2086553b66694399f2250836bda652de73da0a7de",
+    "access time",
+    1469124598975,
+    1469472986906.7256
+  ],
+  [
+    true,
+    "9f6cf273e95c1d86ea36dbdc0ff5c0b58bfc3fde964756b9976b4b541d4b9d75",
+    "access time",
+    1469124594158,
+    1469472982090.7178
+  ],
+  [
+    true,
+    "e902af47cf1ab4c2d0086d22ee1834c59c422379b63de64c1de62d92ddef5d12",
+    "access time",
+    1469124591106,
+    1469472979037.3406
+  ],
+  [
+    true,
+    "9c8d7d6ecd0922da5222701701c9f5bc0249f946957bfc13c47d6eef5250cee4",
+    "access time",
+    1469124586670,
+    1469472974601.8325
+  ],
+  [
+    true,
+    "24d38ee2be0682865f03fe3a41e593a4ce95471e360c0065f18ceb4ed183a379",
+    "access time",
+    1469124581751,
+    1469472969682.5986
+  ],
+  [
+    true,
+    "e7e05d5fddd2d18835f21eb53276ec17d63b5929eb6d4f9febacb8ddf3293e56",
+    "access time",
+    1469124578664,
+    1469472966595.252
+  ],
+  [
+    true,
+    "fdcc395b71bef537a8740f212189eb449f9e9bc6723d063df01ced79ac367edd",
+    "access time",
+    1469124575673,
+    1469472963603.4673
+  ],
+  [
+    true,
+    "f3550b5b0e07a753f3aa84307118922a1a48e149f6ad6a79b7a7c72d523b87dd",
+    "access time",
+    1469124571149,
+    1469472959080.3433
+  ],
+  [
+    true,
+    "27f341b8c5f90bb0b1ed12007849623d84fe102365cdb92e4364480aff048d9f",
+    "access time",
+    1469124566252,
+    1469472954183.8865
+  ],
+  [
+    true,
+    "d6ca31dabdd529655ba1a351f41e366d2246b26df51164502a9544b15d3eb28a",
+    "access time",
+    1469124561533,
+    1469472949463.242
+  ],
+  [
+    true,
+    "696db88b4fe2d66b38944fb50be93ccc9cae17d02bbdfa5e46752c02a09fb30c",
+    "access time",
+    1469124556883,
+    1469472944813.6848
+  ],
+  [
+    true,
+    "e146ae760af8aacbd351f5b14bd9c36a7a13616acb0b49e86f7c0f5d89a9a5c4",
+    "access time",
+    1469124552399,
+    1469472940330.649
+  ],
+  [
+    true,
+    "438daeb7447103c7abfabaace3e8395f4e248fa3bb909a2a0bd16d81c00043d2",
+    "access time",
+    1469124547558,
+    1469472935488.9565
+  ],
+  [
+    true,
+    "030f90de4c516051371a71960ae75b0189da34a1a5a2bcb4ba60f737172288d8",
+    "access time",
+    1469124542801,
+    1469472930731.0295
+  ],
+  [
+    true,
+    "63362dfca2c5b41f01ae324a6bf3c8b3cd74541689a34a89900a4f0613209531",
+    "access time",
+    1469124538068,
+    1469472925999.05
+  ],
+  [
+    true,
+    "aff5bb1e94d20cbbc0eb88ac0022bef94bca1f9dfa8a94cc3ab4631ab3cf56d4",
+    "access time",
+    1469124533538,
+    1469472921468.5613
+  ],
+  [
+    true,
+    "0089b1b6dfc160cfa6ae42da7f231fd451665d2918c26c9c1dff910410067512",
+    "access time",
+    1469124528767,
+    1469472916697.6926
+  ],
+  [
+    true,
+    "326560b3738b4e092717d55534c2d93e902a736daa45d7fba16dac413e6d3fb2",
+    "access time",
+    1469124524117,
+    1469472912047.389
+  ],
+  [
+    true,
+    "379d2fc468d3e8c61dd4cbfc9c11b7b39b534f87b63beb26feabc7875ce0c669",
+    "access time",
+    1469124519516,
+    1469472907445.6865
+  ],
+  [
+    true,
+    "a726058ffb040c629772ac8382d62fbec9ad7fff5ac4dc8ce6f60264628f572b",
+    "access time",
+    1469124515038,
+    1469472902967.837
+  ],
+  [
+    true,
+    "89ab34ba140f09c90c913374ae672e3bde25a42325f40fb7add16f64218ad828",
+    "access time",
+    1469124510102,
+    1469472898031.619
+  ],
+  [
+    true,
+    "8d0e0bb739eca1a1b4954110df043e8ef1042630c71d8a0e271616a55579ce96",
+    "access time",
+    1469124505296,
+    1469472893225.061
+  ],
+  [
+    true,
+    "4b8d166eb0bead6e67608fce728985bbc99f9cd6a10623a04bee694a0597774e",
+    "access time",
+    1469124500727,
+    1469472888656.9082
+  ],
+  [
+    true,
+    "e3ae5a301548d40ad98cb508647a282132ecd800f9341c5c10ef99eea8651924",
+    "access time",
+    1469124496273,
+    1469472884202.4224
+  ],
+  [
+    true,
+    "ff9e694af882dea7761dbee0b6852bfad2059914093786030f9fd499f2231ab8",
+    "access time",
+    1469124491263,
+    1469472879192.1162
+  ],
+  [
+    true,
+    "07fff4edadaca6d50c9c8b6c671d2d5e32ae12e4b45a7d1c9ecb249f9f0597c7",
+    "access time",
+    1469124486805,
+    1469472874734.0562
+  ],
+  [
+    true,
+    "de7f2c4d8863c708ce3af42d5f3c6362ddd2739cb3020c109264571b4225485f",
+    "access time",
+    1469124481584,
+    1469472869513.5723
+  ],
+  [
+    true,
+    "09f19933fc7f645781bd964b218a8143569abc63b99ca94117b2e728bd069b3f",
+    "access time",
+    1469124476668,
+    1469472864597.8975
+  ],
+  [
+    true,
+    "44fe423f5e9edb15fcd55bb5c4de6e8699192e21ab8becca6080b6b70be018dd",
+    "access time",
+    1469124472167,
+    1469472860095.666
+  ],
+  [
+    true,
+    "86555168b8f3c83f90f06929eed8ed8a566b879bb004b0216cf4a18ad25c7661",
+    "access time",
+    1469124467421,
+    1469472855349.1885
+  ],
+  [
+    true,
+    "c87e2349b8003a7c673a8a29d8826520bfcc28ce34a78d97ddcd05324d34f260",
+    "access time",
+    1469124462869,
+    1469472850800.5784
+  ],
+  [
+    true,
+    "dd128464b594a610e1210c04e95da951c68a19ee8f836f1ea45c1e729c0fcaef",
+    "access time",
+    1469124457957,
+    1469472845885.4272
+  ],
+  [
+    true,
+    "fa24ffaff9f6a6fcd390819e64878a66fcfc5df9d10e6ce3e432796b223439fb",
+    "access time",
+    1469124453124,
+    1469472841051.8904
+  ],
+  [
+    true,
+    "e9da1330eb43e2a872b0ce0bd80e0d5a18bbafc2b2c3a9213fee6904538cbad0",
+    "access time",
+    1469124448574,
+    1469472836501.851
+  ],
+  [
+    true,
+    "dfba36f6c5529c3cc4f3b89ee46de6b879effa183839e56e138580167b0f79a8",
+    "access time",
+    1469124444011,
+    1469472831940.1929
+  ],
+  [
+    true,
+    "e37ef0a46780c8f8148ac7e4d44299b2012463ab5259db6d2d147d0a99d22dc5",
+    "access time",
+    1469124440775,
+    1469472828703.1685
+  ],
+  [
+    true,
+    "9f3a49c1a8844b5cfb259aaa36d589af1662da4659f39cb8c86ec0087cdfd33c",
+    "access time",
+    1469124435889,
+    1469472823816.8162
+  ],
+  [
+    true,
+    "f2e20b4efbc694d022b4a21ef22b4e545ac1f8fd643f695c15f5d1374212253f",
+    "access time",
+    1469124430918,
+    1469472818847.25
+  ],
+  [
+    true,
+    "e1ac98b7406005e7043a582ebc8c0aaf2f355eec2989aaf3d57a371a90f339fc",
+    "access time",
+    1469124426236,
+    1469472814164.1858
+  ],
+  [
+    true,
+    "446873ef66de8f636e708c328f7851e4f2e401b7e0c8ce9829fcc3b4dd3196e7",
+    "access time",
+    1469124421199,
+    1469472809126.9055
+  ],
+  [
+    true,
+    "171b1c30df3f9fb2c9c6676e3eb8107d50098a96330d36d5bcbb8718b8c31440",
+    "access time",
+    1469124416147,
+    1469472804075.2615
+  ],
+  [
+    true,
+    "3c3617e52d54ca3b79e523551c4fb6f95490529dd64b7d24fb56931b30524bed",
+    "access time",
+    1469124410983,
+    1469472798910.085
+  ],
+  [
+    true,
+    "438ced0db3ba87e7830aec4a5313ed2f142c6c87e82a222c181de115c79993ec",
+    "access time",
+    1469124406373,
+    1469472794300.67
+  ],
+  [
+    true,
+    "116930fcfec0179edec560d15521a5562f114223bbb4a3ff0b4e99c2eb27035d",
+    "access time",
+    1469124401407,
+    1469472789335.9229
+  ],
+  [
+    true,
+    "1aa09ce29c3253f1c48aaddb1fece6ced4619ae42851abfc8f5d357a7ef6b66c",
+    "access time",
+    1469124396488,
+    1469472784422.3867
+  ],
+  [
+    true,
     "f49c9776bb82257e724ec396402cbc8f3c9480a6f5ca714c380f5167ddff8098",
     "approved",
     true,
@@ -596,13 +1632,6 @@
   ],
   [
     true,
-    "afa786f960b4ed6bc97d4187616e6ab976c2b974d353043bf9bed537b4287688",
-    "access time",
-    1469123040564,
-    1469468646677.326
-  ],
-  [
-    true,
     "2c9dab3068515695206c7dcc9e1c28435327742c259ee09169c148a2f794d967",
     "access time",
     1469123036293,
@@ -953,13 +1982,6 @@
   ],
   [
     true,
-    "399ff4566a5548a257988ab82d6487e4a4bddb21a0b9c67f1ba49d41e61cd511",
-    "access time",
-    1469122842355,
-    1469468448464.0674
-  ],
-  [
-    true,
     "ab8dcd1b0c7cd2a41d143e1090b05924d2496e8da659af7b80a8f9316fb9176b",
     "access time",
     1469122837653,
@@ -1072,13 +2094,6 @@
   ],
   [
     true,
-    "b753cda21e1b09579e4058d5ada9ebf325fca3f307763fbcba4f21dec874fded",
-    "access time",
-    1469122705419,
-    1469468311524.4492
-  ],
-  [
-    true,
     "93119ee72d1c7e426f7f5dfcb731351eb554ff368b867841ddc2984bb881ecaa",
     "access time",
     1469122700857,
@@ -1156,97 +2171,6 @@
   ],
   [
     true,
-    "73d8a6d84d0a2ff9bf061addd7c05c92d9ba5e785adc6ccc8baa9faaf6af40d0",
-    "access time",
-    1469122653298,
-    1469468259402.96
-  ],
-  [
-    true,
-    "cfcff8f6ee8356cb14f1261a531be10faaff7fae48eed02b59d3441320a2ceae",
-    "access time",
-    1469122648545,
-    1469468254648.9692
-  ],
-  [
-    true,
-    "28af3ebf81610486163b97548949bbd438b6dd0988a577af54bdfad954600c51",
-    "access time",
-    1469122644033,
-    1469468250137.5469
-  ],
-  [
-    true,
-    "fdd56fc545e57816a346d1f3d4ab08a9d3cbfdf21f1497b737c2527fc57b8d33",
-    "access time",
-    1469122639665,
-    1469468245769.4023
-  ],
-  [
-    true,
-    "1ee8c40150fb0df3a67eb3154a4cd390d8cf97cae7def54e34629ffe85986990",
-    "access time",
-    1469122634876,
-    1469468240980.1333
-  ],
-  [
-    true,
-    "2b8eb0434639fe1d1a11c6bdd93ddf7bbf121ab2afd35ab54802bc289994eb1f",
-    "access time",
-    1469122630160,
-    1469468236264.016
-  ],
-  [
-    true,
-    "a20efec2740cc4251e562f7945841be441b8a498b2c37711e84ee472a34c3fac",
-    "access time",
-    1469122625486,
-    1469468231590.4248
-  ],
-  [
-    true,
-    "27e934245da6920f3bbf149e6b48799447df13ba63fa0e5081cf6bcaaf1f2f2d",
-    "access time",
-    1469122621151,
-    1469468227255.6797
-  ],
-  [
-    true,
-    "f1d45c4a06b0e1255a4de4f77eabb248b82fd1823726deb2e9de9ac3062948dd",
-    "access time",
-    1469122616192,
-    1469468222296.806
-  ],
-  [
-    true,
-    "8f825cb143211c0cce892ed7d0fb39c74f8c9319d82071922ee5796e70a3d2eb",
-    "access time",
-    1469122611765,
-    1469468217868.6245
-  ],
-  [
-    true,
-    "60a4590ca629f01980cf667ea1fff270f7d5f11c36d3d219624529b4267f496a",
-    "access time",
-    1469122607011,
-    1469468213115.3914
-  ],
-  [
-    true,
-    "5521c6339d1b84936620bbbb446dba9e366f9be77c58d9ba4c64d5f228a83560",
-    "access time",
-    1469122602219,
-    1469468208323.1921
-  ],
-  [
-    true,
-    "a550cf9b78efe4e5cc4a21b8c86009561880940f8061017d44f078d9b5e3968b",
-    "access time",
-    1469122597471,
-    1469468203574.5723
-  ],
-  [
-    true,
     "a550cf9b78efe4e5cc4a21b8c86009561880940f8061017d44f078d9b5e3968b",
     "publication time",
     1465012800000,
@@ -1254,27 +2178,6 @@
   ],
   [
     true,
-    "6e6803a250c03313b951fb4df749e42a24814d082da3d2060abc8bc22902996d",
-    "access time",
-    1469122592829,
-    1469468198932.2966
-  ],
-  [
-    true,
-    "b23dcc41b770e596e145dd04099d6f3bca5a0eded80304a8d1e6e8e856b836ab",
-    "access time",
-    1469122588340,
-    1469468194444.4238
-  ],
-  [
-    true,
-    "d14bb00f52059081e319a442923215729297b769acc2f5aa05348c62a3820b02",
-    "access time",
-    1469122583467,
-    1469468189570.1028
-  ],
-  [
-    true,
     "d14bb00f52059081e319a442923215729297b769acc2f5aa05348c62a3820b02",
     "publication time",
     1465876800000,
@@ -1282,143 +2185,10 @@
   ],
   [
     true,
-    "ad4fd80f7614d7e1d766bb9f1027535730dec2e95d9bbc74aeaa63542219fa46",
-    "access time",
-    1469122578717,
-    1469468184819.8843
-  ],
-  [
-    true,
-    "07c20cdb811a2f533520e95087354441255af54300c4e5f4433235a4fcb5b6ea",
-    "access time",
-    1469122574174,
-    1469468180276.7983
-  ],
-  [
-    true,
-    "41392c39b61a54c8b0a475ca0f378c6cb59f8703b19be0562991b01dacc9ee0f",
-    "access time",
-    1469122569801,
-    1469468175904.8997
-  ],
-  [
-    true,
-    "41392c39b61a54c8b0a475ca0f378c6cb59f8703b19be0562991b01dacc9ee0f",
-    "price",
-    null,
-    1469468175904.8997
-  ],
-  [
-    true,
-    "2b99164e6b24785cb19880b241deec27ce1cb66b5cd6234f7308fbc11c636614",
-    "access time",
-    1469122564937,
-    1469468171039.7297
-  ],
-  [
-    true,
-    "6acef8a02c516d9bc6d1a57fdbeb235d2b1f0f4578e6aa8671eed220f529e6f0",
-    "access time",
-    1469122560549,
-    1469468166651.4673
-  ],
-  [
-    true,
-    "3749673899d323d44de74f59117c29a2b190232c9212e9e8f586db36bf5b1872",
-    "access time",
-    1469122555696,
-    1469468161798.8633
-  ],
-  [
-    true,
-    "26a56e0866daadf4511629f359cad6c3161a93aaf10b5752fe431934a9b46d99",
-    "access time",
-    1469122550948,
-    1469468157050.8127
-  ],
-  [
-    true,
-    "4b9dee57931db4df0a7aa4166c8cba8d3d18c6521ef9c5e1ee88f7e511d72855",
-    "access time",
-    1469122546154,
-    1469468152256.8118
-  ],
-  [
-    true,
-    "d14a42e904dd52a7df5066dfff2e66fd7d2e05f51b41eeb127a59f4a231a406d",
-    "access time",
-    1469122541411,
-    1469468147513.499
-  ],
-  [
-    true,
-    "06f79cd956e6c2dd03b1b22cb12edf4a9b6c69a0c25c462a352914529b9a583a",
-    "access time",
-    1469122538461,
-    1469468144562.642
-  ],
-  [
-    true,
-    "45542c4788cf4ed41d8da6b9cbce6a9b2a7d40d8681e7c6a0584aa54b3997aff",
-    "access time",
-    1469122533562,
-    1469468139664.549
-  ],
-  [
-    true,
     "45542c4788cf4ed41d8da6b9cbce6a9b2a7d40d8681e7c6a0584aa54b3997aff",
     "publication time",
     1465876800000,
     1469468139664.549
-  ],
-  [
-    true,
-    "96b5ac610978b0dca4c1207345824daa755d7a391ec9944413cdc1affe5d3857",
-    "access time",
-    1469122529086,
-    1469468135188.7317
-  ],
-  [
-    true,
-    "bf502f7cf1aab98ffe4ccb4d99c44bbc5b0532833029a21de26f069c81f9c9c6",
-    "access time",
-    1469122524210,
-    1469468130311.4124
-  ],
-  [
-    true,
-    "3cc0164ed52af270368f521633d4e64fcf7e6fac13b7e7b61aae1342e5589ab5",
-    "access time",
-    1469122519571,
-    1469468125673.672
-  ],
-  [
-    true,
-    "6c1c7514377e418472c90d9ec2c98bf3af9ef15d8828ee796664cec8949a64cb",
-    "access time",
-    1469122514826,
-    1469468120929.7964
-  ],
-  [
-    true,
-    "eb68279f5e123a17d7c819d81835d6d448b8d6da7631264c9efdf767ce4d9c6a",
-    "access time",
-    1469122510081,
-    1469468116182.5024
-  ],
-  [
-    true,
-    "10a1cc0f863ec36f6f277d6fddc2ec73e4dbab2e6ebacbf215a8e352bc6ba62b",
-    "access time",
-    1469122505325,
-    1469468111425.9504
-  ],
-  [
-    true,
-    "c1e139f58fa4e82d57707434ae023e6e692920705b580af4788b70a04fa25c9d",
-    "access time",
-    1469122500433,
-    1469468106534.999
   ],
   [
     true,
@@ -1464,41 +2234,6 @@
   ],
   [
     true,
-    "e1e1349102beecca3bfef6cea02b45de4cbe1251ebe4bebd109b82b3054760c3",
-    "access time",
-    1469122413208,
-    1469468019307.454
-  ],
-  [
-    true,
-    "1788c7116ebfde37fc84301fbd2da490c3226f27d920178a6b8fa24f6b658221",
-    "access time",
-    1469122410318,
-    1469468016417.3054
-  ],
-  [
-    true,
-    "20aa2c13bfb8dc7b3d33ebb04e13f562a6832b14d6ca464ddfe42355e94849b7",
-    "access time",
-    1469122405527,
-    1469468011626.532
-  ],
-  [
-    true,
-    "61bc9107f3f6580a164aad6c7dd31e865c7c3b49285a554d908987b36337b1ed",
-    "access time",
-    1469122400844,
-    1469468006942.9048
-  ],
-  [
-    true,
-    "aefbe5cf18019fb69bc51b22a7b1ee9dc655283dd7ad3631741a60c1f7efb767",
-    "access time",
-    1469122396278,
-    1469468002378.2249
-  ],
-  [
-    true,
     "7959d39e2f2795040287b5b6214000799aff80ef673e88910ee86267b67bc526",
     "access time",
     1469122391810,
@@ -1510,370 +2245,6 @@
     "expired",
     1469122391810,
     1469467997908.3452
-  ],
-  [
-    true,
-    "a6801dbe0b39976ebd75d33f2529124c04078ce02cf6f20e90c662931f66d02d",
-    "access time",
-    1469122386776,
-    1469467992875.2644
-  ],
-  [
-    true,
-    "b5903141f824414875796f64aa779f7177a93908547eed9a5b8edcba6bfce3fc",
-    "access time",
-    1469122382050,
-    1469467988148.734
-  ],
-  [
-    true,
-    "52ae276e6281339655bff975c0d6cd2ab5d0ba52568732ea94df4df41978462d",
-    "access time",
-    1469122377498,
-    1469467983596.097
-  ],
-  [
-    true,
-    "c8d5475188b68aad00859fdee189338253883961aab7882c8f0c82ad71d9bd3b",
-    "access time",
-    1469122372883,
-    1469467978981.6177
-  ],
-  [
-    true,
-    "b4a8c642503354235d43e7e9cbe638643c9d6bfc09b75896abdc570bcb919da0",
-    "access time",
-    1469122368005,
-    1469467974103.055
-  ],
-  [
-    true,
-    "c26311cc7e65a1c32c706c521452d0d4808b564222da02c9ad46c998c494ceba",
-    "access time",
-    1469122363341,
-    1469467969438.9688
-  ],
-  [
-    true,
-    "1fd20bbc37a6ee72af478425a384d44be259573c0fe23f5bfc395e40c180bc25",
-    "access time",
-    1469122358787,
-    1469467964884.9724
-  ],
-  [
-    true,
-    "c5545a02cbcbc0c081b657a4b8d9571b6c2a919573f8ba5c2e429b488282538e",
-    "access time",
-    1469122354349,
-    1469467960446.767
-  ],
-  [
-    true,
-    "0ace2d71ddb3e8a5a2a9852c9a59248d3011e56067f81a70612baf61bd1df249",
-    "access time",
-    1469122349518,
-    1469467955616.303
-  ],
-  [
-    true,
-    "d92118c8c1e4aca584f448e965e91908ad4177c4c070ee093bb594338cc491ba",
-    "access time",
-    1469122344792,
-    1469467950889.873
-  ],
-  [
-    true,
-    "0a61bb183b4e372c0a9de07e2bcb6873a3ea5ca8bd5e1661558b4ac1fd4b4286",
-    "access time",
-    1469122340212,
-    1469467946309.8132
-  ],
-  [
-    true,
-    "5909638777227ffc9793aaa16d2dea47997e60509d1b5af11a553435005345da",
-    "access time",
-    1469122335757,
-    1469467941854.2002
-  ],
-  [
-    true,
-    "f1955762df192cf8531309d9db92e83f1c8a775bdffec3c844beabc5679102ef",
-    "access time",
-    1469122330786,
-    1469467936883.83
-  ],
-  [
-    true,
-    "f687d2a8ab07424fe4a5ab1198a726de6618da87f102bfd4788af430a278b881",
-    "access time",
-    1469122326348,
-    1469467932445.1768
-  ],
-  [
-    true,
-    "801ba47355e434a7f4cb49e19fd8ab2dd7744703457830a05f0f3d578ff069e2",
-    "access time",
-    1469122321490,
-    1469467927587.5227
-  ],
-  [
-    true,
-    "84a6ac6392c8e9d1a9f202120e3f3d7a4324598e1d502c9aeb6221a83936aac2",
-    "access time",
-    1469122316564,
-    1469467922661.105
-  ],
-  [
-    true,
-    "ef7a8a063b5e7295f9d4113f224d32d2f7a94b75e465962d1247e5ce3958e6bb",
-    "access time",
-    1469122192903,
-    1469467798998.0432
-  ],
-  [
-    true,
-    "7410cd476f74076b223d1cf60dc4b6a3a26bb756c8215940e51fbc68dcf2f3cb",
-    "access time",
-    1469122188365,
-    1469467794459.9204
-  ],
-  [
-    true,
-    "a6be8fe01782b61faeb6afd0241cca5cebec1b8c15ea6ce0b74b642ebb5d6c15",
-    "access time",
-    1469122183918,
-    1469467790011.9841
-  ],
-  [
-    true,
-    "731fa8ee69efcba0cb2085ff501d857292a8597882db7879ae27dea531d9443a",
-    "access time",
-    1469122179071,
-    1469467785165.2683
-  ],
-  [
-    true,
-    "6d6e90e3f35f23f4e0854394566ea9f668d6ee3dd26c1e5beafc62010eaf0b7b",
-    "access time",
-    1469122174401,
-    1469467780495.1296
-  ],
-  [
-    true,
-    "18ace842c46aff5d8f8571952dbd502c9926c310a61a48094f8041a7d97622d5",
-    "access time",
-    1469122169819,
-    1469467775913.7827
-  ],
-  [
-    true,
-    "18c9441bb294e962026e00016a81b02098b8f41f82723d3fd2c91ed6f30338af",
-    "access time",
-    1469122165388,
-    1469467771482.641
-  ],
-  [
-    true,
-    "2b2dc31f10bb0345cd6e5701f85549106f83df0a256c0f4c69d0d4012df66acb",
-    "access time",
-    1469122160661,
-    1469467766755.3533
-  ],
-  [
-    true,
-    "f2e52e2b022a13755af93ae777f000624b41e6119ba8a2ff3e1f5eee04ae6211",
-    "access time",
-    1469122156035,
-    1469467762129.2632
-  ],
-  [
-    true,
-    "e6ff51ac1e9d0789a3f812bb0b958243de84b4872e3837376e6d87783258a9cf",
-    "access time",
-    1469122151489,
-    1469467757583.0679
-  ],
-  [
-    true,
-    "69839eea431eb0564f83035795bcf684421b6ad9abe0d98c73e2d45bc0678f68",
-    "access time",
-    1469122147039,
-    1469467753132.7317
-  ],
-  [
-    true,
-    "e8a09ecdd94a980eea355b6b654fbae7e068a2764b66c183a12fe889087c2a44",
-    "access time",
-    1469122142157,
-    1469467748249.953
-  ],
-  [
-    true,
-    "e439c8086f353efdd3307a2f113e4df870985ffa4df016f2d7f61073c16fa973",
-    "access time",
-    1469122137421,
-    1469467743514.5938
-  ],
-  [
-    true,
-    "71a04d2315b27f006e20a5954c931749300f5a539b0eac9b6913e045bf865d30",
-    "access time",
-    1469122132671,
-    1469467738764.1475
-  ],
-  [
-    true,
-    "58f119f10cc8ce4ae20597f345b8e131f98a8b7e617f9c7814c0a255cb9fd051",
-    "access time",
-    1469122128229,
-    1469467734322.5984
-  ],
-  [
-    true,
-    "482b464cb43dd3acbc0eca8920287862b4c42a221b2a2122bf025922630022e5",
-    "access time",
-    1469122123459,
-    1469467729552.6414
-  ],
-  [
-    true,
-    "339c3ea7dc704a839e8ba9f62ee45e2b34810bb210d3fb94b7c9d4a767a6f50f",
-    "access time",
-    1469122118717,
-    1469467724811.0994
-  ],
-  [
-    true,
-    "c45ed58190aa916dba00736fa9930c360fb3eb2e2e2ead3778907bd4dce6243d",
-    "access time",
-    1469122114124,
-    1469467720217.4985
-  ],
-  [
-    true,
-    "f2a0207b9a0fdc7c8d3c5c23ffbfdd21fa1d20548858a75e0e587fdc60d75368",
-    "access time",
-    1469122111227,
-    1469467717320.0806
-  ],
-  [
-    true,
-    "aac0db9e2f56ef5276aa04127c41446b66285c1f3007740c4d2f9f6a9dd81c83",
-    "access time",
-    1469122108130,
-    1469467714223.08
-  ],
-  [
-    true,
-    "f61d039475813c432ec7a29225cdc2480424c68f5a5ab8c096b6948a15c0c145",
-    "access time",
-    1469122103389,
-    1469467709481.3887
-  ],
-  [
-    true,
-    "f8ed23e12a2d9923f1fb82b54740b8e2e7ac0b09c6dc87cdc65091ad1c8e0a99",
-    "access time",
-    1469122098791,
-    1469467704883.5771
-  ],
-  [
-    true,
-    "f20af8bb6ef2307ad01a61eb545d98a9960b80d67dfd189348dfd6ab342ece86",
-    "access time",
-    1469122095842,
-    1469467701934.8933
-  ],
-  [
-    true,
-    "d8c411889588cd43e1c01c0ffe358bea2e0e50b3b2a9e9dbbd34d8dfd368aa56",
-    "access time",
-    1469122091003,
-    1469467697095.2083
-  ],
-  [
-    true,
-    "3005b81b4226241724f7c59f3a080e6a0bc1c3098173f6e37c5e0835e3c175d0",
-    "access time",
-    1469122086343,
-    1469467692435.7544
-  ],
-  [
-    true,
-    "dc70e3a06d8cf26d629c31500873ebe91579ca0db9971ca7825fd40b0fa8e521",
-    "access time",
-    1469122081789,
-    1469467687880.847
-  ],
-  [
-    true,
-    "f7f3b8c5b9ea6c6f8dbec0719995bb81c3f8c519d117399f45e8f34b70b6435b",
-    "access time",
-    1469122078873,
-    1469467684966.599
-  ],
-  [
-    true,
-    "fb99b5560ce272abfa6f6c8001773e0a61416f24717d8bfd51070c1d34a4263e",
-    "access time",
-    1469122073977,
-    1469467680068.9993
-  ],
-  [
-    true,
-    "0239d33156abd582b0ee4961d314872b81d2ea1e9ecb9233532a3aa423837814",
-    "access time",
-    1469122069171,
-    1469467675263.341
-  ],
-  [
-    true,
-    "67f615a5a0acf0cd62be47ecf38663204ff7454246ee3e5a57ddfad4108f6460",
-    "access time",
-    1469122064315,
-    1469467670406.8716
-  ],
-  [
-    true,
-    "5df0bd03423cfd8a7096fd1d47be3ef313c9e90616aa841f00638bbea78f9938",
-    "access time",
-    1469122059654,
-    1469467665745.9343
-  ],
-  [
-    true,
-    "ba6cb3495d96ac5d9f4b08d8d6c82acb013a7d1a5456a762e320c994231bc1c5",
-    "access time",
-    1469122054741,
-    1469467660832.5024
-  ],
-  [
-    true,
-    "0338f450b9fadb3ac482beba40334eb0f62765b021be4a850e5d0fa08abd65bb",
-    "access time",
-    1469122050182,
-    1469467656274.8132
-  ],
-  [
-    true,
-    "7046e5e465f4d22d2cbd0be5bd790d3fd1cb6fd0c320a3cd5c4842c21b54fe4b",
-    "access time",
-    1469122045115,
-    1469467651205.8718
-  ],
-  [
-    true,
-    "ae783541be4edfdb4ad36b9eddf99d343abf149b4494751e5e767b7be2055788",
-    "access time",
-    1469122041998,
-    1469467648092.8577
-  ],
-  [
-    true,
-    "b64f9ce438f666755a91f557bd82039bc8015f9f7e9e99ae003730fb5b199af3",
-    "access time",
-    1469122037050,
-    1469467643148.13
   ],
   [
     true,
@@ -1940,76 +2311,6 @@
   ],
   [
     true,
-    "1aa09ce29c3253f1c48aaddb1fece6ced4619ae42851abfc8f5d357a7ef6b66c",
-    "access time",
-    1469119855492,
-    1469463021115.6208
-  ],
-  [
-    true,
-    "116930fcfec0179edec560d15521a5562f114223bbb4a3ff0b4e99c2eb27035d",
-    "access time",
-    1469119850749,
-    1469463016365.5234
-  ],
-  [
-    true,
-    "438ced0db3ba87e7830aec4a5313ed2f142c6c87e82a222c181de115c79993ec",
-    "access time",
-    1469119845944,
-    1469463011560.1716
-  ],
-  [
-    true,
-    "3c3617e52d54ca3b79e523551c4fb6f95490529dd64b7d24fb56931b30524bed",
-    "access time",
-    1469119840866,
-    1469463006481.6404
-  ],
-  [
-    true,
-    "171b1c30df3f9fb2c9c6676e3eb8107d50098a96330d36d5bcbb8718b8c31440",
-    "access time",
-    1469119832001,
-    1469462997615.9758
-  ],
-  [
-    true,
-    "446873ef66de8f636e708c328f7851e4f2e401b7e0c8ce9829fcc3b4dd3196e7",
-    "access time",
-    1469119827269,
-    1469462992884.8906
-  ],
-  [
-    true,
-    "e1ac98b7406005e7043a582ebc8c0aaf2f355eec2989aaf3d57a371a90f339fc",
-    "access time",
-    1469119822426,
-    1469462988041.0469
-  ],
-  [
-    true,
-    "f2e20b4efbc694d022b4a21ef22b4e545ac1f8fd643f695c15f5d1374212253f",
-    "access time",
-    1469119816641,
-    1469462982256.2642
-  ],
-  [
-    true,
-    "9f3a49c1a8844b5cfb259aaa36d589af1662da4659f39cb8c86ec0087cdfd33c",
-    "access time",
-    1469119811842,
-    1469462977456.8762
-  ],
-  [
-    true,
-    "e37ef0a46780c8f8148ac7e4d44299b2012463ab5259db6d2d147d0a99d22dc5",
-    "access time",
-    1469119807130,
-    1469462972745.106
-  ],
-  [
-    true,
     "3eaa8b81129edbf811317765bddde923ec093d2e562155afc038e52db14ea8d1",
     "expired",
     1469119802482,
@@ -2024,198 +2325,9 @@
   ],
   [
     true,
-    "dfba36f6c5529c3cc4f3b89ee46de6b879effa183839e56e138580167b0f79a8",
-    "access time",
-    1469119796780,
-    1469462962394.8372
-  ],
-  [
-    true,
-    "e9da1330eb43e2a872b0ce0bd80e0d5a18bbafc2b2c3a9213fee6904538cbad0",
-    "access time",
-    1469119792025,
-    1469462957639.9844
-  ],
-  [
-    true,
-    "fa24ffaff9f6a6fcd390819e64878a66fcfc5df9d10e6ce3e432796b223439fb",
-    "access time",
-    1469119787360,
-    1469462952974.839
-  ],
-  [
-    true,
-    "dd128464b594a610e1210c04e95da951c68a19ee8f836f1ea45c1e729c0fcaef",
-    "access time",
-    1469119782534,
-    1469462948149.0222
-  ],
-  [
-    true,
-    "c87e2349b8003a7c673a8a29d8826520bfcc28ce34a78d97ddcd05324d34f260",
-    "access time",
-    1469119777824,
-    1469462943438.5762
-  ],
-  [
-    true,
-    "86555168b8f3c83f90f06929eed8ed8a566b879bb004b0216cf4a18ad25c7661",
-    "access time",
-    1469119772895,
-    1469462938510.3643
-  ],
-  [
-    true,
-    "44fe423f5e9edb15fcd55bb5c4de6e8699192e21ab8becca6080b6b70be018dd",
-    "access time",
-    1469119768236,
-    1469462933849.7483
-  ],
-  [
-    true,
-    "09f19933fc7f645781bd964b218a8143569abc63b99ca94117b2e728bd069b3f",
-    "access time",
-    1469119762716,
-    1469462928329.8313
-  ],
-  [
-    true,
-    "de7f2c4d8863c708ce3af42d5f3c6362ddd2739cb3020c109264571b4225485f",
-    "access time",
-    1469119758096,
-    1469462923710.6838
-  ],
-  [
-    true,
-    "07fff4edadaca6d50c9c8b6c671d2d5e32ae12e4b45a7d1c9ecb249f9f0597c7",
-    "access time",
-    1469119753700,
-    1469462919315.1064
-  ],
-  [
-    true,
-    "ff9e694af882dea7761dbee0b6852bfad2059914093786030f9fd499f2231ab8",
-    "access time",
-    1469119748874,
-    1469462914488.7935
-  ],
-  [
-    true,
-    "e3ae5a301548d40ad98cb508647a282132ecd800f9341c5c10ef99eea8651924",
-    "access time",
-    1469119745904,
-    1469462911517.4973
-  ],
-  [
-    true,
-    "4b8d166eb0bead6e67608fce728985bbc99f9cd6a10623a04bee694a0597774e",
-    "access time",
-    1469119741289,
-    1469462906902.4375
-  ],
-  [
-    true,
-    "8d0e0bb739eca1a1b4954110df043e8ef1042630c71d8a0e271616a55579ce96",
-    "access time",
-    1469119736836,
-    1469462902450.0027
-  ],
-  [
-    true,
-    "89ab34ba140f09c90c913374ae672e3bde25a42325f40fb7add16f64218ad828",
-    "access time",
-    1469119727298,
-    1469462892910.907
-  ],
-  [
-    true,
-    "a726058ffb040c629772ac8382d62fbec9ad7fff5ac4dc8ce6f60264628f572b",
-    "access time",
-    1469119722734,
-    1469462888346.6814
-  ],
-  [
-    true,
-    "379d2fc468d3e8c61dd4cbfc9c11b7b39b534f87b63beb26feabc7875ce0c669",
-    "access time",
-    1469119718256,
-    1469462883868.418
-  ],
-  [
-    true,
-    "326560b3738b4e092717d55534c2d93e902a736daa45d7fba16dac413e6d3fb2",
-    "access time",
-    1469119713524,
-    1469462879137.5933
-  ],
-  [
-    true,
-    "0089b1b6dfc160cfa6ae42da7f231fd451665d2918c26c9c1dff910410067512",
-    "access time",
-    1469119708693,
-    1469462874305.8894
-  ],
-  [
-    true,
-    "aff5bb1e94d20cbbc0eb88ac0022bef94bca1f9dfa8a94cc3ab4631ab3cf56d4",
-    "access time",
-    1469119704126,
-    1469462869738.969
-  ],
-  [
-    true,
-    "63362dfca2c5b41f01ae324a6bf3c8b3cd74541689a34a89900a4f0613209531",
-    "access time",
-    1469119699829,
-    1469462865441.95
-  ],
-  [
-    true,
-    "030f90de4c516051371a71960ae75b0189da34a1a5a2bcb4ba60f737172288d8",
-    "access time",
-    1469119694984,
-    1469462860596.4973
-  ],
-  [
-    true,
-    "438daeb7447103c7abfabaace3e8395f4e248fa3bb909a2a0bd16d81c00043d2",
-    "access time",
-    1469119690369,
-    1469462855981.188
-  ],
-  [
-    true,
-    "e146ae760af8aacbd351f5b14bd9c36a7a13616acb0b49e86f7c0f5d89a9a5c4",
-    "access time",
-    1469119685409,
-    1469462851022.0967
-  ],
-  [
-    true,
-    "696db88b4fe2d66b38944fb50be93ccc9cae17d02bbdfa5e46752c02a09fb30c",
-    "access time",
-    1469119681084,
-    1469462846695.9734
-  ],
-  [
-    true,
-    "d6ca31dabdd529655ba1a351f41e366d2246b26df51164502a9544b15d3eb28a",
-    "access time",
-    1469119675974,
-    1469462841585.7366
-  ],
-  [
-    true,
     "27f341b8c5f90bb0b1ed12007849623d84fe102365cdb92e4364480aff048d9f",
     "description",
     "Hi, I'm James from The Turner Guitar Studio in Leduc, Alberta. We have a brand new Levinson Blade Texas Standard Pro in a Left Handed Variation on clearance. Since we are no longer able to get the line through a Canadian Distributor, we are clearing out all remaining Levinson Blade guitars at huge discounts. This one as an original Canadian MSRP of $1499.00, so we are offering over 50% off with it at $740.00. \rThe Texas Standard Pro is a strat style electric with 3 single coil pick-ups, a 5-way pick-up selector switch, and Levinson's VSC-3 pre-amp, for a huge variety in tones. The guitar comes with a great hard foam case Ideal for light weight portability and protection. \r\rTo make the deal even more enticing. I will offer a 20% discount on any accessories you'd like to purchase with it, and 10% off any amplifier. \r\rIf you have any questions about this guitar, or would like to come see it, call James at 780-278-3679, or visit us in store at 4707 50th Ave, Leduc, AB. You can also find out more about us by visiting www.turnerguitar.com",
-    1469462835249.6145
-  ],
-  [
-    true,
-    "27f341b8c5f90bb0b1ed12007849623d84fe102365cdb92e4364480aff048d9f",
-    "access time",
-    1469119669637,
     1469462835249.6145
   ],
   [
@@ -2234,62 +2346,6 @@
   ],
   [
     true,
-    "f3550b5b0e07a753f3aa84307118922a1a48e149f6ad6a79b7a7c72d523b87dd",
-    "access time",
-    1469119664774,
-    1469462830385.9392
-  ],
-  [
-    true,
-    "fdcc395b71bef537a8740f212189eb449f9e9bc6723d063df01ced79ac367edd",
-    "access time",
-    1469119659758,
-    1469462825369.4358
-  ],
-  [
-    true,
-    "e7e05d5fddd2d18835f21eb53276ec17d63b5929eb6d4f9febacb8ddf3293e56",
-    "access time",
-    1469119654664,
-    1469462820277.0347
-  ],
-  [
-    true,
-    "24d38ee2be0682865f03fe3a41e593a4ce95471e360c0065f18ceb4ed183a379",
-    "access time",
-    1469119650157,
-    1469462815767.9875
-  ],
-  [
-    true,
-    "9c8d7d6ecd0922da5222701701c9f5bc0249f946957bfc13c47d6eef5250cee4",
-    "access time",
-    1469119641139,
-    1469462806749.8022
-  ],
-  [
-    true,
-    "e902af47cf1ab4c2d0086d22ee1834c59c422379b63de64c1de62d92ddef5d12",
-    "access time",
-    1469119636267,
-    1469462801878.8987
-  ],
-  [
-    true,
-    "9f6cf273e95c1d86ea36dbdc0ff5c0b58bfc3fde964756b9976b4b541d4b9d75",
-    "access time",
-    1469119631362,
-    1469462796972.5962
-  ],
-  [
-    true,
-    "8821dae54ddfc4b6949d82f2086553b66694399f2250836bda652de73da0a7de",
-    "access time",
-    1469119626807,
-    1469462792418.4211
-  ],
-  [
-    true,
     "2b563d00eef9c503581fe1cdb4da7db55ffec55297bcf1295dad73498179d6d1",
     "access time",
     1469119622356,
@@ -2301,55 +2357,6 @@
     "expired",
     1469119622356,
     1469462787966.6768
-  ],
-  [
-    true,
-    "183fc63b670d9ae3d73b90a646840e436c06f38ed16740505d25f36a6fe7c255",
-    "access time",
-    1469119617235,
-    1469462782846.1086
-  ],
-  [
-    true,
-    "494562fa98d161be936bbbfdefdbf4bc5d7f5698f7caf750eda3ba474c502a5f",
-    "access time",
-    1469119611281,
-    1469462776891.8335
-  ],
-  [
-    true,
-    "2c028b3dce70d37f083cd45c141ff2f6f4df3cbf54fc0c29b707da77330005d8",
-    "access time",
-    1469119606838,
-    1469462772448.1584
-  ],
-  [
-    true,
-    "a92a0b7732629a44c7f0d2ed59bdc397c649f5c4b213a3bc7c87dd5f3213915a",
-    "access time",
-    1469119603895,
-    1469462769505.4487
-  ],
-  [
-    true,
-    "9541ab925df1c88564ea42ecde94ce8d8a6ff8f08b21ade35aca4aceae038de7",
-    "access time",
-    1469119598804,
-    1469462764414.7087
-  ],
-  [
-    true,
-    "22554eab14183b9aa9ced38bf57f855a698642083f60949f7098f6bda39810a7",
-    "access time",
-    1469119594368,
-    1469462759978.909
-  ],
-  [
-    true,
-    "db39e8c37695f74576ce0b49da844cbd1a60ebdf5db508690ae75c1b6b0e4206",
-    "access time",
-    1469119589327,
-    1469462754937.8828
   ],
   [
     true,
