@@ -148,7 +148,7 @@ write = require("fs").writeFile
 advanceOldestArticle = ->
   articles = instruments.query()
     .filter (article) -> (article["approved"] or article["pocketd"]) and (article["expired"] is undefined) and (article["trashed"] is undefined)
-    .filter (article) -> article["access time"] < (Date.now() - 99.minutes())
+    .filter (article) -> article["access time"] < (Date.now() - 66.minutes())
     .sort (a, b) -> a["access time"] - b["access time"]
     .reverse()
   if article = articles[0]
@@ -163,8 +163,8 @@ advanceOldestArticle = ->
       instruments.advance article.id, advancements
       setTimeout advanceOldestArticle, 1/10
   else
-    setTimeout findNovelArticles, 5.minutes()
-    setTimeout advanceOldestArticle, 9.minutes()
+    setTimeout findNovelArticles, 33.minutes()
+    setTimeout advanceOldestArticle, 1.minutes()
 
 
 
@@ -176,12 +176,12 @@ findNovelArticles = ->
       novelAddresses.forEach (address) -> addInstrument.fromKijiji(address, (error, identifier) ->)
 
 setTimeout findNovelArticles,    1.seconds()
-setTimeout advanceOldestArticle, 3.seconds()
+setTimeout advanceOldestArticle, 1.seconds()
 
 # console.info article = instruments.pull "XXX"
 
 # instruments.advance "4710afa5d6310b719dd8bf369a29f17b3ae689d95f5639e5682cd7ed5417289b", expired:Date.now()
-# instruments.advance "201660fff09c4bf0ef1a4f203afc77af0f0b731940e57f0d7c4342a9ea567dc2", pocketd:Date.now()
+# instruments.advance "ef7a8a063b5e7295f9d4113f224d32d2f7a94b75e465962d1247e5ce3958e6bb", pocketd:Date.now()
 # addInstrument.fromKijiji "http://www.kijiji.ca/v-view-details.html?adId=1172979691", -> console.info(arguments, "Done")
 
-Kijiji.Article.read "http://www.kijiji.ca/v-view-details.html?adId=1172979691", (error, output) -> console.info(output)
+# Kijiji.Article.read "http://www.kijiji.ca/v-view-details.html?adId=1172979691", (error, output) -> console.info(output)

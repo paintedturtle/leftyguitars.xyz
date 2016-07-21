@@ -199,8 +199,8 @@ document.on "DOMContentLoaded", ->
   {current, expired, pocketd, novelty, trashed} = window.articles.reduce(toCurrentExpiredNoprice, {})
   renderNovelty novelty if location.hostname.length is 9
   renderCurrentArticles current
-  # renderExpiredArticles expired
-  # renderTrash trashed
+  renderExpiredArticles expired
+  renderTrash trashed
   renderPocket pocketd if location.hostname.length is 9
 
 toCurrentExpiredNoprice = (reduction, guitar) ->
