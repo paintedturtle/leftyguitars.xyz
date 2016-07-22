@@ -863,7 +863,7 @@
   },
   {
     "publication time": 1466568000000,
-    "access time": 1469214775007,
+    "access time": 1469222110660,
     "price": 249.99,
     "address": "http://www.kijiji.ca/v-view-details.html?adId=1144547942",
     "location": [
@@ -1064,7 +1064,7 @@
   },
   {
     "publication time": 1469160000000,
-    "access time": 1469211867467,
+    "access time": 1469215872552,
     "price": 300,
     "pocketd": 1469213456491,
     "address": "http://www.kijiji.ca/v-view-details.html?adId=1184103624",
@@ -2837,7 +2837,7 @@
   },
   {
     "publication time": 1469160000000,
-    "access time": 1469213379947,
+    "access time": 1469217762912,
     "price": 850,
     "address": "http://www.kijiji.ca/v-view-details.html?adId=1184173255",
     "location": [
@@ -6144,7 +6144,7 @@
   },
   {
     "publication time": 1469160000000,
-    "access time": 1469212706795,
+    "access time": 1469216674315,
     "price": 550,
     "address": "http://www.kijiji.ca/v-view-details.html?adId=1184169961",
     "location": [
@@ -8513,6 +8513,25 @@
     "description": "Vintage left hand guitar.  Immaculate cond. Attemted to play twice.  Comes with gator case and snark tuner \r\rText or email"
   },
   {
+    "publication time": 1469160000000,
+    "access time": 1469215294173,
+    "price": 229,
+    "address": "http://www.kijiji.ca/v-view-details.html?adId=1184184753",
+    "location": [
+      "15241 Stony Plain Rd NW",
+      "Edmonton",
+      "AB T5P 3Y4",
+      "Canada"
+    ],
+    "photographs": [
+      "http://i.ebayimg.com/00/s/ODAwWDUzMw==/z/aSMAAOSwsTxXkmsL/$_35.JPG"
+    ],
+    "approved": true,
+    "title": "WASHBURN CLASSICAL GUITAR\"BRAND NEW\"",
+    "id": "48db9412d0b14da0cf6fad4f5426e6e8d5c17776b6e56dd56d410c0154d82fbd",
+    "description": "This is a brand new full-size acoustic guitar made by Washburn through their Oscar Schmidt line. It is left handed with a beautiful natural wood finish with a mother of pearl inlay binding. A great starter guitar, for only $229.00. \rFOR MORE INFORMATION PLEASE CALL OR VISIT: \rWESTEND EXCHANGE PAWNSHOP 15241 STONY PL RD \r780 481 3857 OR 780 966 5080 SUSAN"
+  },
+  {
     "publication time": 1464926400000,
     "publication date": "2016-06-03T04:00:00.000Z",
     "access time": 1469213966434,
@@ -9899,7 +9918,7 @@
   },
   {
     "publication time": 1469160000000,
-    "access time": 1469211869955,
+    "access time": 1469215865630,
     "price": 200,
     "address": "http://www.kijiji.ca/v-view-details.html?adId=1184100977",
     "location": [
@@ -10645,7 +10664,7 @@
   },
   {
     "publication time": 1466568000000,
-    "access time": 1469212407595,
+    "access time": 1469216426620,
     "price": 275,
     "address": "http://www.kijiji.ca/v-view-details.html?adId=1176204688",
     "location": [
@@ -11426,7 +11445,7 @@
   },
   {
     "publication time": 1466222400000,
-    "access time": 1469213803853,
+    "access time": 1469218732986,
     "price": 400,
     "address": "http://www.kijiji.ca/v-view-details.html?adId=1175191396",
     "location": [
@@ -12223,6 +12242,26 @@
     "title": "Brand New Denver DD44SL Left Handed Acoustic Guitar",
     "id": "03ef4b7110d646867abdc5f40107da501f75795d2a14d3707d4ca0636d951f7a",
     "description": "Brand New Denver DD44SL Left Handed Acoustic GuitarComes with carrying caseasking $175 obo text 4169998791"
+  },
+  {
+    "publication time": 1469160000000,
+    "access time": 1469215300288,
+    "price": 125,
+    "address": "http://www.kijiji.ca/v-view-details.html?adId=1184186083",
+    "location": [
+      "Toronto",
+      "ON  M5A3G5"
+    ],
+    "photographs": [
+      "http://i.ebayimg.com/00/s/NDUwWDgwMA==/z/kH4AAOSwqfNXkmpn/$_35.JPG",
+      "http://i.ebayimg.com/00/s/NDUwWDgwMA==/z/zCEAAOSwZVlXkmpr/$_35.JPG",
+      "http://i.ebayimg.com/00/s/NDUwWDgwMA==/z/zGcAAOSw4s9Xkmpu/$_35.JPG",
+      "http://i.ebayimg.com/00/s/NDUwWDgwMA==/z/D1QAAOSwhMFXkmpy/$_35.JPG"
+    ],
+    "approved": true,
+    "title": "Jay Turser dreadnought  acoustic model#  JJ45-LH-N  left handed ",
+    "id": "b9fab6032fb4f764ba94d562f5cadd6cf340aa081035edf22d32872dfbe4fdd5",
+    "description": "Jay Turser model#  JJ45-LH-N  left handed acoustic guitar I have it strong right hand and right now but can easily switch it over it's a really good beginner's guitar it's brand new and I could even throw in a guitar stand it's brand new the original price was 200 US so it's a pretty good deal"
   },
   {
     "publication time": 1468900800000,
