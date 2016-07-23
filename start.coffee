@@ -181,7 +181,7 @@ setTimeout advanceOldestArticle, 1.seconds()
 # console.info article = instruments.pull "XXX"
 
 # instruments.advance "4710afa5d6310b719dd8bf369a29f17b3ae689d95f5639e5682cd7ed5417289b", expired:Date.now()
-# instruments.advance "88b030b94e6286425aafd9915f85715aeaa684a3b1608800b12b7d34df0db5d8", pocketd:Date.now()
+# instruments.advance "d0e506ef9edd4b812dff2f4cce9311b24391e37cb11f40267e0d4b277f4f7dd9", pocketd:Date.now()
 # addInstrument.fromKijiji "http://www.kijiji.ca/v-view-details.html?adId=1172979691", -> console.info(arguments, "Done")
 
 # Kijiji.Article.read "http://www.kijiji.ca/v-view-details.html?adId=1172979691", (error, output) -> console.info(output)
