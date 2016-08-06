@@ -1,6 +1,6 @@
 window = require('x-ray')()
 window.concurrency(1)
-window.throttle(1, 33)
+window.throttle(1, 111)
 
 Kijiji = module.exports
 
@@ -89,7 +89,9 @@ Kijiji.Search =
     addresses: [".title a[href]@href"]
 
   read: (address, done) ->
+    startedAt = Date.now()
     window(address, Kijiji.Search.attributes) (error, output) ->
+      console.info "responded in":Date.now() - startedAt
       if error
         console.error "Kijiji.Search.read #{address}":error
         done error
