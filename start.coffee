@@ -175,36 +175,8 @@ findNovelArticles = ->
       console.info "#{source} novelty": novelAddresses
       novelAddresses.forEach (address) -> addInstrument.fromKijiji(address, (error, identifier) ->)
 
-findExpiredArticles = ->
-  articles = instruments.query()
-    .filter (article) -> article["expired"] and article["trashed"] is undefined
-    .filter (article) -> article["access time"] > (Date.now() - 24.hours())
-    .sort (a, b) -> a["access time"] - b["access time"]
-    .reverse()
-  console.info articles.length
-  # console.info articles
-  # article = articles[0]
-  for article in articles
-    Kijiji.Article.read article.address, (error, output) ->
-      if error then throw error
-      console.info article.address
-      console.info output
-      if output["expired"] is undefined
-        instruments.reverse article.id, expired:article["expired"]
-
-    # advancements = {}
-    # for key, value of output
-    #   advancements[key] = value unless Immutable.is Immutable.fromJS(value), Immutable.fromJS(article[key])
-    # console.info "PULL #{article.id}":advancements
-    # instruments.advance article.id, advancements
-    # setTimeout advanceOldestArticle, 1/10
-
-# setTimeout findExpiredArticles,  1.second()
-
-# setTimeout findNovelArticles,    1.seconds()
-# setTimeout advanceOldestArticle, 1.seconds()
-
-# console.info article = instruments.pull "XXX"
+setTimeout findNovelArticles,    1.seconds()
+setTimeout advanceOldestArticle, 1.seconds()
 
 # instruments.advance "4710afa5d6310b719dd8bf369a29f17b3ae689d95f5639e5682cd7ed5417289b", expired:Date.now()
 
@@ -214,40 +186,25 @@ findExpiredArticles = ->
 
 # Kijiji.Article.read "http://www.kijiji.ca/v-view-details.html?adId=1172979691", (error, output) -> console.info(output)
 
-# reverseExpiredAttribute = (identifier) ->
-#   article = instruments.pull(identifier)
-#   if article.expired
-#     instruments.reverse identifier, expired:article.expired
 
 
-articles = instruments.query().filter (article) -> article["expired"] > (1470424366445 - 2.hour())
-console.info articles.length
-
-processNextArticle = ->
-  article = articles.pop()
-  if article is undefined
-    console.info "Done"
-    return "Done"
-  else
-    console.info processing:article.id
-    console.info remaining:articles.length
-  Kijiji.Article.read article.address, (error, output) ->
-    if error then throw error
-    console.info article.address
-    console.info output
-    if output["expired"] is undefined
-      instruments.reverse article.id, expired:article["expired"]
-      setTimeout processNextArticle, 1.second()
-    else
-      setTimeout processNextArticle(), 1
-
-setTimeout processNextArticle(), 1
-
-# for article in articles
-#   reverseExpiredAttribute article.id
-# console.info instruments.pull "e28ee3bd02cb75e86b35a98b7e28198e3d0dc9a5035d7102f8273eab4f320765"
-
-# reverseExpiredAttribute "cfcff8f6ee8356cb14f1261a531be10faaff7fae48eed02b59d3441320a2ceae"
-
-# console.info instruments.pull("cfcff8f6ee8356cb14f1261a531be10faaff7fae48eed02b59d3441320a2ceae")["expired"]
+# articles = instruments.query().filter (article) -> article["expired"] > (1470424366445 - 5.hour())
+# processNextArticle = ->
+#   article = articles.pop()
+#   if article is undefined
+#     console.info "Done"
+#     return "Done"
+#   else
+#     console.info processing:article.id
+#     console.info remaining:articles.length
+#   Kijiji.Article.read article.address, (error, output) ->
+#     if error then throw error
+#     console.info article.address
+#     console.info output
+#     if output["expired"] is undefined
+#       instruments.reverse article.id, expired:article["expired"]
+#       setTimeout processNextArticle, 1.second()
+#     else
+#       setTimeout processNextArticle, 1
 #
+# setTimeout processNextArticle, 1
