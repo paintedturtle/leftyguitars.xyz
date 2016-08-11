@@ -1,5 +1,6 @@
 require "./Number"
 {readFileSync}      = require "fs"
+{writeFileSync}     = require "fs"
 Cryptography        = require "crypto"
 Facts               = require "facts"
 Immutable           = require "immutable"
@@ -9,6 +10,7 @@ Kijiji              = require "./Sources/Kijiji"
 instruments = require("facts")()
 instruments.datoms = Immutable.Stack(Immutable.fromJS(require("./article.datoms.json")))
 instruments.on "transaction", ->
+  console.info "transaction":Date.now()
   write "article.datoms.json", JSON.stringify(instruments.datoms, undefined, "  "), "UTF-8", (error) ->
     if error then throw error
     console.info "SAVED":"article.datoms.json"
@@ -146,11 +148,13 @@ watch = require("fs").watch
 write = require("fs").writeFile
 
 advanceOldestArticle = ->
+  console.info "articles select start":Date.now()
   articles = instruments.query()
     .filter (article) -> (article["approved"] or article["pocketd"]) and (article["expired"] is undefined) and (article["trashed"] is undefined)
-    .filter (article) -> article["access time"] < (Date.now() - 66.minutes())
+    .filter (article) -> article["access time"] < (Date.now() - 333.minutes())
     .sort (a, b) -> a["access time"] - b["access time"]
     .reverse()
+  console.info "articles select end":Date.now()
   if article = articles[0]
     console.info "READ #{article.id}":article.address
     Kijiji.Article.read article.address, (error, output) ->
@@ -161,7 +165,7 @@ advanceOldestArticle = ->
         advancements[key] = value unless Immutable.is Immutable.fromJS(value), Immutable.fromJS(article[key])
       console.info "PULL #{article.id}":advancements
       instruments.advance article.id, advancements
-      setTimeout advanceOldestArticle, 1/10
+      setTimeout advanceOldestArticle, 1
   else
     setTimeout findNovelArticles, 33.minutes()
     setTimeout advanceOldestArticle, 1.minutes()
