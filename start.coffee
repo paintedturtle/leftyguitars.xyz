@@ -184,9 +184,9 @@ setTimeout advanceOldestArticle, 2.seconds()
 
 # instruments.advance "4710afa5d6310b719dd8bf369a29f17b3ae689d95f5639e5682cd7ed5417289b", expired:Date.now()
 
-# instruments.advance "7361f4a8a0e4d8561e66798ee77e0ebf4ac8bf3671757825fb5864d4e9f95f28", pocketd:Date.now()
+# instruments.advance "ff08e7304a648a59058e3f9b88635bb32460a91fa2e4bbe0b9e7d3b5e081e64d", pocketd:Date.now()
 
-# addInstrument.fromKijiji "http://www.kijiji.ca/v-view-details.html?adId=1172979691", -> console.info(arguments, "Done")
+# addInstrument.fromKijiji "http://www.kijiji.ca/v-guitar/kawartha-lakes/vantage-left-handed-guitar/1171545360", -> console.info(arguments, "Done")
 
 # Kijiji.Article.read "http://www.kijiji.ca/v-view-details.html?adId=1172979691", (error, output) -> console.info(output)
 
@@ -212,3 +212,11 @@ setTimeout advanceOldestArticle, 2.seconds()
 #       setTimeout processNextArticle, 1
 #
 # setTimeout processNextArticle, 1
+
+
+
+unexpire = (id) ->
+  article = instruments.pull(id)
+  instruments.reverse article.id, expired:article["expired"]
+
+# unexpire "b0d72e72733dbd70db21b27b2addec993590fb1ebdf9950d975892b4299649c6"
