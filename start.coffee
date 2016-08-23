@@ -184,8 +184,8 @@ setTimeout advanceOldestArticle, 2.seconds()
 
 # instruments.advance "4710afa5d6310b719dd8bf369a29f17b3ae689d95f5639e5682cd7ed5417289b", expired:Date.now()
 
-instruments.advance "0d4fdf5196da9ae79b116f46ddb4eb89fc43db8db9523798518401b6ac1077ef", pocketd:Date.now()
-instruments.advance "fc5a0ff370290d1b8447759e3eab766dcc076fd0338755e27734c5c5f0950858", pocketd:Date.now()
+# instruments.advance "0d4fdf5196da9ae79b116f46ddb4eb89fc43db8db9523798518401b6ac1077ef", pocketd:Date.now()
+# instruments.advance "fc5a0ff370290d1b8447759e3eab766dcc076fd0338755e27734c5c5f0950858", pocketd:Date.now()
 
 # addInstrument.fromKijiji "http://www.kijiji.ca/v-guitar/kawartha-lakes/vantage-left-handed-guitar/1171545360", -> console.info(arguments, "Done")
 
