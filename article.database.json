@@ -1,6 +1,925 @@
 [
   [
     true,
+    "073e5eba9918d6d431d793eb267ff8fd565938e1858a2830678fc3cf8ec9eaa9",
+    "pocketd",
+    1471975606146,
+    1472001833420.054
+  ],
+  [
+    true,
+    "4a39c86b7999e7eb506e189f0c261322e518423c5b6af8083079035b0d8d8f43",
+    "title",
+    "GUITARE GAUCHÈRE - Art and lutherie folk",
+    1471991916948.5027
+  ],
+  [
+    true,
+    "4a39c86b7999e7eb506e189f0c261322e518423c5b6af8083079035b0d8d8f43",
+    "description",
+    "QUEBEC CITY - 220$ - Pas d'échange, je suis déjà bien équipé ! *gigitty*\r\rArt and Lutherie folk usagée. Les cordes sont neuves et le case rigide est inclus\r\rRaison de la vente : Elle dort dans son case et j'ai pas le temps de m'amuser avec :(",
+    1471991916948.5027
+  ],
+  [
+    true,
+    "4a39c86b7999e7eb506e189f0c261322e518423c5b6af8083079035b0d8d8f43",
+    "photographs",
+    [
+      "http://i.ebayimg.com/00/s/MzIwWDE5OQ==/z/0uYAAOSw-itXvHSA/$_35.JPG"
+    ],
+    1471991916948.5027
+  ],
+  [
+    true,
+    "4a39c86b7999e7eb506e189f0c261322e518423c5b6af8083079035b0d8d8f43",
+    "location",
+    [
+      "2374 Avenue de la Ronde",
+      "Ville de Québec",
+      "QC G1J 5B7",
+      "Canada"
+    ],
+    1471991916948.5027
+  ],
+  [
+    true,
+    "4a39c86b7999e7eb506e189f0c261322e518423c5b6af8083079035b0d8d8f43",
+    "address",
+    "http://www.kijiji.ca/v-view-details.html?adId=1192848935",
+    1471991916948.5027
+  ],
+  [
+    true,
+    "4a39c86b7999e7eb506e189f0c261322e518423c5b6af8083079035b0d8d8f43",
+    "access time",
+    1471973226051,
+    1471991916948.5027
+  ],
+  [
+    true,
+    "4a39c86b7999e7eb506e189f0c261322e518423c5b6af8083079035b0d8d8f43",
+    "price",
+    220,
+    1471991916948.5027
+  ],
+  [
+    true,
+    "4a39c86b7999e7eb506e189f0c261322e518423c5b6af8083079035b0d8d8f43",
+    "publication time",
+    1471924800000,
+    1471991916948.5027
+  ],
+  [
+    true,
+    "fc0afe77ca6e580ea86f280cac83706dad76dfa5b67a8b4fb52df6ca596a83bd",
+    "approved",
+    true,
+    1471988288333.585
+  ],
+  [
+    true,
+    "4f61bee3cc4df62d65a987204e28e468230808e6441748a05cb19ae8926e9cc2",
+    "approved",
+    true,
+    1471988280452.4001
+  ],
+  [
+    true,
+    "27691790d81bb07bc6da81145686814caf4e78225f31feb2fbcd31cabdf7fa86",
+    "access time",
+    1471968568288,
+    1471987259077.9724
+  ],
+  [
+    true,
+    "5d0acc2f9b3f567a950642de6a698d024d4d2be828cd6ee65b834ddd89d22500",
+    "expired",
+    1471968553310,
+    1471987244099.3315
+  ],
+  [
+    true,
+    "5d0acc2f9b3f567a950642de6a698d024d4d2be828cd6ee65b834ddd89d22500",
+    "access time",
+    1471968553310,
+    1471987244099.3315
+  ],
+  [
+    true,
+    "eef44b05ea3b2a612575227b1a9936c279c88204cdcbccefd74193e709cfb275",
+    "expired",
+    1471968536939,
+    1471987227727.9658
+  ],
+  [
+    true,
+    "eef44b05ea3b2a612575227b1a9936c279c88204cdcbccefd74193e709cfb275",
+    "access time",
+    1471968536939,
+    1471987227727.9658
+  ],
+  [
+    true,
+    "a74e8ef41fe0d7c557f184c101bc6c920117d1fad5fb9907e2a3f88f75e1391b",
+    "access time",
+    1471968521024,
+    1471987211813.857
+  ],
+  [
+    true,
+    "a74e8ef41fe0d7c557f184c101bc6c920117d1fad5fb9907e2a3f88f75e1391b",
+    "price",
+    null,
+    1471987211813.857
+  ],
+  [
+    true,
+    "32aaeeb6e5fe4882d8ff9be412055381cbb5c6d9c32a00208ac743018a1a4b5f",
+    "access time",
+    1471968505961,
+    1471987196749.6333
+  ],
+  [
+    true,
+    "03fc2fd766b98f042b98a5dc1402e20da0ac79f07468594fee4f1e7a57649c1c",
+    "expired",
+    1471968490235,
+    1471987181023.4543
+  ],
+  [
+    true,
+    "03fc2fd766b98f042b98a5dc1402e20da0ac79f07468594fee4f1e7a57649c1c",
+    "access time",
+    1471968490235,
+    1471987181023.4543
+  ],
+  [
+    true,
+    "396dc4f4915d9b4fb1f7fe1865026adfee3091265fdf3990200e37fe4793d095",
+    "expired",
+    1471968474880,
+    1471987165667.9854
+  ],
+  [
+    true,
+    "396dc4f4915d9b4fb1f7fe1865026adfee3091265fdf3990200e37fe4793d095",
+    "access time",
+    1471968474880,
+    1471987165667.9854
+  ],
+  [
+    true,
+    "428aabf3a5f4416a39d5c72e430f6d5f8e320b09a4b8b64c92ba1da9ab7c6f64",
+    "access time",
+    1471968459024,
+    1471987149812.3665
+  ],
+  [
+    true,
+    "c0f9c649c878373ee996ce00bd16b8af5033e62cf0346986582d58bb6696feea",
+    "access time",
+    1471968443463,
+    1471987134250.5095
+  ],
+  [
+    true,
+    "0b1418a27a9ceccee23a99ca86dd97c0057de737db68075b169ee2d9cdb4f86e",
+    "access time",
+    1471968428449,
+    1471987119236.7434
+  ],
+  [
+    true,
+    "0b1418a27a9ceccee23a99ca86dd97c0057de737db68075b169ee2d9cdb4f86e",
+    "price",
+    null,
+    1471987119236.7434
+  ],
+  [
+    true,
+    "c29e6fbca8d90d1813afb36db67a5ea4ac7f26bd7379616228c4716a835f3564",
+    "access time",
+    1471968418203,
+    1471987108989.9663
+  ],
+  [
+    true,
+    "1aea09aba63d3fa9ff53502cafbdd39e110a86b81fd976f922785a304533205c",
+    "access time",
+    1471968402758,
+    1471987093544.7869
+  ],
+  [
+    true,
+    "670f58353ca8676aa3f1efa0eaba7af0e1308b161a526397a7bd42a582b2c3c2",
+    "access time",
+    1471968392669,
+    1471987083456.5508
+  ],
+  [
+    true,
+    "3af0fb407524520b9340c902bdf739344aa05ccf3a1da12cd286933879ac1f4d",
+    "access time",
+    1471968377076,
+    1471987067862.4382
+  ],
+  [
+    true,
+    "cf5e9bea6d319501a2f1aac391c094da4553c1242cbcead4b58c649294bfe056",
+    "expired",
+    1471968361922,
+    1471987052707.5417
+  ],
+  [
+    true,
+    "cf5e9bea6d319501a2f1aac391c094da4553c1242cbcead4b58c649294bfe056",
+    "access time",
+    1471968361922,
+    1471987052707.5417
+  ],
+  [
+    true,
+    "70bba916ad2f61232ad3f686db769e3aea8de1e4cce88adc308770a43ec99c41",
+    "access time",
+    1471968346215,
+    1471987037000.8066
+  ],
+  [
+    true,
+    "14e1165afae78570dfe1e09eeadbe10117cac1639eef547a4c0b65c7d9e22d79",
+    "access time",
+    1471968330639,
+    1471987021423.8418
+  ],
+  [
+    true,
+    "307ffe84b909c0c3516ad3f1b29b070b053dfc2703b40693347c462517bdf3b3",
+    "expired",
+    1471968315435,
+    1471987006219.243
+  ],
+  [
+    true,
+    "307ffe84b909c0c3516ad3f1b29b070b053dfc2703b40693347c462517bdf3b3",
+    "access time",
+    1471968315435,
+    1471987006219.243
+  ],
+  [
+    true,
+    "7139c0b2a829ffca87a5fb555232f0dabe825193a569543e6a397d963ff1ad82",
+    "access time",
+    1471968299692,
+    1471986990476.5667
+  ],
+  [
+    true,
+    "39e53a9ff86daa87acb0c2153fa838dd75565f68780da1f175d8fce38f543031",
+    "access time",
+    1471968284166,
+    1471986974949.9607
+  ],
+  [
+    true,
+    "35a205dbae5f9841672ba7b12c672de93da702b32411e162759b51169d829236",
+    "expired",
+    1471968268944,
+    1471986959727.173
+  ],
+  [
+    true,
+    "35a205dbae5f9841672ba7b12c672de93da702b32411e162759b51169d829236",
+    "access time",
+    1471968268944,
+    1471986959727.173
+  ],
+  [
+    true,
+    "074285518d7ee73f8be59745f18e255f641b358789a80a4fd5bf6c520a7e5a00",
+    "access time",
+    1471968253472,
+    1471986944256.3713
+  ],
+  [
+    true,
+    "aba897e0a4321da0fea5fd6f895cd05141b235778650866e3014477d8ccbf209",
+    "access time",
+    1471968237941,
+    1471986928723.6174
+  ],
+  [
+    true,
+    "e439c8086f353efdd3307a2f113e4df870985ffa4df016f2d7f61073c16fa973",
+    "access time",
+    1471968222376,
+    1471986913158.8665
+  ],
+  [
+    true,
+    "26a56e0866daadf4511629f359cad6c3161a93aaf10b5752fe431934a9b46d99",
+    "access time",
+    1471968207252,
+    1471986898034.4688
+  ],
+  [
+    true,
+    "4329b1ccaf42e9c91c2374e673404c55617d437ac0f47773f82985847e1b967c",
+    "access time",
+    1471968192179,
+    1471986882960.8323
+  ],
+  [
+    true,
+    "8434da64fdee9b6d06b874bd17dc2fe7c94cdd012c1c6bf0da406ccd7f09ab6c",
+    "access time",
+    1471968176576,
+    1471986867358.1284
+  ],
+  [
+    true,
+    "6c189ed23ed19f043ae8e04c1d36e504af7e255d90f666fd542a38ed197b3afd",
+    "access time",
+    1471968161054,
+    1471986851834.7354
+  ],
+  [
+    true,
+    "4d7540fdfcecdfa4a527ed170183ee5c2d1041be209e6ca6412eedf4da1e1873",
+    "access time",
+    1471968145886,
+    1471986836666.1804
+  ],
+  [
+    true,
+    "f8c0fd1c20b5111856ec0d0e92b54ad02997a78033ba454f5033477b6b798a8f",
+    "access time",
+    1471968130171,
+    1471986820952.2358
+  ],
+  [
+    true,
+    "1f5f22fc5cbcb80e360d64b1620219f6259261d0909a11c64818b6e452fbabee",
+    "access time",
+    1471968119879,
+    1471986810659.8586
+  ],
+  [
+    true,
+    "1ee8c40150fb0df3a67eb3154a4cd390d8cf97cae7def54e34629ffe85986990",
+    "access time",
+    1471968104734,
+    1471986795514.203
+  ],
+  [
+    true,
+    "71a04d2315b27f006e20a5954c931749300f5a539b0eac9b6913e045bf865d30",
+    "access time",
+    1471968089385,
+    1471986780165.0786
+  ],
+  [
+    true,
+    "6e6803a250c03313b951fb4df749e42a24814d082da3d2060abc8bc22902996d",
+    "expired",
+    1471968073918,
+    1471986764696.767
+  ],
+  [
+    true,
+    "6e6803a250c03313b951fb4df749e42a24814d082da3d2060abc8bc22902996d",
+    "access time",
+    1471968073918,
+    1471986764696.767
+  ],
+  [
+    true,
+    "24b3873aa64f72ab6ff3b38093264115bd2699636a71b8881e34806596c6110d",
+    "access time",
+    1471968058177,
+    1471986748955.7424
+  ],
+  [
+    true,
+    "fb99b5560ce272abfa6f6c8001773e0a61416f24717d8bfd51070c1d34a4263e",
+    "access time",
+    1471968042402,
+    1471986733180.8284
+  ],
+  [
+    true,
+    "aac0db9e2f56ef5276aa04127c41446b66285c1f3007740c4d2f9f6a9dd81c83",
+    "access time",
+    1471968027348,
+    1471986718126.57
+  ],
+  [
+    true,
+    "afa786f960b4ed6bc97d4187616e6ab976c2b974d353043bf9bed537b4287688",
+    "description",
+    "I have a left-handed Jean larrivee parlor  it's  in excellent condition  this guitar and case is like new condition 700.00 no trades",
+    1471986702402.166
+  ],
+  [
+    true,
+    "afa786f960b4ed6bc97d4187616e6ab976c2b974d353043bf9bed537b4287688",
+    "access time",
+    1471968011625,
+    1471986702402.166
+  ],
+  [
+    true,
+    "afa786f960b4ed6bc97d4187616e6ab976c2b974d353043bf9bed537b4287688",
+    "price",
+    700,
+    1471986702402.166
+  ],
+  [
+    true,
+    "f2e52e2b022a13755af93ae777f000624b41e6119ba8a2ff3e1f5eee04ae6211",
+    "access time",
+    1471967996014,
+    1471986686791.492
+  ],
+  [
+    true,
+    "8b895c33cf331eda60ab7eb7491c235de284a1c0239891ba3100ff559ebb3eea",
+    "access time",
+    1471967980553,
+    1471986671329.41
+  ],
+  [
+    true,
+    "8c17fbc7530fed490ea579c42e7c666e82102336bcc254f93f7c259afdc5332b",
+    "access time",
+    1471967965351,
+    1471986656127.8901
+  ],
+  [
+    true,
+    "c9cd51526a40e242df7df6e216e54e63e805f8f3235902b3376f89e6ceb74e7b",
+    "access time",
+    1471967949777,
+    1471986640553.8103
+  ],
+  [
+    true,
+    "de838dceb6ae2bc985c787cfe898948ce90e4fadc7cb4fdf30f874404b9036e0",
+    "access time",
+    1471967934185,
+    1471986624960.5037
+  ],
+  [
+    true,
+    "de838dceb6ae2bc985c787cfe898948ce90e4fadc7cb4fdf30f874404b9036e0",
+    "publication time",
+    1469073600000,
+    1471986624960.5037
+  ],
+  [
+    true,
+    "14ceb509b2fad38ffdce1b9544791d339b97c3079c98ed796dbdc4d55e62a26d",
+    "access time",
+    1471967918996,
+    1471986609772.4387
+  ],
+  [
+    true,
+    "14ceb509b2fad38ffdce1b9544791d339b97c3079c98ed796dbdc4d55e62a26d",
+    "publication time",
+    1467518400000,
+    1471986609772.4387
+  ],
+  [
+    true,
+    "48db9412d0b14da0cf6fad4f5426e6e8d5c17776b6e56dd56d410c0154d82fbd",
+    "expired",
+    1471967903580,
+    1471986594354.7573
+  ],
+  [
+    true,
+    "48db9412d0b14da0cf6fad4f5426e6e8d5c17776b6e56dd56d410c0154d82fbd",
+    "access time",
+    1471967903580,
+    1471986594354.7573
+  ],
+  [
+    true,
+    "d0e506ef9edd4b812dff2f4cce9311b24391e37cb11f40267e0d4b277f4f7dd9",
+    "location",
+    [
+      "Ottawa",
+      "ON K0A3M0"
+    ],
+    1471986578178.1846
+  ],
+  [
+    true,
+    "d0e506ef9edd4b812dff2f4cce9311b24391e37cb11f40267e0d4b277f4f7dd9",
+    "access time",
+    1471967887400,
+    1471986578178.1846
+  ],
+  [
+    true,
+    "7f64d8fd7feb2b9ee04711aa0e5a4196f17a6b3033f842b65ec706e80e39b70f",
+    "access time",
+    1471967872095,
+    1471986562869.671
+  ],
+  [
+    true,
+    "bdcf25e58dbb92b07ad81f20846b48231ee408dd4cbc7c6b3dcf243e6a8c01e8",
+    "access time",
+    1471967856219,
+    1471986546993.3027
+  ],
+  [
+    true,
+    "687094226d33cbc1d8797155c41da5f2712f5dddd660b6e43e607c3d03ed9c65",
+    "description",
+    "Barely used left handed Epiphone SG. Good condition, one dent. No strings. Asking $200 OBO. Soft sided case also for sale $50 OBO.",
+    1471986531596.8103
+  ],
+  [
+    true,
+    "687094226d33cbc1d8797155c41da5f2712f5dddd660b6e43e607c3d03ed9c65",
+    "location",
+    [
+      "Edmonton",
+      "AB  T6X0P3"
+    ],
+    1471986531596.8103
+  ],
+  [
+    true,
+    "687094226d33cbc1d8797155c41da5f2712f5dddd660b6e43e607c3d03ed9c65",
+    "access time",
+    1471967840823,
+    1471986531596.8103
+  ],
+  [
+    true,
+    "8258400be62d5dfe9321edabdfb37a09a71d744cb9dcee48bc95ce1fd94feaec",
+    "title",
+    "\" Lefthanded Rouge Beatle Bass w/Case \"",
+    1471986516524.898
+  ],
+  [
+    true,
+    "8258400be62d5dfe9321edabdfb37a09a71d744cb9dcee48bc95ce1fd94feaec",
+    "description",
+    "This Left Handed \"Rouge\" Beatle Bass style guitar Is Like New. > Bought it but never learned to play Bass. > Seen others like this, but not as rich in colour as this one. > I still have too many guitars. > Selling this Bass Guitar with Matching Case for $300.00. firm.> 1st Buyer > Too many emails! > Callers Only! (7am to 3am in the morning) South River On 705-386-7086. > Thanks For Looking..",
+    1471986516524.898
+  ],
+  [
+    true,
+    "8258400be62d5dfe9321edabdfb37a09a71d744cb9dcee48bc95ce1fd94feaec",
+    "access time",
+    1471967825751,
+    1471986516524.898
+  ],
+  [
+    true,
+    "8258400be62d5dfe9321edabdfb37a09a71d744cb9dcee48bc95ce1fd94feaec",
+    "price",
+    300,
+    1471986516524.898
+  ],
+  [
+    true,
+    "47c6cadff4641982a14510d3626073f8ec2909dd0c0df72d8510315ca99fa987",
+    "access time",
+    1471967810141,
+    1471986500914.1875
+  ],
+  [
+    true,
+    "51aba795cb2f3a6c3f42db0a447c76743e1157664d3e252e3bd8aa74e32d87af",
+    "access time",
+    1471967794492,
+    1471986485264.34
+  ],
+  [
+    true,
+    "ff08e7304a648a59058e3f9b88635bb32460a91fa2e4bbe0b9e7d3b5e081e64d",
+    "access time",
+    1471967779213,
+    1471986469985.373
+  ],
+  [
+    true,
+    "5a579699704000561cb83aa945b538b237af665b7bafb9af23addb648114c9fd",
+    "access time",
+    1471967763652,
+    1471986454423.6804
+  ],
+  [
+    true,
+    "5a59db3c7a1deb991092637250fc7d438cb884a2bdab720afa6bb65cc25a4cdf",
+    "access time",
+    1471967748319,
+    1471986439089.9292
+  ],
+  [
+    true,
+    "2299458781d45a7585bb999afeee21ac856f219051c8600c9b503c4a289bdf94",
+    "access time",
+    1471967733286,
+    1471986424056.8967
+  ],
+  [
+    true,
+    "d1a37f806cfad4fe373ab94450841d0a8c29928e8f4430fa3ccdb3e8a4be3842",
+    "access time",
+    1471967717861,
+    1471986408631.963
+  ],
+  [
+    true,
+    "50f94a57906df0915464f0c223b3241f6994155dfaa01ce6ead2a85027543f85",
+    "access time",
+    1471967702432,
+    1471986393203.0205
+  ],
+  [
+    true,
+    "2762636ce5b09dcd6c38b31b68df4c34215ff294a7ce826ca66388809f1bbfc7",
+    "access time",
+    1471967687411,
+    1471986378181.8638
+  ],
+  [
+    true,
+    "654fd889ddf7bab2e4669a840d935b1943f31205559723ab2c051d42c9ae2e29",
+    "access time",
+    1471967671576,
+    1471986362346.467
+  ],
+  [
+    true,
+    "31c6985a6747c21f7aa91c39446f4df19c1af44c695cd83d6ebd09c4a7b582fc",
+    "expired",
+    1471967656199,
+    1471986346967.89
+  ],
+  [
+    true,
+    "31c6985a6747c21f7aa91c39446f4df19c1af44c695cd83d6ebd09c4a7b582fc",
+    "access time",
+    1471967656199,
+    1471986346967.89
+  ],
+  [
+    true,
+    "d7cbc20ec23caf8669d1d5b9094d10c3e92a56f19662213f32071811d9d55002",
+    "access time",
+    1471967640557,
+    1471986331325.6304
+  ],
+  [
+    true,
+    "eec7b11952f867721701e699847bfaef46a20cbbffc1a3bf76709aba9ade6556",
+    "access time",
+    1471967624996,
+    1471986315764.1733
+  ],
+  [
+    true,
+    "50aa66595786c3e72985c21ae5d644903a8e8307c16eeba8b0fe3a042ed9fab1",
+    "access time",
+    1471967609509,
+    1471986300277.7407
+  ],
+  [
+    true,
+    "b0d72e72733dbd70db21b27b2addec993590fb1ebdf9950d975892b4299649c6",
+    "access time",
+    1471967594419,
+    1471986285188.7053
+  ],
+  [
+    true,
+    "c631767b6e495bab8d2c488bdca1db4a180a0d0f1fb333d5c5575f9041a8f9e7",
+    "access time",
+    1471967578948,
+    1471986269715.5535
+  ],
+  [
+    true,
+    "7de501d5286e3edf2e42998fdd9edcd22d5115382e1c89516757f00993d6345d",
+    "access time",
+    1471967563442,
+    1471986254216.597
+  ],
+  [
+    true,
+    "eb59f7af3d4aa3194b33582c12f8442a273210082f3330414581104f8be2914d",
+    "expired",
+    1471967548251,
+    1471986239017.0378
+  ],
+  [
+    true,
+    "eb59f7af3d4aa3194b33582c12f8442a273210082f3330414581104f8be2914d",
+    "access time",
+    1471967548251,
+    1471986239017.0378
+  ],
+  [
+    true,
+    "bcbd11da31b22c351f8f975186675f036305f635b938011d464b7d8d59437d7a",
+    "access time",
+    1471967537597,
+    1471986228363.172
+  ],
+  [
+    true,
+    "bcbd11da31b22c351f8f975186675f036305f635b938011d464b7d8d59437d7a",
+    "expired",
+    1471967537597,
+    1471986228363.172
+  ],
+  [
+    true,
+    "c624e0c543973fad554659ba2ae2465a1a23026a6b12f0511a626cbda3fb8a28",
+    "access time",
+    1471967521477,
+    1471986212242.713
+  ],
+  [
+    true,
+    "52ae276e6281339655bff975c0d6cd2ab5d0ba52568732ea94df4df41978462d",
+    "access time",
+    1471967505606,
+    1471986196371.1572
+  ],
+  [
+    true,
+    "e9201025aa29f58d51b1ec894761016f47bfb935a24afa5a0a3da54a4baa9dc4",
+    "access time",
+    1471967490180,
+    1471986180945.8394
+  ],
+  [
+    true,
+    "24d38ee2be0682865f03fe3a41e593a4ce95471e360c0065f18ceb4ed183a379",
+    "access time",
+    1471967474492,
+    1471986165257.1455
+  ],
+  [
+    true,
+    "24d38ee2be0682865f03fe3a41e593a4ce95471e360c0065f18ceb4ed183a379",
+    "publication time",
+    1471752000000,
+    1471986165257.1455
+  ],
+  [
+    true,
+    "af53b11cff7b73c47677b3f7062e701930d7243467c0e2b616dcd1bb47ef4cc5",
+    "access time",
+    1471967457335,
+    1471986148101.1208
+  ],
+  [
+    true,
+    "fc0afe77ca6e580ea86f280cac83706dad76dfa5b67a8b4fb52df6ca596a83bd",
+    "title",
+    "41\" Acoustic Guitar Left-handed cutaway with Guitar Bag",
+    1471986140101.2344
+  ],
+  [
+    true,
+    "fc0afe77ca6e580ea86f280cac83706dad76dfa5b67a8b4fb52df6ca596a83bd",
+    "description",
+    "Pls view my other ads by clicking \"View poster's other ads\" on the right. \r------------------------------------------------------------------- \r41\" Acoustic Guitar Left-handed cutaway with Guitar Bag \rSize: 41\" full size \rNeck: Birch \rTop: Spruce \rBack/Side: Linden \rFingerboard/Bridge: Rosewood \rColor Available: Natural \rFree 6MM FOAM Guitar Bag/Strap/3xpicks \r-------------------------------------------------------------------------------- \rPlease call 416-721-7162 for further informations. \rWebsite: http://www.cjccanada.com \r-------------------------------------------------------------------------------- \rCJC music \r207 Edgeley Blvd. Unit 19 \rConcord, ON L4K 4B5 \r(Northeast of HWY 7/HWY 400) \r~~~~~~~~~~~~~~~~~~~~~~~~ \rStore Hours: \rTuesday-Friday: 11 am - 6 pm \rSaturday: 11 am - 5 pm \rSunday & Monday: Closed",
+    1471986140101.2344
+  ],
+  [
+    true,
+    "fc0afe77ca6e580ea86f280cac83706dad76dfa5b67a8b4fb52df6ca596a83bd",
+    "photographs",
+    [
+      "http://i.ebayimg.com/00/s/NDcxWDQ0Ng==/z/IOUAAOSwV0RXvGg9/$_35.JPG",
+      "http://i.ebayimg.com/00/s/NDIyWDQ3NQ==/z/~fsAAOSw-itXvGhC/$_35.JPG"
+    ],
+    1471986140101.2344
+  ],
+  [
+    true,
+    "fc0afe77ca6e580ea86f280cac83706dad76dfa5b67a8b4fb52df6ca596a83bd",
+    "location",
+    [
+      "207 Edgeley Blvd #19",
+      "Concord",
+      "ON L4K 4B5",
+      "Canada"
+    ],
+    1471986140101.2344
+  ],
+  [
+    true,
+    "fc0afe77ca6e580ea86f280cac83706dad76dfa5b67a8b4fb52df6ca596a83bd",
+    "address",
+    "http://www.kijiji.ca/v-view-details.html?adId=1192829989",
+    1471986140101.2344
+  ],
+  [
+    true,
+    "fc0afe77ca6e580ea86f280cac83706dad76dfa5b67a8b4fb52df6ca596a83bd",
+    "access time",
+    1471967449338,
+    1471986140101.2344
+  ],
+  [
+    true,
+    "fc0afe77ca6e580ea86f280cac83706dad76dfa5b67a8b4fb52df6ca596a83bd",
+    "price",
+    139,
+    1471986140101.2344
+  ],
+  [
+    true,
+    "fc0afe77ca6e580ea86f280cac83706dad76dfa5b67a8b4fb52df6ca596a83bd",
+    "publication time",
+    1471924800000,
+    1471986140101.2344
+  ],
+  [
+    true,
+    "4f61bee3cc4df62d65a987204e28e468230808e6441748a05cb19ae8926e9cc2",
+    "title",
+    "Left handed guitar and Amp",
+    1471986131917.517
+  ],
+  [
+    true,
+    "4f61bee3cc4df62d65a987204e28e468230808e6441748a05cb19ae8926e9cc2",
+    "description",
+    "Left handed les paul wtih peavey amp,hard case , tuner and strap. All in mint condition. Asking $350. OBO.",
+    1471986131917.517
+  ],
+  [
+    true,
+    "4f61bee3cc4df62d65a987204e28e468230808e6441748a05cb19ae8926e9cc2",
+    "photographs",
+    [
+      "http://i.ebayimg.com/00/s/ODAwWDYwMA==/z/CYAAAOSw6n5XvGXc/$_35.JPG",
+      "http://i.ebayimg.com/00/s/NjAwWDgwMA==/z/lb0AAOSwdzVXvGXd/$_35.JPG",
+      "http://i.ebayimg.com/00/s/ODAwWDYwMA==/z/ZuQAAOSwU-pXvGXc/$_35.JPG",
+      "http://i.ebayimg.com/00/s/ODAwWDYwMA==/z/HlQAAOSwaB5XvGXd/$_35.JPG",
+      "http://i.ebayimg.com/00/s/ODAwWDYwMA==/z/ejQAAOSw9NdXvGXf/$_35.JPG"
+    ],
+    1471986131917.517
+  ],
+  [
+    true,
+    "4f61bee3cc4df62d65a987204e28e468230808e6441748a05cb19ae8926e9cc2",
+    "location",
+    [
+      "Saint John",
+      "NB E2J2V8"
+    ],
+    1471986131917.517
+  ],
+  [
+    true,
+    "4f61bee3cc4df62d65a987204e28e468230808e6441748a05cb19ae8926e9cc2",
+    "address",
+    "http://www.kijiji.ca/v-view-details.html?adId=1192827135",
+    1471986131917.517
+  ],
+  [
+    true,
+    "4f61bee3cc4df62d65a987204e28e468230808e6441748a05cb19ae8926e9cc2",
+    "access time",
+    1471967441154,
+    1471986131917.517
+  ],
+  [
+    true,
+    "4f61bee3cc4df62d65a987204e28e468230808e6441748a05cb19ae8926e9cc2",
+    "price",
+    350,
+    1471986131917.517
+  ],
+  [
+    true,
+    "4f61bee3cc4df62d65a987204e28e468230808e6441748a05cb19ae8926e9cc2",
+    "publication time",
+    1471924800000,
+    1471986131917.517
+  ],
+  [
+    true,
+    "8b5ef30b7bf4493b79c207fce7794a13d05588f32da951efeeae2978757e4133",
+    "access time",
+    1471967431441,
+    1471986122209.4749
+  ],
+  [
+    true,
     "fc5a0ff370290d1b8447759e3eab766dcc076fd0338755e27734c5c5f0950858",
     "pocketd",
     1471966990637,
@@ -7770,104 +8689,6 @@
   ],
   [
     true,
-    "8b5ef30b7bf4493b79c207fce7794a13d05588f32da951efeeae2978757e4133",
-    "access time",
-    1471447353112,
-    1472042470197.2627
-  ],
-  [
-    true,
-    "af53b11cff7b73c47677b3f7062e701930d7243467c0e2b616dcd1bb47ef4cc5",
-    "access time",
-    1471447339139,
-    1472042456223.889
-  ],
-  [
-    true,
-    "24d38ee2be0682865f03fe3a41e593a4ce95471e360c0065f18ceb4ed183a379",
-    "access time",
-    1471447325143,
-    1472042442227.807
-  ],
-  [
-    true,
-    "e9201025aa29f58d51b1ec894761016f47bfb935a24afa5a0a3da54a4baa9dc4",
-    "access time",
-    1471447310933,
-    1472042428017.186
-  ],
-  [
-    true,
-    "52ae276e6281339655bff975c0d6cd2ab5d0ba52568732ea94df4df41978462d",
-    "access time",
-    1471447296680,
-    1472042413764.5122
-  ],
-  [
-    true,
-    "c624e0c543973fad554659ba2ae2465a1a23026a6b12f0511a626cbda3fb8a28",
-    "access time",
-    1471447282119,
-    1472042399203.0527
-  ],
-  [
-    true,
-    "bcbd11da31b22c351f8f975186675f036305f635b938011d464b7d8d59437d7a",
-    "access time",
-    1471447267938,
-    1472042385023.1907
-  ],
-  [
-    true,
-    "eb59f7af3d4aa3194b33582c12f8442a273210082f3330414581104f8be2914d",
-    "access time",
-    1471447258445,
-    1472042375528.5642
-  ],
-  [
-    true,
-    "7de501d5286e3edf2e42998fdd9edcd22d5115382e1c89516757f00993d6345d",
-    "access time",
-    1471447244526,
-    1472042361608.8694
-  ],
-  [
-    true,
-    "c631767b6e495bab8d2c488bdca1db4a180a0d0f1fb333d5c5575f9041a8f9e7",
-    "access time",
-    1471447229954,
-    1472042347036.7922
-  ],
-  [
-    true,
-    "b0d72e72733dbd70db21b27b2addec993590fb1ebdf9950d975892b4299649c6",
-    "access time",
-    1471447220511,
-    1472042337593.4194
-  ],
-  [
-    true,
-    "50aa66595786c3e72985c21ae5d644903a8e8307c16eeba8b0fe3a042ed9fab1",
-    "access time",
-    1471447206625,
-    1472042323707.164
-  ],
-  [
-    true,
-    "eec7b11952f867721701e699847bfaef46a20cbbffc1a3bf76709aba9ade6556",
-    "access time",
-    1471447192581,
-    1472042309662.4165
-  ],
-  [
-    true,
-    "d7cbc20ec23caf8669d1d5b9094d10c3e92a56f19662213f32071811d9d55002",
-    "access time",
-    1471447178213,
-    1472042295294.7375
-  ],
-  [
-    true,
     "dc7e8ed6c0eecd785bb786a6a46b0b01ba18be2e0981594a3efbad082e68fce2",
     "expired",
     1471447164232,
@@ -7882,13 +8703,6 @@
   ],
   [
     true,
-    "31c6985a6747c21f7aa91c39446f4df19c1af44c695cd83d6ebd09c4a7b582fc",
-    "access time",
-    1471447149631,
-    1472042266711.6904
-  ],
-  [
-    true,
     "48fbca8c78e15648d6b7cb20d90c681c497d7e0b6fee0aed05ce9f2a8bc37e90",
     "expired",
     1471447135754,
@@ -7900,13 +8714,6 @@
     "access time",
     1471447135754,
     1472042252833.6206
-  ],
-  [
-    true,
-    "654fd889ddf7bab2e4669a840d935b1943f31205559723ab2c051d42c9ae2e29",
-    "access time",
-    1471447120784,
-    1472042237864.4353
   ],
   [
     true,
@@ -7917,80 +8724,10 @@
   ],
   [
     true,
-    "2762636ce5b09dcd6c38b31b68df4c34215ff294a7ce826ca66388809f1bbfc7",
-    "access time",
-    1471447106464,
-    1472042223543.6584
-  ],
-  [
-    true,
-    "50f94a57906df0915464f0c223b3241f6994155dfaa01ce6ead2a85027543f85",
-    "access time",
-    1471447097222,
-    1472042214301.9224
-  ],
-  [
-    true,
-    "d1a37f806cfad4fe373ab94450841d0a8c29928e8f4430fa3ccdb3e8a4be3842",
-    "access time",
-    1471447082722,
-    1472042199800.6692
-  ],
-  [
-    true,
-    "2299458781d45a7585bb999afeee21ac856f219051c8600c9b503c4a289bdf94",
-    "access time",
-    1471447068486,
-    1472042185564.3066
-  ],
-  [
-    true,
-    "5a59db3c7a1deb991092637250fc7d438cb884a2bdab720afa6bb65cc25a4cdf",
-    "access time",
-    1471447054718,
-    1472042171796.0127
-  ],
-  [
-    true,
-    "5a579699704000561cb83aa945b538b237af665b7bafb9af23addb648114c9fd",
-    "access time",
-    1471447040412,
-    1472042157489.8213
-  ],
-  [
-    true,
-    "ff08e7304a648a59058e3f9b88635bb32460a91fa2e4bbe0b9e7d3b5e081e64d",
-    "access time",
-    1471447026221,
-    1472042143305.1707
-  ],
-  [
-    true,
     "ff08e7304a648a59058e3f9b88635bb32460a91fa2e4bbe0b9e7d3b5e081e64d",
     "publication time",
     1469246400000,
     1472042143305.1707
-  ],
-  [
-    true,
-    "51aba795cb2f3a6c3f42db0a447c76743e1157664d3e252e3bd8aa74e32d87af",
-    "access time",
-    1471447016810,
-    1472042133887.6123
-  ],
-  [
-    true,
-    "47c6cadff4641982a14510d3626073f8ec2909dd0c0df72d8510315ca99fa987",
-    "access time",
-    1471447002387,
-    1472042119464.6064
-  ],
-  [
-    true,
-    "8258400be62d5dfe9321edabdfb37a09a71d744cb9dcee48bc95ce1fd94feaec",
-    "access time",
-    1471446987968,
-    1472042105046.2031
   ],
   [
     true,
@@ -8001,27 +8738,6 @@
   ],
   [
     true,
-    "687094226d33cbc1d8797155c41da5f2712f5dddd660b6e43e607c3d03ed9c65",
-    "access time",
-    1471446973358,
-    1472042090434.7366
-  ],
-  [
-    true,
-    "bdcf25e58dbb92b07ad81f20846b48231ee408dd4cbc7c6b3dcf243e6a8c01e8",
-    "access time",
-    1471446959592,
-    1472042076668.4387
-  ],
-  [
-    true,
-    "7f64d8fd7feb2b9ee04711aa0e5a4196f17a6b3033f842b65ec706e80e39b70f",
-    "access time",
-    1471446944959,
-    1472042062035.0461
-  ],
-  [
-    true,
     "e146ae760af8aacbd351f5b14bd9c36a7a13616acb0b49e86f7c0f5d89a9a5c4",
     "expired",
     1471446930758,
@@ -8036,153 +8752,6 @@
   ],
   [
     true,
-    "d0e506ef9edd4b812dff2f4cce9311b24391e37cb11f40267e0d4b277f4f7dd9",
-    "access time",
-    1471446916159,
-    1472042033235.4155
-  ],
-  [
-    true,
-    "48db9412d0b14da0cf6fad4f5426e6e8d5c17776b6e56dd56d410c0154d82fbd",
-    "access time",
-    1471446901763,
-    1472042018838.0613
-  ],
-  [
-    true,
-    "14ceb509b2fad38ffdce1b9544791d339b97c3079c98ed796dbdc4d55e62a26d",
-    "access time",
-    1471446886333,
-    1472042003408.1768
-  ],
-  [
-    true,
-    "de838dceb6ae2bc985c787cfe898948ce90e4fadc7cb4fdf30f874404b9036e0",
-    "access time",
-    1471446871965,
-    1472041989039.4045
-  ],
-  [
-    true,
-    "c9cd51526a40e242df7df6e216e54e63e805f8f3235902b3376f89e6ceb74e7b",
-    "access time",
-    1471446854502,
-    1472041971575.5962
-  ],
-  [
-    true,
-    "8c17fbc7530fed490ea579c42e7c666e82102336bcc254f93f7c259afdc5332b",
-    "access time",
-    1471446840432,
-    1472041957505.5308
-  ],
-  [
-    true,
-    "8b895c33cf331eda60ab7eb7491c235de284a1c0239891ba3100ff559ebb3eea",
-    "access time",
-    1471446825044,
-    1472041942117.2866
-  ],
-  [
-    true,
-    "f2e52e2b022a13755af93ae777f000624b41e6119ba8a2ff3e1f5eee04ae6211",
-    "access time",
-    1471446815881,
-    1472041932954.7234
-  ],
-  [
-    true,
-    "afa786f960b4ed6bc97d4187616e6ab976c2b974d353043bf9bed537b4287688",
-    "access time",
-    1471446800966,
-    1472041918039.4475
-  ],
-  [
-    true,
-    "aac0db9e2f56ef5276aa04127c41446b66285c1f3007740c4d2f9f6a9dd81c83",
-    "access time",
-    1471446790870,
-    1472041907942.51
-  ],
-  [
-    true,
-    "fb99b5560ce272abfa6f6c8001773e0a61416f24717d8bfd51070c1d34a4263e",
-    "access time",
-    1471446776729,
-    1472041893802.0107
-  ],
-  [
-    true,
-    "24b3873aa64f72ab6ff3b38093264115bd2699636a71b8881e34806596c6110d",
-    "access time",
-    1471446761391,
-    1472041878463.2798
-  ],
-  [
-    true,
-    "6e6803a250c03313b951fb4df749e42a24814d082da3d2060abc8bc22902996d",
-    "access time",
-    1471446751388,
-    1472041868460.608
-  ],
-  [
-    true,
-    "71a04d2315b27f006e20a5954c931749300f5a539b0eac9b6913e045bf865d30",
-    "access time",
-    1471446737199,
-    1472041854270.0234
-  ],
-  [
-    true,
-    "1ee8c40150fb0df3a67eb3154a4cd390d8cf97cae7def54e34629ffe85986990",
-    "access time",
-    1471446722977,
-    1472041840047.528
-  ],
-  [
-    true,
-    "1f5f22fc5cbcb80e360d64b1620219f6259261d0909a11c64818b6e452fbabee",
-    "access time",
-    1471446708875,
-    1472041825944.8303
-  ],
-  [
-    true,
-    "f8c0fd1c20b5111856ec0d0e92b54ad02997a78033ba454f5033477b6b798a8f",
-    "access time",
-    1471446694438,
-    1472041811507.3784
-  ],
-  [
-    true,
-    "4d7540fdfcecdfa4a527ed170183ee5c2d1041be209e6ca6412eedf4da1e1873",
-    "access time",
-    1471446680173,
-    1472041797243.2197
-  ],
-  [
-    true,
-    "6c189ed23ed19f043ae8e04c1d36e504af7e255d90f666fd542a38ed197b3afd",
-    "access time",
-    1471446666264,
-    1472041783332.9863
-  ],
-  [
-    true,
-    "8434da64fdee9b6d06b874bd17dc2fe7c94cdd012c1c6bf0da406ccd7f09ab6c",
-    "access time",
-    1471446651957,
-    1472041769026.7744
-  ],
-  [
-    true,
-    "4329b1ccaf42e9c91c2374e673404c55617d437ac0f47773f82985847e1b967c",
-    "access time",
-    1471446637597,
-    1472041754666.915
-  ],
-  [
-    true,
     "ab472231debe0314f48f17c714f7f1fbce2451d7f07511b53f8bf62858e8b40f",
     "access time",
     1471446623816,
@@ -8194,55 +8763,6 @@
     "expired",
     1471446623816,
     1472041740883.5264
-  ],
-  [
-    true,
-    "26a56e0866daadf4511629f359cad6c3161a93aaf10b5752fe431934a9b46d99",
-    "access time",
-    1471446614053,
-    1472041731121.3625
-  ],
-  [
-    true,
-    "e439c8086f353efdd3307a2f113e4df870985ffa4df016f2d7f61073c16fa973",
-    "access time",
-    1471446599590,
-    1472041716657.316
-  ],
-  [
-    true,
-    "aba897e0a4321da0fea5fd6f895cd05141b235778650866e3014477d8ccbf209",
-    "access time",
-    1471446585712,
-    1472041702780.466
-  ],
-  [
-    true,
-    "074285518d7ee73f8be59745f18e255f641b358789a80a4fd5bf6c520a7e5a00",
-    "access time",
-    1471446571368,
-    1472041688434.3293
-  ],
-  [
-    true,
-    "35a205dbae5f9841672ba7b12c672de93da702b32411e162759b51169d829236",
-    "access time",
-    1471446556827,
-    1472041673893.174
-  ],
-  [
-    true,
-    "39e53a9ff86daa87acb0c2153fa838dd75565f68780da1f175d8fce38f543031",
-    "access time",
-    1471446543122,
-    1472041660199.182
-  ],
-  [
-    true,
-    "7139c0b2a829ffca87a5fb555232f0dabe825193a569543e6a397d963ff1ad82",
-    "access time",
-    1471446528116,
-    1472041645183.1716
   ],
   [
     true,
@@ -8285,13 +8805,6 @@
     "307ffe84b909c0c3516ad3f1b29b070b053dfc2703b40693347c462517bdf3b3",
     "address",
     "http://www.kijiji.ca/v-view-details.html?adId=1190967257",
-    1472041638160.6633
-  ],
-  [
-    true,
-    "307ffe84b909c0c3516ad3f1b29b070b053dfc2703b40693347c462517bdf3b3",
-    "access time",
-    1471446521095,
     1472041638160.6633
   ],
   [
@@ -8348,13 +8861,6 @@
     "14e1165afae78570dfe1e09eeadbe10117cac1639eef547a4c0b65c7d9e22d79",
     "address",
     "http://www.kijiji.ca/v-view-details.html?adId=1190985530",
-    1472041631269.31
-  ],
-  [
-    true,
-    "14e1165afae78570dfe1e09eeadbe10117cac1639eef547a4c0b65c7d9e22d79",
-    "access time",
-    1471446514204,
     1472041631269.31
   ],
   [
@@ -8420,13 +8926,6 @@
   [
     true,
     "70bba916ad2f61232ad3f686db769e3aea8de1e4cce88adc308770a43ec99c41",
-    "access time",
-    1471446507043,
-    1472041624107.8872
-  ],
-  [
-    true,
-    "70bba916ad2f61232ad3f686db769e3aea8de1e4cce88adc308770a43ec99c41",
     "price",
     400,
     1472041624107.8872
@@ -8476,13 +8975,6 @@
     "cf5e9bea6d319501a2f1aac391c094da4553c1242cbcead4b58c649294bfe056",
     "address",
     "http://www.kijiji.ca/v-view-details.html?adId=1191133111",
-    1472041617132.178
-  ],
-  [
-    true,
-    "cf5e9bea6d319501a2f1aac391c094da4553c1242cbcead4b58c649294bfe056",
-    "access time",
-    1471446500068,
     1472041617132.178
   ],
   [
@@ -8545,13 +9037,6 @@
   [
     true,
     "3af0fb407524520b9340c902bdf739344aa05ccf3a1da12cd286933879ac1f4d",
-    "access time",
-    1471446493077,
-    1472041610140.9883
-  ],
-  [
-    true,
-    "3af0fb407524520b9340c902bdf739344aa05ccf3a1da12cd286933879ac1f4d",
     "price",
     200,
     1472041610140.9883
@@ -8602,13 +9087,6 @@
     "670f58353ca8676aa3f1efa0eaba7af0e1308b161a526397a7bd42a582b2c3c2",
     "address",
     "http://www.kijiji.ca/v-view-details.html?adId=1191000690",
-    1472041603220.8113
-  ],
-  [
-    true,
-    "670f58353ca8676aa3f1efa0eaba7af0e1308b161a526397a7bd42a582b2c3c2",
-    "access time",
-    1471446486157,
     1472041603220.8113
   ],
   [
@@ -8667,13 +9145,6 @@
     "1aea09aba63d3fa9ff53502cafbdd39e110a86b81fd976f922785a304533205c",
     "address",
     "http://www.kijiji.ca/v-view-details.html?adId=1191017377",
-    1472041596423.0188
-  ],
-  [
-    true,
-    "1aea09aba63d3fa9ff53502cafbdd39e110a86b81fd976f922785a304533205c",
-    "access time",
-    1471446479359,
     1472041596423.0188
   ],
   [
@@ -8738,13 +9209,6 @@
   [
     true,
     "c29e6fbca8d90d1813afb36db67a5ea4ac7f26bd7379616228c4716a835f3564",
-    "access time",
-    1471446472212,
-    1472041589275.5017
-  ],
-  [
-    true,
-    "c29e6fbca8d90d1813afb36db67a5ea4ac7f26bd7379616228c4716a835f3564",
     "price",
     139.99,
     1472041589275.5017
@@ -8794,20 +9258,6 @@
     "0b1418a27a9ceccee23a99ca86dd97c0057de737db68075b169ee2d9cdb4f86e",
     "address",
     "http://www.kijiji.ca/v-view-details.html?adId=1191089132",
-    1472041575346.148
-  ],
-  [
-    true,
-    "0b1418a27a9ceccee23a99ca86dd97c0057de737db68075b169ee2d9cdb4f86e",
-    "access time",
-    1471446458283,
-    1472041575346.148
-  ],
-  [
-    true,
-    "0b1418a27a9ceccee23a99ca86dd97c0057de737db68075b169ee2d9cdb4f86e",
-    "price",
-    null,
     1472041575346.148
   ],
   [
@@ -8866,13 +9316,6 @@
   [
     true,
     "c0f9c649c878373ee996ce00bd16b8af5033e62cf0346986582d58bb6696feea",
-    "access time",
-    1471446450927,
-    1472041567990.4204
-  ],
-  [
-    true,
-    "c0f9c649c878373ee996ce00bd16b8af5033e62cf0346986582d58bb6696feea",
     "price",
     450,
     1472041567990.4204
@@ -8924,13 +9367,6 @@
     "428aabf3a5f4416a39d5c72e430f6d5f8e320b09a4b8b64c92ba1da9ab7c6f64",
     "address",
     "http://www.kijiji.ca/v-view-details.html?adId=1190991040",
-    1472041540133.9985
-  ],
-  [
-    true,
-    "428aabf3a5f4416a39d5c72e430f6d5f8e320b09a4b8b64c92ba1da9ab7c6f64",
-    "access time",
-    1471446423071,
     1472041540133.9985
   ],
   [
@@ -8996,13 +9432,6 @@
   [
     true,
     "396dc4f4915d9b4fb1f7fe1865026adfee3091265fdf3990200e37fe4793d095",
-    "access time",
-    1471446399847,
-    1472041516909.4658
-  ],
-  [
-    true,
-    "396dc4f4915d9b4fb1f7fe1865026adfee3091265fdf3990200e37fe4793d095",
     "price",
     225,
     1472041516909.4658
@@ -9057,13 +9486,6 @@
     "03fc2fd766b98f042b98a5dc1402e20da0ac79f07468594fee4f1e7a57649c1c",
     "address",
     "http://www.kijiji.ca/v-view-details.html?adId=1191063408",
-    1472041514973.8894
-  ],
-  [
-    true,
-    "03fc2fd766b98f042b98a5dc1402e20da0ac79f07468594fee4f1e7a57649c1c",
-    "access time",
-    1471446397912,
     1472041514973.8894
   ],
   [
@@ -9126,13 +9548,6 @@
   [
     true,
     "32aaeeb6e5fe4882d8ff9be412055381cbb5c6d9c32a00208ac743018a1a4b5f",
-    "access time",
-    1471446395980,
-    1472041513042.0981
-  ],
-  [
-    true,
-    "32aaeeb6e5fe4882d8ff9be412055381cbb5c6d9c32a00208ac743018a1a4b5f",
     "price",
     220,
     1472041513042.0981
@@ -9143,20 +9558,6 @@
     "publication time",
     1471320000000,
     1472041513042.0981
-  ],
-  [
-    true,
-    "a74e8ef41fe0d7c557f184c101bc6c920117d1fad5fb9907e2a3f88f75e1391b",
-    "access time",
-    1471446385505,
-    1472041502574.122
-  ],
-  [
-    true,
-    "a74e8ef41fe0d7c557f184c101bc6c920117d1fad5fb9907e2a3f88f75e1391b",
-    "price",
-    null,
-    1472041502574.122
   ],
   [
     true,
@@ -9213,13 +9614,6 @@
     "eef44b05ea3b2a612575227b1a9936c279c88204cdcbccefd74193e709cfb275",
     "address",
     "http://www.kijiji.ca/v-view-details.html?adId=1190913092",
-    1471949704460.8347
-  ],
-  [
-    true,
-    "eef44b05ea3b2a612575227b1a9936c279c88204cdcbccefd74193e709cfb275",
-    "access time",
-    1471377218550,
     1471949704460.8347
   ],
   [
@@ -9283,13 +9677,6 @@
   [
     true,
     "5d0acc2f9b3f567a950642de6a698d024d4d2be828cd6ee65b834ddd89d22500",
-    "access time",
-    1471377216640,
-    1471949702550.8438
-  ],
-  [
-    true,
-    "5d0acc2f9b3f567a950642de6a698d024d4d2be828cd6ee65b834ddd89d22500",
     "price",
     425,
     1471949702550.8438
@@ -9339,13 +9726,6 @@
     "27691790d81bb07bc6da81145686814caf4e78225f31feb2fbcd31cabdf7fa86",
     "address",
     "http://www.kijiji.ca/v-view-details.html?adId=1190931845",
-    1471949700632.1084
-  ],
-  [
-    true,
-    "27691790d81bb07bc6da81145686814caf4e78225f31feb2fbcd31cabdf7fa86",
-    "access time",
-    1471377214721,
     1471949700632.1084
   ],
   [
@@ -9948,20 +10328,6 @@
     "publication time",
     1471320000000,
     1471934658925.3901
-  ],
-  [
-    true,
-    "14ceb509b2fad38ffdce1b9544791d339b97c3079c98ed796dbdc4d55e62a26d",
-    "publication time",
-    1467604800000,
-    1471915659075.098
-  ],
-  [
-    true,
-    "de838dceb6ae2bc985c787cfe898948ce90e4fadc7cb4fdf30f874404b9036e0",
-    "publication time",
-    1469160000000,
-    1471915644598.4028
   ],
   [
     true,
@@ -11333,20 +11699,6 @@
   ],
   [
     true,
-    "8258400be62d5dfe9321edabdfb37a09a71d744cb9dcee48bc95ce1fd94feaec",
-    "description",
-    "This left handed \"Rouge\" Beatle Bass is like new. > Bought it for looks,not playing because i cant even play Bass guitar.lol. > Seen others like this but not as rich in colour as this one. > I still have toooo many guitars. > Selling this Bass Guitar with Case for $325.00. firm.> 1st Buyer > Too many emails! > Callers Only! (7am to 3am in the morning) South River On 705-386-7086. > Thanks For Looking..",
-    1471710684049.3474
-  ],
-  [
-    true,
-    "8258400be62d5dfe9321edabdfb37a09a71d744cb9dcee48bc95ce1fd94feaec",
-    "price",
-    325,
-    1471710684049.3474
-  ],
-  [
-    true,
     "8681ae24059724f9344b0bba4fdd0dbf17376f2c02cf883509f66060962b3dfd",
     "expired",
     1471229023862,
@@ -11903,27 +12255,10 @@
   [
     true,
     "687094226d33cbc1d8797155c41da5f2712f5dddd660b6e43e607c3d03ed9c65",
-    "description",
-    "Barely used left handed Epiphone SG. Good condition, one dent. No strings. Asking $250 OBO. Soft sided case also for sale $50 OBO.",
-    1471657181868.2883
-  ],
-  [
-    true,
-    "687094226d33cbc1d8797155c41da5f2712f5dddd660b6e43e607c3d03ed9c65",
     "photographs",
     [
       "http://i.ebayimg.com/00/s/NDAwWDI2Nw==/z/h1kAAOSw-itXsL8O/$_35.JPG",
       "http://i.ebayimg.com/00/s/NDAwWDI2Nw==/z/ITcAAOSwHoFXsL8T/$_35.JPG"
-    ],
-    1471657181868.2883
-  ],
-  [
-    true,
-    "687094226d33cbc1d8797155c41da5f2712f5dddd660b6e43e607c3d03ed9c65",
-    "location",
-    [
-      "Edmonton",
-      "AB T6X0P3"
     ],
     1471657181868.2883
   ],
@@ -17642,13 +17977,6 @@
     "publication time",
     1470888000000,
     1471192919413.337
-  ],
-  [
-    true,
-    "8258400be62d5dfe9321edabdfb37a09a71d744cb9dcee48bc95ce1fd94feaec",
-    "title",
-    "\" Lefthanded Rouge Beatle Bass \"",
-    1471192912439.491
   ],
   [
     true,
@@ -29665,25 +29993,11 @@
   [
     true,
     "afa786f960b4ed6bc97d4187616e6ab976c2b974d353043bf9bed537b4287688",
-    "description",
-    "I have a left-handed Jean larrivee parlor  it's  in excellent condition  this guitar and case is like new condition 800.00 no trades",
-    1470011527492.4707
-  ],
-  [
-    true,
-    "afa786f960b4ed6bc97d4187616e6ab976c2b974d353043bf9bed537b4287688",
     "location",
     [
       "Stony Plain",
       "AB  T7Z0C4"
     ],
-    1470011527492.4707
-  ],
-  [
-    true,
-    "afa786f960b4ed6bc97d4187616e6ab976c2b974d353043bf9bed537b4287688",
-    "price",
-    800,
     1470011527492.4707
   ],
   [
@@ -39724,16 +40038,6 @@
       "http://i.ebayimg.com/00/s/ODAwWDYwMA==/z/8EgAAOSwIgNXkuy1/$_35.JPG",
       "http://i.ebayimg.com/00/s/ODAwWDYwMA==/z/FW8AAOSwTZ1Xkuyq/$_35.JPG",
       "http://i.ebayimg.com/00/s/ODAwWDU5OQ==/z/C5UAAOSwRgJXku3G/$_35.JPG"
-    ],
-    1469255970796.4229
-  ],
-  [
-    true,
-    "d0e506ef9edd4b812dff2f4cce9311b24391e37cb11f40267e0d4b277f4f7dd9",
-    "location",
-    [
-      "Ottawa",
-      "ON  K0A3M0"
     ],
     1469255970796.4229
   ],
@@ -55690,13 +55994,6 @@
     "publication time",
     1466913600000,
     1467890813954.7266
-  ],
-  [
-    true,
-    "24d38ee2be0682865f03fe3a41e593a4ce95471e360c0065f18ceb4ed183a379",
-    "publication time",
-    1467000000000,
-    1467890811195.2888
   ],
   [
     true,
